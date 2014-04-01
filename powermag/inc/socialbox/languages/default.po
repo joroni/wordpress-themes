@@ -1,0 +1,406 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SocialBox\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-11-17 19:25+0100\n"
+"PO-Revision-Date: 2012-11-17 19:25+0100\n"
+"Last-Translator: Jonas Döbertin <jonas@doebertin.de>\n"
+"Language-Team: JonasDoebertin <support@jonasdoebertin.net>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../socialbox.php:185
+msgid "Every Ten Minutes"
+msgstr ""
+
+#: ../socialbox.php:280
+msgid "SocialBox update available!"
+msgstr ""
+
+#: ../socialbox.php:281
+#, php-format
+msgid ""
+"New Version: %s (%s). Info and download at the <a href=\"%s\">plugin page</"
+"a>."
+msgstr ""
+
+#: ../socialbox.php:302
+msgid "SocialBox Settings"
+msgstr ""
+
+#: ../socialbox.php:302 ../views/options-page.frame.php:15
+msgid "Settings"
+msgstr ""
+
+#: ../socialbox.php:347 ../socialbox.php:348
+#: ../views/options-page.frame.php:14
+msgid "SocialBox"
+msgstr ""
+
+#: ../socialbox.php:371
+msgid "Advanced Settings"
+msgstr ""
+
+#: ../socialbox.php:378
+msgid "Update Interval"
+msgstr ""
+
+#: ../socialbox.php:387
+msgid "SSL-Verification"
+msgstr ""
+
+#: ../socialbox.php:397
+msgid "Debugging"
+msgstr ""
+
+#: ../socialbox.php:404 ../views/options-page.frame.php:18
+msgid "API Log"
+msgstr ""
+
+#: ../socialbox.php:413
+msgid "API Log Entries"
+msgstr ""
+
+#: ../socialbox.php:424
+msgid "Some advanced options to tweak SocialBox's internals"
+msgstr ""
+
+#: ../socialbox.php:431
+msgid ""
+"The time (in minutes) that SocialBox waits before refreshing it's data. "
+"(Default: 180 = 3 hours)"
+msgstr ""
+
+#: ../socialbox.php:440
+msgid "Disable SSL-Verification on API requests."
+msgstr ""
+
+#: ../socialbox.php:441
+msgid "This can be useful on most \"local servers\" like MAMP or XAMPP."
+msgstr ""
+
+#: ../socialbox.php:449
+msgid "Debugging should help you when SocialBox doesn't work as expected."
+msgstr ""
+
+#: ../socialbox.php:456
+msgid "Enable the API log"
+msgstr ""
+
+#: ../socialbox.php:457
+msgid "This should help you, if you're receiving no data for your networks"
+msgstr ""
+
+#: ../socialbox.php:466
+msgid "Number of log entries to keep"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:18
+msgid ""
+"Adds a super easy SocialBox Widget which displays the current numbers of "
+"Facebook Page Likes, Google+, Twitter, Dribbble, Forrst and Digg Followers "
+"and YouTube and Vimeo Channel Subscriptions."
+msgstr ""
+
+#: ../includes/socialbox.widget.php:226 ../views/options-page.help.php:57
+#: ../views/widget.form.php:59
+msgid "Facebook"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:228 ../views/options-page.help.php:64
+#: ../views/widget.form.php:84
+msgid "Twitter"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:232 ../views/widget.form.php:137
+msgid "YouTube"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:234 ../views/options-page.help.php:83
+#: ../views/widget.form.php:162
+msgid "Vimeo"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:236 ../views/options-page.help.php:89
+#: ../views/widget.form.php:187
+msgid "Dribbble"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:238 ../views/options-page.help.php:95
+#: ../views/widget.form.php:212
+msgid "Forrst"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:240 ../views/options-page.help.php:101
+#: ../views/widget.form.php:237
+msgid "Digg"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:242 ../views/widget.form.php:262
+msgid "GitHub"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:252
+msgid "Fans"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:254 ../includes/socialbox.widget.php:262
+#: ../includes/socialbox.widget.php:264 ../includes/socialbox.widget.php:266
+#: ../includes/socialbox.widget.php:268
+msgid "Followers"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:258 ../includes/socialbox.widget.php:260
+msgid "Subscribers"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:278
+msgid "Like"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:280 ../includes/socialbox.widget.php:288
+#: ../includes/socialbox.widget.php:290 ../includes/socialbox.widget.php:292
+#: ../includes/socialbox.widget.php:294
+msgid "Follow"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:284 ../includes/socialbox.widget.php:286
+msgid "Subscribe"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:304
+msgid "Like on Facebook"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:306
+msgid "Follow on Twitter"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:310
+msgid "Subscribe to Youtube Channel"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:312
+msgid "Subscribe to Vimeo Channel"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:314
+msgid "Follow on Dribbble"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:316
+msgid "Follow on Forrst"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:318
+msgid "Follow on Digg"
+msgstr ""
+
+#: ../includes/socialbox.widget.php:320
+msgid "Follow on GitHub"
+msgstr ""
+
+#: ../views/options-page.frame.php:16
+msgid "About"
+msgstr ""
+
+#: ../views/options-page.frame.php:17
+msgid "Help"
+msgstr ""
+
+#: ../views/options-page.help.php:57 ../views/widget.form.php:63
+msgid "Page ID/Name"
+msgstr ""
+
+#: ../views/options-page.help.php:64 ../views/options-page.help.php:89
+#: ../views/options-page.help.php:95 ../views/options-page.help.php:101
+#: ../views/widget.form.php:88 ../views/widget.form.php:191
+#: ../views/widget.form.php:216 ../views/widget.form.php:241
+#: ../views/widget.form.php:266
+msgid "Username"
+msgstr ""
+
+#: ../views/options-page.help.php:70
+msgid "Google+"
+msgstr ""
+
+#: ../views/options-page.help.php:70
+msgid "User ID"
+msgstr ""
+
+#: ../views/options-page.help.php:77
+msgid "Youtube"
+msgstr ""
+
+#: ../views/options-page.help.php:77 ../views/options-page.help.php:83
+#: ../views/widget.form.php:141 ../views/widget.form.php:166
+msgid "Channel"
+msgstr ""
+
+#: ../views/options-page.log.php:21 ../views/options-page.log.php:30
+msgid "Time"
+msgstr ""
+
+#: ../views/options-page.log.php:22 ../views/options-page.log.php:31
+msgid "Network"
+msgstr ""
+
+#: ../views/options-page.log.php:23
+msgid "Username/ID"
+msgstr ""
+
+#: ../views/options-page.log.php:24 ../views/options-page.log.php:33
+msgid "Status Code"
+msgstr ""
+
+#: ../views/options-page.log.php:25 ../views/options-page.log.php:34
+msgid "Message"
+msgstr ""
+
+#: ../views/options-page.log.php:32
+msgid "Userame/ID"
+msgstr ""
+
+#: ../views/options-page.log.php:42
+msgid "The API log is disabled."
+msgstr ""
+
+#: ../views/options-page.log.php:48
+msgid "Nothing found. Seems as if everything's running smoothly."
+msgstr ""
+
+#: ../views/options-page.log.php:57
+msgid "Y/m/d H:i:s"
+msgstr ""
+
+#: ../views/widget.form.php:14
+msgid "General Settings"
+msgstr ""
+
+#: ../views/widget.form.php:19
+msgid "Open Links in new Window/Tab"
+msgstr ""
+
+#: ../views/widget.form.php:20
+msgid "Forces Links to be opened in a new window/tab"
+msgstr ""
+
+#: ../views/widget.form.php:26
+msgid "Show Buttons"
+msgstr ""
+
+#: ../views/widget.form.php:27
+msgid "Display Follow/Subscribe buttons"
+msgstr ""
+
+#: ../views/widget.form.php:44
+msgid "Choose the widgets display style"
+msgstr ""
+
+#: ../views/widget.form.php:50
+msgid "Use Compact Numbers"
+msgstr ""
+
+#: ../views/widget.form.php:51
+msgid "Show 12K instead of 12.300"
+msgstr ""
+
+#: ../views/widget.form.php:63
+msgid "Your Pages ID or Shortname (e.g. nettutsplus)"
+msgstr ""
+
+#: ../views/widget.form.php:69
+msgid "Your fallback like count"
+msgstr ""
+
+#: ../views/widget.form.php:69 ../views/widget.form.php:94
+#: ../views/widget.form.php:147 ../views/widget.form.php:172
+#: ../views/widget.form.php:197 ../views/widget.form.php:222
+#: ../views/widget.form.php:247 ../views/widget.form.php:272
+msgid "Default:"
+msgstr ""
+
+#: ../views/widget.form.php:75 ../views/widget.form.php:100
+#: ../views/widget.form.php:153 ../views/widget.form.php:178
+#: ../views/widget.form.php:203 ../views/widget.form.php:228
+#: ../views/widget.form.php:253 ../views/widget.form.php:278
+msgid "Display position within SocialBox"
+msgstr ""
+
+#: ../views/widget.form.php:75 ../views/widget.form.php:100
+#: ../views/widget.form.php:153 ../views/widget.form.php:178
+#: ../views/widget.form.php:203 ../views/widget.form.php:228
+#: ../views/widget.form.php:253 ../views/widget.form.php:278
+msgid "Position:"
+msgstr ""
+
+#: ../views/widget.form.php:88
+msgid "Your Twitter screenname (e.g. envatowebdev)"
+msgstr ""
+
+#: ../views/widget.form.php:94 ../views/widget.form.php:197
+#: ../views/widget.form.php:222 ../views/widget.form.php:247
+#: ../views/widget.form.php:272
+msgid "Your fallback follower count"
+msgstr ""
+
+#: ../views/widget.form.php:141
+msgid "Your YouTube Channel (e.g. nettutsplus)"
+msgstr ""
+
+#: ../views/widget.form.php:147 ../views/widget.form.php:172
+msgid "Your fallback subscriber count"
+msgstr ""
+
+#: ../views/widget.form.php:166
+msgid "Your Vimeo Channel"
+msgstr ""
+
+#: ../views/widget.form.php:191
+msgid "Your Dribbble username (e.g. envato)"
+msgstr ""
+
+#: ../views/widget.form.php:216
+msgid "Your Forrst username"
+msgstr ""
+
+#: ../views/widget.form.php:241
+msgid "Your Digg username"
+msgstr ""
+
+#: ../views/widget.form.php:266
+msgid "Your gitHub username"
+msgstr ""
+
+#: ../views/widget.form.php:287
+msgid "Additional Settings"
+msgstr ""
+
+#: ../views/widget.form.php:291
+msgid "Forced Widget Width:"
+msgstr ""
+
+#: ../views/widget.form.php:293
+msgid "Force Widget to have a specific width (0 to disable)"
+msgstr ""
+
+#: ../views/widget.form.php:298
+msgid "Forced Button Width:"
+msgstr ""
+
+#: ../views/widget.form.php:300
+msgid "Force Buttons to have a specific width (0 to disable)"
+msgstr ""
+
+#: ../views/widget.form.php:310
+msgid ""
+"Need support? <a href=\"http://support.jonasdoebertin.net/\" title=\"Get "
+"support!\">Get some!</a>"
+msgstr ""

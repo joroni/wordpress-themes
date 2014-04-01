@@ -1,0 +1,870 @@
+/*
+    Theme Name: Arion Property
+    Description: This is a start kit for to devevelop your own themes for the Genesis Framework
+    Author: Russell Green
+    Author URI: http://www.surefirewebservices.com/
+ 
+    Version: 1.9
+ 
+    Template: genesis
+    Template Version: 1.9
+ 
+    License: GPL-2.0+
+    License URI: http://www.opensource.org/licenses/gpl-license.php 
+*/
+
+@import '../genesis/style.css';
+
+@font-face {
+  font-family: IndieFlower;
+  src: url('fonts/IndieFlower.ttf');
+}
+@font-face {
+  font-family: SyncopateRegular;
+  src: url('fonts/syncopate.regular.ttf');
+}
+@font-face {
+  font-family: SyncopateBold;
+  src: url('fonts/syncopatebold.ttf');
+}
+
+body > #wrap {
+	margin: 0 auto;
+	max-width: 1500px;
+	background: #fff;
+	/*padding: 50px 30px;*/
+	box-shadow: 0 0 10px #aaa;
+	position: relative;
+	z-index: 5;
+}
+
+body {
+	background: #eee;
+}
+
+.wrap {
+	max-width: 1500px;
+}
+
+ul, ol {
+	padding-left: 30px;
+}
+
+.clear {
+	clear: both;
+}
+
+#menu-primary-nav {
+	background: #000;
+}
+.genesis-nav-menu .sub-menu a {
+	background-color: #222;
+	border-color: #555;
+}
+
+#header {
+	background: #fff;
+	color: #fff;
+	position: relative;
+}
+#header .header-left {
+	float: left;
+	width: 40%;
+}
+#header .header-right {
+	float: left;
+	width: 60%;
+	height: 100%;
+	position: relative;
+	padding-top: 25px;
+}
+#header .wrap {
+	overflow: hidden;
+	position: relative;
+	min-height: 80px;
+	background: #000;
+	padding-top: 80px;
+}
+
+#header #title-area {
+	position: relative;
+	z-index: 10;
+}
+
+.header-image #title-area {
+	padding: 13px 25px;
+}
+
+.header-image #title-area a {
+	color: rgb(166, 195, 243);
+	font-family: IndieFlower;
+	font-size: 40px;
+}
+
+#header .header-title {
+	color: #FFF;
+	font-family: SyncopateBold;
+	font-size: 30px;
+}
+
+#header #title-area img {
+	padding: 10px;
+	width: 240px;
+}
+
+#header .background-image {
+	position: absolute;
+	right: 0;
+	top: -80px;
+	z-index: 5;
+}
+
+#header .full-nav {
+	list-style-type: none;
+	display: block;
+	clear:both;
+	position: relative;
+	z-index: 15;
+}
+#header .full-nav li {
+	display: inline-block;
+	width: auto;
+}
+#header .full-nav li a {
+	color: #a7aaac;
+	/*padding: 86px 20px;*/
+	display: block;
+}
+#header .full-nav li a:hover {
+	color: #fff;
+	background: #bf8843;
+}
+
+#inner {
+}
+
+.front-content .left-content, .front-content .right-content {
+	float: left;
+	width: 50%;
+	font-family: SyncopateBold;
+	font-size: 30px;
+}
+.front-content .left-content {
+	position: relative;
+	z-index: 10;
+	padding-right: 10px;
+}
+.front-content .left-content .title {
+	font-family: IndieFlower;
+	font-size: 34px;
+	text-align: center;
+	width: 75%;
+}
+.front-content .left-content .title a {
+	color: rgb(166, 195, 243);
+}
+.front-content .cool-change {
+	color: rgb(166, 195, 243);
+}
+.front-content .left-content .site-tag {
+	width: 75%;
+	font-size: 25px;
+	text-align: center;
+}
+.front-content {
+	padding: 40px 20px;
+}
+.front-content .right-content img {
+	max-width: 125%;
+	margin-left: -25%;
+}
+
+.page #inner #content {
+	padding: 20px;
+}
+.page .left-section, .page .right-section {
+	float: left;
+	width: 50%;
+	position: relative;
+}
+.long-term .left-section {
+	float: left;
+}
+.long-term .right-section {
+	float: right;
+}
+.page .left-section {
+	padding-right: 10px;
+}
+.page .right-section {
+	padding-left: 10px;
+}
+.page .left-section .image-section {
+	float: left;
+	width: 40%;
+	padding-top: 55px;
+}
+.page .left-section .image-section img {
+	margin-bottom: 20px;
+}
+.page .left-section .text-section {
+	float: left;
+	width: 60%;
+	padding-right: 15px;
+}
+
+.about .right-section img {
+	padding-top: 40px;
+}
+
+.plan-purchase .centered-image {
+	position: absolute;
+	width: 60%;
+	left: 50%;
+	margin-left: -32%;
+	top: 50%;
+	margin-top: -23%;
+	box-shadow: 4px 4px 10px 3px #777;
+	border: 3px solid #333;
+}
+
+.how-ltsc .first-section, .how-ltsc .second-section, .how-ltsc .third-section {
+	float: left;
+	width: 31%;
+	text-align: center;
+	margin-right: 2%;
+}
+.how-ltsc img {
+	border: 3px solid #333;
+	box-shadow: 3px 3px 10px 0px #777;
+}
+.how-ltsc h3 {
+	font-family: SyncopateBold;
+	margin-bottom: 5px;
+	font-size: 22px;
+}
+.designed .left-section {
+	width: 30%;
+}
+.designed .right-section {
+	width: 70%;
+}
+.designed .mini-left {
+	float: left;
+	width: 20%;
+}
+.designed .mini-right {
+	float: left;
+	width: 80%;
+	padding-left: 20px;
+}
+.designed .scale-image {
+	width: 100%;
+	margin-top: 20px;
+}
+.designed img {
+	border: 3px solid #333;
+}
+.designed .dbi-logo {
+	text-align: center;
+}
+.designed .dbi-logo img {
+	border: none;
+}
+
+.environment .boyd {
+	position: absolute;
+	right: 20px;
+}
+
+.masterplan-image-bottom {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.long-term .left-section {
+	width: 80%;
+}
+.long-term .right-section {
+	width: 20%;
+}
+
+.opportunity .left-section {
+	width: 30%;
+}
+.opportunity .right-section {
+	width: 70%;
+}
+
+.location .text-section {
+	border: 3px solid #333;
+	box-shadow: 0 0 10px 3px #111;
+	padding: 20px;
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -37%;
+	background: #fff;
+}
+
+.time-work ul {
+	list-style-type: none;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.disclaimer-text {
+	font-size: 10px;
+	font-style: italic;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: #fff;
+}
+
+.benefit .section .left {
+	float: left;
+	width: 20%;
+}
+.benefit .section .right {
+	float: left;
+	width: 80%;
+	padding: 10px 0 0 10px;
+}
+
+.ready-to-move {
+	position: relative;
+}
+
+.ready-to-move .move-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 40px 20px;
+	color: #000;
+	font-size: 16px;
+}
+
+.ready-to-move .disclaimer {
+	font-size: 12px;
+}
+.ready-to-move .large {
+	font-size: 25px;
+}
+.ready-to-move .highlight {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.table-row .table-left, .table-row .table-right {
+	float: left;
+}
+.table-row .table-left {
+	width: 70%;
+}
+.table-row .table-right {
+	text-align: right;
+	width: 30%;
+}
+.table-row.total {
+	border-top: 3px double #aaa;
+	border-bottom: 1px solid #aaa;
+}
+
+span.red {
+	color: red;
+}
+span.bold {
+	font-weight: bold;
+}
+span.indie {
+	font-family: IndieFlower;
+}
+span.sync {
+	font-family: SyncopateBold;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contact-box {
+	background: #a7aaac;
+	position: relative;
+	left: -21px;
+	width: 104%;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.contact-box .background-image {
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -131px;
+	display: none;
+}
+.contact-box .contact-box-content {
+	overflow: hidden;
+	padding: 15px 40px;
+	position: relative;
+}
+.contact-box .left-triangle, .contact-box .right-triangle {
+	position: absolute;
+	top: -20px;
+	width: 0;
+	height: 0;
+	border-width: 10px;
+	border-color: #bf8843;
+	border-style: solid;
+	border-top-color: transparent;
+}
+.contact-box .left-triangle {
+	border-left-color: transparent;
+	left: 0;
+}
+.contact-box .right-triangle {
+	right: 0;
+	border-right-color: transparent;
+}
+.contact-box .more-information {
+	float: left;
+	width: 25%;
+	position: relative;
+	z-index: 9;
+}
+.contact-box .more-information span {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 20px;
+}
+.contact-box .contact-form {
+	float: left;
+	width: 73%;
+	margin-left: 2%;
+	position: relative;
+	z-index: 10;
+}
+.contact-box .contact-form input {
+	padding: 8px 16px;
+	width: 90%;
+	min-width: 150px;
+	margin-bottom: 10px;
+}
+.contact-box .contact-form .form-field {
+	float: left;
+	width: 33%;
+}
+.contact-box .contact-form .form-field input[type=submit] {
+	margin-top: 26px;
+}
+
+.fixed-mobile-nav {
+	display: none;
+}
+
+.btn {
+	background: #e78e1e;
+	padding: 12px 30px;
+	color: #fff !important;
+	border-radius: 5px;
+}
+.btn:hover {
+	background: #F8AF53;
+}
+
+.vslider {
+	margin-bottom: 0 !important;
+}
+
+.mobile-only {
+	display: none;
+}
+
+@media screen and (max-width: 1250px) {
+	.page .about .left-section, .opportunity .right-section {
+		width: 60%;
+	}
+	.page .about .right-section, .opportunity .left-section {
+		width: 40%;
+	}
+
+	.how-ltsc h3 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 1139px) {
+	#footer .wrap, #header .wrap {
+		max-width: 1140px;
+	}
+
+	.page .about .left-section, .page .about .right-section, .minimise-risk .left-section, .minimise-risk .right-section {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+
+	.designed .left-section, .designed .right-section {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+
+	.plan-purchase .left-section, .plan-purchase .right-section {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+
+	.plan-purchase .left-section img {
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	.how-ltsc h3 {
+		font-size: 18px;
+	}
+	.long-term .left-section {
+		width: 70%;
+	}
+	.long-term .right-section {
+		width: 30%;
+	}
+
+
+	.page .left-section .text-section {
+		width: 60%;
+	}
+	.page .left-section .image-section {
+		padding-top: 0;
+		margin-left: 10%;
+		width: 30%;
+	}
+
+	.benefit .section .left {
+		width: 30%;
+	}
+	.benefit .section .right {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.archive-description, .author-box, .comment-respond, .entry, .entry-comments, .entry-footer .entry-meta, .header-image .site-header .widget-area, .sidebar .widget, .site-header {
+		padding: 20px;
+	}
+
+	.contact-box .left-triangle, .contact-box .right-triangle {
+		display: none;
+	}
+
+	#header .full-nav li a {
+		font-size: 14px;
+	}
+
+	.how-ltsc .first-section, .how-ltsc .second-section, .how-ltsc .third-section {
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 45px;
+	}
+	.how-ltsc h3 {
+		font-size: 24px;
+	}
+
+	.environment .left-section, .environment .right-section {
+		float: none;
+		width: 100%;
+	}
+
+	.masterplan .left-section, .masterplan .right-section {
+		float: none;
+		width: 100%;
+	}
+	.masterplan .left-section img {
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+
+	.long-term .left-section, .long-term .right-section {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+	.long-term .left-section img {
+		padding-top: 20px;
+	}
+
+	.opportunity .left-section, .opportunity .right-section {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+	.opportunity .right-section {
+		margin-top: 20px;
+	}
+
+	.page .left-section .text-section {
+		width: 60%;
+	}
+	.page .left-section .image-section {
+		padding-top: 0;
+		margin-left: 0;
+		width: 40%;
+	}
+
+	.location .text-section {
+		border: none;
+		padding: 0;
+		box-shadow: none;
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-left: 0;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	.vendor-terms .left-section, .vendor-terms .right-section {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#header .full-nav li a {
+		padding: 70px 10px 10px;
+	}
+
+	img.mobile-only {
+		display: inline;
+		padding-bottom: 15px;
+	}
+	div.mobile-only {
+		display: block;
+	}
+	.desktop-only {
+		display: none;
+	}
+
+	.page .about .left-section .text-section, .page .about .left-section .image-section {
+		float: none;
+		width: 100%;
+	}
+	.page .about .left-section .text-section img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.header-image #title-area a {
+		font-size: 30px;
+	}
+	#header .header-title {
+		font-size: 25px;
+	}
+	#header .header-right {
+		padding-top: 17px;
+	}
+	#header .wrap {
+		padding-top: 40px;
+	}
+
+	.front-content .left-content .site-tag {
+		font-size: 18px;
+	}
+
+	.front-content .left-content, .front-content .right-content {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.contact-box .contact-form .form-field {
+		/*float: none;*/
+		/*width: 100%;*/
+	}
+
+	.contact-box .contact-form {
+		float: none;
+		width: 100%;
+	}
+
+	.contact-box .more-information {
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#nav {
+		display: none;
+	}
+
+	#header .header-right, #header .header-left {
+		float: none;
+		width: 100%;
+	}
+	#header .header-right {
+		padding: 0 20px;
+		text-align: center;
+	}
+
+	.toggle-mobile-nav {
+		background: url(/wp-content/themes/ArionProperty/images/mobile-menu-btn.png);
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		right: 10px;
+		top: 40%;
+		margin-top: -30px;
+		cursor: pointer;
+		z-index: 20;
+	}
+
+	#header .header-left {
+		float: none;
+		width: 75%;
+	}
+
+	.designed .mini-left {
+		width: 30%;
+	}
+	.designed .mini-right {
+		width: 70%;
+	}
+
+	.fixed-mobile-nav {
+		display: block;
+	  position: fixed;
+	  top: 0;
+	  right: 0px;
+	  width: 200px;
+	  height: 100%;
+	  background: #eee;
+	  z-index: 1;
+	  border-left: 1px solid #ccc;
+	  overflow-y: scroll;
+	}
+	.fixed-mobile-nav .title {
+	  text-align: center;
+	}
+	.fixed-mobile-nav .nav-item {
+	  display: block;
+	  background: #fff;
+	  padding: 10px 15px;
+	  border-top: 1px solid #eee;
+	  border-bottom: 1px solid #eee;
+	  color: #333;
+	}
+	.fixed-mobile-nav .nav-item:hover {
+	  background: #ddd;
+	  color: #008CDA;
+	}
+	.fixed-mobile-nav .close-mobile-menu {
+	  background: #fff;
+	  padding: 10px 15px;
+	  float: right;
+	  margin-top: 10px;
+	  color: #333;
+	}
+	.fixed-mobile-nav .close-mobile-menu:hover {
+	  background: #ddd;
+	}
+
+	.benefit .section .left, .benefit .section .right {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+	.benefit .section .left {
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 30px;
+	}
+
+	.front-content .left-content, .front-content .right-content {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+	.front-content .left-content .site-tag, .front-content .left-content .title {
+		width: 100%;
+	}
+	.front-content .right-content img {
+		max-width: 100%;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	.front-content .left-content img {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.front-content .left-content, .front-content .right-content {
+		text-align: center;
+	}
+
+	.mobile-nav-container {
+		position: relative;
+		height: 70px;
+	}
+	.front-content {
+		padding-top: 20px;
+	}
+
+	.bank-debt .left-section, .bank-debt .right-section, .vendor-terms-10 .left-section, .vendor-terms-10 .right-section, .vendor-terms-5 .left-section, .vendor-terms-5 .right-section {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+	.vendor-terms-10 .right-section img, .vendor-terms-5 .right-section img, .bank-debt .right-section img {
+		margin-top: 20px;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.contact-box .contact-form .form-field {
+		float: none;
+		width: 100%;
+	}
+	.contact-box .contact-form input {
+		width: 100%;
+	}
+
+	.designed .mini-left, .designed .mini-right {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+	.designed .mini-left img {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+
+	.environment .boyd {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 350px) {
+
+}

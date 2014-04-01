@@ -1,0 +1,78 @@
+/*
+	Color Theme for Game Tek Live
+*/
+
+#header {
+	background: green !important;
+}
+
+#nav {
+	background: green !important;
+}
+
+#content .featured-post:hover {
+	border-color: green !important;
+}
+
+#content .normal-post:hover {
+	border-color: green !important;
+}
+
+.widget-container ul li span, .widget .widget-wrap ul li span {
+	color: green !important;
+}
+
+.widget-container ul li a:hover, .widget .widget-wrap ul li a:hover {
+	border-bottom-color: green !important;
+}
+
+.category-section.second {
+	border-top-color: green !important;
+}
+
+.category-section.third, .category-section.fourth, .category-section.fifth, .category-section.first, #content .content-left, .widget-container, .widget .widget-wrap, .huge-top-stories {
+	border-top-color: green !important;
+}
+
+.huge-top-stories .story-list a:hover, .huge-top-stories .story-list a.active {
+	background: green !important;
+}
+
+h1,h2,h3,h4,h5,h1 a, h2 a, h3 a, h4 a, h5 a {
+  color: #333;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
+  color: #0c5 !important;
+}
+
+#header .mobile-menu-toggle {
+  color: #0c5 !important;
+}
+
+#content h4 {
+  background: #0c5 !important;
+}
+
+.navigation .pagination-previous a:hover, .navigation .pagination-next a:hover {
+  background: #0c5 !important;
+}
+
+.fixed-mobile-nav .nav-item:hover {
+  color: #0c5 !important;
+}
+
+.category-section.second > .normal-post:hover {
+  border-bottom-color: #0c5 !important;
+}
+
+.genesis-nav-menu.menu-primary a:hover {
+  color: #0c5 !important;
+}
+.genesis-nav-menu.menu-primary .current-menu-item a {
+  border-bottom: 4px solid #0c5 !important;
+}
+
+.huge-top-stories .story-list a:hover .arrow, .huge-top-stories .story-list a.active .arrow {
+  border-left-color: #0c5 !important;
+}

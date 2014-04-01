@@ -1,0 +1,198 @@
+/*
+Theme Name: Celebrity Gossip Child [SinglePro+PSD Version]
+Theme URI: http://magazine3.com/celebritygossip
+Author: Magazine3.com
+Author URI: http://magazine3.com/
+Description: Celebrity Blogging Theme
+Version: 1.1
+Template: celebritygossip-single-pro-psd
+*/
+
+@import '../celebritygossip-single-pro-psd/style.css';
+
+#mc_signup_form {
+	background: none !important;
+	border: none !important;
+}
+
+#mc_signup_form .mc_input {
+	display: block;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 5px;
+	width: 155px;
+}
+
+#mc_signup_form .button {
+	border: none;
+	background: #E50F8C;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 3px;
+	padding: 10px;
+	cursor: pointer;
+}
+#mc_signup_form .button:hover {
+	background: #CE2487;
+}
+
+.mc_signup_submit {
+	text-align: right;
+}
+
+.contact-us {
+	text-align: right;
+	font-size: 16px;
+	font-weight: bold;
+}
+.contact-us a {
+	color: #CE2487;
+}
+
+#footer .social-holder a {
+	-webkit-transition: all ease-in-out 0.2s;
+    -moz-transition: all 0.4s ease 0s;
+
+	display:block;
+	width:34px;
+	height:34px;
+	text-indent:-9999px;
+	overflow:hidden;
+	background:url(images/icon-sprite.png) no-repeat;
+	background-position:-3px 0;
+}
+#footer .social-holder a:hover {
+	opacity:0.7;
+	filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+#footer .social-holder .youtube {background-position:-43px -1px;}
+#footer .social-holder .twitter {background-position:-83px -1px;}
+#footer .social-holder .pinterest {background-position:-123px -1px;}
+#footer .social-holder .flickr {background-position:-163px -1px;}
+#footer .social-holder .gplus {background-position:-203px -1px;}
+#footer .social-holder .linkedin {background-position:-243px -1px;}
+#footer .social-holder .vimeo {background-position:-283px -1px;}
+#footer .social-holder .facebook {background-position:-323px -1px;}
+
+#other-site-feeds {
+	margin: 0 auto;
+}
+
+#other-site-feeds img {
+	padding-bottom: 5px;
+}
+
+#other-site-feeds .footer-widget {
+	width: 319px;
+	margin-right: 20px;
+	float: left;
+}
+#other-site-feeds .footer-widget.last {
+	margin-right: 0;
+}
+
+#other-site-feeds .footer-widget a {
+	color: #fff;
+}
+#other-site-feeds .footer-widget a:hover {
+	color: #ddd;
+}
+
+.widget_super_rss_reader {
+	margin-bottom: 0 !important;
+}
+.widget_super_rss_reader h3 {
+	margin-bottom: 0 !important;
+	font-size: 20px;
+	line-height: 20px;
+}
+.widget_super_rss_reader {
+	list-style-type: none;
+}
+.srr-item {
+	padding-bottom: 0 !important;
+	margin-top: -28px !important;
+}
+.srr-item:first-child {
+	margin-top: 0 !important;
+}
+
+.srr-title {
+	/*background: url(../transcript/styles/default/icons/widget_li.gif) no-repeat left 7px;*/
+	padding-left: 12px;
+	position: relative;
+}
+.srr-title:before {
+	content: '';
+	position: absolute;
+	top: 8px;
+	left: 0;
+	border: 3px solid transparent;
+	border-left-color: #e50f8c;
+}
+.super-rss-reader-widget {
+	padding-left: 15px;
+}
+
+#footer .contact-us {
+	text-align: center;
+	padding: 15px 0;
+	color: #000;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+}
+
+#footer .contact-us strong {
+	color: #000;
+}
+
+.disclaimer {
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+.disclaimer p {
+	font-size: 10px !important;
+	line-height: 12px;
+	color: #333;
+}
+
+
+.widget {
+	margin: 0 0 1.5em;
+
+	background:url(images/icon-sprite.png) no-repeat;
+	background-position: -328px -78px;
+}
+
+.sidebar .widget {
+}
+.adspace-widget br {
+	display: none;
+}
+
+.ad-outer-container {
+	text-align: center;
+}
+
+.ad-container {
+	display: inline-block;
+}
+
+.ad-container img {
+	width: 100%;
+}
+
+.ad-home-afterThirdPost {
+	padding: 6px 0 18px;
+}
+
+.ad-footer {
+	padding: 2px 0 8px;
+}
+
+.ad-topBanner {
+	margin-top: -5px;
+	padding-bottom: 5px;
+}

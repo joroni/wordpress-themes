@@ -1,0 +1,2669 @@
+/*
+Theme Name: Hemingway Child
+Description: Child theme for Hemingway
+
+Template: hemingway
+*/
+
+
+@import '../hemingway/style.css';
+
+@font-face {
+  font-family: Futura-Book;
+  src: url('fonts/FuturaStd-Book.otf');
+}
+
+@font-face {
+	 font-family: Calibri-Light;
+  src: url('fonts/Calibril.ttf');
+}
+
+body a {
+	color: #333;
+}
+body a:hover {
+	text-decoration: underline;
+	color: #333;
+}
+body p {
+	font-size: 12pt;
+	font-family: Calibri-Light;
+	margin-bottom: 15px;
+}
+body {
+	font-family: Futura-Book;
+	color: #000;
+}
+
+h5 {
+	font-family: Calibri;
+	letter-spacing: 2px;
+}
+
+.custom-header {
+	padding: 13% 0;
+	height: 60px;
+	background: no-repeat center;
+	background-image: url(/wp-content/themes/hemingway-child/images/header/1920x517.min.jpg);
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+}
+
+.blog-menu a {
+	margin-left: 49px;
+	font-family: Futura-Book;
+}
+.blog-menu a:hover {
+	text-decoration: none;
+}
+
+::selection {
+	background: #000; /* Safari */
+	color: #fff;
+	}
+::-moz-selection {
+	background: #000; /* Firefox */
+	color: #fff;
+}
+
+/*
+ HOME PAGE SETTINGS
+*/
+.wrapper {
+	margin-top: 0;
+}
+.wrapper.section-inner {
+	width: 1000px;
+	overflow: hidden;
+}
+
+.who-are-we .section {
+	padding: 30px 0;
+}
+
+.navigation {
+	background: none !important;
+	margin-top: -67px;
+}
+
+.blog-menu li:hover a {
+	background: none !important;
+}
+
+.header-inner {
+	padding: 30px;
+}
+.home-section .rightltsc {
+	width: 40%;
+	padding-left: 70px;
+	padding-top: 13px;
+	float:left;
+}
+.home-section .leftltsc {
+	width: 60%;
+	padding-left: 70px;
+	float:left;
+}
+.home-section .right2 {
+	width: 33%;
+	padding-left: 70px;
+	float:left;
+}
+.home-section .right4 {
+	width: 25%;
+	padding-left: 50px;
+	margin-top: -10px;
+
+	float:left;
+}
+.home-section .right5 {
+	width: 65%;
+	padding-left: 20px;
+	margin-top: -12px;
+	float:left;
+}
+.home-section .right6 {
+	width: 25%;
+	padding-left: 20px;
+	border-right: 2px solid #333;
+	margin-top: 0px;
+	float:left;
+}
+.home-section .right7 {
+	width: 25%;
+	padding-left: 120px;
+
+	margin-top: -30px;
+	float:right;
+}
+.home-section .right3 {
+margin-top: -50px;
+margin-right: 170px;
+float: right;
+}
+.header-inner .blog-info {
+	display: none;
+}
+.page-footer {
+	padding: 0 0;
+	margin-top: 40px;
+	text-align: center;
+}
+.page-footer p {
+	text-align: center;
+	padding-top: 0px;
+}
+.page-footer .footertxt {
+	width: 100%;
+	margin-top: 20px;
+	font-size: 8pt;
+	font-family: Calibri-Light;
+	text-align: center;
+}
+.home-section .a {
+	width: 100%;
+	background-color:  #000000 !important;
+	padding-right: 0px;
+	padding-top: 7px;
+	border: 0px solid #333;
+	text-align: center;
+	font-size: 14pt;
+	font-family: Calibri-Light;
+	height: 32px;
+}
+.home-section .emailbase {
+	width: 100%;
+	background-color:  #000000 !important;
+	padding-right: 0px;
+	padding-top: 7px;
+	border: 0px solid #333;
+	text-align: center;
+	font-size: 14pt;
+	font-family: Calibri-Light;
+	height: 32px;
+}
+.home-section .contactdetails {
+	width: 100%;
+	background-color:  #eeeeee !important;
+	border: 0px solid #333;
+	text-align: center;
+	font-size: 10pt;
+	font-family: Calibri-Light;
+	line-height:32px;
+	height: 50px;
+}
+.home-section .downloadlinks {
+	width: 100%;
+	padding-right: 30px;
+	border: 0px solid #333;
+	text-align: center;
+	font-size: 10pt;
+	font-family: Calibri-Light;
+	line-height:12px;
+	height: 50px;
+}
+
+.home-section .downloadlinks  p {
+	font-size: 10pt;
+	font-family: Calibri-Light;
+	margin-top: -10px;
+	text-align: center;
+}
+.home-section .downloadlinksent  p {
+	font-size: 10pt;
+	font-family: Calibri-Light;
+	margin-top: -10px;
+	text-align: center;
+}
+.home-section .contactmessage {
+	width: 100%;
+	background-color:  #eeeeee !important;
+	border: 0px solid #333;
+	text-align: left;
+	font-size: 10pt;
+	font-family: Calibri-Light;
+	height: 180px;
+	padding: 10px;
+}
+
+.home-section .dlbuttonleft {
+	width: 500px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.home-section .bottomcontactform {
+	padding-top: 10px;
+}
+.home-section .bottomcontactform.first {
+	padding-top: 7px;
+}
+.home-section .bottomcontactform.webinarcheck {
+	padding-top: 5px;
+	font-size: 10pt;
+	font-family: Calibri-Light;
+	line-height: 32px;
+
+}
+.home-section .bottomcontactform.message {
+	padding-top: 25px;
+}
+.home-section .dlbuttonmiddle {
+	width: 400px;
+	margin-top: -220px;
+	margin-left: 470px;
+}
+.home-section .dlbuttonright {
+	width: 450px;
+	margin-top: -255px;
+	margin-left: 833px;
+}
+.home-section.downloads {
+	margin-top: 60px;
+}
+
+.home-section .downloadscentered {
+	margin-top: -65px;
+	width: 1000px;
+}
+.home-section .whoarewe-centered {
+	margin-top: 40px;
+	width: 1000px;
+}
+.home-section.form {
+	/*margin-top: -125px;*/
+}
+.ContactFormSection {
+	margin-top: 0px;
+}
+.ContactFormSectionInner {
+	/*margin-top: 40px;*/
+}
+.home-section .right {
+	width: 63%;
+	padding-left: 70px;
+}
+.home-section.bankers .right {
+	padding: 0;
+	width: 75%;
+}
+
+.home-section.bankers .right span {
+	padding-left: 110px;
+}
+.home-section.bankers .right span.last {
+	position: relative;
+	top: -5px;
+}
+.home-section .left {
+	width: 37%;
+	padding-right: 0px;
+	border-right: 2px solid #333;
+}
+.home-section.bankers .left {
+	width: 25%;
+}
+.home-section .info-right {
+	width: 63%;
+	padding-left: 500px;
+	float: right;
+	margin-top: 30px;
+}
+.home-section .more-info a img {
+	position: relative;
+	top: 3px;
+	left: -7px;
+}
+.home-section .whoarewe-sub-info {
+
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 10pt;
+	font-family: Calibri-Light;
+	margin-bottom: 30px;
+}
+
+.home-section .whoarewe-sub-infotxt {
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 10pt;
+	font-family: Calibri-Light;
+	height: 30px;
+	padding: 0 70px;
+}
+.home-section .whoarewe-sub-infotxtlowerleft {
+	letter-spacing: 1px;
+	text-align: left;
+	font-size: 16pt;
+	font-family: Futura-Book;
+}
+
+.home-section .whoarewe-sub-infotxtlowercenter {
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 16pt;
+	font-family: Futura-Book;
+}
+
+.home-section .whoarewe-sub-infotxtlowerright {
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 16pt;
+	font-family: Futura-Book;
+}
+
+
+
+
+.home-section .downloads-sub-info {
+	padding-top: 50px;
+	letter-spacing: 1px;
+	font-size: 10pt;
+	font-family: Calibri-Light;
+	margin-bottom: 30px;
+}
+
+
+.submitbutton {
+    background:url(/images/submitbutton.png) no-repeat;
+    cursor:pointer;
+    width: 200px;
+    height: 100px;
+    border: none;
+}
+.home-section .downloads-sub-infotxt {
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 10pt;
+	font-family: Calibri-Light;
+	height: 30px;
+	padding: 0 70px;
+}
+.home-section .downloads-sub-infotxtlowerleft {
+	letter-spacing: 4px;
+	text-align: center;
+	font-size: 20pt;
+	font-family: Futura-Book;
+}
+
+.home-section .downloads-sub-infotxtlowercenter {
+	letter-spacing: 2px;
+	text-align: center;
+	font-size: 20px;
+	font-family: Futura-Book;
+}
+
+.home-section .downloads-sub-infotxtlowerright {
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 20pt;
+	font-family: Futura-Book;
+}
+.home-section .centered {
+	margin: 0 auto;
+	width: 325px;
+}
+.page-footer .centered {
+	text-align: center;
+	width: 1000px;
+	margin-bottom: 70px;
+	font-size: 10pt;
+	font-family: Calibri-Light;
+}
+.home-section .centeredext {
+	margin: 0 auto;
+	width: 500px;
+	padding-left: 50px;
+}
+.home-section .recaptcha {
+	width: 35%;
+	padding-left: 10px;
+	float: left;
+	margin-top: 235px;
+}
+
+.home-section .cleft {
+	width: 35%;
+	text-align: right;
+	padding-right: 30px;
+	border-right: 0px solid #333;
+	float: left;
+}
+.home-section .cright {
+	width: 65%;
+	padding-left: 70px;
+	float: left;
+}
+
+.home-section .whoarewe-left {
+	width: 50%;
+	padding-left: 122px;
+	border-right: 0px solid #333;
+	margin-bottom: 70px;
+}
+.home-section .whoarewe-left2 {
+	width: 65%;
+	margin-left: 150px;
+	padding-top: 60px;
+	border-right: 0px solid #333;
+	font-size: 12pt;
+	font-family: Calibri-Light;
+	text-align:right;
+}
+
+.home-section .whoarewe-right2 {
+	width: 35%;
+	padding-left: 70px;
+	padding-top: 0px;
+	font-family: Futura-Book;
+	text-align:left;
+}
+
+.home-section .whoarewe-right {
+	width: 45%;
+	padding-left: 70px;
+}
+
+
+.home-section .whoarewe-dash {
+	width: 3%;
+	margin-left: 470px;
+	border-bottom: 2px solid #888;
+	float:left;
+}
+
+.home-section .bottomleft {
+	border: none;
+	width: 30%;
+
+}
+.home-section .bottomright {
+	border-left: 2px solid #333;
+	width: 70%;
+	padding-left:35px;
+}
+.home-section .center {
+	width: 100%;
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
+.home-section .location {
+	width: 100%;
+	padding-right: 30px;
+
+}
+.home-section .bottom {
+	width: 100%;
+	padding-left: 10px;
+}
+
+.home-section .bankers-right {
+	width: 65%;
+	padding-left: 70px;
+}
+.home-section .contactright {
+	width: 35%;
+	padding-left: 70px;
+}
+.home-section .contactleft {
+	width: 45%;
+	padding-left: 70px;
+}
+.home-section .csub-info {
+	text-align: center;
+	padding-top: 10px;
+	/*float:right;*/
+	font-size: 12pt;
+	font-family: Calibri-Light;
+	width: 100%;
+	line-height:32px;
+	letter-spacing: 1px;
+
+}
+.home-section .subtitle {
+	font-family: Futura-Book;
+	letter-spacing: 12px;
+	font-size: 45pt;
+	font-weight: 300;
+	text-align: right;
+	margin-bottom: 25px;
+	padding-right: 25px;
+}
+.home-section .locationsubtitle {
+	font-family: Futura-Book;
+	letter-spacing: 12px;
+	font-size: 45pt;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 10px;
+	padding-right: 4px;
+	padding-left: 10px;
+}
+.home-section .whoarewesubtitle {
+	font-family: Futura-Book;
+	letter-spacing: 12px;
+	font-size: 36pt;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 25px;
+	padding-right: 4px;
+}
+.ltsc-chart {
+	margin-top: 80px;
+}
+.home-section .ltscsubtitle {
+	font-family: Futura-Book;
+	letter-spacing: 12px;
+	font-size: 36pt;
+	font-weight: 300;
+	text-align: left;
+	margin-bottom: 5px;
+	padding-right: 4px;
+}
+
+.home-section .ltscsub-info {
+
+	text-align: left;
+}
+
+.home-section .sub-info {
+
+	text-align: right;
+	padding-right: 40px;
+	/*line-height: 2.5;*/
+}
+.home-section .sub-info div {
+	margin-top: 17px;
+	letter-spacing: 2px;
+}
+.home-section .ltsc-sub-info {
+
+	text-align: left;
+}
+
+.home-section .mid-sub-info {
+	letter-spacing: 5px;
+	text-align: center;
+	padding-left: 5px;
+}
+.home-section  .minidash
+{
+	width:1%;
+	display: block;
+}
+
+}
+.home-section .sub-info div {
+	font-size: 14pt;
+	font-family: Calibri;
+	font-weight: 300;
+	margin-top: 13px;
+	letter-spacing: 5px;
+	padding-right: 10px;
+}
+
+.home-section .right .section-desc {
+	padding-top: 10px;
+	font-size: 12pt;
+	font-family: Calibri-Light;
+	line-height:23px;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+
+
+.home-section .right .whoarewe-bio-right {
+	padding-top: 10px;
+	margin-left: -155px;
+	font-size: 12pt;
+	font-family: Calibri-Light;
+	padding-right: 220px;
+
+
+}
+.home-section .left .whoarewe-bio-left {
+	padding-top: 10px;
+	margin-left: -155px;
+	font-size: 12pt;
+	font-family: Calibri-Light;
+
+
+}
+
+
+
+/*
+END OF HOME PAGE SETTINGS
+*/
+/*
+ ABOUT US PAGE SETTINGS
+*/
+
+.home-section  .midsection-desc {
+	padding-top: 40px;
+	font-size: 12pt;
+	font-family: Calibri-Light;
+	text-align: center;
+	padding-bottom: 40px;
+	padding-left: 16px;
+	padding-right: 116px;
+}
+.home-section  .small-midsection-desc {
+	padding-top: 25px;
+	width: 58%;
+	font-size: 12pt;
+	font-family: Calibri-Light;
+	text-align: center;
+	padding-bottom: 40px;
+	margin:0 auto;
+	line-height:23px;
+}
+.home-section.solicitors {
+	/*margin-top: 60px;*/
+	padding: 0 60px;
+}
+.home-section.solicitors .logos {
+	padding: 0 100px 50px;
+}
+.home-section.solicitors .left, .home-section.solicitors .right {
+	width: 50%;
+	text-align: center;
+	border: none;
+}
+.home-section.solicitors .logos img {
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+.home-section.solicitors .logos .left img {
+	padding-bottom: 21px;
+}
+.home-section.solicitors p {
+	padding-top: 50px;
+	text-align: center;
+}
+
+
+
+
+.home-section .solicitorscentered {
+	margin-top: -65px;
+	width: 1000px;
+}
+.home-section .solicitors-section.first {
+	padding-right: 180px;
+	width: 50%;
+	float:right;
+
+}
+.home-section .solicitors-section.last {
+	padding-left: 180px;
+	width: 50%;
+	padding-bottom: 40px;
+	float:left;
+
+}
+
+.home-section .solicitors-sub-infotxtlowerleft {
+	letter-spacing: 1px;
+	text-align: left;
+	font-size: 16pt;
+	font-family: Futura-Book;
+	padding-left: 80px;
+	margin-top: -55px;
+
+}
+
+.home-section .solicitors-sub-infotxtlowercenter {
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 16pt;
+	font-family: Futura-Book;
+}
+
+.home-section .solicitors-sub-infotxtlowerright {
+	letter-spacing: 1px;
+	text-align: right;
+	font-size: 16pt;
+	font-family: Futura-Book;
+	padding-right: 80px;
+}
+
+.home-section .accounts-title {
+	letter-spacing: 6px;
+	text-align: left;
+	font-size: 16pt;
+	font-family: Futura-Book;
+	line-height: 25px;
+	height: 47px;
+}
+.home-section.sponsors .accounts-title {
+	padding: 11px 0;
+	line-height: 22px;
+	height: auto;
+}
+.home-section.sponsors {
+	margin-bottom: 50px;
+}
+
+
+
+.who-are-we .left-image {
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+.who-are-we img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.who-are-we .right-text {
+	width: 70%;
+	float: left;
+	font-family: Calibri-Light;
+	font-size: 12pt;
+	padding-top: 30px;
+	padding-right: 100px;
+}
+
+.who-are-we .left-text.second {
+	padding-top: 40px;
+}
+.who-are-we .right-text.third {
+	padding-top: 30px;
+}
+
+.who-are-we .right-text p {
+	text-align: justify;
+}
+
+.who-are-we  .left-text p {
+	float: right;
+	width: 100%;
+	text-align:justify;
+	padding-left: 75px;
+}
+.who-are-we .right-image {
+	float: right;
+	width: 30%;
+	text-align: center;
+}
+
+.dash {
+	width: 3%;
+	margin: 0 auto;
+	border-bottom: 2px solid #888;
+}
+
+.who-are-we .left-text {
+	width: 70%;
+	float:right;
+	text-align: right;
+	font-family: Calibri-Light;
+	font-size: 12pt;
+	padding-top: 23px;
+	padding-right: 10px;
+
+}
+.who-are-we  {
+
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+/*
+END OF ABOUT US PAGE SETTINGS
+*/
+
+/*
+LTSC PAGE SETTINGS
+*/
+
+.chart-list {
+	padding: 34px 0;
+}
+.chart-list > div {
+	opacity: 0;
+	left: 50px;
+	position: relative;
+}
+
+.home-section .ltsc-section-desc {
+	padding-top: 10px;
+	font-size: 12pt;
+	font-family: Calibri-Light;
+	width: 75%;
+	text-align: justify;
+	line-height:23px;
+}
+.home-section .ltsctitle {
+	font-family: Futura-Book;
+	letter-spacing: 12px;
+	font-size: 20pt;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 25px;
+	padding-right: 4px;
+}
+
+.coming-soon {
+	margin: 0 !important;
+	line-height: 40px;
+}
+
+.ltsc .left-image {
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+.ltsc img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.ltsc .ltsc-top-text{
+	width: 70%;
+	float: center;
+	font-family: Calibri-Light;
+	font-size: 12pt;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	border-left: 2px solid #888;
+	margin: 0 auto;
+}
+.ltsc .ltsc-top-text p{
+	line-height: 20px;
+	text-align: justify;
+}
+
+.ltsc  .ltsc-left-image {
+	float: left;
+	width: 50%;
+	text-align:left;
+}
+
+.ltsc  .left-text p {
+	float: right;
+	width: 100%;
+	text-align:right;
+}
+.home-section .ltsc-mid-sub-info {
+	letter-spacing: 5px;
+	text-align:left;
+	margin-bottom: 20px;
+}
+.home-section .ltsc-sub-info {
+
+	letter-spacing: 2px;
+	text-align: left;
+	float: left;
+}
+.home-section .ltsc-sub-info div {
+	margin-top: 10px;
+	line-height: 18px;
+}
+
+
+.ltsc.right-image {
+	float: right;
+	width: 30%;
+	text-align: center;
+}
+
+.ltsc-dash {
+	width: 17%;
+	margin-left: 0px;
+	padding-top: 0px;
+	border-bottom: 2px solid #888;
+}
+.home-section .ltscbottomleft {
+	border: none;
+	text-align:left;
+
+
+}
+.home-section .ltscbottomright {
+	border: none;
+	text-align:left;
+	letter-spacing: 3px;
+	line-height:32px;
+
+
+
+}
+
+.home-section .ltsc-right {
+	width: 70%;
+	padding-right: 0px;
+}
+
+.home-section .ltsc-left {
+	width: 30%;
+	float:left;
+	padding-right: 0px;
+	border-right: 2px solid #333;
+}
+
+
+.faq-answer-text{
+	width: 100%;
+	float: center;
+	padding-right: 20px;
+	font-family: Calibri-Light;
+	font-size: 10pt;
+	font-weight:300;
+	display: none;
+	padding-left: 10px;
+}
+.faq-question-text{
+	width: 100%;
+	padding-right: 20px;
+	font-family: Calibri;
+	font-size: 12pt;
+	font-weight:300;
+	padding-top: 20px;
+	position: relative;
+	padding-left: 10px;
+	font-weight:bold;
+	cursor: pointer;
+}
+
+.faq-question-text .arrow {
+	width: 0;
+	height: 0;
+	border-width: 5px;
+	border-style: solid;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: #333;
+
+	position: absolute;
+	left: -10px;
+	top: 24px;
+}
+.faq-question-text.active .arrow {
+	border-left-color: transparent;
+	border-top-color: #333;
+	top: 27px;
+	left: -11px;
+}
+
+
+.center li{
+	width: 100%;
+	float: center;
+	padding-left: 20px;
+	font-family: Calibri-Light;
+	font-size: 10pt;
+	font-weight:300;
+	padding-top: 10px;
+}
+
+/*
+END OF LTSC PAGE SETTINGS
+*/
+
+/*
+LOCATION PAGE SETTINGS
+*/
+.home-section .locpage-left {
+	width: 100%;
+	padding-right: 30px;
+	border-bottom: 0px solid #888;
+	float:left;
+}
+
+.home-section .page-location-title {
+	text-align:left;
+	font-family: Futura-Book;
+	letter-spacing: 12px;
+	font-size: 45pt;
+	margin-bottom: 15px;
+}
+.home-section .page-raillink-title {
+	width: 100%;
+	padding-right: 0;
+	border-bottom: 0px solid #888;
+	float:none;
+	text-align:center;
+	font-family: Futura-Book;
+	letter-spacing: 37px;
+	font-size: 22pt;
+	padding-bottom: 10px;
+	padding-left: 37px;
+}
+
+.rail-link .center, .rail-link .bottom {
+	padding: 0;
+}
+
+.home-section .locmap-image {
+	background-image: url(images/location/Page-Location_07.jpg);
+	height: 536px;
+	width: 377px;
+}
+.home-section .locdrawmap-image {
+	background-image: url(images/location/Page-Location_11.jpg);
+	height: 341px;
+	width: 650px;
+}
+
+.home-section .locmap-mob-image {
+	background-image: url(images/location/mobile/Location-Mobile_03.jpg);
+	height: 323px;
+	width: 228px;
+}
+.home-section .locdrawmap-mob-image {
+	background-image: url(images/location/mobile/Location-Mobile_07.jpg);
+	height: 149px;
+	width: 282px;
+
+}
+
+
+
+
+.home-section .locraillink-image {
+	background-image: url(images/location/Page-Location_15.jpg);
+	height: 148px;
+	width: 1000px;
+}
+
+.home-section .locraillink-mob-image {
+	background-image: url(images/location/mobile/Location-Mobile_10.jpg);
+	height: 61px;
+	width: 282px;
+	margin:0 auto;
+}
+
+.home-section .pl-mid-sub-info {
+	letter-spacing: 5px;
+	margin-top: 20px;
+	text-align: left;
+
+	font-family: Futura-Book;
+	font-size: 18px;
+	font-weight: bold;
+}
+.pl-who-are-we  {
+
+	margin-top: -115px;
+	margin-bottom: 0px;
+}
+.home-section .pl-right-text {
+	width: 100%;
+	float: right;
+	font-family: Calibri-Light;
+	font-size: 12pt;
+	padding-top: -23px;
+	padding-right: 10px;
+	padding-left: 0px;
+	text-align:left;
+	margin-bottom: 15px;
+}
+.home-section .right-text a{
+
+
+	color:  #000000 !important;
+
+}
+.home-section .rail-link  a{
+
+
+	color:  #000000 !important;
+
+}
+
+.home-section  .pl-midsection-desc {
+	padding-top: 25px;
+	font-size: 12pt;
+	font-family: Calibri-Light;
+	text-align: justify;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	padding-right: 142px;
+	line-height: 20px;
+}
+.home-section  .pl-midsection-desc ul {
+	padding-left: 20px;
+}
+.home-section  .pl-midsection-desc ul li {
+margin-bottom: 15px;
+}
+
+.who-are-we .coat-of-arms {
+	width: 50%;
+	margin: 0 auto;
+	padding: 25px 0 0 0;
+}
+.coat-of-arms h5 {
+	padding-top: 40px;
+}
+.who-are-we .coat-of-arms .left-image{
+	width: 49%;
+	padding: 0;
+}
+.who-are-we .coat-of-arms .right-text {
+	width: 51%;
+	padding: 0;
+}
+.who-are-we .coat-of-arms img {
+	margin-bottom: 0;
+}
+.coat-of-arms .right-text p {
+	font-weight: bold;
+	padding-top: 30px;
+}
+.coat-of-arms .urban-right-text p {
+	font-weight: bold;
+	float:center;
+	width: 50%;
+	padding-top: 30px;
+}
+.coat-of-arms.rail-link {
+	padding: 0;
+}
+.coat-of-arms.rail-link img {
+	margin-bottom: 0;
+}
+.pl-urban-right-image {
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 10pt;
+	letter-spacing: 5px;
+}
+.pl-urban-right-image hr {
+	width: 20%;
+	margin: 12px auto;
+}
+
+.urban-growth {
+	font-size: 30pt;
+	letter-spacing: 5px;
+}
+
+.coat-of-arms a:hover {
+	text-decoration: underline;
+}
+.home-section .loc-bottom{
+	width: 100%;
+	text-align: center;
+	padding-top: 30px;
+}
+.home-section .loc-bottom div {
+	margin: 10px auto 60px auto;
+}
+
+.home-section  .plrail-midsection-desc {
+	padding-top: 50px;
+	font-size: 12pt;
+	font-family: Calibri-Light;
+	text-align: justify;
+	padding-bottom: 40px;
+	line-height: 20px;
+	width: 55%;
+	margin: 0 auto;
+}
+.home-section .loc-bottom-text{
+	width: 100%;
+	padding-left: 5px;
+	letter-spacing: 17px;
+}
+
+.home-section .pl-urban-left-text {
+	float: left;
+	width: 50%;
+	padding-right: 10px;
+	text-align:justify;
+	line-height: 23px;
+}
+.home-section .pl-urban-left-text p {
+	text-align: justify;
+	font-size: 13pt;
+	width: 100%;
+	padding-right: 10px;
+	line-height: 23px;
+}
+
+.home-section .raillinktop {
+
+	width: 100%;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+/*  ///////////////////////////////////////
+END OF LOCATION PAGE SETTINGS
+*/
+
+
+
+/*
+PROJECT PAGE SETTINGS
+*/
+
+.location-map .left {
+	width: 38%;
+}
+.location-map .right {
+	width: 62%;
+	border: none;
+}
+.location-map h5 {
+	margin-bottom: 15px;
+}
+.location-map p {
+	text-align: justify;
+	line-height: 20px;
+}
+
+.home-section .page-project-title {
+	width: 100%;
+	padding-left: 30px;
+	border-left: 2px solid #888;
+	float:left;
+	text-align:left;
+	font-family: Futura-Book;
+	letter-spacing: 12px;
+	font-size: 38pt;
+	padding-bottom: 20px;
+	margin-bottom: 25px;
+}
+
+.home-section .pprojmap-image {
+	background-image: url(/images/project/Page_Project_01_03.jpg);
+	height: 605px;
+	width: 1000px;
+}
+
+.who-are-we  .pproj-left-text p {
+	width: 100%;
+	float: none;
+	font-family: Calibri-Light;
+	font-size: 12pt;
+	padding-top: 23px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align:justify;
+	line-height: 23px;
+}
+.who-are-we .pproj-center {
+	margin:0 auto;
+	width: 100%;
+	text-align: center;
+	padding: 0px;
+}
+.who-are-we .pproj-left-image {
+	float: left;
+	width: 50%;
+	text-align: center;
+	line-height: 23px;
+}
+.who-are-we .pproj-left-text {
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding-right: 30px;
+	line-height: 23px;
+
+
+}
+.who-are-we .pproj-ight-image {
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+
+.who-are-we .pproj-left-image {
+	float: left;
+	width: 50%;
+	text-align: center;
+	line-height: 23px;
+}
+.who-are-we .pproj-project-left-text p{
+	float: left;
+	width: 70%;
+	text-align:justify;
+	padding-right: 0px;
+	line-height: 23px;
+}
+.architecture {
+	position: relative;
+}
+.architecture .title {
+	margin-bottom: 30px;
+}
+.architecture .title h2 {
+	font-size: 20pt;
+	letter-spacing: 4px;
+}
+.architecture .title h2.large {
+	font-size: 38pt;
+}
+.architecture .title h3 {
+	font-size: 14pt;
+	letter-spacing: 3px;
+}
+.architecture .pl-urban-left-text {
+	width: 45%;
+}
+.architecture .pl-urban-left-text p {
+	line-height: 23px;
+	font-size: 13pt;
+}
+.architecture > div {
+	position: relative;
+	z-index: 15;
+}
+.architecture .soul-tower {
+	position: absolute;
+	right: 80px;
+	top: 0;
+	z-index: 10;
+	width: 870px;
+}
+
+.planit .title {
+	font-size: 20pt;
+	letter-spacing: 40px;
+	font-family: Futura-Book;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.planit .left-image {
+	width: 45%;
+}
+.planit .right-text {
+	width: 55%;
+	padding: 0;
+	padding-left: 40px;
+}
+.planit .right-text p {
+	line-height: 25px;
+	font-size: 13pt;
+	text-align: justify;
+}
+.planit .left-image img {
+	margin-bottom: 0;
+}
+/*  ///////////////////////////////////////
+END OF PROJECT PAGE SETTINGS
+*/
+/*
+ GENERIC PAGE SETTINGS -CONTINUE
+*/
+
+.home-section.sponsors .left {
+	width: 26%;
+}
+.dev-consultants .left {
+	margin-top: 10px;
+	width: 26%;
+}
+.dev-consultants .right5 {
+	overflow:hidden;
+	height: 80px;
+}
+.accounts-list {
+
+	width: 74%;
+	float: left;
+	font-size: 16pt;
+	font-family: Futura-Book;
+	margin-top: 1px;
+	padding-left: 40px;
+}
+.accounts-list img, .accounts-list span {
+	display: block;
+	float: left;
+	padding-right: 152px;
+}
+.accounts-list span {
+	border-right: 2px solid #333;
+	padding: 11px 20px 11px 0;
+	letter-spacing: 6px;
+}
+.accounts-list .last {
+	padding-right: 0;
+	padding-left: 40px;
+}
+.accounts-list .image1 {
+	display: inline-block;
+	width:143px;
+	float:left;
+	padding: 40px;
+}
+.accounts-list .image2 {
+	display: inline-block;
+	width:143px;
+	float:left;
+	padding: 40px;
+
+}
+.accounts-list .image1, .accounts-list .image2, .accounts-list .span  {
+	padding: 0;
+	font-size: 16pt;
+	font-family: Futura-Book;
+}
+
+.home-section .download-section {
+	width: 34%;
+	float: left;
+}
+.home-section .download-section.first {
+	padding-right: 80px;
+	width: 33%;
+}
+.home-section .download-section.last {
+	padding-left: 80px;
+	width: 33%;
+}
+.home-section .download-section.first .downloads-sub-infotxt, .home-section .download-section.last .downloads-sub-infotxt {
+	padding: 0 30px;
+}
+
+
+.home-section .bankers-title {
+	letter-spacing: 1px;
+	text-align: right;
+	font-size: 20pt;
+	font-family: Futura-Book;
+	padding-right: 50px;
+}
+.home-section .whoarewe-section {
+	width: 34%;
+	float: left;
+}
+.home-section .whoarewe-section.first {
+	padding-right: 80px;
+	width: 33%;
+}
+.home-section .whoarewe-section.last {
+	padding-left: 80px;
+	width: 33%;
+}
+.home-section .whoarewe-section.first .whoarewe-sub-infotxt, .home-section .whoarewe-section.last .whoarewe-sub-infotxt {
+	padding: 0 10px;
+}
+
+
+.home-section .lawyers-section.first {
+	padding-right: 80px;
+	width: 50%;
+}
+.home-section .lawyers-section.second {
+	padding-left: 80px;
+	width: 50%;
+}
+
+
+.home-section .who-imageleft {
+	background-image: url(images/aboutus/page-Aboutus_03.jpg);
+	height: 147px;
+	width: 147px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.home-section .who-imagecenter {
+	background-image: url(images/aboutus/page-Aboutus_03.jpg);
+	height: 147px;
+	width: 147px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.home-section .who-imageright {
+	background-image: url(images/aboutus/page-Aboutus_03.jpg);
+	height: 147px;
+	width: 147px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+
+.home-section .download-image {
+	background-image: url(images/downloadicon.jpg);
+	height: 81px;
+	width: 82px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.home-section .download-image:hover {
+	background-position: 0 -81px;
+}
+.home-section .ltsc-image {
+	/*height: 320px;*/
+	position: relative;
+	overflow: hidden;
+}
+
+.home-section .ltsc-image:hover {
+	background-position: 0 -320px;
+}
+.home-section .location-image {
+	/*height: 160px;*/
+	overflow: hidden;
+	position: relative;
+}
+.home-section .location-image:hover {
+	background-position: 0 -160px;
+}
+
+.home-section .project-image {
+	/*height: 187px;*/
+	overflow:hidden;
+	position: relative;
+}
+.home-section .colour {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 15;
+	opacity: 0;
+}
+
+.home-section .project-image:hover {
+	background-position: 0 -187px;
+}
+
+.page-seperator {
+	padding: 80px 0;
+}
+.page-seperator .left-image {
+	margin-top: 13px;
+	float: left;
+}
+.page-seperator .right-image {
+	float: right;
+}
+
+.footer, .credits {
+	display: none;
+}
+
+.dev-consultants {
+	margin-top: 20px;
+}
+
+input[type=checkbox] {
+	-webkit-appearance: checkbox;
+}
+
+.page-seperator hr {
+	display: none;
+}
+
+#back-top {
+	width: 100px;
+	margin: 0 auto;
+	margin-bottom: 55px;
+}
+
+.mobile-only {
+	display: none !important;
+}
+.last .mobile-only{
+	display: none !important;
+}
+
+.who-are-we .section.price-list {
+	padding-top: 56px;
+}
+
+.who-are-we .pproj-left-text p.lot-desc {
+	font-size: 12pt;
+	letter-spacing: 1px;
+	font-family: Calibri-Light;
+	padding-left: 0;
+	padding-right: 22px;
+	padding-top: 0;
+}
+
+.who-are-we  .pproj-left-text p.price-title {
+	letter-spacing: 5px !important;
+	font-size: 16pt !important;
+	font-family: Futura-Book !important;
+	padding: 0;
+}
+
+.pproj-right-text .small-text {
+	text-align: right;
+	letter-spacing: 6px;
+	margin-bottom: 20px;
+}
+#pagewrap {
+	position: relative;
+	/*padding-top: 40px;*/
+}
+.appointment-container {
+	margin: 50px 0;
+}
+.book-appointment {
+	display: block;
+	width: 300px;
+	padding: 23px 0 20px 0;
+	border: 2px solid #000;
+	background: #FFF;
+	color: #000;
+	font-size: 12pt;
+	font-family: Futura-Book;
+	margin: 0 auto;
+	letter-spacing: 3px;
+	text-align: center;
+
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.book-appointment:hover {
+	background: #000;
+	color: #FFF;
+	text-decoration: none;
+}
+.masterplan .center {
+	padding: 0;
+}
+@media screen and (max-width: 760px) {
+
+}
+
+@media screen and (max-width: 550px) {
+
+	p {
+		text-align: justify !important;
+	}
+
+	.wrapper {
+		margin-top: 0px;
+	}
+
+	#pagewrap {
+		padding: 0 5px;
+	}
+
+	.custom-header {
+		padding: 20% 0;
+	}
+
+	.home-section .info-right {
+		width: 100%;
+		padding: 0;
+		float: none;
+		text-align: center;
+	}
+
+	.home-section .small-midsection-desc {
+		width: 100%;
+		text-align: justify;
+	}
+
+ .header-cover .section.bg-dark-light .section.no-padding {
+		padding: 0;
+	}
+
+	.home-section .bottom {
+		padding: 0;
+	}
+
+	.who-are-we .section {
+		padding: 0;
+	}
+
+	.home-section .bottomcontactform {
+		width: 90%;
+	padding: 10px 0 0 0;
+	}
+	.mid-sub-info .mobile-only{
+		width: 100%;
+		text-align: center;
+	}
+	.home-section .right {
+		width: 100%;
+		padding-left: 0px;
+		float: none;
+	}
+
+	.home-section .left {
+		width: 100%;
+		padding-right: 0px;
+		border-right:none;
+		float: none;
+	}
+	.home-section .center{
+		padding: 0;
+	}
+
+	.home-section .sub-info {
+		text-align: left;
+		font-family: Futura-Book;
+		font-size: 10pt;
+		letter-spacing: 12px;
+		padding: 0;
+		padding-bottom: 25px;
+	}
+
+	.home-section .subtitle {
+		font-size: 27pt;
+		letter-spacing: 8px;
+		text-align: left;
+		padding: 0;
+	}
+
+	.home-section .sub-info div {
+		font-size: 10pt;
+		letter-spacing: 4px;
+		line-height: 2;
+		padding: 0;
+		margin-top: 10px;
+	}
+
+	.home-section .right .section-desc {
+		display: none;
+	}
+
+	.page-seperator img {
+		display: none;
+	}
+	.page-seperator hr {
+		display: block;
+		border-color: #fff;
+		border-top-color: #aaa;
+		border-style: solid;
+	}
+
+	.home-section .locationsubtitle {
+		font-family: Futura-Book;
+		letter-spacing: 12px;
+		font-size: 27pt;
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 25px;
+		padding: 0;
+	}
+
+	.home-section .midsection-desc{
+		width: 100%;
+		text-align: justify;
+		padding-right: 0;
+		padding-left: 5px;
+		margin-top: -85px;
+		padding-bottom: 0px;
+		padding-top: 90px;
+	}
+	.home-section .mid-sub-info {
+		text-align: center;
+		padding-right: 0px;
+		line-height:40px;
+	}
+	.last .desktop-only{
+		display: none;
+	}
+	.home-section .bottomright {
+		border-left: 0px solid #333;
+	}
+	.home-section .bottomleft {
+		padding-bottom: 0px;
+		padding-top: 30px;
+	}
+	.home-section .ltscsubtitle {
+		font-family: Futura-Book;
+		letter-spacing: 12px;
+		font-size: 27pt;
+		font-weight: 300;
+		text-align: left;
+	}
+
+	.home-section .ltsc-sub-info div {
+		line-height: 30px;
+		margin-top: 10px;
+	}
+
+	.home-section .ltsc-section-desc {
+		font-size: 12pt;
+		padding: 0;
+		font-family: Calibri-Light;
+		width: 100%;
+	}
+
+	.home-section .ltsctitle {
+		font-family: Futura-Book;
+		letter-spacing: 2px;
+		font-size: 16pt;
+		font-weight: 300;
+		text-align: left;
+		margin-bottom: 25px;
+		padding-right: 4px;
+	}
+
+	.home-section .ltsc-image {
+		margin: 0 auto;
+	}
+
+	 .bottomleft{
+
+	 }
+	 .mid-sub-info .mobile-only{
+	 	line-height: 2;
+	 }
+	.home-section .ltsc-mid-sub-info {
+		font-family: Futura-Book;
+		letter-spacing: 2px;
+		font-size: 10pt;
+		text-align:left;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.ltsc .left-image {
+		float: left;
+		width: 30%;
+		text-align: center;
+	}
+	.ltsc img {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.home-section .ltsc-sub-info {
+		letter-spacing: 1px;
+		padding-bottom: 30px;
+		float: none;
+	}
+	.home-section.downloads {
+		margin-top: 0px;
+	}
+	.home-section .downloadscentered {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.home-section .downloads-sub-info {
+	padding-left: 0px
+	}
+	.home-section .downloads-sub-infotxt {
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 10pt;
+	font-family: Calibri-Light;
+	height: 30px;
+	padding: 0;
+	}
+
+
+
+	.home-section .downloads-sub-infotxtlowerleft {
+	letter-spacing: 1px;
+	padding: 0 ;
+	}
+	.home-section .download-section {
+	padding: 0;
+	width:49%;
+	}
+	.home-section .download-section.first {
+	padding: 0;
+	width:50%;
+	}
+	.home-section .download-section.last {
+	padding-top: 50px;
+	padding-left: 10px;
+	width:50%;
+	padding-bottom: 40px;
+
+	}
+
+	.home-section .download-section.first .downloads-sub-infotxt, .home-section .download-section.last .downloads-sub-infotxt
+	.home-section .download-section.last .downloads-sub-infotxt {
+	padding: 0 0px;
+	}
+
+	.clientwebinar {
+
+	font-size: 10px;
+	font-family: Calibri-Light;
+	}
+
+	.centered .csub-info .mobile-only {
+	padding-top: 20px;
+	padding-bottom: 0px;
+	text-align: center;
+
+	}
+	.home-section .csub-info {
+	margin-top: 20px;
+	text-align: center;
+	padding-top: 10px;
+	margin-left:-18px;
+	font-size: 12pt;
+	font-family: Calibri-Light;
+	width: 100%;
+	line-height: 22px;
+
+	}
+
+
+
+	.home-section .download-section.last .downloads-sub-infotxt {
+	 padding: 0 ;
+	}
+
+
+	.home-section .whoarewesubtitle {
+		font-family: Futura-Book;
+		letter-spacing: 6px;
+		font-size: 20pt;
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 25px;
+		padding-right: 4px;
+		padding-top: 0px;
+	}
+
+
+	.who-are-we .left-image {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		margin-top:0;
+
+	}
+	.who-are-we img {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.who-are-we .right-text {
+		width: 100%;
+		float: none;
+		font-family: Calibri-Light;
+		font-size: 12pt;
+		padding-top: 23px;
+		padding-right: 10px;
+		padding-left: 10px;
+		text-align:left;
+	}
+	.who-are-we .left-text {
+		width: 100%;
+		float: none;
+		font-family: Calibri-Light;
+		font-size: 12pt;
+		padding-top: 23px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.who-are-we  .left-text p {
+		width: 100%;
+		float: none;
+		font-family: Calibri-Light;
+		font-size: 12pt;
+		padding-top: 23px;
+		padding-right: 10px;
+		padding-left: 10px;
+		text-align:left;
+	}
+	.who-are-we .right-image {
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin-top: 0;
+	}
+	.who-are-we   .dash {
+		width: 10%;
+		margin:0 auto;
+		border-bottom: 2px solid #888;
+		float:none;
+	}
+
+	.home-section .dash {
+		width: 10%;
+		margin:20px auto;
+		padding-top: 0;
+		border-bottom: 2px solid #888;
+		float:none;
+	}
+	.home-section .right3 {
+		margin: 0 auto;
+		width: 100%;
+		float: none;
+		padding-top: 23px;
+		padding-bottom: 0px;
+		text-align: center;
+		padding-left: 0px;
+	}
+
+	.home-section .right2 {
+		margin: 0 auto;
+		width: 100%;
+		float: none;
+		padding-top: 40px;
+		padding-bottom: 23px;
+		padding-right: 0;
+		padding-left: 0;
+		text-align: center;
+	}
+	.home-section .solicitorscentered {
+		width: 100%;
+	}
+	.home-section .solicitors-section.first {
+		padding-right: 0px;
+		width: 100%;
+		float:none;
+		padding-left: 0px;
+		margin-top: 30px;
+
+	}
+	.home-section .solicitors-section.last {
+		padding-right: 0px;
+		width: 100%;
+		padding-left: 0px;
+		float:none;
+
+	}
+	.home-section .whoarewe-sub-info {
+
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 10pt;
+	font-family: Calibri-Light;
+	margin-top: 30px;
+	}
+	.home-section .solicitors-sub-infotxtlowerright {
+		letter-spacing: 1px;
+		text-align: center;
+		font-size: 16pt;
+		font-family: Futura-Book;
+		margin-top: -9px;
+		padding-left: 0px;
+		padding-right:0px;
+	}
+	.home-section .solicitors-sub-infotxtlowerleft {
+		letter-spacing: 1px;
+		text-align: left;
+		font-size: 16pt;
+		font-family: Futura-Book;
+		padding-left: 80px;
+		margin-top: -40px;
+		padding-bottom: 23px;
+
+	}
+	.home-section .accounts-title {
+		letter-spacing: 1px;
+		width: 100%;
+		text-align: center;
+		font-size: 16pt;
+		font-family: Futura-Book;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.accounts-list img {
+		display: block;
+		margin: 0 auto;
+		padding-right: 0px;
+		padding-bottom: 0;
+		border-bottom: 0px solid #888;
+		float: none;
+	}
+	.accounts-list  {
+		padding-top: 20px;
+		width: 100%;
+		float:none;
+		padding-left: 0px;
+		padding-bottom: 0;
+		text-align: center;
+		border-bottom: 0px solid #888;
+	}
+	.accounts-list  .last{
+		border-bottom: 0px solid #888;
+		padding: 0px;
+
+	}
+	.accounts-list span {
+		display: block;
+		margin:0 auto;
+		width: 100%;
+		padding-right: 0px;
+		padding-bottom: 20px;
+		border-right: none;
+		padding-top: 0;
+	}
+	.home-section .downloadlinks {
+		width: 100%;
+		margin-top: 0px;
+		padding-right: 30px;
+		border: 0px solid #333;
+		text-align: center;
+		font-size: 10pt;
+		font-family: Calibri-Light;
+		line-height:12px;
+		height: 50px;
+	}
+
+	.home-section .downloadlinks  p {
+		font-size: 10pt;
+		font-family: Calibri-Light;
+		margin-top: -10px;
+		text-align: center !important;
+	}
+	.home-section .downloadlinksent  p {
+		font-size: 10pt;
+		font-family: Calibri-Light;
+		margin-top: -10px;
+		text-align: center;
+	}
+	.home-section .dev-consultants{
+		padding-top: 0;
+		width: 100%;
+		float:none;
+	}
+
+	.home-section .right5 {
+
+		padding-top: 40px;
+		margin:0 auto;
+		padding-right: 0;
+		padding-left: 0;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		float:none;
+	}
+	/* LOCATION PAGE MOBILE SETTINGS*/
+
+	.home-section  .pl-midsection-desc {
+		padding: 10px 0;
+		font-size: 12pt;
+		font-family: Calibri-Light;
+		text-align: justify;
+		line-height: 20px;
+		width: 100%;
+	}
+	.home-section  .pl-midsection-desc ul {
+		padding-left: 20px;
+	}
+	.home-section  .pl-midsection-desc ul li {
+	margin-bottom: 15px;
+	}
+
+	.who-are-we .coat-of-arms {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+		padding-bottom: 10px;
+	}
+	.who-are-we .coat-of-arms .left-image, .who-are-we .coat-of-arms .right-text {
+		width: 100%;
+		padding: 0;
+
+		text-align: center;
+	}
+
+	.who-are-we .coat-of-arms .right-text p {
+		text-align: center !important;
+	}
+
+	.coat-of-arms .left-image .right-text  {
+		font-weight: bold;
+		margin: 0 auto;
+		padding-top: 10px;
+		float:center;
+	}
+	.coat-of-arms .right-text p {
+		font-weight: bold;
+		margin: 0 auto;
+		text-align: center !important;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
+
+	}
+	.coat-of-arms .urban-right-text p {
+		font-weight: bold;
+		float:center;
+		width: 50%;
+		padding-top: 30px;
+	}
+	.pl-urban-right-image {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+	.pl-urban-right-image hr {
+		width: 20%;
+	}
+	.coat-of-arms a:hover {
+		text-decoration: underline;
+	}
+	.home-section .loc-bottom{
+		width: 100%;
+		text-align: center;
+		padding-top: 0;
+	}
+	.home-section .loc-bottom div {
+		margin: 10px auto 30px auto;
+	}
+
+	.home-section  .plrail-midsection-desc {
+		padding-top: 40px;
+		font-size: 12pt;
+		font-family: Calibri-Light;
+		text-align: justify;
+		padding-bottom: 40px;
+		line-height: 20px;
+		width: 55%;
+		margin: 0 auto;
+	}
+	.home-section .loc-bottom-text{
+		width: 100%;
+		padding-left: 5px;
+		letter-spacing: 3px;
+		font-size: 10pt;
+		font-family: Calibri-Light;
+		text-align: left;
+		padding: 0;
+	}
+
+
+	.home-section .pl-urban-left-text p {
+		text-align: justify;
+		font-size: 13pt;
+		padding: 0;
+		width: 100%;
+	}
+	.home-section .pl-right-text {
+		width: 100%;
+		float: none;
+		padding: 0;
+		font-family: Calibri;
+		margin-bottom: 0;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+	.home-section .loc-bottom .loc-bottom-text{
+		width: 100%;
+		font-family: Calibri;
+		float: none;
+		padding: 0;
+		letter-spacing: 14px;
+		font-size: 14pt;
+	}
+
+	.home-section .plrail-midsection-desc {
+		padding: 25px 0;
+		font-size: 12pt;
+		font-family: Calibri-Light;
+		text-align: justify;
+		line-height: 20px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.who-are-we .section .urbanzone {
+		padding: 0;
+		width: 100%;
+		letter-spacing: 10px;
+		font-size: 18pt;
+		font-family: Calibri;
+	}
+
+	.home-section .pl-urban-left-text {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+
+	.coat-of-arms h5 {
+		padding-top: 15px;
+		text-align: center;
+	}
+	.coat-of-arms img {
+		margin-bottom: 0;
+	}
+
+	/* END OF LOCATION PAGE MOBILE  SETTINGS*/
+
+
+	/* LTSC PAGE MOBILE SETTINGS */
+
+
+	.home-section .ltsctitle {
+		font-family: Futura-Book;
+		letter-spacing: 5px;
+		font-size: 13pt;
+		font-weight: 300;
+		text-align: left;
+		margin-bottom: 25px;
+		padding-right: 4px;
+		width: 100%;
+		line-height: 23px;
+	}
+
+	.home-section .ltsctitle.faq-title {
+		font-size: 16pt;
+		letter-spacing: 6px;
+		margin-bottom: 0;
+	}
+
+	.ltsc .ltsc-top-text{
+		width: 100%;
+		float: none;
+		font-family: Calibri-Light;
+		font-size: 12pt;
+		padding: 0 0 0 20px;
+		text-align: justify;
+		border: none;
+		margin: 0 auto;
+		position: relative;
+	}
+	.ltsc .ltsc-top-text .left-dash {
+		width: 2px;
+		height: 57px;
+		background: #333;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.chart-list {
+		padding: 13px 0 10px 0;
+	}
+
+
+	.home-section .ltscbottomleft {
+		border: none;
+		text-align:center;
+		width: 100%;
+		float:none;
+		margin:0 auto;
+		padding:0;
+	}
+	.home-section .ltscbottomright {
+		font-size: 12pt;
+		font-family: Calibri-Light;
+		text-align:left;
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-bottom: 0px;
+		width: 100%;
+		margin:0 auto;
+	}
+
+	.home-section .ltscbottomright {
+		line-height: 23px;
+	}
+
+	#ltscfaq .dash {
+		width: 20%;
+		border-bottom-width: 3px;
+	}
+
+	.faq-question-text {
+		padding: 30px 0 0 0;
+	}
+	.faq-answer-text {
+		padding: 0;
+	}
+	.faq-question-text.first {
+		padding-top: 0;
+	}
+
+	/* END OF LTSC PAGE MOBILE SETTINGS */
+
+
+	/*  PROJECT PAGE MOBILE SETTINGS */
+
+
+	.home-section .page-project-title {
+		width: 100%;
+		border-left: 0px solid #888;
+		float:left;
+		text-align:left;
+		font-family: Futura-Book;
+		letter-spacing: 12px;
+		font-size: 20pt;
+		padding: 0;
+	}
+
+	.who-are-we .pproj-left-text {
+		float: left;
+		width:100%;
+		padding-right: 0px;
+		line-height: 23px;
+	}
+
+	.who-are-we  .pproj-left-text p {
+		width: 100%;
+		float: none;
+		font-size: 12pt !important;
+		padding: 23px 0 0 0;
+		text-align:justify;
+		line-height: 23px;
+	}
+
+	.who-are-we .pproj-left-text p.price-title {
+		font-size: 10pt !important;
+		padding: 23px 0 0 0;
+		line-height: 23px;
+		letter-spacing: 3px !important;
+	}
+
+	.who-are-we  .pproj-project-left-text p {
+		width: 100%;
+		float: none;
+		font-family: Calibri-Light;
+		font-size: 12pt !important;
+		padding-top: 23px 0 0 0;
+		text-align:justify;
+		line-height: 23px;
+
+	}
+	.pproj-center {
+		width: 100%;
+		text-align: center;
+	}
+
+	.who-are-we .pproj_left-image {
+		float: none;
+		width: 100%;
+		text-align: left;
+		padding-left: 10px;
+		line-height: 23px;
+	}
+
+	.architecture .title {
+		margin-bottom: 0;
+	}
+
+	.architecture .title h2 {
+		font-size: 20pt;
+		letter-spacing: 4px;
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+
+	.architecture .title h2.large {
+		font-size: 20pt;
+		margin-bottom: 0;
+	}
+
+	.architecture .pl-urban-left-text {
+		width: 100%;
+		padding: 0;
+		padding-bottom: 70px;
+	}
+
+	.architecture .soul-tower {
+		position: absolute;
+		right: 0px;
+		top: auto;
+		bottom: -15px;
+		margin-bottom: 0;
+		z-index: 10;
+		width:100%;
+	}
+
+	.planit .title {
+		font-size: 20pt;
+		letter-spacing: 40px;
+		font-family: Futura-Book;
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.architecture .title h3 {
+		font-size: 20pt;
+		letter-spacing: 4px;
+		padding-left: 0;
+		padding-top: 5px;
+		padding-bottom: 20px;
+	}
+	/* END OF PROJECT PAGE MOBILE SETTINGS */
+
+
+	/* GENERIC PAGE - MOBILE */
+	.page-footer .centered {
+		text-align: center;
+		width: 100%;
+		margin:0 auto;
+		font-size: 10pt;
+		font-family: Calibri-Light;
+		margin-top:-64px;
+		padding-bottom: 20px;
+		float: left;
+
+
+	}
+
+	.home-section.bankers .left {
+		width: 100%;
+		float: none;
+	}
+	.home-section .bankers-title {
+		text-align: center;
+		padding: 0;
+	}
+	.home-section.bankers .dash.mobile-only {
+		margin: 20px auto;
+		padding: 0;
+	}
+	.home-section.bankers .right {
+		width: 100%;
+		float: none;
+	}
+	.home-section.bankers .right span {
+		padding: 0;
+		display: block;
+	}
+	.home-section.bankers .right span.last {
+		margin-top: 30px;
+	}
+	.home-section.bankers .right span img {
+		display: block;
+		margin: 0 auto;
+	}
+	.home-section.solicitors {
+		padding: 0;
+	}
+	.home-section.solicitors .logos {
+		padding: 0;
+		width: 100%;
+	}
+	.home-section.solicitors .left, .home-section.solicitors .right {
+		width: 100%;
+		float: none;
+	}
+	.home-section.solicitors .dash.mobile-only {
+		padding: 0;
+		margin: 30px auto;
+	}
+
+	.home-section.solicitors .logos img, .home-section.solicitors .logos .left img {
+		padding-bottom: 0;
+	}
+
+	.home-section.solicitors p {
+		padding-top: 30px;
+	}
+
+	.home-section.sponsors .left {
+		width: 100%;
+	}
+	.home-section.sponsors .accounts-title {
+
+	}
+	.home-section.sponsors {
+		margin-bottom: 0;
+	}
+	.home-section.sponsors .dash {
+		padding: 0;
+		margin: 20px auto;
+	}
+
+	.who-are-we .left-text.second {
+		padding-top: 0;
+	}
+
+	.home-section .page-location-title {
+		font-size: 20pt;
+	}
+
+	.page-footer .centered img{
+		text-align: center;
+		font-size: 10pt;
+		font-family: Calibri-Light;
+		float: none;
+	}
+
+	.header-cover {
+		background: transparent !important;
+		padding: 10% 0 !important;
+		padding-top: 0 !important;
+	}
+
+	.appointment-container {
+		margin: 20px 0;
+	}
+
+	.home-section.form {
+		margin-top: 0;
+	}
+
+	.ContactFormSection .page-seperator {
+		display: none;
+	}
+
+	.ContactFormSectionInner {
+		margin-top: 15px;
+	}
+
+	.dev-consultants {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.home-section .locmap-mob-image {
+		margin: 0 auto;
+	}
+
+	.page-seperator {
+		padding: 20px 0;
+	}
+
+	.mobile-only {
+		display: block !important;
+	}
+	.desktop-only {
+		display: none !important;
+	}
+	.img-center {
+		display: block;
+		margin: 0 auto;
+	}
+
+}

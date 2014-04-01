@@ -1,0 +1,65 @@
+/*
+    Theme Name: Craigs Blog 2
+    Description: This is a start kit for to devevelop your own themes for the Genesis Framework
+    Author: Russell Green
+    Author URI: http://www.surefirewebservices.com/
+ 
+    Version: 1.9
+ 
+    Template: genesis
+    Template Version: 1.9
+ 
+    License: GPL-2.0+
+    License URI: http://www.opensource.org/licenses/gpl-license.php 
+*/
+
+@import '../genesis/style.css';
+
+body > #wrap {
+	margin: 20px auto;
+	max-width: 1060px;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 50px 30px;
+}
+
+body {
+	background: url('/wp-content/themes/CraigsBlog/images/background.jpeg') repeat fixed top center;
+}
+
+h1, h2, h3, h4, h5, span, p, div, a {
+	font-family: 'Trebuchet MS', Trebuchet, sans-serif;
+}
+h1, h2, h3, h4, h5, h1 a, h2 a, h3 a, h4 a, h5 a {
+	color: #fff;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
+	color: #fff;
+}
+.entry-title {
+	font-size: 20px;
+}
+.entry-title a, .sidebar .widget-title a {
+	color: #fff;
+}
+.entry-title a:hover, .sidebar .widget-title a:hover {
+	color: #fff;
+}
+#title a {
+	font-size: 60px;
+	font-weight: normal;
+	color: #fff;
+}
+.post {
+	background: transparent;
+	padding: 40px 0;
+}
+p, span, div {
+	color: #bbb;
+}
+a {
+	color: #F90;
+}
+a:hover {
+	color: #F90;
+	text-decoration: underline;
+}

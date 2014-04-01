@@ -1,0 +1,18 @@
+/*   
+Theme Name: powermag-child_bbm-child
+Version: 1.0
+Theme URI: http://www.russell.dev
+Description: Child Theme for Powermag theme
+Author: Adam Breen
+Author URI: http://www.russell.dev
+Template: powermag
+*/
+
+
+@import url('../powermag/style.css');
+
+.ad-space-banner {
+	text-align: center;
+	margin-bottom: 15px;
+	overflow: hidden;
+}

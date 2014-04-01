@@ -1,0 +1,75 @@
+/*
+Template: Zylyz
+*/
+
+.masthead {
+	background: #000;
+}
+
+.masthead .head {
+	background: #000;
+}
+
+.masthead .logo {
+	background: #000;
+}
+
+h3.sidetitl {
+	background: #000;
+}
+
+.bottomcover {
+	background: #000;
+}
+#footer {
+	background: #000;
+	color: #555;
+}
+#footer a:link, #footer a:visited {
+	color: #555;
+}
+#footer a:hover {
+	color: #ba8748;
+}
+
+#bottom {
+	background: #444;
+}
+
+#search {
+	background: #444;
+	border-color: #666;
+}
+#s {
+	background: #444;
+}
+
+.botwid ul li a:link, .botwid ul li a:visited {
+	color: #aaa;
+	border-color: #666;
+}
+
+.entry a:link {
+	color: #ba8748;
+}
+
+.fblock h3 a:link {
+	color: #ba8748;
+}
+
+#topbar {
+	background: #222;
+	border-color: #333;
+}
+
+.feedlist ul li a:link {
+	color: #777;
+}
+
+#botmenu {
+	background: url(images/menu-bronze.jpg) center no-repeat;
+}
+
+.sidebox ul li a:hover {
+	color: #ba8748;
+}

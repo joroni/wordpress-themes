@@ -1,0 +1,74 @@
+Version 1.13 (2014-02-16)
+-------------------------
+- Added post thumbnail support for page and template-nosidebar
+
+
+Version 1.12 (2014-02-13)
+-------------------------
+- Fixed meta tag http-equiv
+
+
+Version 1.11 (2014-02-11)
+-------------------------
+- Added a Swedish translation
+
+
+Version 1.10 (2014-02-09)
+-------------------------
+- Fixed a styling issue with align-left and align-right @600px
+
+
+Version 1.09 (2014-02-09)
+-------------------------
+- Fixed alignment on post-nav-newer
+
+
+Version 1.08 (2014-02-05)
+-------------------------
+- Misc bug fixes
+
+
+Version 1.07 (2014-02-03)
+-------------------------
+- Misc bug fixes
+
+
+Version 1.06 (2014-02-03)
+-------------------------
+- More post-meta-bottom adjustments
+– Improved footer styling
+- Misc bug fixes
+
+
+Version 1.05 (2014-02-02)
+-------------------------
+- Cleaned up post-meta-bottom
+- Misc bug fixes
+
+
+Version 1.04 (2014-02-01)
+-------------------------
+- Fixed styling for the archive template
+- Cleaned up style.css, fixed section numbering
+– Misc bug fixes
+
+
+Version 1.03 (2014-01-31)
+-------------------------
+- Added larger screenshot.png to account for high DPI displays
+- Misc bug fixes
+
+
+Version 1.02 (2014-01-31)
+-------------------------
+- Added video post format
+- Added aside post format
+
+
+Version 1.01 (2014-01-31)
+-------------------------
+- Changed the theme description in style.css
+
+
+Version 1 (2014-01-31)
+-------------------------

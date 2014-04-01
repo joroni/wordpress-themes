@@ -1,0 +1,152 @@
+/*
+Theme Name: eGamer Child
+Theme URI: http://www.elegantthemes.com/gallery/egamer
+Version: 5.9
+Description: 2 Column theme from ElegantThemes
+Author: ElegantThemes
+Author URI: http://www.elegantthemes.com
+Template: eGamer
+*/
+
+@import '../eGamer/style.css';
+
+body {
+	font-family: Helvetica, Arial;
+	background-image: none !important;
+}
+
+#footer {
+	background: #222 !important;
+	height: auto !important;
+}
+#wrapper2 {
+	background: #222 !important;
+}
+
+.nav li a {
+	color: #fff !important;
+}
+
+.header-primary {
+	margin-bottom: 30px;
+}
+.header-primary .header-left {
+	float: left;
+	width: 70%;
+	position: relative;
+}
+.header-primary .header-right {
+	float: right;
+	width: 30%;
+	position: relative;
+}
+#wrapper {
+	margin-top: 30px !important;
+}
+.clear-fix {
+	clear: both;
+}
+
+#main-footer {
+	width: 940px;
+	margin: 0 auto;
+}
+
+#other-site-feeds {
+	margin: 0 auto;
+}
+
+#other-site-feeds img {
+	padding-bottom: 5px;
+}
+
+.widget_super_rss_reader {
+	margin-bottom: 0 !important;
+}
+.widget_super_rss_reader h3 {
+	margin-bottom: 0 !important;
+	font-size: 20px;
+	line-height: 20px;
+}
+.widget_super_rss_reader {
+	list-style-type: none;
+}
+.srr-item {
+	padding-bottom: 0 !important;
+	margin-top: -28px !important;
+}
+.srr-item:first-child {
+	margin-top: 0 !important;
+}
+
+.srr-title {
+	/*background: url(../transcript/styles/default/icons/widget_li.gif) no-repeat left 7px;*/
+	padding-left: 12px;
+	position: relative;
+}
+.srr-title:before {
+	content: '';
+	position: absolute;
+	top: 8px;
+	left: 0;
+	border: 3px solid transparent;
+	border-left-color: #b2d34d;
+}
+
+.super-rss-reader-widget {
+	padding-left: 15px;
+}
+
+#footer-widgets .footer-widget {
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+}
+#footer-widgets .footer-widget.last {
+	margin-right: 0;
+}
+
+#footer-widgets .footer-widget img {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.contact-us {
+	clear: both;
+	width: 940px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px 0;
+}
+
+.home-post-wrap2 .mr_social_sharing_wrapper {
+	width: auto;
+	margin-top: -2px;
+	float: right;
+}
+
+.home .single-entry .thumbnail {
+	height: 60px;
+	width: 60px;
+}
+
+.header-primary .logo {
+	border: none !important;
+}
+.header-primary {
+	margin-bottom: 0 !important;
+}
+
+.single img {
+	height: auto;
+}
+
+.disclaimer {
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+.disclaimer p {
+	font-size: 10px !important;
+	line-height: 12px;
+}

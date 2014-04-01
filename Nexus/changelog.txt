@@ -1,0 +1,24 @@
+version 1.2 ( updated 08-02-2013 )
+- Fixed separate_comments function notice
+	* epanel/custom_functions.php
+- Fixed 'Delete module' button that didn't work on newly created modules
+	* js/et_homepage_builder_admin.js
+- Fixed static front page design issues.
+	* includes/breadcrumbs.php
+	* style.css
+- Fixed the issue with recent tabs mobule arrows not working without the popular posts module
+	* js/custom.js
+- Fix: Comments meta info is off by default on index pages
+	* epanel/options_nexus.php
+- Bumped version number
+	* style.css
+
+version 1.1 ( updated 07-20-2013 )
+- Fixed Recent Videos slider issue in Firefox
+	* js/custom.js
+- Bumped version number
+	* style.css
+
+version 1.0
+
+- initial release
