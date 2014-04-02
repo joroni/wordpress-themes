@@ -1,5 +1,5 @@
 <?php
-$internalMessage = '
+$internalEmailHtml = '
 <html>
   <body>
     <div style="width: 80%; margin: 0 auto;">

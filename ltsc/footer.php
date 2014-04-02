@@ -22,7 +22,7 @@
 						<div class="clearfix"></div>
 						<div class="footerGuide-arrow"></div>
 						<div class="clearfix"></div>
-						<a class="footerGuide-button button" href="">GUIDE TO LTSC</a>
+						<a class="footerGuide-button button" href="#">GUIDE TO LTSC</a>
 					</div>
 				</div>
 			</div>

@@ -2214,3 +2214,45 @@ iframe#pf-email-iframe {
 .home .top-wrap .top-content .content-right .category-section {
   min-height: 1080px;
 }
+
+#header #title-area {
+  width: auto;
+}
+
+.ad-headerBanner {
+  float: right;
+  max-width: 650px;
+  width: 60%;
+  margin-right: 20px;
+  position: relative;
+  top: 50px;
+  margin-bottom: -90px;
+
+}
+
+@media (max-width: 865px) {
+  .ad-headerBanner {
+    width: 50%;
+    top: 60px;
+  }
+
+}
+
+@media (max-width: 1145px) {
+  .hidden-at-md {
+    display: none;
+  }
+
+}
+
+@media (max-width: 764px) {
+  .ad-headerBanner {
+    display: none;
+  }
+
+  .top-middle-banner-ad {
+    display: none;
+  }
+
+
+}

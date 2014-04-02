@@ -116,3 +116,47 @@ background-color: #2C9BAA !important;
 	font-size: 10px !important;
 	line-height: 12px;
 }
+
+
+
+.ad-outer-container {
+	text-align: center;
+	overflow: hidden;
+}
+
+.ad-container {
+	display: inline-block;
+}
+
+.ad-container img {
+	width: 100%;
+}
+
+.ad-home-afterThirdPost {
+	padding: 5px 0 60px;
+}
+
+.home-block .ad-headerBanner {
+	margin-top: -90px;
+	padding: 0 10px;
+	padding-bottom: 40px;
+}
+
+.ad-footerBanner {
+	background-color: #fff;
+	margin-top: -40px;
+	padding: 20px 10px 40px;
+}
+
+#sidebar .widget_text {
+	width: 300px;
+}
+
+#main-area {
+	padding-bottom: 20px;
+}
+
+.single #content-area .ad-headerBanner {
+	margin-top: -80px;
+	padding-bottom: 40px;
+}

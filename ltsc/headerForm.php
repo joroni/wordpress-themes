@@ -1,6 +1,6 @@
 <div class="headerForm">
 	<div class="headerForm-blurb">...</div>
-	<form action="/wp-content/themes/ltsc/mail/email.php" method="POST">
+	<form action="<?php echo get_template_directory_uri() ?>/mail/email.php" method="GET">
 		<ul class="formList">
 			<li>
 				<label>Name :</label>
@@ -17,7 +17,7 @@
 		</ul>
 		
 		<div class="headerForm-buttonBox">
-			<button class="headerForm-button button" type="submit">Find Out How</button>
+			<button class="headerForm-button button" type="submit" autocomplete="off">Find Out How</button>
 		</div>
 	</form>
 </div>

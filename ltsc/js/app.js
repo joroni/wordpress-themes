@@ -1,79 +1,13 @@
 
 (function () {
-	/*
-	 var initAmChart1 = function() {
-		AmCharts.makeChart("amchart1", {
-			type: "serial",
-			theme: "darkBlue",
-			dataProvider: [
-				{
-					"month": 'Jan',
-						"height": 0.8,
-						"line": 0
-				},
-				{
-					"month": 'Feb',
-						"height": 1.08,
-						"line": 0.5
-				},
-				{
-					"month": 'Mar',
-						"height": 2,
-						"line": 1
-				},
-				{
-					"month": 'Apr',
-						"height": 1.85,
-						"line": 1.4
-				},
-				{
-					"month": 'May',
-						"height": 2.2,
-						"line": 1.8
-				},
-				{
-					"month": 'Jun',
-						"height": 2.8,
-						"line": 2.3
-				}
-			],
-			categoryField: "month",
-			startDuration: 1,
-			rotate: false,
-
-			categoryAxis: {
-				gridPosition: "start"
-			},
-			valueAxes: [{
-				position: "left",
-			}],
-			graphs: [{
-				type: "column",
-				//title: "Height",
-				valueField: "height",
-				fillAlphas: 1,
-				//balloonText: "<span style='font-size:13px;'>[[title]] in [[category]]:<b>[[value]]</b></span>"
-			}, {
-				type: "line",
-				//title: "Line",
-				valueField: "line",
-				lineThickness: 2,
-				bullet: "round",
-				//balloonText: "<span style='font-size:13px;'>[[title]] in [[category]]:<b>[[value]]</b></span>"
-			}],
-			legend: false
-
-		});
-	};
-	*/
-
 	$(document).ready(function() {
 
 		//
 		// Header form input focus classes
 		//
 
-		$headerFormInputs = $('.headerForm .formList input')
+		var $headerFormInputs	= $('.headerForm .formList input')
+		var $headerFormForm		= $('.headerForm form')
 
 		$headerFormInputs.on('focusin focusout', function() {
 			$input = $(this)
@@ -82,20 +16,22 @@
 			$li.toggleClass('active')
 		})
 
-		$(document).on('click', '.headerForm-button', function (e) {
+		$(document).on('click', '.headerForm-button', function (event) {
+			event.preventDefault();
 			var btn = $(this);
 
-			if( !btn.attr('disabled') ) {
+			if ( ! btn.attr('disabled') ) {
 
 				btn.html("Sending...").attr('disabled', 'disabled');
-
 				$.ajax({
-					url: "/wp-content/themes/ltsc/mail/email.php",
-					type: 'GET',
-					dataType: 'html',
-					data: $(".headerForm form").serialize(),
-					success: function (response) {
-						if( JSON.parse(response).success ) {
+					url			: $headerFormForm.attr('action'),
+					type		: $headerFormForm.attr('method'),
+					dataType	: 'html',
+					data		: $headerFormForm.serialize(),
+					success		: function (response) {
+						data = JSON.parse(response)
+
+						if ( data.success ) {
 							btn.html('Thank you!');
 						} else {
 							btn.attr('disabled', false).html('FIND OUT HOW');
@@ -103,9 +39,6 @@
 					}
 				});
 			}
-
-			e.preventDefault();
-			return false;
 		})
 
 		//
@@ -175,9 +108,12 @@
 		var $logo				= $('.logo')
 		var $headerFormBlurb	= $('.headerForm-blurb')
 		var $headerFormName		= $('.headerForm input[name=name]')
-		var $headerFormForm		= $('.headerForm form')
 
-		$seperatorButton.on('click', function() {
+		var $footerGuideButton	= $('.footerGuide-button')
+
+		var $buttons = $seperatorButton.add($footerGuideButton)
+
+		$buttons.on('click', function() {
 			$body.scrollTo( $logo.offset().top, 800, {
 				onAfter: function() {
 					$headerFormBlurb.animate({ opacity: 1 }, 1000)
@@ -185,10 +121,11 @@
 					$headerFormForm.append('<input type="hidden" name="webinar_button_clicked" value="1" />')
 				}
 			})
+
+			return false
 		})
 
 
-		var $footerGuideButton	= $('.footerGuide-button')
 		var $subFooter			= $('.subFooter')
 
 		$(window).on('scroll.buttonShakeFooter', function() {

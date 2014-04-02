@@ -1,5 +1,8 @@
 <?php
 
+# Suppress errors because it ruins json and we are to lazy to not have notices
+error_reporting(0);
+
 if( isset($_GET['IP']) ) { $_GET['IP'] = $_SERVER['REMOTE_ADDR']; }
 else { $_GET['IP'] = $_SERVER['REMOTE_ADDR']; }
 
@@ -18,12 +21,20 @@ $headers .= 'From:'. "info@cottonparkestate.com"  . "\r\n";
 $oheaders = $headers . 'To:'. $email .  "\r\n";
 $iheaders = $headers . 'To: info@cottonparkestate.com' . "\r\n";
 
-include('genericResponse.php');
-include('internal.php');
+#include('genericResponse.php');
 
-$result = mail($email, $subject, $message, $oheaders);
-mail("info@cottonparkestate.com", "Enquiry", $internalMessage, $iheaders);
+include('internal.php'); # sets $internalEmailHtml
 
-$response = array("success" => $result);
+$emailHtml = file_get_contents('emails/default.html');
+
+
+$result = mail($email, $subject, $emailHtml, $oheaders);
+#mail("info@cottonparkestate.com", "Enquiry", $internalEmailHtml, $iheaders);
+
+$response = array(
+	"success"	=> $result,
+);
 
 echo json_encode($response);
+
+?>
