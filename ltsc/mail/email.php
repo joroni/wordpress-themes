@@ -25,11 +25,11 @@ $iheaders = $headers . 'To: info@cottonparkestate.com' . "\r\n";
 
 include('internal.php'); # sets $internalEmailHtml
 
-$emailHtml = file_get_contents('emails/default.html');
+$emailHtml = file_get_contents('emails/default_inlined.html');
 
 
 $result = mail($email, $subject, $emailHtml, $oheaders);
-#mail("info@cottonparkestate.com", "Enquiry", $internalEmailHtml, $iheaders);
+mail("info@cottonparkestate.com", "Enquiry", $internalEmailHtml, $iheaders);
 
 $response = array(
 	"success"	=> $result,
