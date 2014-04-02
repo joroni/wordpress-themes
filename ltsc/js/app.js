@@ -31,6 +31,8 @@
 					success		: function (response) {
 						data = JSON.parse(response)
 
+						console.log(response)
+
 						if ( data.success ) {
 							btn.html('Thank you!');
 						} else {

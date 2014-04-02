@@ -1,6 +1,6 @@
 <div class="headerForm">
 	<div class="headerForm-blurb">...</div>
-	<form action="<?php echo get_template_directory_uri() ?>/mail/email.php" method="GET">
+	<form action="/wp-content/themes/ltsc/mail/email.php" method="GET"><!-- 1 -->
 		<ul class="formList">
 			<li>
 				<label>Name :</label>

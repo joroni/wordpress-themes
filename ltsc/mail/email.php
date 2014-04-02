@@ -10,29 +10,36 @@ $name = $_GET['name'];
 $email = $_GET['email'];
 $phone = $_GET['phone'];
 
-$subject = "Thank you for your enquiry";
+$result = $internalResult = false;
 
-// To send HTML mail, the Content-type header must be set
-$headers  = 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-$headers .= 'From:'. "info@cottonparkestate.com"  . "\r\n";
+if ( $email ) {
 
-// Additional headers  Office
-$oheaders = $headers . 'To:'. $email .  "\r\n";
-$iheaders = $headers . 'To: info@cottonparkestate.com' . "\r\n";
+	$subject = "Thank you for your enquiry";
 
-#include('genericResponse.php');
+	// To send HTML mail, the Content-type header must be set
+	$headers  = 'MIME-Version: 1.0' . "\r\n";
+	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+	$headers .= 'From:'. "info@cottonparkestate.com"  . "\r\n";
 
-include('internal.php'); # sets $internalEmailHtml
+	// Additional headers  Office
+	$oheaders = $headers . 'To:'. $email .  "\r\n";
+	$iheaders = $headers . 'To: info@cottonparkestate.com' . "\r\n";
 
-$emailHtml = file_get_contents('emails/default_inlined.html');
+	include('genericResponse.php'); # sets $message
 
+	include('internal.php'); # sets $internalEmailHtml
 
-$result = mail($email, $subject, $emailHtml, $oheaders);
-mail("info@cottonparkestate.com", "Enquiry", $internalEmailHtml, $iheaders);
+	$emailHtml = file_get_contents('emails/default_inlined.html');
+
+	$result			= mail($email, $subject, $emailHtml, $oheaders);
+
+	if ( empty($_GET['test']) )
+		$internalResult	= mail("info@cottonparkestate.com", "Enquiry", $internalEmailHtml, $iheaders);
+}
 
 $response = array(
-	"success"	=> $result,
+	"success"			=> $result,
+	"internalSuccess"	=> $internalResult,
 );
 
 echo json_encode($response);
