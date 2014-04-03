@@ -1353,13 +1353,13 @@ iframe#pf-email-iframe {
   top: 0;
   bottom: 0;
   right: 15px;
-  background: #fff;
+  background: #F2F2F2;
   border-radius: 7px;
   padding: 10px 20px;
   border: 2px solid #555;
   font-weight:bold;
   line-height: 10px;
-  color: #333;
+  color: #333 !important;
 }
 
 #header .widget-area {
@@ -2219,6 +2219,21 @@ iframe#pf-email-iframe {
   width: auto;
 }
 
+.ad-outer-container {
+  text-align: center;
+  overflow: hidden;
+}
+.ad-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.ad-container img,
+.ad-container iframe,
+.widget iframe {
+  border-radius: 3px;
+}
+
 .ad-headerBanner {
   float: right;
   max-width: 650px;
@@ -2227,20 +2242,21 @@ iframe#pf-email-iframe {
   position: relative;
   top: 50px;
   margin-bottom: -90px;
+}
 
+.ad-headerBanner iframe {
+  width: 640px;
 }
 
 @media (max-width: 865px) {
   .ad-headerBanner {
+    display: block;
     width: 50%;
     top: 60px;
   }
 
-}
-
-@media (max-width: 1145px) {
-  .hidden-at-md {
-    display: none;
+  .ad-headerBanner iframe {
+    width: 90%;
   }
 
 }
@@ -2249,10 +2265,5 @@ iframe#pf-email-iframe {
   .ad-headerBanner {
     display: none;
   }
-
-  .top-middle-banner-ad {
-    display: none;
-  }
-
 
 }

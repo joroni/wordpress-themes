@@ -1816,3 +1816,62 @@ a:hover {
     /*margin-left: 55px;*/
   }
 }
+
+
+
+
+
+.ad-outer-container {
+  text-align: center;
+}
+
+
+.ad-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.ad-container img {
+  width: 100%;
+}
+
+.ad-home-afterThirdPost {
+  padding: 6px 0 18px;
+}
+
+.ad-footer {
+  padding: 2px 0 8px;
+}
+
+.ad-topBanner {
+  margin-top: -5px;
+  padding-bottom: 5px;
+}
+
+.ad-leftColPosts {
+  padding: 18px 0 8px;
+}
+
+.ad-belowFeatured {
+  padding: 18px 5px 5px;
+}
+
+@media (max-width: 600px) {
+  .ad-belowFeatured iframe {
+    height: 40px;
+  }
+}
+
+.ad-footerBanner {
+  padding: 10px 10px 60px;
+}
+
+.pagination-next a {
+  padding: 4px 12px;
+}
+
+.ad-container img,
+.ad-container iframe,
+.textwidget iframe {
+  border-radius: 4px;
+}

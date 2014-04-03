@@ -17,6 +17,8 @@ Create page "slider", use custom fields: imageSrc1, imageSrc2, imageSrc3
 	link: the <a href="">
 	text: any html. will not be used if an image already exists
 
+	Manage content in wordpress by creating a new page for each type of ad then adding the custom fields to it
+
 	
  */
 
@@ -50,9 +52,9 @@ $sliderItems = buildSlider();
 	<head>
 		<title><?php the_title() ?></title>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
-		<script src="<?php echo get_template_directory_uri() ?>/js/jquery.js"></script>
-		<script src="<?php echo get_template_directory_uri() ?>/js/jquery.bxslider.js"></script>
-		<script src="<?php echo get_template_directory_uri() ?>/css/jquery.bxslider.css"></script>
+		<script src="<?php echo get_stylesheet_directory_uri() ?>/slider/jquery.1.9.js"></script>
+		<script src="<?php echo get_stylesheet_directory_uri() ?>/slider/jquery.bxslider.js"></script>
+		<script src="<?php echo get_stylesheet_directory_uri() ?>/slider/jquery.bxslider.css"></script>
 		<style>
 			.slider {
 				position: relative;
@@ -68,6 +70,10 @@ $sliderItems = buildSlider();
 			.slider a {
 				display: inline-block;
 			}
+
+			.slider img {
+				width: 100%;
+			}
 		</style>
 	</head>
 	<body>
@@ -77,14 +83,14 @@ $sliderItems = buildSlider();
 				?>
 				<li class="sliderItem">
 					<?php if ( !empty($item['link']) ) { ?>
-						<a href="<?php echo $item['link'] ?>">
+						<a href="<?php echo $item['link'] ?>" target="_blank">
 					<?php } ?>
 					
-					<?php if ( !empty($item['image']) ) { ?>
-						<img class="sliderImage" src="<?php echo $item['image'] ?>" />
-					<?php } elseif ( !empty($item['text']) ) { ?>
-						<span class="sliderText"><?php echo $item['text'] ?></span>
-					<?php } ?>
+						<?php if ( !empty($item['image']) ) { ?>
+							<img class="sliderImage" src="<?php echo $item['image'] ?>" />
+						<?php } elseif ( !empty($item['text']) ) { ?>
+							<span class="sliderText"><?php echo $item['text'] ?></span>
+						<?php } ?>
 
 					<?php if ( $item['link'] ) { ?>
 						</a>
@@ -92,26 +98,29 @@ $sliderItems = buildSlider();
 				</li>
 			<?php } ?>
 		</ul>
-		<pre>
-		<?php
-			print_r( $sliderItems );
-		?>
-		</pre>
 		<script>
 			$(document).ready(function() {
 				var $slider = $('.slider')
 				var sliderOptions = {
 
-					speed	: parseInt( <?php echo "'{$_GET['speed']}'" ?> ) || 800
-				,	mode	: <?php echo "'{$_GET['axis']}'" ?> || 'horizontal'
-				,	easing	: <?php echo "'{$_GET['easing']}'" ?> || 'ease-in-out'
-
+					speed			: parseInt( <?php echo "'{$_GET['speed']}'" ?> )		|| 500
+				,	mode			: <?php echo "'{$_GET['axis']}'" ?>						|| 'horizontal'
+				,	autoDirection	: <?php echo "'{$_GET['direction']}'" ?>				|| 'next'
+				,	easing			: <?php echo "'{$_GET['easing']}'" ?>					|| 'ease-in-out'
+				,	pause			: parseInt(<?php echo "'{$_GET['pause']}'" ?>)			|| 6000
+				,	autoDelay		: parseInt(<?php echo "'{$_GET['startDelay']}'" ?>)		|| 1000
+				,	randomStart		: <?php echo $_GET['random'] ? $_GET['easing'] : 'null' ?>	|| true
+				,	useCss			: true
+				,	pager			: false
+				,	controls		: false
+				,	auto			: true
 				}
 
-				console.log(sliderOptions)
+				slider = $slider.bxSlider(sliderOptions)
 
-
-				$slider.bxSlider(sliderOptions)
+				$(window).resize(function(){
+					slider.reloadSlider();
+				})
 			})
 		</script>
 	</body>
