@@ -1131,7 +1131,10 @@ LOCATION PAGE SETTINGS
 	padding-left: 20px;
 }
 .home-section  .pl-midsection-desc ul li {
-margin-bottom: 15px;
+	margin-bottom: 15px;
+}
+.home-section .pl-midsection-desc a {
+	text-decoration: underline;
 }
 
 .who-are-we .coat-of-arms {
@@ -1235,6 +1238,57 @@ margin-bottom: 15px;
 	padding-right: 10px;
 	padding-left: 10px;
 }
+
+.location-maps {
+	margin: 80px 0;
+}
+.location-maps .map-col {
+	float: left;
+	padding: 0 20px;
+	width: 33%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.location-maps .map-col.last {
+	margin-right: 0;
+	width: 34%;
+}
+.location-maps hr {
+	width: 10%;
+	border-color: transparent;
+	border-bottom-color: #ccc;
+	margin: 15px auto 10px auto;
+}
+.location-maps .images {
+	height: 190px;
+	overflow: hidden;
+}
+.location-maps .images img {
+	position: relative;
+	top: 0;
+	transition: all .2s ease-in-out;
+}
+.location-maps span {
+	color: #888;
+	font-size: 10pt;
+	letter-spacing: 3px;
+}
+.location-maps .map-col:hover img {
+	top: -195px;
+}
+.location-maps .map-col:hover span {
+	color: #000;
+}
+.proximity h5 {
+	margin-bottom: 15px;
+	letter-spacing: 0px;
+}
+.proximity p {
+	width: 75%;
+	text-align: justify;
+	line-height: 20px;
+}
+
 /*  ///////////////////////////////////////
 END OF LOCATION PAGE SETTINGS
 */
@@ -1260,6 +1314,10 @@ PROJECT PAGE SETTINGS
 	line-height: 20px;
 }
 
+.location-map p a {
+	text-decoration: underline;
+}
+
 .home-section .page-project-title {
 	width: 100%;
 	padding-left: 30px;
@@ -1268,7 +1326,7 @@ PROJECT PAGE SETTINGS
 	text-align:left;
 	font-family: Futura-Book;
 	letter-spacing: 12px;
-	font-size: 38pt;
+	font-size: 45pt;
 	padding-bottom: 20px;
 	margin-bottom: 25px;
 }
@@ -2626,6 +2684,24 @@ input[type=checkbox] {
 		padding-top: 0 !important;
 	}
 
+
+	.location-maps {
+		margin: 80px 0;
+	}
+	.location-maps .map-col {
+		float: none;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.location-maps .map-col.last {
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.proximity p {
+		width: 100%;
+	}
+
+
 	.appointment-container {
 		margin: 20px 0;
 	}
@@ -2665,5 +2741,4 @@ input[type=checkbox] {
 		display: block;
 		margin: 0 auto;
 	}
-
 }
