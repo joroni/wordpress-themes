@@ -1353,13 +1353,13 @@ iframe#pf-email-iframe {
   top: 0;
   bottom: 0;
   right: 15px;
-  background: #fff;
+  background: #F2F2F2;
   border-radius: 7px;
   padding: 10px 20px;
   border: 2px solid #555;
   font-weight:bold;
   line-height: 10px;
-  color: #333;
+  color: #333 !important;
 }
 
 #header .widget-area {
@@ -2213,4 +2213,57 @@ iframe#pf-email-iframe {
 .home .top-wrap .top-content .content-left,
 .home .top-wrap .top-content .content-right .category-section {
   min-height: 1080px;
+}
+
+#header #title-area {
+  width: auto;
+}
+
+.ad-outer-container {
+  text-align: center;
+  overflow: hidden;
+}
+.ad-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.ad-container img,
+.ad-container iframe,
+.widget iframe {
+  border-radius: 3px;
+}
+
+.ad-headerBanner {
+  float: right;
+  max-width: 650px;
+  width: 60%;
+  margin-right: 20px;
+  position: relative;
+  top: 50px;
+  margin-bottom: -90px;
+}
+
+.ad-headerBanner iframe {
+  width: 640px;
+}
+
+@media (max-width: 865px) {
+  .ad-headerBanner {
+    display: block;
+    width: 50%;
+    top: 60px;
+  }
+
+  .ad-headerBanner iframe {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 764px) {
+  .ad-headerBanner {
+    display: none;
+  }
+
 }

@@ -847,6 +847,7 @@ function genesis_do_header() {
 
 	global $wp_registered_sidebars;
 
+	do_action( 'genesis_before_wrap' );
 	genesis_markup( array(
 		'html5'   => '<div %s>',
 		'xhtml'   => '<div id="title-area">',

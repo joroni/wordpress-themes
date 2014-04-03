@@ -2,6 +2,7 @@
 
 <div id="content-area">
 	<div class="container clearfix">
+		<?php insertAd('ad-headerBanner') ?>
 		<div id="main-area">
 
 <?php while ( have_posts() ) : the_post(); ?>

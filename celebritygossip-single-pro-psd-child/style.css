@@ -174,10 +174,12 @@ Template: celebritygossip-single-pro-psd
 
 .ad-outer-container {
 	text-align: center;
+	overflow: hidden;
 }
 
 .ad-container {
-	display: inline-block;
+  display: inline-block;
+  width: 100%;
 }
 
 .ad-container img {
@@ -195,4 +197,10 @@ Template: celebritygossip-single-pro-psd
 .ad-topBanner {
 	margin-top: -5px;
 	padding-bottom: 5px;
+}
+
+.ad-container img,
+.ad-container iframe,
+.widget iframe {
+  border-radius: 4px;
 }

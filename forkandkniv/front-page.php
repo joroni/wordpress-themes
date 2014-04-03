@@ -42,10 +42,10 @@ add_action( 'genesis_footer', 'genesis_footer_markup_close', 15);
 
 
 function my_excerpt_length($length) {
-        return 15;
+	return 15;
 }
 function my_excerpt_more( $more ) {
-        return '... <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">Read More</a>';
+	return '... <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">Read More</a>';
 }
 
 
@@ -57,16 +57,16 @@ function my_excerpt_more( $more ) {
  */
 function gs_home_helper() {
 
-        if ( is_active_sidebar( 'home-top' ) || is_active_sidebar( 'home-left' ) || is_active_sidebar( 'home-right' ) || is_active_sidebar( 'home-bottom' ) ) {
+	if ( is_active_sidebar( 'home-top' ) || is_active_sidebar( 'home-left' ) || is_active_sidebar( 'home-right' ) || is_active_sidebar( 'home-bottom' ) ) {
 
-                remove_action( 'genesis_loop', 'genesis_do_loop' );
-                add_action( 'genesis_loop', 'gs_home_widgets' );
+		remove_action( 'genesis_loop', 'genesis_do_loop' );
+		add_action( 'genesis_loop', 'gs_home_widgets' );
 
-                /** Force Full Width */
-                add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
-                add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
+		/** Force Full Width */
+		add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+		add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
-        }
+	}
 }
 
 /**
@@ -75,177 +75,185 @@ function gs_home_helper() {
  */
 function gs_home_widgets() {
 
-        genesis_widget_area(
-                'home-top',
-                array( 'before' => '<div id="home-top" class="home-widget widget-area">', )
-        );
+	genesis_widget_area(
+		'home-top',
+		array( 'before' => '<div id="home-top" class="home-widget widget-area">', )
+	);
 
-        echo '<div id="home-middle">';
-        genesis_widget_area(
-                'home-left',
-                array(
-                        'before' => '<div id="home-left" class="first one-half"><div class="home-widget widget-area">',
-                        'after' => '</div></div><!-- end #home-left -->',
-                )
-        );
+	echo '<div id="home-middle">';
+	genesis_widget_area(
+		'home-left',
+		array(
+			'before' => '<div id="home-left" class="first one-half"><div class="home-widget widget-area">',
+			'after' => '</div></div><!-- end #home-left -->',
+		)
+	);
 
-        genesis_widget_area(
-                'home-right',
-                array(
-                        'before' => '<div id="home-right" class="one-half"><div class="home-widget widget-area">',
-                        'after' => '</div></div><!-- end #home-right -->',
-                )
-        );
-        echo '</div>';
+	genesis_widget_area(
+		'home-right',
+		array(
+			'before' => '<div id="home-right" class="one-half"><div class="home-widget widget-area">',
+			'after' => '</div></div><!-- end #home-right -->',
+		)
+	);
+	echo '</div>';
 
 
-        genesis_widget_area(
-                'home-bottom',
-                array(
-                        'before' => '<div id="home-bottom"><div class="home-widget widget-area">',
-                        'after' => '</div></div><!-- end #home-left -->',
-                )
-        );
+	genesis_widget_area(
+		'home-bottom',
+		array(
+			'before' => '<div id="home-bottom"><div class="home-widget widget-area">',
+			'after' => '</div></div><!-- end #home-left -->',
+		)
+	);
 }
 
 function render_home_page() {
-        $post_count = 0;
-        $left_col = array();
-        $right_col = array();
-        $featured_post = '';
+	$left_col = array();
+	$right_col = array();
+	$featured_post = '';
 
-        ?>
+	?>
 
-        <?php
+	<?php
 
-        if( have_posts() ) {
-                while( have_posts() ) : the_post() ;
-                        if( $post_count === 0 ) {
-                                show_featured_post();
-                        }
+	if( have_posts() ) {
+		while( have_posts() ) :
+			the_post();
+			show_featured_post();
+			break;
+		endwhile;
+	}
 
-                        $post_count++;
-                endwhile;
-        }
+	insertAd('ad-belowFeatured');
 
-        ?>
-        <div class="left-col">
-        <?php
+	?>
 
-        $post_count = 0;
-        if( have_posts() ) {
-                while( have_posts() ) : the_post() ;
-                        if( $post_count != 0 && $post_count % 2 != 0 ) {
-                                show_regular_post();
-                        }
-                        $post_count++;
-                endwhile;
-        }
+	<div class="left-col">
+	<?php
 
-        ?>
-        </div>
-        <div class="right-col">
-        <?php
+	$postCount = 0;
 
-        //Menu
-        show_weekly_menu();
+	if ( have_posts() ) {
+		while ( have_posts() ) {
+			the_post();
 
-        $post_count = 0;
-        if( have_posts() ) {
-                while( have_posts() ) : the_post() ;
-                        if( $post_count != 0 && $post_count % 2 === 0 ) {
-                                show_regular_post();
-                        }
+			++$postCount;
 
-                        $post_count++;
-                endwhile;
-        }
+			if ( $postCount === 3 ) insertAd('ad-leftColPosts');
 
-        ?>
-        </div>
-        <?php
+			if ( $postCount >= 7 ) continue;
+			
+			show_regular_post();
+		}
+	}
 
-        do_action( 'genesis_after_endwhile' );
+	?>
+	</div>
+	<div class="right-col">
+	<?php
+
+	//Menu
+	show_weekly_menu();
+
+	$postCount = 0;
+	if ( have_posts() ) {
+		while( have_posts() ) {
+			the_post();
+			++$postCount;
+
+			if ( $postCount > 7 )
+				show_regular_post();
+		}
+	}
+
+	?>
+	</div>
+	<?php
+
+	do_action( 'genesis_after_endwhile' );
 }
 
 function show_featured_post() {
-        ?>
-        <div class="featured-post">
-                <?php if( has_post_thumbnail() ) { ?>
-                        <div class="post-thumbnail">
-                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full-size'); ?></a>
-                        </div>
-                <?php } ?>
+	?>
+	<div class="featured-post">
+		<?php if( has_post_thumbnail() ) { ?>
+			<div class="post-thumbnail">
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full-size'); ?></a>
+			</div>
+		<?php } ?>
 
-                <div class="post-content">
-                        <h2><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
-                        <?php echo '<p>' . preg_replace( '(<[^p]+>)', '', substr( get_the_content(), 0, 350 ) ) . '... <a href="' . get_permalink() . '">[Read More]</a>' . '</p>' ?>
-                        <?php echo do_shortcode('[social_share]'); ?>
-                </div>
-        </div>
-        <?php
+		<div class="post-content">
+			<h2><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
+			<?php echo '<p>' . preg_replace( '(<[^p]+>)', '', substr( get_the_content(), 0, 350 ) ) . '... <a href="' . get_permalink() . '">[Read More]</a>' . '</p>' ?>
+			<?php echo do_shortcode('[social_share]'); ?>
+		</div>
+	</div>
+	<?php
 }
 
 function show_regular_post() {
-        ?>
-        <div class="normal-post">
-                <?php if(has_post_thumbnail() ) { ?>
-                        <div class="post-thumbnail">
-                                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
-                        </div>
-                <?php } ?>
+	?>
+	<div class="normal-post">
+		<?php if(has_post_thumbnail() ) { ?>
+			<div class="post-thumbnail">
+				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
+			</div>
+		<?php } ?>
 
-                <div class="post-content">
-                        <h2><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
-                        <?php the_excerpt() ?>
-                </div>
-        </div>
-        <?php
+		<div class="post-content">
+			<h2><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
+			<?php the_excerpt() ?>
+		</div>
+	</div>
+	<?php
 }
 
 
 
 function custom_broadbent_footer() {
-        ?>
-        <div id="main-footer">
-                <div id="footer-widgets">
-                        <div id="other-site-feeds">
-                                <div class="column">
-                                        <div id="other-site-feeds-left"><div class="footer-column first"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsLeft1' ); ?></div></div></div>
-                                        <div id="other-site-feeds-middle"><div class="footer-column"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsMiddle1' ); ?></div></div></div>
-                                        <div id="other-site-feeds-right"><div class="footer-column last"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsRight1' ); ?></div></div></div>
+	insertAd('ad-footerBanner');
 
-                                        <div class="clear"></div>
-                                </div>
+	?>
+	<div id="main-footer">
+		<div id="footer-widgets">
+			<div id="other-site-feeds">
+				<div class="column">
+					<div id="other-site-feeds-left"><div class="footer-column first"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsLeft1' ); ?></div></div></div>
+					<div id="other-site-feeds-middle"><div class="footer-column"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsMiddle1' ); ?></div></div></div>
+					<div id="other-site-feeds-right"><div class="footer-column last"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsRight1' ); ?></div></div></div>
 
-                                <div class="column">
-                                        <div id="other-site-feeds-left"><div class="footer-column first"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsLeft2' ); ?></div></div></div>
-                                        <div id="other-site-feeds-middle"><div class="footer-column"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsMiddle2' ); ?></div></div></div>
-                                        <div id="other-site-feeds-right"><div class="footer-column last"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsRight2' ); ?></div></div></div>
+					<div class="clear"></div>
+				</div>
 
-                                        <div class="clear"></div>
-                                </div>
+				<div class="column">
+					<div id="other-site-feeds-left"><div class="footer-column first"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsLeft2' ); ?></div></div></div>
+					<div id="other-site-feeds-middle"><div class="footer-column"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsMiddle2' ); ?></div></div></div>
+					<div id="other-site-feeds-right"><div class="footer-column last"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsRight2' ); ?></div></div></div>
 
-                                <div class="column">
-                                        <div id="other-site-feeds-left"><div class="footer-column first"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsLeft3' ); ?></div></div></div>
-                                        <div id="other-site-feeds-middle"><div class="footer-column"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsMiddle3' ); ?></div></div></div>
-                                        <div id="other-site-feeds-right"><div class="footer-column last"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsRight3' ); ?></div></div></div>
+					<div class="clear"></div>
+				</div>
 
-                                        <div class="clear"></div>
-                                </div>
+				<div class="column">
+					<div id="other-site-feeds-left"><div class="footer-column first"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsLeft3' ); ?></div></div></div>
+					<div id="other-site-feeds-middle"><div class="footer-column"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsMiddle3' ); ?></div></div></div>
+					<div id="other-site-feeds-right"><div class="footer-column last"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsRight3' ); ?></div></div></div>
 
-                                <div class="column">
-                                        <div id="other-site-feeds-left"><div class="footer-column first"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsLeft4' ); ?></div></div></div>
-                                        <div id="other-site-feeds-middle"><div class="footer-column"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsMiddle4' ); ?></div></div></div>
-                                        <div id="other-site-feeds-right"><div class="footer-column last"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsRight4' ); ?></div></div></div>
-                                </div>
-                        </div>
+					<div class="clear"></div>
+				</div>
 
-                        <div class="clear"></div>
-                </div>
+				<div class="column">
+					<div id="other-site-feeds-left"><div class="footer-column first"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsLeft4' ); ?></div></div></div>
+					<div id="other-site-feeds-middle"><div class="footer-column"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsMiddle4' ); ?></div></div></div>
+					<div id="other-site-feeds-right"><div class="footer-column last"><div class="footer-widget"><?php dynamic_sidebar( 'OtherSiteFeedsRight4' ); ?></div></div></div>
+				</div>
+			</div>
 
-        </div>
-        <?php
+			<div class="clear"></div>
+		</div>
+
+	</div>
+	<?php
 }
 
 genesis();
