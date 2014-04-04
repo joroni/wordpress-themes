@@ -143,7 +143,7 @@
 	<div class='centered'>
 
 		<div class='centered img desktop-only' id="back-top">
-		<a href="#top"><img src="/wp-content/themes/hemingway-child/images/littlegrey.jpg" alt="submit" /></a>
+		<a class="scrollMe" href="#top"><img src="/wp-content/themes/hemingway-child/images/littlegrey.jpg" alt="submit" /></a>
 		<br/>		BACK TO TOP
 
 		</div>

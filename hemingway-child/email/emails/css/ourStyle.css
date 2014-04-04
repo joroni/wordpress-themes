@@ -1,0 +1,46 @@
+body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
+	font-family: "Tahoma", "Helvetica", "Arial", sans-serif;
+}
+
+body { font-size: 16px; }
+
+b, strong, .heading, h1, h2, h3, h4, h5, h6 {
+	color: #444;
+	font-family: "Helvetica", "Arial", "Tahoma", sans-serif;
+}
+
+
+h3 {
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 150%;
+	text-align: center;
+	color: #404040;
+}
+
+body, p, li {
+	color: #787878;
+	font-size: 16px;
+	line-height: 145%;
+}
+
+
+.underline {
+	text-decoration: underline;
+}
+.underline {
+	text-decoration: underline;
+}
+table.button td, table.tiny-button td, table.small-button td, table.medium-button td, table.large-button td {
+	border: 2px solid #222;
+	background: transparent;
+}
+
+table.button td:hover, table.tiny-button td:hover, table.small-button td:hover, table.medium-button td:hover, table.large-button td:hover {
+	background: #222 !important;
+	color: #fff !important;
+}
+
+table.button td a, table.tiny-button td a, table.small-button td a, table.medium-button td a, table.large-button td a {
+	color: #333 !important;
+}

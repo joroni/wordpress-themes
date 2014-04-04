@@ -20,11 +20,13 @@ Template Name: LOCATION PAGE
 				<div id="locationmap" class="home-section location-map desktop-only">
 						<div class="right bottomright">
 							<h5>Proximately to Employment Zones</h5>
-
 							<p>
-								Cotton Park Estate will be located just 32km from Melbourne’s Central Business District. This makes just a short commute or train ride away for residents who work in the city. For those not interested in a city commute there are alternate employment opportunities. The major employment precincts of Melbourne’s west such as the Werribee East employment cluster just 12km from Cotton Park will provide over 58,000 jobs. The Truganina Employment Area just 15km away will also offer between 10,000 -15,000 jobs.
+								Cotton Park Estate will be located just 32km from Melbourne’s Central Business District. This makes just a 
+								short commute or train ride away for residents who work in the city. For those not interested in a city 
+								commute there are alternate employment opportunities. The major employment precincts of Melbourne’s west 
+								such as the <a target="_blank" href="http://www.mpa.vic.gov.au/east_werribee">Werribee East employment cluster</a> just 12km from Cotton Park will provide over 58,000 jobs. 
+								The <a target="_blank" href="http://www.mpa.vic.gov.au/planning-activities/greenfields-planning/precinct-structure-plans/wyndham/truganina-employment-area/">Truganina Employment Area</a> just 15km away will also offer between 10,000 -15,000 jobs.
 							</p>
-
 						</div>
 						<div class="left bottomleft">
 							<div class="locmap-image"></div>
@@ -42,8 +44,6 @@ Template Name: LOCATION PAGE
 				</div>
 				<div id="locationmap" class="home-section mobile-only">
 						<div class="right bottomright">
-
-
 							<div class="left bottomleft">
 							<div class="locmap-mob-image"></div>
 							<br/>
@@ -54,7 +54,12 @@ Template Name: LOCATION PAGE
 
 						</div>
 						<div class="pl-midsection-desc">
-								Cotton Park Estate will be located just 32km from Melbourne’s Central Business District. This makes just a short commute or train ride away for residents who work in the city. For those not interested in a city commute there are alternate employment opportunities. The major employment precincts of Melbourne’s west such as the Werribee East employment cluster just 12km from Cotton Park will provide over 58,000 jobs. The Truganina Employment Area just 15km away will also offer between 10,000 -15,000 jobs.
+								Cotton Park Estate will be located just 32km from Melbourne’s Central Business District. 
+								This makes just a short commute or train ride away for residents who work in the city. For 
+								those not interested in a city commute there are alternate employment opportunities. The major 
+								employment precincts of Melbourne’s west such as the <a target="_blank" href="http://www.mpa.vic.gov.au/east_werribee">Werribee East employment cluster</a> just 12km 
+								from Cotton Park will provide over 58,000 jobs. The <a target="_blank" href="http://www.mpa.vic.gov.au/planning-activities/greenfields-planning/precinct-structure-plans/wyndham/truganina-employment-area/">Truganina Employment Area</a> just 15km away will 
+								also offer between 10,000 -15,000 jobs.
 							</div>
 
 						<div class="clear"></div>
@@ -76,10 +81,10 @@ Template Name: LOCATION PAGE
 							<ul>
 								<br/>
 								<li>
-								      • $5.5 Billion committed to the regional rail link, due for completion in early 2016.
+								    • $4.8 Billion committed to the regional rail link, due for completion in early 2016.
 								</li>
 								<li>
-								     • $2.2 Billion committed thus far to the development of the E6 Outer Ring Road due to commence in 2020.
+								    • Billions of dollars committed to the development of the E6 Outer Ring Road due to commence in 2020.
 								</li>
 							</ul>
 						</div>
@@ -131,7 +136,7 @@ Template Name: LOCATION PAGE
 
 						<div class="plrail-midsection-desc">
 							<p>
-								The regional rail link is a $5.5 Billion infrastructure project funded jointly by the state government of Victoria and the federal government of Australia.
+								The regional rail link is a $4.8 Billion infrastructure project funded jointly by the state government of Victoria and the federal government of Australia.
 							</p>
 							<p>
 								The project will revolutionize public transport in Melbourne’s western suburbs and provide the first electrical rail link to any Outer Melbourne Suburb.

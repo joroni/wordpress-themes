@@ -6,10 +6,8 @@ Template Name: Home Page
 
 <?php get_header(); ?>
 
-<script src="/wp-content/themes/hemingway-child/js/gen_validatorv4.js" type="text/javascript" xml:space="preserve"></script>
-
-  <body id="top">
-  	<div id="pagewrap">
+<body id="top">
+	<div id="pagewrap">
 			<div class="wrapper section-inner">
 				<!-- Top Section-->
 					<div class="home-section">
@@ -56,35 +54,35 @@ Template Name: Home Page
 				<!-- End of Top Section-->
 				<!-- Mid Section-->
 				<div class="home-section">
-						<div class="center">
-							<h2 class="locationsubtitle">
-								LOCATION
-							</h2>
-						</div>
-						<div class="mid-sub-info desktop-only">
-							<a href="/location/#locationmap"><span>MAP</span></a><span >&nbsp;&nbsp;-&nbsp;</span>
-							<a href="/location/#locationinfra"><span>INFRASTRUCTURE</span></a><span>&nbsp;&nbsp;-&nbsp;</span>
-							<a href="/location/#locationurban"><span>URBAN GROWTH ZONE</span></a>
-						</div>
-						<div class="mid-sub-info mobile-only">
-							<div><a href="/location/#locationmap">MAP</a></div>
-							<div><a href="/location/#locationinfra">INFRASTRUCTURE</a></div>
-							<div><a href="/location/#locationurban">URBAN GROWTH ZONE</a></div>
-						</div>
+					<div class="center">
+						<h2 class="locationsubtitle">
+							LOCATION
+						</h2>
+					</div>
+					<div class="mid-sub-info desktop-only">
+						<a href="/location/#locationmap"><span>MAP</span></a><span >&nbsp;&nbsp;-&nbsp;</span>
+						<a href="/location/#locationinfra"><span>INFRASTRUCTURE</span></a><span>&nbsp;&nbsp;-&nbsp;</span>
+						<a href="/location/#locationurban"><span>URBAN GROWTH ZONE</span></a>
+					</div>
+					<div class="mid-sub-info mobile-only">
+						<div><a href="/location/#locationmap">MAP</a></div>
+						<div><a href="/location/#locationinfra">INFRASTRUCTURE</a></div>
+						<div><a href="/location/#locationurban">URBAN GROWTH ZONE</a></div>
+					</div>
 
 
-						<div class="small-midsection-desc">
-							Cotton Park is situated in Wyndham, one of Australia's fast growing municipalities. Well positioned to benefit from the projected growth in Melbourne's Western Growth Zone and only 30km from the CBD.
-						</div>
-						<div class="bottom">
-							<a href="/location/#dlocationtop"><div class="location-image">
-								<img src="/wp-content/themes/hemingway-child/images/home/black-and-white/part2.jpg" alt="" class="greyscale">
-								<img src="/wp-content/themes/hemingway-child/images/home/colour/part2.jpg" alt="" class="colour">
-							</div></a>
-						</div>
+					<div class="small-midsection-desc">
+						Cotton Park is situated in Wyndham, one of Australia's fast growing municipalities. Well positioned to benefit from the projected growth in Melbourne's Western Growth Zone and only 30km from the CBD.
+					</div>
+					<div class="bottom">
+						<a href="/location/#dlocationtop"><div class="location-image">
+							<img src="/wp-content/themes/hemingway-child/images/home/black-and-white/part2.jpg" alt="" class="greyscale">
+							<img src="/wp-content/themes/hemingway-child/images/home/colour/part2.jpg" alt="" class="colour">
+						</div></a>
+					</div>
 
 
-						<div class="clear"></div>
+					<div class="clear"></div>
 				</div>
 					<div class="page-seperator">
 						<hr/>
@@ -150,7 +148,7 @@ Template Name: Home Page
 
 <script type="text/javascript">
 
-var URLofEmailingScript ="/wp-content/themes/hemingway-child/includes/EmailSender.php";
+var URLofEmailingScript ="/wp-content/themes/hemingway-child/email/emailSender.php";
 
 URLofEmailingScript = URLofEmailingScript.replace(/^https?:\/\/[^\/]*/i,"");
 
@@ -300,14 +298,6 @@ $(document).ready(function(){
 			checkImageColour( window.projectImage, scrollPos );
 			checkImageColour( window.locationImage, scrollPos );
 			checkImageColour( window.ltscImage, scrollPos );
-		});
-
-		// scroll body to 0px on click
-		$('#back-top a').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 800);
-			return false;
 		});
 	});
 });

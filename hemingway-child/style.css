@@ -1131,7 +1131,10 @@ LOCATION PAGE SETTINGS
 	padding-left: 20px;
 }
 .home-section  .pl-midsection-desc ul li {
-margin-bottom: 15px;
+	margin-bottom: 15px;
+}
+.home-section .pl-midsection-desc a {
+	text-decoration: underline;
 }
 
 .who-are-we .coat-of-arms {
@@ -1258,6 +1261,10 @@ PROJECT PAGE SETTINGS
 .location-map p {
 	text-align: justify;
 	line-height: 20px;
+}
+
+.location-map p a {
+	text-decoration: underline;
 }
 
 .home-section .page-project-title {
