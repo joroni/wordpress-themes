@@ -71,9 +71,7 @@ if ( is_category() && 'on' === et_get_option( 'nexus_category_featured', 'on' ) 
 			</div> <!-- #content -->
 
 			<?php get_sidebar(); ?>
-		</div> <!-- .main-content-wrap -->
-
-		<?php get_template_part( 'includes/footer-banner', 'index' ); ?>
-	</div> <!-- #main-content -->
+		</div><!-- .main-content-wrap -->
+	</div><!-- #main-content -->
 
 	<?php get_footer(); ?>

@@ -1,3 +1,7 @@
+		<div class="footer-banner">
+			<?php insertAd('ad-footerBanner') ?>
+		</div>
+
 		<?php include('other-site-feeds.php'); ?>
 		
 		<?php get_sidebar( 'footer' ); ?>

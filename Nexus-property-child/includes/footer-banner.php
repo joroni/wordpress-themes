@@ -1,1 +1,0 @@
-<?php insertAd('ad-footerBanner') ?>

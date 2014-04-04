@@ -127,8 +127,6 @@ if ( '' != get_the_post_thumbnail() ) :
 
 			<?php get_sidebar(); ?>
 		</div> <!-- .main-content-wrap -->
-
-		<?php get_template_part( 'includes/footer-banner', 'single' ); ?>
 	</div> <!-- #main-content -->
 
 	<?php get_footer(); ?>
