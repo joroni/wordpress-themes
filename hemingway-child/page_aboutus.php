@@ -25,8 +25,8 @@ Template Name: About Us
 
 						<div class='who-are-we'>
 							<div class='section'>
-								<div style="opacity: 0;" class='left-image animated' data-type='fadeIn' data-animate-at="onScreen">
-									<img src="/wp-content/themes/hemingway-child/images/aboutus/page-Aboutus_01.jpg" alt="">
+								<div class='left-image fadeInOnView'>
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/Page-Aboutus_01.jpg" alt="">
 									<div>MILES HEDGE</div>
 								</div>
 								<div class='right-text'>
@@ -49,8 +49,8 @@ Template Name: About Us
 
 						<div class='who-are-we'>
 							<div class='section'>
-								<div style='opacity: 0;' class='right-image animated' data-type='fadeIn' data-animate-at="onScreen">
-									<img src="/wp-content/themes/hemingway-child/images/aboutus/page-Aboutus_02.jpg" alt="">
+								<div class='right-image fadeInOnView'>
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/Page-Aboutus_02.jpg" alt="">
 									<div>MATHEW AIRD</div>
 								</div>
 								<div class='left-text second'>
@@ -66,8 +66,8 @@ Template Name: About Us
 
 						<div class='who-are-we'>
 							<div class='section'>
-								<div style="opacity: 0;" class='left-image animated' data-type='fadeIn' data-animate-at="onScreen">
-									<img src="/wp-content/themes/hemingway-child/images/aboutus/page-Aboutus_03.jpg" alt="">
+								<div class='left-image fadeInOnView'>
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/Page-Aboutus_03.jpg" alt="">
 									<div>SHANE PENFOLD</div>
 								</div>
 								<div class='right-text third'>
@@ -93,10 +93,10 @@ He brings a wealth of sales experience to the Cotton Park Project and has been i
 					<div class="page-seperator">
 						<hr/>
 						<div class="right-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Right.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
 						</div>
 						<div class="left-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Left.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
 						</div>
 						<div class="clear"></div>
 					</div>
@@ -112,18 +112,18 @@ He brings a wealth of sales experience to the Cotton Park Project and has been i
 						</div>
 						<div class='dash mobile-only'></div>
 						<div class="right">
-							<span><img src="/wp-content/themes/hemingway-child/images/aboutus/page-Aboutus_bankers_01.jpg" alt=""></span>
-							<span class='last'><img src="/wp-content/themes/hemingway-child/images/aboutus/page-Aboutus_bankers_02.jpg" alt=""></span>
+							<span><img src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/page-Aboutus_bankers_01.jpg" alt=""></span>
+							<span class='last'><img src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/page-Aboutus_bankers_02.jpg" alt=""></span>
 						</div>
 						<div class="clear"></div>
 					</div>
 					<div class="page-seperator">
 						<hr/>
 						<div class="right-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Right.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
 						</div>
 						<div class="left-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Left.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
 						</div>
 						<div class="clear"></div>
 					</div>
@@ -133,12 +133,12 @@ He brings a wealth of sales experience to the Cotton Park Project and has been i
 				<div class='home-section solicitors'>
 					<div class="logos">
 						<div class="left">
-							<img src="/wp-content/themes/hemingway-child/images/aboutus/Page-Aboutus_19.jpg" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/Page-Aboutus_19.jpg" alt="">
 							<span>CEELAW SYDNEY</span>
 						</div>
 						<div class='dash mobile-only'></div>
 						<div class="right">
-							<img src="/wp-content/themes/hemingway-child/images/aboutus/jcl-logo.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/jcl-logo.png" alt="">
 							<span>JAMES CONOMOS</span>
 						</div>
 						<div class="clear"></div>
@@ -157,10 +157,10 @@ He brings a wealth of sales experience to the Cotton Park Project and has been i
 					<div class="page-seperator">
 						<hr/>
 						<div class="right-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Right.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
 						</div>
 						<div class="left-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Left.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
 						</div>
 						<div class="clear"></div>
 					</div>
@@ -173,25 +173,25 @@ He brings a wealth of sales experience to the Cotton Park Project and has been i
 						</div>
 
 						<div class="accounts-list desktop-only">
-							<img src="/wp-content/themes/hemingway-child/images/aboutus/Page-Aboutus_26.jpg" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/Page-Aboutus_26.jpg" alt="">
 
 							<span >
 
 								REALTOR
 							</span>
 
-							<img class="last" src="/wp-content/themes/hemingway-child/images/aboutus/Page-Aboutus_23.jpg" alt="">
+							<img class="last" src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/Page-Aboutus_23.jpg" alt="">
 							<div class='clear'></div>
 						</div>
 						<div class="accounts-list mobile-only">
-							<img src="/wp-content/themes/hemingway-child/images/aboutus/Page-Aboutus_26.jpg" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/Page-Aboutus_26.jpg" alt="">
 							<div class='dash'></div>
 							<span >
 								REALTOR
 							</span>
 
 
-							<img class="last mobile-only" src="/wp-content/themes/hemingway-child/images/aboutus/Page-Aboutus_m16.jpg" alt="">
+							<img class="last mobile-only" src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/Page-Aboutus_m16.jpg" alt="">
 							<div class='clear'></div>
 						</div>
 
@@ -210,11 +210,11 @@ He brings a wealth of sales experience to the Cotton Park Project and has been i
 							</h2>
 						</div>
 						<div class="right5 desktop-only">
-							<img src="/wp-content/themes/hemingway-child/images/aboutus/Page-Aboutus-ii_31.jpg" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/Page-Aboutus-ii_31.jpg" alt="">
 						</div>
 
 						<div class="right5 mobile-only">
-							<img src="/wp-content/themes/hemingway-child/images/aboutus/Page-Aboutus_m19.jpg" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/Page-Aboutus_m19.jpg" alt="">
 						</div>
 						<div class="clear"></div>
 					</div>
@@ -228,226 +228,17 @@ He brings a wealth of sales experience to the Cotton Park Project and has been i
 							</h2>
 						</div>
 						<div class="right5 desktop-only">
-							<img src="/wp-content/themes/hemingway-child/images/aboutus/Page-Aboutus-ii_31.jpg" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/Page-Aboutus-ii_31.jpg" alt="">
 						</div>
 
 						<div class="right5 mobile-only">
-							<img src="/wp-content/themes/hemingway-child/images/aboutus/Page-Aboutus_m19.jpg" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/aboutus/Page-Aboutus_m19.jpg" alt="">
 						</div>
 						<div class="clear"></div>
 					</div>
-
-				<!-- End of Mid SPONSORS Section-->
-
-				<!-- End of Bottom Solicitors Section-->
-				<?php include 'includes/form-footer.php'; ?>
 			</div> <!-- /wrapper -->
 
 </div>
-
-<script type="text/javascript"><!--
-
-// function validateEmail(email) {
-//     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//     return re.test(email);
-// }
-
-// function postContactToGoogle(){
-// 	 alert("TEST");
-//         var name = "test";//$j('#clientname').val();
-//         var email = "test";//$j('#clientemail').val();
-//         var cphone = "test";//$j('#clientNumber').val();
-//         var cmsg = "test";//$j('#clientMessage').val();
-//   					//if ((name !== "") && (email !== "") && ((cphone !== "") && ((cmsg !== "") && (validateEmail(email)))) {
-//         if ((name !== "") {
-
-//             $j.ajax({
-//                 url: "https://docs.google.com/a/cottonparkestate.com/spreadsheet/ccc?key=0Aql9ltBl3_zddHUyOFYtNkQ0cHZGWDZiaTZ0UTdJeEE&usp=drive_web#gid=9",
-//                 data: {"entry.1" : name, "entry.2" : email, "entry.3": cphone, "entry.4": cmsg},
-//                 type: "POST",
-//                 dataType: "xml",
-//                 statusCode: {
-//                     0: function (){
-
-//                         $j('#clientname').val("dd");
-//                         $j('#clientemail').val("ss");
-//                         $j('#clientNumber').val("ss");
-//                          $j('#clientMessage').val("ss");
-//                         //Success message
-
-//                     200: function (){
-//                          $j('#clientname').val("ss");
-//                         $j('#clientemail').val("dd");
-//                         $j('#clientNumber').val("ff");
-//                          $j('#clientMessage').val("ee");
-//                         //Success Message
-//                     }
-//                 }
-//             });
-//         }
-//         else {
-//             //Error message
-//         }
-//     }
-// }
-function clientsetFocus()
-
-{
-
-document.querySelector(".clientName").focus();
-document.querySelector(".downloadlink").style.display="block";
-document.querySelector(".sclientLTSCRequest").checked=true;
-
-}
-
-/////////////////////////////////////////////
-// One place to customize.
-//
-// Specify the URL of the emailing script.
-
-//var URLofEmailingScript = "http://127.0.0.1:8888/DEV/AJAX/AutoEmail/EmailSender.php";
-var URLofEmailingScript ="/wp-content/themes/hemingway-child/includes/EmailSender.php";
-
-// End of customization section.
-/////////////////////////////////////////////
-
-URLofEmailingScript = URLofEmailingScript.replace(/^https?:\/\/[^\/]*/i,"");
-
-function GetServerRequestObject() {
-var http;
-if (window.XMLHttpRequest) {
-   try { http = new XMLHttpRequest(); }
-   catch(e) {}
-   }
-else if (window.ActiveXObject) {
-   try { http = new ActiveXObject("Msxml2.XMLHTTP"); }
-   catch(e) {
-      try { http = new ActiveXObject("Microsoft.XMLHTTP"); }
-      catch(e) {}
-      }
-   }
-else {
-   alert('Unable to connect with the server.');
-   return false;
-   }
-return http;
-}
-
-function SendAnEmail() {
-
-	var
-		timestamp=new Date(),
-		clientEmail = document.querySelector(".clientEmail").value,
-		clientName = document.querySelector(".clientName").value,
-		clientNumber = document.querySelector(".clientNumber").value,
-		clientMessage = document.querySelector(".clientMessage").value,
-		message = "Sender Name: " + clientName + "<br/> Email: " + clientEmail + "<br/> Phone: " + clientNumber + "<br/> Message: " + clientMessage + "<br/>"
-	;
-
-var http = GetServerRequestObject();
-if( ! http ) { alert('Unable to open http connection'); return true; }
-var url = URLofEmailingScript + "?" + escape("Page with link") + "=" + escape(document.URL);
-if( message.length ) { url += "&Message=" + escape(message); }
-
-if(clientEmail) { url += "&clientEmail=" + clientEmail; }
-if(clientName) { url += "&clientName=" + clientName; }
-if(clientNumber) { url += "&clientNumber=" + clientNumber; }
-if(clientMessage) { url += "&clientMessage=" + clientMessage; }
-
-http.onreadystatechange = function() {};
-http.open("GET",url,true);
-http.send("");
-document.querySelector(".downloadlink").style.display="none";
-document.querySelector(".downloadlinksent").style.display="inline-block";
-
-return false;
-}
-
-
-// scroll to top animated..
-
-$(document).ready(function(){
-
-	// hide #back-top first
-	$("#back-top").hide();
-
-	// fade in #back-top
-	$(function () {
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 100) {
-				$('#back-top').fadeIn();
-			} else {
-				$('#back-top').fadeOut();
-			}
-
-			checkAnimations();
-		});
-
-		// scroll body to 0px on click
-		$('#back-top a').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 800);
-			return false;
-		});
-	});
-
-	window.animatedList = [];
-	setupAnimationObjects();
-
-});
-
-function checkAnimations() {
-	$.each( window.animatedList, function (i, obj) {
-		if( obj.type === 'fadeIn' ) {
-			console.log("fadeIn");
-			fadeInAnimation( obj );
-		}
-	});
-}
-
-function fadeInAnimation( obj ) {
-	var screenPos = $(window).scrollTop();
-
-	console.log("checking screenPos : ", screenPos, " -- ", obj.animationTrigger());
-	if( screenPos > obj.animationTrigger() && !obj.animationComplete ) {
-		fadeIn( obj.reference );
-		obj.animationComplete = true;
-	}
-}
-
-function fadeIn( htmlObj ) {
-	htmlObj.animate({ 'opacity': '1'}, 400, function () {
-		if( htmlObj.data('next-animation') ) {
-			fadeInAnimation( htmlObj.data('next-animation') );
-		}
-	});
-}
-
-function setupAnimationObjects() {
-	var list = $(".animated");
-
-	$.each(list, function (i, obj) {
-		if( $(obj).data('type') === 'fadeIn' ) {
-			animatedList.push( generateFadeObj( obj ) );
-		}
-	});
-}
-
-function generateFadeObj( obj ) {
-	return {
-		'type': 'fadeIn',
-		'animationTrigger': function () {
-			// return ( $(window).scrollTop() + $(window).height() ) - obj.height();
-
-			return $(obj).offset().top - $(window).height() + $(obj).height();
-		},
-		'animateNextSelector': $(obj).data('next-animation'),
-		'reference': $(obj)
-	};
-}
-
-//--></script>
 
 
 <?php get_footer(); ?>

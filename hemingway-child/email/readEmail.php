@@ -1,17 +1,29 @@
 <?php
-	error_reporting(E_ALL);
+#
+# Email Reader
+# 
+# Generates an email from templates for use with http://putsmail.com or similar services.
+# Paste code in manually, use the now-inlined css and html for a template in ./emails/inlined/
+# Then add any dynamic content via php to that.
+# 
+# ~April 04 2014
+# 
 
-	$doEmail = false;
+error_reporting(0);
 
-	# Set defaults
-	$_GET['clientName']		= 'clientName';
-	$_GET['clientEmail']	= 'clientEmail';
-	$_GET['clientNumber']	= 'clientNumber';
-	$_GET['clientMessage']	= 'clientMessage';
+$doEmail	= false;
+$useInlined	= false;
 
-	$client_request = !empty($_GET['type']) ? $_GET['type'] : 'generic';
+# Set defaults
+$_GET['clientName']		= 'clientName';
+$_GET['clientEmail']	= 'clientEmail';
+$_GET['clientNumber']	= 'clientNumber';
+$_GET['clientMessage']	= 'clientMessage';
 
-	include "emailSender.php";
+$client_request = !empty($_GET['type']) ? $_GET['type'] : 'generic';
 
-	echo $client_body;
+include "emailSender.php";
+
+echo $client_body;
+
 ?>

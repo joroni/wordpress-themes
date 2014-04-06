@@ -93,7 +93,7 @@ Template Name: LOCATION PAGE
 						<div class='who-are-we'>
 							<div class='section coat-of-arms'>
 								<div class='left-image'>
-									<img src="/wp-content/themes/hemingway-child/images/location/Page-Location_03.png" alt="">
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/location/Page-Location_03.png" alt="">
 								</div>
 								<div class='right-text'>
 									<h5>
@@ -108,10 +108,10 @@ Template Name: LOCATION PAGE
 				<div class="page-seperator">
 					<hr/>
 					<div class="right-image">
-						<img src="/wp-content/themes/hemingway-child/images/Liseret-Right.png" alt="">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
 					</div>
 					<div class="left-image">
-						<img src="/wp-content/themes/hemingway-child/images/Liseret-Left.png" alt="">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -121,10 +121,10 @@ Template Name: LOCATION PAGE
 			<!-- RAIL LINK Section-->
 				<div id="locationinfra" class="home-section rail-link">
 						<div class="center desktop-only">
-							<img src="/wp-content/themes/hemingway-child/images/location/Page-Location_20.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/location/Page-Location_20.png" alt="">
 						</div>
 						<div class="center mobile-only">
-							<img class="raillinktop" src="/wp-content/themes/hemingway-child/images/location/Page-Location_20.png" alt="">
+							<img class="raillinktop" src="<?php echo get_stylesheet_directory_uri() ?>/images/location/Page-Location_20.png" alt="">
 						</div>
 						<br>
 						<div class="bottom desktop-only">
@@ -150,7 +150,7 @@ Template Name: LOCATION PAGE
 							<div class='who-are-we'>
 								<div class='section coat-of-arms rail-link'>
 									<div class='left-image'>
-										<img src="/wp-content/themes/hemingway-child/images/location/Page-Location_03.png" alt="">
+										<img src="<?php echo get_stylesheet_directory_uri() ?>/images/location/Page-Location_03.png" alt="">
 									</div>
 									<div class='right-text'>
 										<h5>
@@ -166,10 +166,10 @@ Template Name: LOCATION PAGE
 					<div class="page-seperator">
 						<hr/>
 						<div class="right-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Right.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
 						</div>
 						<div class="left-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Left.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
 						</div>
 						<div class="clear"></div>
 					</div>
@@ -198,7 +198,7 @@ Template Name: LOCATION PAGE
 									</p>
 								</div>
 								<div class='pl-urban-right-image'>
-									<img src="/wp-content/themes/hemingway-child/images/location/Page-Location_19.jpg" alt="">
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/location/Page-Location_19.jpg" alt="">
 									<hr/>MELBOURNE AND SUBURBS
 									<br/>
 								</div>
@@ -219,151 +219,15 @@ Template Name: LOCATION PAGE
 									</p>
 								</div>
 								<div class='pl-urban-right-image'>
-									<img src="/wp-content/themes/hemingway-child/images/location/mobile/Location-Mobile_17.jpg" alt="">
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/location/mobile/Location-Mobile_17.jpg" alt="">
 									<hr/>MELBOURNE AND SUBURBS
 									<br/>
 								</div>
 								<div class='clear'></div>
 							</div>
 						</div>
-			<!-- End of LOCATION Section-->
-
-
-
-
-
-
-				<?php include 'includes/form-footer.php'; ?>
 			</div> <!-- /wrapper -->
 
 </div>
-
-<script type="text/javascript"><!--
-
-
-function clientsetFocus()
-
-{
-
-document.querySelector(".clientName").focus();
-document.querySelector(".downloadlink").style.display="inline-block";
-document.querySelector(".sclientLTSCRequest").checked=true;
-
-}
-function clientsetFocus()
-
-{
-
-document.querySelector(".clientName").focus();
-document.querySelector(".downloadlink").style.display="inline-block";
-
-}
-/////////////////////////////////////////////
-// One place to customize.
-//
-// Specify the URL of the emailing script.
-
-//var URLofEmailingScript = "http://127.0.0.1:8888/DEV/AJAX/AutoEmail/EmailSender.php";
-var URLofEmailingScript ="/wp-content/themes/hemingway-child/includes/EmailSender.php";
-
-// End of customization section.
-/////////////////////////////////////////////
-
-URLofEmailingScript = URLofEmailingScript.replace(/^https?:\/\/[^\/]*/i,"");
-
-function GetServerRequestObject() {
-var http;
-if (window.XMLHttpRequest) {
-   try { http = new XMLHttpRequest(); }
-   catch(e) {}
-   }
-else if (window.ActiveXObject) {
-   try { http = new ActiveXObject("Msxml2.XMLHTTP"); }
-   catch(e) {
-      try { http = new ActiveXObject("Microsoft.XMLHTTP"); }
-      catch(e) {}
-      }
-   }
-else {
-   alert('Unable to connect with the server.');
-   return false;
-   }
-return http;
-}
-
-function SendAnEmail() {
-
-	var
-		timestamp=new Date(),
-		clientEmail = document.querySelector(".clientEmail").value,
-		clientName = document.querySelector(".clientName").value,
-		clientNumber = document.querySelector(".clientNumber").value,
-		clientMessage = document.querySelector(".clientMessage").value,
-		message = "Sender Name: " + clientName + "<br/> Email: " + clientEmail + "<br/> Phone: " + clientNumber + "<br/> Message: " + clientMessage + "<br/>"
-	;
-
-var http = GetServerRequestObject();
-if( ! http ) { alert('Unable to open http connection'); return true; }
-var url = URLofEmailingScript + "?" + escape("Page with link") + "=" + escape(document.URL);
-if( message.length ) { url += "&Message=" + escape(message); }
-
-if(clientEmail) { url += "&clientEmail=" + clientEmail; }
-if(clientName) { url += "&clientName=" + clientName; }
-if(clientNumber) { url += "&clientNumber=" + clientNumber; }
-if(clientMessage) { url += "&clientMessage=" + clientMessage; }
-
-http.onreadystatechange = function() {};
-http.open("GET",url,true);
-http.send("");
-document.querySelector(".downloadlink").style.display="none";
-document.querySelector(".downloadlinksent").style.display="inline-block";
-
-return false;
-}
-
-
-// scroll to top animated..
-
-$(document).ready(function(){
-
-	// hide #back-top first
-	$("#back-top").hide();
-
-	// fade in #back-top
-	$(function () {
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 100) {
-				$('#back-top').fadeIn();
-			} else {
-				$('#back-top').fadeOut();
-			}
-		});
-
-		// scroll body to 0px on click
-		$('#back-top a').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 800);
-			return false;
-		});
-	});
-
-
-	window.faqAnswers = $(".faq-answer-text");
-	window.faqQuestions = $(".faq-question-text");
-
-	$(document).on('click', '.faq-question-text', function () {
-		if( !$(this).hasClass("active") ) {
-			faqAnswers.slideUp('slow');
-			faqQuestions.removeClass('active');
-
-			$(this).addClass('active').next().slideDown('slow');
-		}
-	});
-
-});
-
-//--></script>
-
 
 <?php get_footer(); ?>

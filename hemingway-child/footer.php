@@ -1,3 +1,6 @@
+
+	<?php include 'includes/form-footer.php'; ?>
+
 	<div class="footer section large-padding bg-dark">
 		
 		<div class="footer-inner section-inner">
@@ -25,8 +28,8 @@
 							<div class="widget-content">
 							
 								<h3 class="widget-title"><?php _e( 'Search form', 'hemingway' ); ?></h3>
-				                <?php get_search_form(); ?>
-				                
+								<?php get_search_form(); ?>
+								
 							</div>
 							
 		                </div>

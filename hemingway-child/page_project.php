@@ -47,10 +47,10 @@ Template Name: PROJECT PAGE
 				<div class="page-seperator">
 					<hr/>
 					<div class="right-image">
-						<img src="/wp-content/themes/hemingway-child/images/Liseret-Right.png" alt="">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
 					</div>
 					<div class="left-image">
-						<img src="/wp-content/themes/hemingway-child/images/Liseret-Left.png" alt="">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -63,10 +63,10 @@ Template Name: PROJECT PAGE
 						</div>
 					<!-- PROJECT TOP MAP-->
 						<div class="center desktop-only">
-							<img src="/wp-content/themes/hemingway-child/images/project/Page_Project_01_03.jpg" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/Page_Project_01_03.jpg" alt="">
 						</div>
 						<div class="center mobile-only">
-							<img class='img-center' src="/wp-content/themes/hemingway-child/images/project/mobile/Project-Mobile_03.jpg" alt="">
+							<img class='img-center' src="<?php echo get_stylesheet_directory_uri() ?>/images/project/mobile/Project-Mobile_03.jpg" alt="">
 						</div>
 						<div class='who-are-we'>
 								<div class='section price-list'>
@@ -82,21 +82,21 @@ Template Name: PROJECT PAGE
 										<div class="small-text">
 											FIVE YEAR LTSC PRICE LIST
 										</div>
-										<img src="/wp-content/themes/hemingway-child/images/project/Page_Project_01_07.jpg" alt="">
+										<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/Page_Project_01_07.jpg" alt="">
 									</div>
 									<div class='pproj-right-text mobile-only'>
-										<img src="/wp-content/themes/hemingway-child/images/project/mobile/Project-Mobile_07.jpg" alt="">
+										<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/mobile/Project-Mobile_07.jpg" alt="">
 									</div>
 									<div class='clear'></div>
 								</div>
 						</div>
 						<div class="pproj-center desktop-only">
-							<img src="/wp-content/themes/hemingway-child/images/project/Page_Project_01_09.jpg" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/Page_Project_01_09.jpg" alt="">
 						</div>
 
 						<div class="pproj-center mobile-only">
-							<img src="/wp-content/themes/hemingway-child/images/project/mobile/Project-Mobile_10.jpg" alt="">
-							<img src="/wp-content/themes/hemingway-child/images/project/mobile/Project-Mobile_13.jpg" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/mobile/Project-Mobile_10.jpg" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/mobile/Project-Mobile_13.jpg" alt="">
 
 						</div>
 
@@ -109,10 +109,10 @@ Template Name: PROJECT PAGE
 				<div class="page-seperator">
 					<hr/>
 					<div class="right-image">
-						<img src="/wp-content/themes/hemingway-child/images/Liseret-Right.png" alt="">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
 					</div>
 					<div class="left-image">
-						<img src="/wp-content/themes/hemingway-child/images/Liseret-Left.png" alt="">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -141,14 +141,14 @@ Template Name: PROJECT PAGE
 									</p>
 								</div>
 
-								<img class='soul-tower desktop-only' src="/wp-content/themes/hemingway-child/images/project/Page_Project_01_11.jpg" alt="">
-								<img class='soul-tower mobile-only' src="/wp-content/themes/hemingway-child/images/project/mobile/Project-Mobile_15.jpg" alt="">
+								<img class='soul-tower desktop-only' src="<?php echo get_stylesheet_directory_uri() ?>/images/project/Page_Project_01_11.jpg" alt="">
+								<img class='soul-tower mobile-only' src="<?php echo get_stylesheet_directory_uri() ?>/images/project/mobile/Project-Mobile_15.jpg" alt="">
 
 								<div class='clear'></div>
 							</div>
 
 							<!-- <div class='pproj-ight-image'>
-								<img src="/wp-content/themes/hemingway-child/images/project/Page_Project_01_11.jpg" alt="">
+								<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/Page_Project_01_11.jpg" alt="">
 							</div> -->
 							<div class='clear'></div>
 						</div>
@@ -160,10 +160,10 @@ Template Name: PROJECT PAGE
 				<div class="page-seperator">
 					<hr/>
 					<div class="right-image">
-						<img src="/wp-content/themes/hemingway-child/images/Liseret-Right.png" alt="">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
 					</div>
 					<div class="left-image">
-						<img src="/wp-content/themes/hemingway-child/images/Liseret-Left.png" alt="">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -172,10 +172,10 @@ Template Name: PROJECT PAGE
 				<div class='who-are-we'>
 							<div id="devconsultants" class='planit'>
 								<div class='title'>
-									<img src="/wp-content/themes/hemingway-child/images/project/Page-Project_13.png" alt="">
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/Page-Project_13.png" alt="">
 								</div>
 								<div class='left-image'>
-									<img src="/wp-content/themes/hemingway-child/images/project/Page_Project_01_13.jpg" alt="">
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/Page_Project_01_13.jpg" alt="">
 								</div>
 								<div class='right-text'>
 									<p>
@@ -194,150 +194,9 @@ Template Name: PROJECT PAGE
 							</div>
 
 						</div>
-			<!-- End of DBI ARCHITECTURE Section-->
 
-
-
-
-
-
-
-
-
-
-
-
-				<?php include 'includes/form-footer.php'; ?>
 			</div> <!-- /wrapper -->
 
 </div>
-
-<script type="text/javascript"><!--
-
-
-function clientsetFocus()
-
-{
-
-document.querySelector(".clientName").focus();
-document.querySelector(".downloadlink").style.display="inline-block";
-document.querySelector(".sclientLTSCRequest").checked=true;
-
-}
-function clientsetFocus()
-
-{
-
-document.querySelector(".clientName").focus();
-document.querySelector(".downloadlink").style.display="inline-block";
-
-}
-/////////////////////////////////////////////
-// One place to customize.
-//
-// Specify the URL of the emailing script.
-
-//var URLofEmailingScript = "http://127.0.0.1:8888/DEV/AJAX/AutoEmail/EmailSender.php";
-var URLofEmailingScript ="/wp-content/themes/hemingway-child/includes/EmailSender.php";
-
-// End of customization section.
-/////////////////////////////////////////////
-
-URLofEmailingScript = URLofEmailingScript.replace(/^https?:\/\/[^\/]*/i,"");
-
-function GetServerRequestObject() {
-var http;
-if (window.XMLHttpRequest) {
-   try { http = new XMLHttpRequest(); }
-   catch(e) {}
-   }
-else if (window.ActiveXObject) {
-   try { http = new ActiveXObject("Msxml2.XMLHTTP"); }
-   catch(e) {
-      try { http = new ActiveXObject("Microsoft.XMLHTTP"); }
-      catch(e) {}
-      }
-   }
-else {
-   alert('Unable to connect with the server.');
-   return false;
-   }
-return http;
-}
-
-function SendAnEmail() {
-
-	var
-		timestamp=new Date(),
-		clientEmail = document.querySelector(".clientEmail").value,
-		clientName = document.querySelector(".clientName").value,
-		clientNumber = document.querySelector(".clientNumber").value,
-		clientMessage = document.querySelector(".clientMessage").value,
-		message = "Sender Name: " + clientName + "<br/> Email: " + clientEmail + "<br/> Phone: " + clientNumber + "<br/> Message: " + clientMessage + "<br/>"
-	;
-
-var http = GetServerRequestObject();
-if( ! http ) { alert('Unable to open http connection'); return true; }
-var url = URLofEmailingScript + "?" + escape("Page with link") + "=" + escape(document.URL);
-if( message.length ) { url += "&Message=" + escape(message); }
-
-if(clientEmail) { url += "&clientEmail=" + clientEmail; }
-if(clientName) { url += "&clientName=" + clientName; }
-if(clientNumber) { url += "&clientNumber=" + clientNumber; }
-if(clientMessage) { url += "&clientMessage=" + clientMessage; }
-
-http.onreadystatechange = function() {};
-http.open("GET",url,true);
-http.send("");
-document.querySelector(".downloadlink").style.display="none";
-document.querySelector(".downloadlinksent").style.display="inline-block";
-
-return false;
-}
-
-
-// scroll to top animated..
-
-$(document).ready(function(){
-
-	// hide #back-top first
-	$("#back-top").hide();
-
-	// fade in #back-top
-	$(function () {
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 100) {
-				$('#back-top').fadeIn();
-			} else {
-				$('#back-top').fadeOut();
-			}
-		});
-
-		// scroll body to 0px on click
-		$('#back-top a').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 800);
-			return false;
-		});
-	});
-
-
-	window.faqAnswers = $(".faq-answer-text");
-	window.faqQuestions = $(".faq-question-text");
-
-	$(document).on('click', '.faq-question-text', function () {
-		if( !$(this).hasClass("active") ) {
-			faqAnswers.slideUp('slow');
-			faqQuestions.removeClass('active');
-
-			$(this).addClass('active').next().slideDown('slow');
-		}
-	});
-
-});
-
-//--></script>
-
 
 <?php get_footer(); ?>

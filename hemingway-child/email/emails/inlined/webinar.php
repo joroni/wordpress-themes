@@ -89,7 +89,7 @@ table.large-button td:hover { background: #222 !important; color: #fff !importan
 												<table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
 													<tr style="padding-left: 0; padding-bottom: 0; padding-top: 0; padding-right: 0; vertical-align: top; text-align: left;" align="left">
 														<td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Tahoma', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px;" align="left" valign="top">
-															<img width="600" src="http://cottonpark.staging.wpengine.com/wp-content/themes/hemingway-child/email/emails/img/header.jpg" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;" align="left" />
+															<img width="600" src="<?php echo get_stylesheet_directory_uri() ?>/email/emails/img/header.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;" align="left" />
 														</td>
 													</tr>
 												</table>
@@ -149,7 +149,7 @@ table.large-button td:hover { background: #222 !important; color: #fff !importan
 												<table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
 													<tr style="padding-left: 0; padding-bottom: 0; padding-top: 0; padding-right: 0; vertical-align: top; text-align: left;" align="left">
 														<td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Tahoma', 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px;" align="left" valign="top">
-															<img width="600" src="http://cottonpark.staging.wpengine.com/wp-content/themes/hemingway-child/email/emails/img/footer.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;" align="left" />
+															<img width="600" src="<?php echo get_stylesheet_directory_uri() ?>/email/emails/img/footer.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;" align="left" />
 														</td>
 													</tr>
 												</table>

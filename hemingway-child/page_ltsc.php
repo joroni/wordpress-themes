@@ -38,10 +38,10 @@ Template Name: LTSC
 					</div>
 					<div style="display: none;" class="page-seperator desktop-only">
 						<div class="right-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Right.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
 						</div>
 						<div class="left-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Left.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
 						</div>
 						<div class="clear"></div>
 					</div>
@@ -52,7 +52,7 @@ Template Name: LTSC
 				<!-- Chart Section-->
 						<div class="home-section ltsc-chart">
 							<div class="leftltsc  ltscbottomleft">
-								<img src="/wp-content/themes/hemingway-child/images/ltsc/Page-LTSC_03.jpg" alt="">
+								<img src="<?php echo get_stylesheet_directory_uri() ?>/images/ltsc/Page-LTSC_03.jpg" alt="">
 							</div>
 
 							<div class="rightltsc  ltscbottomright">
@@ -75,10 +75,10 @@ Template Name: LTSC
 						</div>
 					<div class="page-seperator">
 						<div class="right-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Right.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
 						</div>
 						<div class="left-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Left.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
 						</div>
 						<div class="clear"></div>
 					</div>
@@ -94,10 +94,10 @@ Template Name: LTSC
 
 			<div class="page-seperator">
 						<div class="right-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Right.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
 						</div>
 						<div class="left-image">
-							<img src="/wp-content/themes/hemingway-child/images/Liseret-Left.png" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
 						</div>
 						<div class="clear"></div>
 					</div>
@@ -257,182 +257,9 @@ Template Name: LTSC
 						<div class='clear'></div>
 					</div>
 				</div>
-				<!-- End of FAQ Section-->
-				<!-- End of Bottom Solicitors Section-->
-				<?php include 'includes/form-footer.php'; ?>
+
 			</div> <!-- /wrapper -->
 
 </div>
-
-<script type="text/javascript"><!--
-
-// function validateEmail(email) {
-//     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//     return re.test(email);
-// }
-
-// function postContactToGoogle(){
-// 	 alert("TEST");
-//         var name = "test";//$j('#clientname').val();
-//         var email = "test";//$j('#clientemail').val();
-//         var cphone = "test";//$j('#clientNumber').val();
-//         var cmsg = "test";//$j('#clientMessage').val();
-//   					//if ((name !== "") && (email !== "") && ((cphone !== "") && ((cmsg !== "") && (validateEmail(email)))) {
-//         if ((name !== "") {
-
-//             $j.ajax({
-//                 url: "https://docs.google.com/a/cottonparkestate.com/spreadsheet/ccc?key=0Aql9ltBl3_zddHUyOFYtNkQ0cHZGWDZiaTZ0UTdJeEE&usp=drive_web#gid=9",
-//                 data: {"entry.1" : name, "entry.2" : email, "entry.3": cphone, "entry.4": cmsg},
-//                 type: "POST",
-//                 dataType: "xml",
-//                 statusCode: {
-//                     0: function (){
-
-//                         $j('#clientname').val("dd");
-//                         $j('#clientemail').val("ss");
-//                         $j('#clientNumber').val("ss");
-//                          $j('#clientMessage').val("ss");
-//                         //Success message
-
-//                     200: function (){
-//                          $j('#clientname').val("ss");
-//                         $j('#clientemail').val("dd");
-//                         $j('#clientNumber').val("ff");
-//                          $j('#clientMessage').val("ee");
-//                         //Success Message
-//                     }
-//                 }
-//             });
-//         }
-//         else {
-//             //Error message
-//         }
-//     }
-// }
-function clientsetFocus()
-
-{
-
-document.querySelector(".clientName").focus();
-document.querySelector(".downloadlink").style.display="inline-block";
-document.querySelector(".sclientLTSCRequest").checked=true;
-
-}
-function clientsetFocus()
-
-{
-
-document.querySelector(".clientName").focus();
-document.querySelector(".downloadlink").style.display="inline-block";
-
-}
-/////////////////////////////////////////////
-// One place to customize.
-//
-// Specify the URL of the emailing script.
-
-//var URLofEmailingScript = "http://127.0.0.1:8888/DEV/AJAX/AutoEmail/EmailSender.php";
-var URLofEmailingScript ="/wp-content/themes/hemingway-child/includes/EmailSender.php";
-
-// End of customization section.
-/////////////////////////////////////////////
-
-URLofEmailingScript = URLofEmailingScript.replace(/^https?:\/\/[^\/]*/i,"");
-
-function GetServerRequestObject() {
-var http;
-if (window.XMLHttpRequest) {
-   try { http = new XMLHttpRequest(); }
-   catch(e) {}
-   }
-else if (window.ActiveXObject) {
-   try { http = new ActiveXObject("Msxml2.XMLHTTP"); }
-   catch(e) {
-      try { http = new ActiveXObject("Microsoft.XMLHTTP"); }
-      catch(e) {}
-      }
-   }
-else {
-   alert('Unable to connect with the server.');
-   return false;
-   }
-return http;
-}
-
-function SendAnEmail() {
-
-	var
-		timestamp=new Date(),
-		clientEmail = document.querySelector(".clientEmail").value,
-		clientName = document.querySelector(".clientName").value,
-		clientNumber = document.querySelector(".clientNumber").value,
-		clientMessage = document.querySelector(".clientMessage").value,
-		message = "Sender Name: " + clientName + "<br/> Email: " + clientEmail + "<br/> Phone: " + clientNumber + "<br/> Message: " + clientMessage + "<br/>"
-	;
-
-var http = GetServerRequestObject();
-if( ! http ) { alert('Unable to open http connection'); return true; }
-var url = URLofEmailingScript + "?" + escape("Page with link") + "=" + escape(document.URL);
-if( message.length ) { url += "&Message=" + escape(message); }
-
-if(clientEmail) { url += "&clientEmail=" + clientEmail; }
-if(clientName) { url += "&clientName=" + clientName; }
-if(clientNumber) { url += "&clientNumber=" + clientNumber; }
-if(clientMessage) { url += "&clientMessage=" + clientMessage; }
-
-http.onreadystatechange = function() {};
-http.open("GET",url,true);
-http.send("");
-document.querySelector(".downloadlink").style.display="none";
-document.querySelector(".downloadlinksent").style.display="inline-block";
-
-return false;
-}
-
-
-// scroll to top animated..
-
-$(document).ready(function(){
-
-	// hide #back-top first
-	$("#back-top").hide();
-
-	// fade in #back-top
-	$(function () {
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 100) {
-				$('#back-top').fadeIn();
-			} else {
-				$('#back-top').fadeOut();
-			}
-		});
-
-		// scroll body to 0px on click
-		$('#back-top a').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 800);
-			return false;
-		});
-	});
-
-
-	window.faqAnswers = $(".faq-answer-text");
-	window.faqQuestions = $(".faq-question-text");
-
-	$(document).on('click', '.faq-question-text', function () {
-		faqAnswers.slideUp('fast');
-		if( !$(this).hasClass("active") ) {
-			faqQuestions.removeClass('active');
-			$(this).addClass('active').next().slideDown('fast');
-		} else {
-			faqQuestions.removeClass('active');
-		}
-	});
-
-});
-
-//--></script>
-
 
 <?php get_footer(); ?>
