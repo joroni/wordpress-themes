@@ -39,17 +39,9 @@
 	<header id="main-header">
 		<div class="container">
 			<div id="top-info" class="clearfix">
-			<?php if ( 'on' === et_get_option( 'nexus_header_banner', 'false' ) ) : ?>
-				<div class="header-banner">
-				<?php
-					printf( '<a href="%s"><img src="%s" alt="%s" /></a>',
-						esc_url( et_get_option( 'nexus_header_banner_url', '#' ) ),
-						esc_attr( et_get_option( 'nexus_header_banner_image' ) ),
-						esc_attr( et_get_option( 'nexus_header_banner_description' ) )
-					);
-				?>
-				</div> <!-- .header-banner -->
-			<?php endif; ?>
+			<div class="header-banner">
+				<?php insertAd('ad-headerBanner') ?>
+			</div>
 
 			<?php
 				$logo = ( $user_logo = et_get_option( 'nexus_logo' ) ) && '' != $user_logo

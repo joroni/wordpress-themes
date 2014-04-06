@@ -33,7 +33,7 @@ $useInlined	= isset($useInlined)	? $useInlined	: true;
 
 # If redirect is set, redirect instead of serving json (ie. no javascript is needed)
 # This should really be a valid redirect path or nothing
-$redirect		= !empty($_POST['redirect']) ? $_POST['redirect'] : '';
+$redirect		= !empty($_GET['redirect']) ? $_GET['redirect'] : '';
 
 $nowDate		= new DateTime( "now", new DateTimeZone("Australia/Queensland") );
 $sentDateTime	= $nowDate->format("m-d-y H:i:s A");
@@ -45,16 +45,16 @@ $sentDateTime	= $nowDate->format("m-d-y H:i:s A");
 $ltscPdfUrl			= "http://cottonparkestate.com/wp-content/uploads/2014/03/A-Quick-Guide-To-LTSC.pdf";
 $cottonParkPdfUrl	= "http://cottonparkestate.com/wp-content/uploads/2014/03/COTTON-PARK.pdf";
 
-$client_name		= $_POST['clientName'];
-$client_email		= $_POST['clientEmail'];
-$client_number		= $_POST['clientNumber'];
-$client_message		= $_POST['clientMessage'];
+$client_name		= $_GET['clientName'];
+$client_email		= $_GET['clientEmail'];
+$client_number		= $_GET['clientNumber'];
+$client_message		= $_GET['clientMessage'];
 
 if ( !isset($client_request) ) {
 	// Check if Client Request was for Webinar or LTSC or Generic Request..
 	$client_request				= 'generic';
-	$client_requestWebinar		= $_POST['clientRequestWebinar'];
-	$client_requestLtsc			= $_POST['clientRequestLTSC'];
+	$client_requestWebinar		= $_GET['clientRequestWebinar'];
+	$client_requestLtsc			= $_GET['clientRequestLTSC'];
 
 	$client_requestCounter = 0;
 

@@ -73,7 +73,7 @@
 		<div class="clear"></div>
 		</div>
 		<div class="ContactFormSectionInner">
-			<form id="contactform" action="<?php echo get_stylesheet_directory_uri() ?>/email/emailSender.php" method="post">
+			<form id="contactform" action="<?php echo get_stylesheet_directory_uri() ?>/email/emailSender.php" method="get">
 				<input type="hidden" name="redirect" value="<?php echo home_url(add_query_arg(array(),$wp->request)) ?>" />
 				<div class='home-section'>
 					<div class='centered'>

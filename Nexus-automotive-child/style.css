@@ -135,9 +135,36 @@ Template: Nexus
 /* Style some dynamic widgets - carefully */
 #additional-sidebar .widget_text,
 #sidebar .widget_text {
+	text-align: center;
+	display: block;
+	width: auto !important;
 	padding: 20px 10px;
 }
 
 .ad-home-afterThirdPost {
 	padding: 15px 0 35px;
+}
+
+.ad-outer-container {
+  text-align: center;
+  overflow: hidden;
+}
+
+.ad-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.ad-container img,
+.ad-container iframe,
+.widget iframe {
+  border-radius: 3px;
+}
+
+.ad-container img {
+	width: 100%;
+}
+
+.header-banner {
+	width: auto !important;
 }
