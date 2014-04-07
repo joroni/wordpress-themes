@@ -2172,19 +2172,18 @@ iframe#pf-email-iframe {
   }
 
   #content .normal-post h3 {
-    font-size: 24px;
-    margin-left: 85px;
+    font-size: 20px;
+    /*margin-left: 85px;*/
   }
 
-  #content .normal-post span {
-    display: none;
+  #content .normal-post > span {
+    display: inline-block;
+    margin-left: 86px;
   }
 
   #content .normal-post .normal-post-thumb {
     position: absolute;
     left: 5px;
-    top: 50%;
-    margin-top: -35px;
   }
 
   .category-section.second > .normal-post {
@@ -2266,4 +2265,19 @@ iframe#pf-email-iframe {
     display: none;
   }
 
+}
+
+.top-sidebar .widget-container {
+  margin-top: 10px;
+}
+.top-sidebar .widget-container:first-child {
+  margin-top: 0;
+}
+
+.top-sidebar .textwidget {
+  text-align: center;
+}
+
+.widget-container {
+  overflow: hidden;
 }

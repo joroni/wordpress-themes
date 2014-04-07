@@ -165,6 +165,7 @@ Template: Nexus
 	width: 100%;
 }
 
-.header-banner {
+
+body #main-header .header-banner {
 	width: auto !important;
 }

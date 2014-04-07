@@ -174,9 +174,8 @@ function custom_loop() {
             </div>
 
             <div class="top-sidebar">
-                    <?php breaking_news( genesis_get_option( 'home_cat_sidebar' ), $excluded, '', genesis_get_option( 'home_cat_sidebar_posts' ) ); ?>
-
                     <?php dynamic_sidebar( 'HomeTopRightSidebar' ); ?>
+                    <?php breaking_news( genesis_get_option( 'home_cat_sidebar' ), $excluded, '', genesis_get_option( 'home_cat_sidebar_posts' ) ); ?>
             </div>
 
             <div class="clear"></div>

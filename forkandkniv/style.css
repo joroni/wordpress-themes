@@ -1822,6 +1822,7 @@ a:hover {
 
 
 .ad-outer-container {
+  overflow: hidden;
   text-align: center;
 }
 
@@ -1857,7 +1858,7 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-  .ad-belowFeatured iframe {
+  .ad-belowFeatured .textwidget > iframe {
     height: 40px;
   }
 }
@@ -1874,4 +1875,8 @@ a:hover {
 .ad-container iframe,
 .textwidget iframe {
   border-radius: 4px;
+}
+
+#sidebar .textwidget {
+  text-align: center;
 }

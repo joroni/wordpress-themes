@@ -125,7 +125,7 @@ function gs_theme_setup() {
 		register_sidebar(array('name' => 'OtherSiteFeedsRight4','id' => 'OtherSiteFeedsRight4','description' => 'Right column, above footer', 'before_widget' => '<div class="small-logo">', 'after_widget' => '</div>', 'before_title' => '<h4 class="title">', 'after_title' => '</h4>'));
 
 		register_sidebar(array('name' => 'HomeMiddleAdSpace','id' => 'HomeMiddleAdSpace','description' => 'Wide Ad Space, middle of home page.', 'before_widget' => '<div>', 'after_widget' => '</div>'));
-		register_sidebar(array('name' => 'HomeTopRightSidebar','id' => 'HomeTopRightSidebar','description' => 'Top Right Sidebar on Home Page', 'before_widget' => '<div class="widget-container" style="text-align:center;padding:10px 0;">', 'after_widget' => '</div>'));
+		register_sidebar(array('name' => 'HomeTopRightSidebar','id' => 'HomeTopRightSidebar','description' => 'Top Right Sidebar on Home Page', 'before_widget' => '<div class="widget-container">', 'after_widget' => '</div>'));
 		register_sidebar(array('name' => 'HomeBottomRightSidebar','id' => 'HomeBottomRightSidebar','description' => 'Bottom Right Sidebar on Home Page', 'before_widget' => '<div class="widget-container">', 'after_widget' => '</div>'));
 
 		register_sidebar(array('name' => 'SearchArea1','id' => 'SearchArea1','description' => 'Search box in header', 'before_widget' => '<div>', 'after_widget' => '</div>'));

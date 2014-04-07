@@ -212,4 +212,6 @@ text-decoration : none;
 </div>
 
 <div id="main">
+<?php insertAd('ad-topBanner'); ?>
+
 <?php get_template_part( 'featured', get_post_format() );?>

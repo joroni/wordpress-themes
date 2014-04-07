@@ -1,5 +1,5 @@
 /*
-Theme Name: LTSC
+Theme Name: LTSC variant
 Author: Arion
 Description: A landing page!
 Version: 1.0
@@ -102,7 +102,7 @@ a:active, .button:active {
 	display: inline-block;
 
 	padding: 14px 22px;
-	background-color: #2EBC46;
+	background-color: #b09045;
 	color: #fff;
 	font-size: 22px;
 	border-radius: 4px;
@@ -160,14 +160,13 @@ a:active, .button:active {
 	width: 100%;
 	overflow: hidden;
 
-	background: url('/wp-content/themes/ltsc/img/header.jpg') no-repeat center top;
-	background-color: #101c28;
+	background: #f6f6f6 url('/wp-content/themes/ltsc/variant/img/header.jpg') no-repeat center top;
 }
 
 .header {
 	height: 623px;
 
-	color: #fff;
+	color: #b09045;
 }
 
 	.headerLeft {
@@ -219,7 +218,7 @@ a:active, .button:active {
 				height: 87px;
 				margin: 4px 4px -31px;
 				display: inline-block;
-				background: url('/wp-content/themes/ltsc/img/header_number.png') no-repeat;
+				background: url('/wp-content/themes/ltsc/variant/img/header_number.png') no-repeat;
 			}
 
 
@@ -236,7 +235,7 @@ a:active, .button:active {
 			height: 56px;
 			margin: 0 auto;
 			margin-bottom: 35px;
-			background: url('/wp-content/themes/ltsc/img/logo.png') no-repeat;
+			background: url('/wp-content/themes/ltsc/variant/img/logo.png') no-repeat;
 		}
 
 		.logo:hover {
@@ -265,7 +264,7 @@ a:active, .button:active {
 				.headerForm .formList li:last-child { margin-bottom: 0; }
 
 				.headerForm .formList li.active {
-					box-shadow: 0 0 0 3px rgba(46, 188, 68, 0.83);
+					box-shadow: 0 0 0 2px rgba(176, 143, 69, 0.8);
 				}
 
 		.headerForm .formList label,
@@ -419,7 +418,7 @@ a:active, .button:active {
 	}
 
 		.coreSection2-graph .graphText {
-			color: #2EBC46;
+			color: #b09045;
 			font-size: 36px;
 		}
 
@@ -1029,7 +1028,7 @@ a:active, .button:active {
 
 
 .thankYouPage {
-	background: #101c28 url('/wp-content/themes/ltsc/img/header.jpg') no-repeat center top;
+	background: #f6f6f6 url('/wp-content/themes/ltsc/variant/img/header.jpg') no-repeat center top;
 	overflow: hidden;
 }
 
@@ -1039,16 +1038,17 @@ a:active, .button:active {
 }
 
 .thankYouPage .fader {
-	-moz-transition		: background-color 2s ease;
-	-webkit-transition	: background-color 2s ease;
-	transition			: background-color 2s ease;
+	-moz-transition		: background-color 1.5s ease;
+	-webkit-transition	: background-color 1.5s ease;
+	transition			: background-color 1.5s ease;
 
-	background-color: rgba(0,0,0,0.1);
+	background-color: rgba(255,255,255,0.0);
 }
 
 .thankYouPage .fader.faded {
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(255,255,255,0.4);
 }
+
 .thankYouPage .container {
 	margin: 0 auto;
 	padding: 16% 0 0;
@@ -1056,8 +1056,7 @@ a:active, .button:active {
 	min-width: 320px;
 	max-width: 800px;
 	text-align: center;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
-	color: #EDF1F3;
+	color: #404753;
 	font-size: 32px;
 
 	-moz-transition		: all 0.5s ease;
@@ -1066,7 +1065,7 @@ a:active, .button:active {
 }
 
 .thankYouPage small {
-	color: #C2D0D8;
+	color: #6F5C4A;
 	font-size: 65%;
 }
 

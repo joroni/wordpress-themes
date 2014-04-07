@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<?php insertAd('ad-topBanner'); ?>
 <div id="content-wrapper" class="site-content">
 
 	<?php while ( have_posts() ) : the_post(); ?>

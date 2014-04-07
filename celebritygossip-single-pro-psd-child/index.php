@@ -5,7 +5,7 @@
 <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 </hgroup></div>
 
-<?php insertAd('ad-topBanner'); ?>
+<?php insertAd('ad-home-belowFeatured'); ?>
 <div id="content-wrapper" class="site-content">
 	<div id="content" role="main">	
 		<section>
