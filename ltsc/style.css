@@ -1047,7 +1047,7 @@ a:active, .button:active {
 }
 
 .thankYouPage .fader.faded {
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.65);
 }
 .thankYouPage .container {
 	margin: 0 auto;
@@ -1065,7 +1065,7 @@ a:active, .button:active {
 	transition			: all 0.5s ease;
 }
 
-.thankYouPage small {
+.thankYouPage small, .thankYouPage a {
 	color: #C2D0D8;
 	font-size: 65%;
 }
@@ -1080,3 +1080,39 @@ a:active, .button:active {
 	}
 }
 
+.thankYouPage a {
+	text-shadow	: 0 1px 1px rgba(0,0,0, 0.5);
+}
+
+.thankYouPage a:hover {
+	color: #fff;
+}
+
+.thankYouPage .backLink {
+	font-size: 50%;
+}
+
+.thankYouPage .backLink:hover .backImage {
+	opacity: 1;
+}
+
+.thankYouPage .backImage {
+	background: url('/wp-content/themes/ltsc/img/back_white.png');
+	width: 40px;
+	height: 40px;
+	margin-bottom: -23px;
+	opacity: 0.6;
+	display: inline-block;
+	-moz-transition		: all 0.25s ease;
+	-webkit-transition	: all 0.25s ease;
+	transition			: all 0.25s ease;
+}
+
+.thankYouPage .gradient {
+	height: 623px;
+}
+.thankYouPage .footerMsg {
+	padding: 10px;
+	font-size: 12px;
+	text-align: center;
+}

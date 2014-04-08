@@ -23,6 +23,8 @@
 				Contact Us: <a href="mailto:info@keepontravellin.com">info@keepontravellin.com</a>
 				<br/><br/>
 				<strong>Keep on Travellin is part of the <a href="http://broadbentmedia.com" target='_blank'>Broadbent Media</a> Group.</strong>
+				<br/><br/>
+				<?php dynamic_sidebar('footerDisclaimer') ?>
 			</div>
 		</div> <!-- .container -->
 	</footer> <!-- #main-footer -->

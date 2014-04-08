@@ -929,3 +929,5 @@ function registerWidget($options) {
 registerWidget('ad-headerBanner');
 registerWidget('ad-home-afterThirdPost');
 registerWidget('ad-footerBanner');
+registerWidget('footerDisclaimer');
+

@@ -34,3 +34,8 @@ function setup_sidebars() {
 }
 
 add_action( 'after_setup_theme', 'setup_sidebars' );
+
+
+include dirname(__FILE__) . '/../_shared/functions.php';
+
+registerWidget('footerDisclaimer');

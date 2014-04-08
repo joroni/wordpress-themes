@@ -409,3 +409,10 @@ function registerWidget($options) {
 registerWidget('ad-footerbanner');
 registerWidget('ad-leftColPosts');
 registerWidget('ad-belowFeatured');
+registerWidget('footerDisclaimer');
+
+function footerDisclaimer() {
+	dynamic_sidebar('footerDisclaimer');
+}
+
+add_action( 'genesis_after_footer', 'footerDisclaimer' );

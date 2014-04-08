@@ -7,7 +7,8 @@
 						<br/><br/>
 						<strong>Trend Homme is part of the <a target="_blank" href="http://broadbentmedia.com">Broadbent Media</a> Group.</strong>
 					</div>
-
+					<br/><br/>
+					<?php dynamic_sidebar('footerDisclaimer') ?>
 				</div> <!-- #footer-bottom -->
 			</div> <!-- #container -->
 		</div> <!-- #main-page-wrapper -->

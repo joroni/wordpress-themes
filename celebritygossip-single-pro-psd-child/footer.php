@@ -93,7 +93,10 @@
 		Contact Us: <a href="mailto:info@gollygoss.com">info@gollygoss.com</a>
 		<br/>
 		<strong>Golly Goss is part of the <a target="_blank" href="http://broadbentmedia.com">Broadbent Media</a> Group.</strong>
+		<br/><br/>
+		<?php dynamic_sidebar('footerDisclaimer') ?>
 	</div>
+
 </div>
 </div><!-- footer3-wrapper -->
 </div><!-- #footer -->

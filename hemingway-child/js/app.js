@@ -13,6 +13,12 @@ $(document).ready(function() {
 		$(window).scrollTo($target.offset().top - 50, 800)
 	})
 
+	$('.ltscDownloadButton').on('click', function(){
+		$("form .clientName").focus()
+		$("[name=clientRequestLtsc]").val("yes")
+		$(".downloadlink").show()
+	})
+
 	var $formButton	= $('.emailSubmitButton')
 	var $form		= $formButton.closest('form')
 	
@@ -23,11 +29,13 @@ $(document).ready(function() {
 	$formButton.on('click', function(event) {
 		event.preventDefault()
 
-		if ( $formButton.attr('disabled') ) return null;
+		if ( $formButton.attr('disabled') == 'disabled' ) return null;
 
 		var url		= $form.attr('action')
 		var method	= $form.attr('method')
 		var data	= $form.serializeArray()
+		
+		$formButton.attr('disabled', 'disabled')
 
 		$.ajax({
 			method	: method
@@ -38,12 +46,21 @@ $(document).ready(function() {
 		,	success	: function(json) {
 				console.log(json)
 
-				$formButton.attr('disabled', 'disabled')
-				$('#contactform_errorloc')
-					.hide()
-					.html('Success!<br/>You will recieve an email shortly.')
-					.fadeIn()
+				if ( json && json.success ) {
+					$('#contactform_errorloc')
+						.hide()
+						.html('Success!<br/>You will recieve an email shortly.')
+						.fadeIn()
 
+
+				} else {
+					$('#contactform_errorloc')
+						.hide()
+						.html('It didnt work.<br/>Please, try again soon.')
+						.fadeIn()
+
+					$formButton.attr('disabled', false)
+				}
 			}
 		})
 	})
@@ -87,7 +104,7 @@ $(document).ready(function() {
 			if ( $inView.length ) {
 				$inView.each(function() {
 					var $item = $(this)
-					$item.animate({opacity: 1}, 1000)
+					$item.delay(500).animate({opacity: 1}, 1500)
 					$item.removeClass('fadeInOnView')
 
 					// Remove item from set when it has been faded in
@@ -168,22 +185,22 @@ $(document).ready(function() {
 	frmvalidator.EnableOnPageErrorDisplaySingleBox();
 	//frmvalidator.EnableMsgsTogether();
 
-	frmvalidator.addValidation("clientname","req","Please enter your Full Name");
-	frmvalidator.addValidation("clientname","maxlen=50","Max length for Name is 50");
-	frmvalidator.addValidation("clientname","alpha_s","Name can contain alphabetic chars only");
-	frmvalidator.addValidation("clientemail","maxlen=50");
-	frmvalidator.addValidation("clientemail","req","Please enter valid Email Address");
-	frmvalidator.addValidation("clientemail","email","Please enter valid Email Address");;
+	frmvalidator.addValidation("clientName","req","Please enter your Full Name");
+	frmvalidator.addValidation("clientName","maxlen=50","Max length for Name is 50");
+	frmvalidator.addValidation("clientName","alpha_s","Name can contain alphabetic chars only");
+	frmvalidator.addValidation("clientEmail","maxlen=180");
+	frmvalidator.addValidation("clientEmail","req","Please enter valid Email Address");
+	frmvalidator.addValidation("clientEmail","email","Please enter valid Email Address");;
 
 	frmvalidator.addValidation("clientNumber","maxlen=50");
 	frmvalidator.addValidation("clientNumber","req","Please enter valid Contact Number");
 	frmvalidator.addValidation("clientNumber","numeric");
 
-	function clientsetFocus() {
-		document.querySelector(".clientName").focus();
-		document.querySelector(".clientltsc").value="yes";
-		document.querySelector(".downloadlink").style.display="block";
-		postContactToGoogle();
+	window.clientsetFocus = function() {
+		$("form .clientName").focus()
+		$(".clientRequestLtsc").val("yes")
+		$(".downloadlink").css({display: 'block'})
+		//postContactToGoogle();
 	}
 
 	// Legacy animate functions based on markup, data attributes

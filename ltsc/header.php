@@ -1,10 +1,11 @@
 <?php
-	$isVariant = isset($_GET['v']) ? true : false;
+	if ( !isset($isVariant) )
+		$isVariant = isset($_GET['v']) ? true : false;
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><?php the_title() ?></title>
+		<title><?php bloginfo( 'name' ); ?></title>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<meta name="viewport" content="width=device-width" />

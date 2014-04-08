@@ -96,3 +96,4 @@ registerWidget('ad-home-belowFeatured');
 
 registerWidget('ad-home-afterThirdPost');
 registerWidget('ad-footer');
+registerWidget('footerDisclaimer');

@@ -25,6 +25,8 @@
 		<div class="contact-us">
 			Contact Us: <a href="mailto:info@carsboatsandbikes.com">info@carsboatsandbikes.com</a> | Cars Boats and Bikes is part of the <a href="http://broadbentmedia.com" target="_blank">Broadbent Media</a> Group.
 		</div>
+		<br/>
+		<?php dynamic_sidebar('footerDisclaimer') ?>
 
 	</div>
 

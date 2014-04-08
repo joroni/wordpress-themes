@@ -8,6 +8,9 @@
 
 		var $headerFormInputs	= $('.headerForm .formList input')
 		var $headerFormForm		= $('.headerForm form')
+		//var $formRedirect		= $headerFormForm.find('[name=redirect]')
+		//var formRedirect		= $formRedirect.val()
+		//$formRedirect.remove()
 
 		$headerFormInputs.on('focusin focusout', function() {
 			$input = $(this)
@@ -15,10 +18,11 @@
 
 			$li.toggleClass('active')
 		})
-
+		/*
 		$(document).on('click', '.headerForm-button', function (event) {
 			event.preventDefault();
 			var btn = $(this);
+
 
 			if ( ! btn.attr('disabled') ) {
 
@@ -34,7 +38,7 @@
 						console.log(response)
 
 						if ( data.success ) {
-							btn.html('Thank you!');
+							window.location.href = $headerFormForm.find('[name=thankYouUrl]').value
 						} else {
 							btn.attr('disabled', false).html('FIND OUT HOW');
 						}
@@ -42,6 +46,7 @@
 				});
 			}
 		})
+		*/
 
 		//
 		// On scroll sliding text fade animation on body .showcase list

@@ -285,3 +285,13 @@ function adHeaderBanner() {
 }
 
 add_action( 'genesis_before_wrap', 'adHeaderBanner' );
+
+registerWidget(array(
+	'id' => 'footerDisclaimer',
+));
+
+function footerDisclaimer() {
+	dynamic_sidebar('footerDisclaimer');
+}
+
+add_action( 'genesis_after_footer', 'footerDisclaimer' );

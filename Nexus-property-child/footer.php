@@ -25,7 +25,9 @@
 		<div class="contact-us">
 			Contact Us: <a href="mailto:info@takeonproperty.com">info@takeonproperty.com</a> | Take on Property is part of the <a href="http://broadbentmedia.com" target="_blank">Broadbent Media</a> Group.
 		</div>
-
+		<br/>
+		<?php dynamic_sidebar('footerDisclaimer') ?>
+		
 	</div>
 
 	<?php wp_footer(); ?>

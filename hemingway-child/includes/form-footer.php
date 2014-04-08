@@ -19,7 +19,7 @@
 				<span>Get a free download on how you can benefit from LTSC</span>
 			</div>
 			<div class="downloads-sub-info">
-				<a href="javascript:clientsetFocus();" ><div class="download-image"></div></a>
+				<a class="ltscDownloadButton scrollMe" href="#contactform" ><div class="download-image"></div></a>
 			</div>
 			<div class="downloads-sub-infotxtlowerleft">
 				<span>LTSC</span>
@@ -87,13 +87,13 @@
 						<div class='centered'>
 							<div class="bottomcontactform first">
 								<label class="contactdetails" for='clientname'>Full Name:</label>
-							<input class="contactdetails clientName" type='text' name="clientname" id="clientname" placeholder="Please enter your name here...">
+							<input class="contactdetails clientName" type='text' name="clientName" id="clientname" placeholder="Please enter your name here...">
 							</div>
 
 
 							<div class="bottomcontactform">
 								<label class="contactdetails" for='clientemail'>Email:</label>
-								<input class="contactdetails clientEmail" type='text' name="clientemail"  placeholder="Please enter your email here...">
+								<input class="contactdetails clientEmail" type='text' name="clientEmail"  placeholder="Please enter your email here...">
 							</div>
 
 							<div class="bottomcontactform">
@@ -108,12 +108,12 @@
 
 							<div class="bottomcontactform webinarcheck">
 
-								<input class="clientwebinar" type="checkbox" name="clientwebinar"   >
+								<input class="clientwebinar" type="checkbox" name="clientRequestWebinar"   >
 
 									<label class="clientwebinar">Click here to book a webinar with an LTSC Specialist</label>
 
 
-								<input  class="contactdetails clientltsc" type="hidden" name="clientltsc"  value="NO" >
+								<input  class="contactdetails clientltsc" type="hidden" name="clientRequestLtsc"  value="NO" >
 							</div>
 
 							<div class="bottomcontactform">

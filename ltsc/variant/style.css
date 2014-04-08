@@ -1041,7 +1041,7 @@ a:active, .button:active {
 	-moz-transition		: background-color 1.5s ease;
 	-webkit-transition	: background-color 1.5s ease;
 	transition			: background-color 1.5s ease;
-
+	
 	background-color: rgba(255,255,255,0.0);
 }
 
@@ -1064,7 +1064,7 @@ a:active, .button:active {
 	transition			: all 0.5s ease;
 }
 
-.thankYouPage small {
+.thankYouPage small, .thankYouPage a {
 	color: #6F5C4A;
 	font-size: 65%;
 }
@@ -1079,3 +1079,38 @@ a:active, .button:active {
 	}
 }
 
+.thankYouPage a:hover {
+	color: #000;
+}
+
+.thankYouPage .backLink {
+	font-size: 50%;
+}
+
+.thankYouPage .gradient {
+	height: 623px;
+}
+
+
+.thankYouPage .backLink:hover .backImage {
+	opacity: 0.8;
+}
+
+.thankYouPage .backImage {
+	background: url('/wp-content/themes/ltsc/img/back.png');
+	width: 40px;
+	height: 40px;
+	margin-bottom: -23px;
+	opacity: 0.4;
+	display: inline-block;
+	-moz-transition		: all 0.25s ease;
+	-webkit-transition	: all 0.25s ease;
+	transition			: all 0.25s ease;
+}
+
+.thankYouPage .footerMsg {
+	padding: 10px;
+	font-size: 12px;
+	text-align: center;
+	color: #999;
+}

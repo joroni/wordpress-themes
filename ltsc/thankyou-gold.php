@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: Thank You
+Template Name: Thank You Gold
 
 */
 
-$isVariant = false;
+$isVariant = true;
 
 ?>
 <!DOCTYPE html>
@@ -50,7 +50,7 @@ $isVariant = false;
 				)
 			})
 		</script>
-		<!-- Brandscreen Conversion Tag Code . Advertiser: LTSC. Name: thank you - black -->
-		<img src="http://tags.rtbidder.net/convert?sid=53438ea655314b115460dfc4" width="0" height="0" border="0" alt="" />
+		<!-- Brandscreen Conversion Tag Code . Advertiser: LTSC. Name: thank you -->
+		<img src="http://tags.rtbidder.net/convert?sid=5341ed8f8bc06f188000454c" width="0" height="0" border="0" alt="" />
 	</body>
 </html>

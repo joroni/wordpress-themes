@@ -2,15 +2,16 @@
 
 # Suppress errors because it ruins json and we are to lazy to not have notices
 error_reporting(0);
+require_once "../../../../wp-load.php"; # Adds wordpress functionality
 
 if( isset($_GET['IP']) ) { $_GET['IP'] = $_SERVER['REMOTE_ADDR']; }
 else { $_GET['IP'] = $_SERVER['REMOTE_ADDR']; }
 
-$name = $_GET['name'];
-$email = $_GET['email'];
-$phone = $_GET['phone'];
+$name	= $_GET['name'];
+$email	= $_GET['email'];
+$phone	= $_GET['phone'];
 
-$result = $internalResult = false;
+$result	= $internalResult = false;
 
 if ( $email ) {
 
@@ -31,17 +32,26 @@ if ( $email ) {
 
 	$emailHtml = file_get_contents('emails/default_inlined.html');
 
-	$result			= mail($email, $subject, $emailHtml, $oheaders);
+	$result = mail($email, $subject, $emailHtml, $oheaders);
 
 	if ( empty($_GET['test']) )
 		$internalResult	= mail("info@cottonparkestate.com", "Enquiry", $internalEmailHtml, $iheaders);
 }
 
-$response = array(
-	"success"			=> $result,
-	"internalSuccess"	=> $internalResult,
-);
+$redirect = !empty($_GET['redirect']) ? $_GET['redirect'] : null;
 
-echo json_encode($response);
+if ( $redirect ) {
+	if ( $result ) {
+		header("location: $redirect");
+	} else {
+		header("location: " . home_url());
+	}
+} else {
+	$response = array(
+		"success"			=> $result,
+		"internalSuccess"	=> $internalResult,
+	);
 
+	echo json_encode($response);
+}
 ?>

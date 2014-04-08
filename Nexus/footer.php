@@ -17,6 +17,7 @@
 
 	<div id="footer-info" class="container">
 		<p id="copyright"><?php printf( __( 'Designed by %1$s | Powered by %2$s', 'Nexus' ), '<a href="http://www.elegantthemes.com" title="Premium WordPress Themes">Elegant Themes</a>', '<a href="http://www.wordpress.org">WordPress</a>' ); ?></p>
+		<br/>
 	</div>
 
 	<?php wp_footer(); ?>

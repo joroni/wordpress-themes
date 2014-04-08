@@ -54,7 +54,7 @@ if ( !isset($client_request) ) {
 	// Check if Client Request was for Webinar or LTSC or Generic Request..
 	$client_request				= 'generic';
 	$client_requestWebinar		= $_GET['clientRequestWebinar'];
-	$client_requestLtsc			= $_GET['clientRequestLTSC'];
+	$client_requestLtsc			= $_GET['clientRequestLtsc'];
 
 	$client_requestCounter = 0;
 
@@ -63,7 +63,7 @@ if ( !isset($client_request) ) {
 		$client_request = 'ltsc';
 		++$client_requestCounter;
 	}
-	if ( $clientRequestWebinar != '' ) {
+	if ( $client_requestWebinar != '' ) {
 		$client_request = 'webinar';
 		++$client_requestCounter;
 	}
@@ -114,14 +114,13 @@ $internal_body = releaseBuffer();
 
 
 
-# TEST
+/*# TEST
 
 $internal_email	=
 $client_email	= 'sam.johnson@ariongroup.com.au';
-$doEmail = false;
-# TEST
+$doEmail = true;
 
-
+# TEST*/
 
 $client_headers		= "mime-version: 1.0\r\n";
 $client_headers		.= "content-type: text/html; charset=utf-8\r\n";
@@ -136,16 +135,15 @@ $internal_headers	.= "From:$internal_email\r\n";
 
 if ( $doEmail ) {
 	# internal email
-	mail($internal_email, $internal_subject, $internal_body, $internal_headers);
+	$json['success'] = mail($internal_email, $internal_subject, $internal_body, $internal_headers);
 
 	# client email
-	mail($client_email, $client_subject, $client_body, $client_headers);
+	$json['internalSuccess'] = mail($client_email, $client_subject, $client_body, $client_headers);
 
 	sleep(3); # I guess wait a bit so that the email is known to be sent? consider removing this.
 }
 
-$json['success'] = true;
-
+$json['GET'] = $_GET;
 endRequest($json, $redirect);
 
 ?>

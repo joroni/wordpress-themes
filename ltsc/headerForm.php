@@ -1,6 +1,11 @@
 <div class="headerForm">
 	<div class="headerForm-blurb">...</div>
 	<form action="/wp-content/themes/ltsc/mail/email.php" method="GET"><!-- 1 -->
+		<?php if ( $isVariant ) { ?>
+			<input type="hidden" name="redirect" value="<?php echo home_url() ?>/thankyou-gold" />
+		<?php } else { ?>
+			<input type="hidden" name="redirect" value="<?php echo home_url() ?>/thankyou" />
+		<?php } ?>
 		<ul class="formList">
 			<li>
 				<label>Name :</label>
