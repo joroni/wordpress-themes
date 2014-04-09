@@ -98,7 +98,7 @@ if ($boxed) { ?>
 							<?php } ?>
 							
 							<div class="utilities">
-								<?php wp_nav_menu( array( 'theme_location' => 'utilities', 'container_class' => 'util-menu', 'depth' => 1 ) ); ?>
+								<?php #wp_nav_menu( array( 'theme_location' => 'utilities', 'container_class' => 'util-menu', 'depth' => 1 ) ); ?>
 								<?php get_template_part( 'partials/part', 'socials');?>
 							</div>
 							

@@ -273,3 +273,9 @@ div.wpcf7 .watermark {
 #searchsubmit {
 	display: none;
 }
+
+.ad-space-banner {
+	text-align: center;
+	margin-bottom: 15px;
+	overflow: hidden;
+}

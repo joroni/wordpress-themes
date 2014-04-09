@@ -18,14 +18,35 @@
 
 			$li.toggleClass('active')
 		})
-		/*
+
+		var $formPhoneInput	= $headerFormForm.find('[name=phone]')
+		var $formPhoneLi	= $formPhoneInput.closest('li')
+		var $formEmailInput	= $headerFormForm.find('[name=email]')
+		var $formEmailLi	= $formEmailInput.closest('li')
+
 		$(document).on('click', '.headerForm-button', function (event) {
-			event.preventDefault();
-			var btn = $(this);
+			var $button = $(this);
+
+			if ( ! parseInt( $formPhoneInput.val() ) ) {
+				$formPhoneLi.addClass('error')
+				$formPhoneInput.one('focus', function(){
+					$formPhoneLi.removeClass('error')
+				})
+				
+
+				event.preventDefault()
+			}
+
+			if ( ! $formEmailInput.val().length ) ) {
+				$formEmailLi.addClass('error')
+				$formEmailInput.one('focus', function(){
+					$formEmailLi.removeClass('error')
+				})
+				event.preventDefault()
+			}
 
 
-			if ( ! btn.attr('disabled') ) {
-
+			/*if ( ! btn.attr('disabled') ) {
 				btn.html("Sending...").attr('disabled', 'disabled');
 				$.ajax({
 					url			: $headerFormForm.attr('action'),
@@ -45,8 +66,9 @@
 					}
 				});
 			}
+			*/
 		})
-		*/
+		
 
 		//
 		// On scroll sliding text fade animation on body .showcase list

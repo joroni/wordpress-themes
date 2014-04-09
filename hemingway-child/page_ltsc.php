@@ -27,8 +27,12 @@ Template Name: LTSC
 					</div>
 					<div class='ltsc'>
 						<div class="center">
+							<div class="left-image">
+								<img src="<?php echo get_stylesheet_directory_uri() ?>/images/ltsc/people.jpg" alt="">
+							</div>
 							<div class='ltsc-top-text'>
-								<div class="mobile-only left-dash"></div>
+								<div class="mobile-only left-dash">
+								</div>
 								<p>
 									LTSC’s will revolutionize the way people look at property investment forever. They provide investors with the chance to capitilise on the next property boom without the traditional pitfalls associated with regular investment property methods. The advantages of investing in Property using an LTSC vs utilizing traditional methods are LTSC’s require.
 								</p>
@@ -48,6 +52,15 @@ Template Name: LTSC
 				</div>
 				<!-- End of Top Section-->
 
+			<div class="page-seperator">
+				<div class="right-image">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
+				</div>
+				<div class="left-image">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
+				</div>
+				<div class="clear"></div>
+			</div>
 
 				<!-- Chart Section-->
 						<div class="home-section ltsc-chart">
@@ -93,14 +106,14 @@ Template Name: LTSC
 			</div>
 
 			<div class="page-seperator">
-						<div class="right-image">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
-						</div>
-						<div class="left-image">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
-						</div>
-						<div class="clear"></div>
-					</div>
+				<div class="right-image">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Right.png" alt="">
+				</div>
+				<div class="left-image">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Liseret-Left.png" alt="">
+				</div>
+				<div class="clear"></div>
+			</div>
 
 			<!-- FAQ Section-->
 				<div id="ltscfaq" class="home-section">

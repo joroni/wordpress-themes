@@ -530,6 +530,7 @@ float: right;
 	text-align: right;
 	margin-bottom: 25px;
 	padding-right: 25px;
+	overflow: hidden;
 }
 .home-section .locationsubtitle {
 	font-family: Futura-Book;
@@ -551,7 +552,7 @@ float: right;
 	padding-right: 4px;
 }
 .ltsc-chart {
-	margin-top: 80px;
+	margin-top: 10px;
 }
 .home-section .ltscsubtitle {
 	font-family: Futura-Book;
@@ -840,7 +841,7 @@ LTSC PAGE SETTINGS
 }
 .home-section .ltsctitle {
 	font-family: Futura-Book;
-	letter-spacing: 12px;
+	letter-spacing: 10px;
 	font-size: 20pt;
 	font-weight: 300;
 	text-align: center;
@@ -853,36 +854,34 @@ LTSC PAGE SETTINGS
 	line-height: 40px;
 }
 
-.ltsc .left-image {
-	float: left;
-	width: 30%;
-	text-align: center;
+
+.ltsc {
+	padding-top: 15px;
 }
+
 .ltsc img {
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 30px;
+	display: inline-block;
 }
-.ltsc .ltsc-top-text{
-	width: 70%;
-	float: center;
+.ltsc .ltsc-top-text {
+	width: 63%;
+	float: left;
 	font-family: Calibri-Light;
-	font-size: 12pt;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	padding-left: 20px;
-	border-left: 2px solid #888;
-	margin: 0 auto;
+	padding-right: 10px;
+	margin: 0 0 0 5px;
 }
-.ltsc .ltsc-top-text p{
-	line-height: 20px;
+.ltsc .ltsc-top-text p {
+	line-height: 30px;
+	font-size: 21px;
 	text-align: justify;
 }
 
-.ltsc  .ltsc-left-image {
+.ltsc  .left-image {
 	float: left;
-	width: 50%;
-	text-align:left;
+	width: 32%;
+	text-align: right;
 }
 
 .ltsc  .left-text p {
@@ -1023,6 +1022,11 @@ LOCATION PAGE SETTINGS
 	letter-spacing: 12px;
 	font-size: 45pt;
 	margin-bottom: 15px;
+	padding-left: 8px;
+}
+
+.home-section {
+	padding: 0 10px;
 }
 .home-section .page-raillink-title {
 	width: 100%;
@@ -1070,7 +1074,7 @@ LOCATION PAGE SETTINGS
 .home-section .locraillink-image {
 	background-image: url(images/location/Page-Location_15.jpg);
 	height: 148px;
-	width: 1000px;
+	/*width: 1000px;*/
 }
 
 .home-section .locraillink-mob-image {
@@ -1268,6 +1272,59 @@ PROJECT PAGE SETTINGS
 	text-decoration: underline;
 }
 
+/* new */
+.location-maps {
+	margin: 80px 0;
+}
+.location-maps .map-col {
+	float: left;
+	padding: 0 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.location-maps .map-col.last {
+	margin-right: 0;
+}
+
+.location-maps .map-col {
+	width: 320px;
+}
+
+.location-maps hr {
+	width: 10%;
+	border-color: transparent;
+	border-bottom-color: #ccc;
+	margin: 15px auto 10px auto;
+}
+.location-maps .images {
+	height: 190px;
+	overflow: hidden;
+}
+.location-maps .images img {
+	position: relative;
+	top: 0;
+	transition: all .2s ease-in-out;
+}
+.location-maps span {
+	color: #888;
+	font-size: 10pt;
+	letter-spacing: 3px;
+}
+.location-maps .map-col:hover img {
+	top: -195px;
+}
+.location-maps .map-col:hover span {
+	color: #000;
+}
+.proximity h5 {
+	margin-bottom: 15px;
+	letter-spacing: 0px;
+}
+.proximity p {
+	width: 75%;
+	text-align: justify;
+	line-height: 20px;
+}
 .home-section .page-project-title {
 	width: 100%;
 	padding-left: 30px;
@@ -1667,16 +1724,46 @@ input[type=checkbox] {
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
+
 .book-appointment:hover {
 	background: #000;
 	color: #FFF;
 	text-decoration: none;
 }
+
 .masterplan .center {
 	padding: 0;
 }
-@media screen and (max-width: 760px) {
 
+@media screen and (max-width: 760px) {
+	.ltsc .left-image {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+
+	.ltsc .ltsc-top-text {
+		width: 100%;
+		border-left: 0;
+		margin-top: 10px;
+	}
+
+	.ltsc .ltsc-top-text p {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.ltsc-chart .leftltsc {
+		float: none;
+		margin: 0 auto;
+		width: 80%;
+		padding: 0;
+	}
+
+	.ltsc-chart .rightltsc {
+		width: auto;
+		padding-left: 125px;
+	}
 }
 
 @media screen and (max-width: 550px) {
@@ -1842,9 +1929,9 @@ input[type=checkbox] {
 		letter-spacing: 2px;
 		font-size: 16pt;
 		font-weight: 300;
-		text-align: left;
+		text-align: center;
 		margin-bottom: 25px;
-		padding-right: 4px;
+		padding: 0 8px;
 	}
 
 	.home-section .ltsc-image {
@@ -1861,14 +1948,14 @@ input[type=checkbox] {
 		font-family: Futura-Book;
 		letter-spacing: 2px;
 		font-size: 10pt;
-		text-align:left;
+		text-align: center;
 		width: 100%;
 		margin-bottom: 30px;
 	}
 
 	.ltsc .left-image {
-		float: left;
-		width: 30%;
+		float: none;
+		width: 100%;
 		text-align: center;
 	}
 	.ltsc img {
@@ -2362,7 +2449,7 @@ input[type=checkbox] {
 		font-size: 12pt;
 		padding: 0 0 0 20px;
 		text-align: justify;
-		border: none;
+		border: 0;
 		margin: 0 auto;
 		position: relative;
 	}
@@ -2373,6 +2460,12 @@ input[type=checkbox] {
 		position: absolute;
 		top: 0;
 		left: 0;
+	}
+
+	.ltsc .ltsc-top-text {
+		font-size: 16px;
+		padding: 0 8px;
+		border: 0;
 	}
 
 	.chart-list {
@@ -2714,4 +2807,16 @@ input[type=checkbox] {
 
 .fadeInOnView {
 	opacity: 0;
+}
+
+
+@media (max-width: 960px) {
+	.location-maps .map-col {
+		display: block;
+		float: none;
+		margin: 30px auto;
+	}
+	.location-maps .map-col.last {
+		margin-right: auto;
+	}
 }
