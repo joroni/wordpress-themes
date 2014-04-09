@@ -53,6 +53,7 @@ h5 {
 .blog-menu a {
 	margin-left: 49px;
 	font-family: Futura-Book;
+	color: rgba(255,255,255,0.6);
 }
 .blog-menu a:hover {
 	text-decoration: none;
@@ -61,7 +62,7 @@ h5 {
 ::selection {
 	background: #000; /* Safari */
 	color: #fff;
-	}
+}
 ::-moz-selection {
 	background: #000; /* Firefox */
 	color: #fff;
@@ -1622,13 +1623,16 @@ END OF PROJECT PAGE SETTINGS
 	position: relative;
 }
 .home-section .colour {
-	position: absolute;
+	/*position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 15;
-	opacity: 0;
+	opacity: 0;*/
 }
 
+.colorViewFade .greyscale {
+	display: none;
+}
 .home-section .project-image:hover {
 	background-position: 0 -187px;
 }

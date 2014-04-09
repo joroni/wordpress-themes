@@ -84,10 +84,11 @@ $(document).ready(function() {
 		else 
 			$backTop.fadeOut()
 
-		if ( colorViewFadeItems.length )
+		/*if ( colorViewFadeItems.length )
 			colorViewFadeItems.forEach(function(item) {
 				checkImageColour( item, scrollPos )
 			})
+		*/
 	})
 
 	// FadeInOnView, does what it says it does. 1000ms fadetime

@@ -267,6 +267,24 @@ a:active, .button:active {
 					box-shadow: 0 0 0 2px rgba(176, 143, 69, 0.8);
 				}
 
+				.headerForm .formList li.error {
+					box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.4) !important;
+				}
+
+				.headerForm .formList .active label {
+					color: #333;
+				}
+
+				.headerForm .formList .error label {
+					color: #8F2727;
+				}
+
+				.error-msg {
+					color: #9A5656;
+					font-size: 80%;
+					padding-bottom: 2px;
+				}
+
 		.headerForm .formList label,
 		.headerForm .formList input {
 			padding: 16px 10px;

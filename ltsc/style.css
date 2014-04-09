@@ -255,6 +255,7 @@ a:active, .button:active {
 				color: #cad2da;
 				font-size: 16px;
 				text-align: center;
+
 			}
 
 			.headerForm .formList li {
@@ -265,7 +266,25 @@ a:active, .button:active {
 				.headerForm .formList li:last-child { margin-bottom: 0; }
 
 				.headerForm .formList li.active {
-					box-shadow: 0 0 0 3px rgba(46, 188, 68, 0.83);
+					box-shadow: 0 0 0 2px rgba(46, 188, 68, 0.83);
+				}
+
+				.headerForm .formList li.error {
+					box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.73) !important;
+				}
+
+				.headerForm .formList .active label {
+					color: #222;
+				}
+
+				.headerForm .formList .error label {
+					color: #D25C5C;
+				}
+
+				.error-msg {
+					color: #EAC4C4;
+					font-size: 80%;
+					padding-bottom: 2px;
 				}
 
 		.headerForm .formList label,
@@ -304,6 +323,7 @@ a:active, .button:active {
 			.headerForm input:first-child {
 				margin-top: 0;
 			}
+
 
 		.headerForm-buttonBox {
 			padding: 30px 0;
@@ -1116,3 +1136,4 @@ a:active, .button:active {
 	font-size: 12px;
 	text-align: center;
 }
+

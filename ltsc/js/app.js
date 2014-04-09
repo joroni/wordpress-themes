@@ -8,6 +8,7 @@
 
 		var $headerFormInputs	= $('.headerForm .formList input')
 		var $headerFormForm		= $('.headerForm form')
+		var $headerFormBlurb	= $('.headerForm-blurb')
 		//var $formRedirect		= $headerFormForm.find('[name=redirect]')
 		//var formRedirect		= $formRedirect.val()
 		//$formRedirect.remove()
@@ -25,26 +26,44 @@
 		var $formEmailLi	= $formEmailInput.closest('li')
 
 		$(document).on('click', '.headerForm-button', function (event) {
-			var $button = $(this);
+			var $button = $(this)
+
+			$headerFormBlurb.html('').animate({opacity: 1}, 500)
+
+			if ( ! $formEmailInput.val() ) {
+				$formPhoneLi.addClass('error')
+				var $emailError = $('.error-email')
+
+				if ( ! $emailError.length ) {
+					$headerFormBlurb.append("<div class='error-msg error-email'>Please enter an email.</div>")
+					$headerFormBlurb.show()
+					$emailError = $('.error-email')
+				}
+
+				$formEmailInput.one('focus', function(){
+					$formEmailLi.removeClass('error')
+					$emailError.fadeOut().remove()
+				})
+
+				event.preventDefault()
+			}
 
 			if ( ! parseInt( $formPhoneInput.val() ) ) {
 				$formPhoneLi.addClass('error')
+				var $phoneError = $('.error-phone')
+
+				if ( ! $phoneError.length ) {
+					$headerFormBlurb.append("<div class='error-msg error-phone'>Please enter a phone number.</div>")
+					$headerFormBlurb.show()
+					$phoneError = $('.error-phone')
+				}
+
 				$formPhoneInput.one('focus', function(){
 					$formPhoneLi.removeClass('error')
-				})
-				
-
-				event.preventDefault()
-			}
-
-			if ( ! $formEmailInput.val().length ) ) {
-				$formEmailLi.addClass('error')
-				$formEmailInput.one('focus', function(){
-					$formEmailLi.removeClass('error')
+					$phoneError.fadeOut().remove()
 				})
 				event.preventDefault()
 			}
-
 
 			/*if ( ! btn.attr('disabled') ) {
 				btn.html("Sending...").attr('disabled', 'disabled');
@@ -135,7 +154,6 @@
 		var $seperatorButton	= $('.seperatorButton')
 		var $body				= $('body')
 		var $logo				= $('.logo')
-		var $headerFormBlurb	= $('.headerForm-blurb')
 		var $headerFormName		= $('.headerForm input[name=name]')
 
 		var $footerGuideButton	= $('.footerGuide-button')
