@@ -55,6 +55,7 @@ h5 {
 	font-family: Futura-Book;
 	color: rgba(255,255,255,0.6);
 }
+
 .blog-menu a:hover {
 	text-decoration: none;
 }
@@ -305,10 +306,9 @@ float: right;
 	width: 25%;
 }
 .home-section .info-right {
-	width: 63%;
-	padding-left: 500px;
 	float: right;
 	margin-top: 30px;
+	clear: both;
 }
 .home-section .more-info a img {
 	position: relative;

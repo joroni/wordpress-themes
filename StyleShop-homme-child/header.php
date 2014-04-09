@@ -76,6 +76,24 @@
 						<?php do_action( 'et_top_navigation' ); ?>
 					</div> <!-- #top-navigation -->
 				</header> <!-- #main-header -->
+				
+<div class="ad-outer-container ad-headerBanner">
+	<div class="ad-container">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Excl-news HomeMiddleAd -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3525701263209076"
+     data-ad-slot="5359993747"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+	</div>
+</div>
+
+
 				<div id="content">
 				<?php
 					$menuID = 'top-categories';

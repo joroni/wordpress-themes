@@ -189,3 +189,7 @@ Template: TheSource
 	line-height: 12px;
 	color: #333;
 }
+
+.ad-footerBanner {
+	margin-top: 40px;
+}

@@ -5,8 +5,25 @@
 	</div> 	<!-- end .container -->
 </div> <!-- end #content -->
 
+
+
+<?php /* ad-footer */?>
+
+<div class="ad-outer-container ad-footerBanner">
+	<div class="ad-container">
+
+<a href="http://ltsc.com.au">
+	<img style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
+</a>
+
+	</div>
+</div>
+
+
 <div id="content-bottom">
+
 	<div class="container<?php if ($fullWidthPage) echo(' nobg'); ?>"></div>
+
 </div>
 
 <div id="footer">

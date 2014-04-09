@@ -807,3 +807,4 @@ function et_add_woocommerce_class_to_homepage( $classes ) {
 
 	return $classes;
 }
+

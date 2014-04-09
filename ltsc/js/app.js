@@ -30,8 +30,8 @@
 
 			$headerFormBlurb.html('').animate({opacity: 1}, 500)
 
-			if ( ! $formEmailInput.val() ) {
-				$formPhoneLi.addClass('error')
+			if ( ! $formEmailInput.val() || ! $formEmailInput.val().match(/\S+@\S+\.\S+/i) ) {
+				$formEmailLi.addClass('error')
 				var $emailError = $('.error-email')
 
 				if ( ! $emailError.length ) {

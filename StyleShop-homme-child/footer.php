@@ -1,3 +1,21 @@
+
+<?php /* ad-footer */?>
+
+<div class="ad-outer-container ad-footerBanner">
+	<div class="ad-container">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Excl-news HomeMiddleAd -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3525701263209076"
+     data-ad-slot="5359993747"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+	</div>
+</div>
 					<?php include('other-site-feeds.php'); ?>
 					<?php get_sidebar( 'footer' ); ?>
 				</div> <!-- #content -->

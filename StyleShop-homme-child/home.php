@@ -2,6 +2,24 @@
 
 <?php if ( 'on' == et_get_option( 'styleshop_featured', 'on' ) && is_home() ) get_template_part( 'includes/featured', 'home' ); ?>
 
+
+<div class="ad-outer-container ad-belowFeatured">
+	<div class="ad-container">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Excl-news HomeMiddleAd -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3525701263209076"
+     data-ad-slot="5359993747"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+	</div>
+</div>
+
+
 <?php if ( 'on' == et_get_option( 'styleshop_display_offers', 'on' ) ) : ?>
 <?php
 	$args = array(
@@ -59,9 +77,29 @@
 			'posts_per_page' => 6
 		);
 		$the_posts = new WP_Query( $args );
+
+		$postCount = 0;
 		?>
 
-		<?php while ( $the_posts->have_posts() ) : $the_posts->the_post(); ?>
+		<?php while ( $the_posts->have_posts() ) :
+			$the_posts->the_post();
+			++$postCount;
+
+			if ( $postCount === 4 ) { ?>
+
+<div class="ad-outer-container ad-afterThirdPost">
+	<div class="ad-container">
+
+<a href="http://ltsc.com.au">
+	<img style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
+</a>
+
+	</div>
+</div>
+
+			<?php }
+
+			?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix entry' ); ?>>
 				<?php

@@ -29,7 +29,6 @@ function et_setup_theme(){
 	add_action( 'delete_post', 'et_delete_featured_ids_cache' );
 	add_action( 'save_post', 'et_delete_featured_ids_cache' );
 }
-include dirname(__FILE__) . '/../_shared/functions.php';
 
 function setup_sidebars() {
 	if( function_exists( 'register_sidebar' ) ) {
@@ -63,5 +62,7 @@ function setup_sidebars() {
 }
 
 add_action( 'after_setup_theme', 'setup_sidebars' );
+
+
 
 
