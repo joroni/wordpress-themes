@@ -7,16 +7,19 @@ Template Name: LOCATION PAGE
 ?>
 
 <?php get_header(); ?>
-  <body id="top">
-  	<div id="pagewrap">
+<body id="top">
+	<div id="pagewrap">
 
-			<div id="locationtop" class="wrapper section-inner">
+			<div id="locationtop" class="wrapper section-inner locationPage">
 				<!-- LOCATION Section-->
 				<div class="home-section">
 					<h2 class="page-location-title">
 						LOCATION
 					</h2>
-
+					
+					<div class="proximityImage">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/images/location/Page-Location_03.jpg" alt="">
+					</div>
 					<div class="proximity">
 						<h5>Proximately to Employment Zones</h5>
 						<p class='proximity-text'>
@@ -27,28 +30,35 @@ Template Name: LOCATION PAGE
 							The <a target="_blank" href="http://www.mpa.vic.gov.au/planning-activities/greenfields-planning/precinct-structure-plans/wyndham/truganina-employment-area/">Truganina Employment Area</a> just 15km away will also offer between 10,000 -15,000 jobs.
 						</p>
 					</div>
+					<br class="clear" />
 
 					<div class="location-maps">
 						<div class="map-col">
 							<div class="images">
-								<img src="/wp-content/themes/hemingway-child/images/location/location-1-bw.jpg" alt="">
-								<img src="/wp-content/themes/hemingway-child/images/location/location-1-c.jpg" alt="">
+								<a data-popup-button="locationMap1" href="#">
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/location/location-1-bw.jpg" alt="">
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/location/location-1-c.jpg" alt="">
+								</a>
 							</div>
 							<hr>
 							<span>SATTELITE MAP</span>
 						</div>
 						<div class="map-col">
 							<div class="images">
-								<img src="/wp-content/themes/hemingway-child/images/location/location-2-bw.jpg" alt="">
-								<img src="/wp-content/themes/hemingway-child/images/location/location-2-c.jpg" alt="">
+								<a data-popup-button="locationMap2" href="#">
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/location/location-2-bw.jpg" alt="">
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/location/location-2-c.jpg" alt="">
+								</a>
 							</div>
 							<hr>
 							<span>COMPETITION MAP</span>
 						</div>
 						<div class="map-col last">
 							<div class="images">
-								<img src="/wp-content/themes/hemingway-child/images/location/location-3-bw.jpg" alt="">
-								<img src="/wp-content/themes/hemingway-child/images/location/location-3-c.jpg" alt="">
+								<a data-popup-button="locationMap3" href="#">
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/location/location-3-bw.jpg" alt="">
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/location/location-3-c.jpg" alt="">
+								</a>
 							</div>
 							<hr>
 							<span>ROAD MAP</span>
@@ -211,5 +221,5 @@ Template Name: LOCATION PAGE
 			</div> <!-- /wrapper -->
 
 </div>
-
+<?php include 'locationPopups.php'; ?>
 <?php get_footer(); ?>

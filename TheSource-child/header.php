@@ -71,6 +71,22 @@
 			</div>	<!-- end #page-menu -->
 			<!-- End Page-menu -->
 
+<div class="ad-outer-container ad-headerBanner">
+	<div class="ad-container">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Excl-news HomeMiddleAd -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3525701263209076"
+     data-ad-slot="5359993747"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+	</div>
+</div>
+
 			<div id="cat-nav" class="clearfix">
 				<div id="cat-nav-left"> </div>
 				<div id="cat-nav-content">

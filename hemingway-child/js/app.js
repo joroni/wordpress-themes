@@ -1,5 +1,189 @@
+var DEBUG = true
+
+window.popups = function($findIn) {
+	var itemCount, self, startTime, time;
+	if ($findIn == null) {
+		$findIn = $('body');
+	}
+	self = popups;
+	itemCount = 0;
+	if (DEBUG) {
+		startTime = new Date();
+	}
+	$('[data-popup]', $findIn).each(function() {
+		var $buttonSet, $buttons, $inner1, $popup, isActive, name, popup;
+		$popup = $(this);
+		name = $popup.data('popup');
+		if (!name) {
+			return null;
+		}
+		$buttons = $("[data-popup-button=" + name + "]");
+		isActive = !($popup.data('active') == null);
+		if (!$popup.length) {
+			return null;
+		}
+		popup = self.popups[name] = {
+			name: name,
+			active: false,
+			$buttons: $buttons,
+			$popup: $popup,
+			active: isActive
+		};
+		popup.$head = $popup.find('.popupHead');
+		popup.$body = $popup.find('.popupBody');
+		popup.toggle = function() {
+			self.toggle(name);
+			return this;
+		};
+		popup.show = function() {
+			self.show(name);
+			return this;
+		};
+		popup.hide = function() {
+			self.hide(name);
+			return this;
+		};
+		popup.populate = function(head, body, options) {
+			self.populate(name, head, body, options);
+			return this;
+		};
+		popup.timer = function($counter, ms, interval) {
+			self.timer(name, $counter, ms, interval);
+			return this;
+		};
+		$buttons.popup = $popup.popup = popup;
+		$buttonSet = $buttons.add($('.popupClose', $popup));
+		$buttonSet.unbind('click.popups');
+		$buttonSet.on('click.popups', function(event) {
+			var $button;
+			popup.toggle();
+			$button = $(this);
+			console.log($button, 'clicked')
+			if ( ($button.data('passLink') == null)) {
+				return event.preventDefault();
+			}
+		});
+		$inner1 = $popup.find('> .popupInner1');
+		$inner1.unbind('click.popups');
+		$inner1.on('click.popups', function(event) {
+			if ($inner1.is(event.target) && $inner1.has(event.target).length === 0) {
+				return popup.hide();
+			}
+		});
+		return ++itemCount;
+	});
+	if (DEBUG) {
+		time = new Date().getTime() - startTime.getTime();
+		console.log('[', time, 'ms ]', 'popups() mapped', itemCount, 'items');
+	}
+	popups.isSetup = true
+	return popups;
+};
+
+popups.popups = {};
+
+popups.toggle = function(name, args) {
+	var popup;
+	if (args == null) {
+		args = null;
+	}
+	if (!name || !(name in this.popups) || !this.isSetup) {
+		return this;
+	}
+	popup = this.popups[name];
+	console.log(popup)
+	if (popup.active) {
+		return this.hide(name);
+	} else {
+		return this.show(name)
+	}
+	return this;
+};
+
+popups.show = function(name) {
+	var popup;
+	if (name && (popup = this.popups[name])) {
+		popup.$popup.attr('data-active', '');
+		popup.active = true;
+	}
+	return this;
+};
+
+popups.hide = function(name) {
+	var popup;
+	if (name && (popup = this.popups[name])) {
+		popup.$popup.removeAttr('data-active');
+		popup.active = false;
+	}
+	return this;
+};
+
+popups.hideAll = function() {
+	var popupName;
+	for (popupName in this.popups) {
+		this.hide(popupName);
+	}
+	return this;
+};
+
+popups.populate = function(name, head, body, options) {
+	var popup, _ref, _ref1;
+	if (options == null) {
+		options = {};
+	}
+	if (!name) {
+		return this;
+	}
+	if (!(popup = popups.popups[name])) {
+		return this;
+	}
+	if (head != null) {
+		if ((_ref = popup.$head) != null) {
+			_ref.html(head);
+		}
+	}
+	if (body != null) {
+		if ((_ref1 = popup.$body) != null) {
+			_ref1.html(body);
+		}
+	}
+	return this;
+};
+
+popups.timer = function(name, $counter, fullTime, intervalTime) {
+	var counter, interval, maxCounter;
+	if (fullTime == null) {
+		fullTime = 0;
+	}
+	if (intervalTime == null) {
+		intervalTime = 1000;
+	}
+	if (!name || !$counter) {
+		return this;
+	}
+	counter = 0;
+	maxCounter = Math.round(fullTime / intervalTime);
+	$counter.html(maxCounter);
+	interval = setInterval((function() {
+		$counter.html(maxCounter - (++counter));
+		if (counter >= maxCounter) {
+			clearInterval(interval);
+			return popups.hide(name);
+		}
+	}), intervalTime);
+	return this;
+};
+
+popups.get = function(name) {
+	if (name === null) {
+		return popups.popups;
+	} else {
+		return popups.popups[name];
+	}
+};
 
 $(document).ready(function() {
+	popups()
 
 	// anything with the scrollMe class will scroll to its [href] attribute smoothly when clicked
 	$(document).on('click', '.scrollMe', function(event) {

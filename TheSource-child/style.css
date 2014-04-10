@@ -190,6 +190,63 @@ Template: TheSource
 	color: #333;
 }
 
+.ad-outer-container {
+  text-align: center;
+  overflow: hidden;
+}
+
+.ad-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.ad-container img,
+.ad-container iframe,
+.widget iframe {
+  border-radius: 3px;
+}
+
+.ad-container img {
+	width: 100%;
+}
+
+
+.ad-headerBanner {
+	padding: 6px 0 4px;
+	clear: both;
+}
+
+.ad-belowFeatured {
+	padding-bottom: 10px;
+	padding-top: 8px;
+}
+
+.ad-afterThirdPost {
+	padding: 25px 8px 10px;
+}
+
+#header-top {
+	height: 288px !important;
+}
+
 .ad-footerBanner {
-	margin-top: 40px;
+	padding: 26px 0 6px;
+}
+
+#sidebar .textwidget {
+	overflow: hidden;
+	margin-left: -6px;
+}
+
+#sidebar .widgetcontent {
+	padding: 20px 10px;
+	padding-right: 0;
+}
+
+.single #sidebar .textwidget {
+	margin-left: 0;
+}
+
+.single #sidebar .widgetcontent {
+	padding: 20px 15px;
 }

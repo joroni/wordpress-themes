@@ -12,18 +12,22 @@
 <div class="ad-outer-container ad-footerBanner">
 	<div class="ad-container">
 
-<a href="http://ltsc.com.au">
-	<img style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
-</a>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Excl-news HomeMiddleAd -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3525701263209076"
+     data-ad-slot="5359993747"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 	</div>
 </div>
 
 
 <div id="content-bottom">
-
 	<div class="container<?php if ($fullWidthPage) echo(' nobg'); ?>"></div>
-
 </div>
 
 <div id="footer">

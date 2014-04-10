@@ -157,7 +157,9 @@ body {
 }
 
 .ad-afterThirdPost {
-	padding: 5px 8px 40px;
+	padding: 5px 0 40px;
+	width: 110%;
+	margin-left: -5%;
 }
 
 

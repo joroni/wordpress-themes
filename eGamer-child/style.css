@@ -150,3 +150,78 @@ body {
 	font-size: 10px !important;
 	line-height: 12px;
 }
+
+
+
+.ad-outer-container {
+  text-align: center;
+  overflow: hidden;
+}
+
+.ad-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.ad-container img,
+.ad-container iframe,
+.widget iframe {
+  border-radius: 3px;
+}
+
+.ad-container img {
+	width: 100%;
+}
+
+
+.ad-headerBanner {
+	padding: 0 0 4px;
+}
+
+.ad-belowFeatured {
+	padding-bottom: 10px;
+	padding-top: 8px;
+}
+
+.ad-afterThirdPost {
+	padding: 6px 8px 18px;
+	margin-left: -11px;
+	width: 636px;
+}
+
+
+.ad-footerBanner {
+	padding: 14px 0 14px;
+	clear: both;
+}
+
+.sidebar-box .textwidget {
+	overflow: hidden;
+}
+
+.placeholderAd {
+	display: inline-block;
+	background-color: rgba(180, 140, 120, 0.3);
+	border-radius: 3px;
+	width: 100%;
+	max-width: 728px;
+	height: 90px;
+}
+
+.placeholderAd-300x250 {
+	display: inline-block;
+	background-color: rgba(180, 140, 120, 0.3);
+	border-radius: 3px;
+	width: 100%;
+	max-width: 300px;
+	height: 250px;
+}
+
+.placeholderAd-300x600 {
+	display: inline-block;
+	background-color: rgba(180, 140, 120, 0.3);
+	border-radius: 3px;
+	width: 100%;
+	max-width: 300px;
+	height: 600px;
+}

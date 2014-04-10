@@ -31,7 +31,34 @@ while (have_posts()) : the_post(); ?>
 </div>
 <?php }; ?>
 <?php
-if (have_posts()) : while (have_posts()) : the_post();?>
+$postCount = 0;
+if (have_posts()) : while (have_posts()) :
+  the_post();
+
+  ++$postCount;
+
+  if ( $postCount === 4 ) {
+    ?>
+
+<div class="ad-outer-container ad-afterThirdPost">
+  <div class="ad-container">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Excl-news HomeMiddleAd -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3525701263209076"
+     data-ad-slot="5359993747"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  </div>
+</div>
+
+    <?php
+  }
+?>
 <!--Begin Post-->
 
     <?php $width = (int) get_option('egamer_thumbnail_width_index');
@@ -50,7 +77,6 @@ if (have_posts()) : while (have_posts()) : the_post();?>
         <?php the_title() ?>
         </a></h2>
     <div class="single-entry">
-
         <?php if (get_option('egamer_index_thumbnails') == 'on') { ?>
             <?php if($thumb <> '') { ?>
                 <a href="<?php the_permalink() ?>" title="<?php printf(esc_attr__('Permanent Link to %s','eGamer'), get_the_title()) ?>">

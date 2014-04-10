@@ -78,14 +78,11 @@ Template Name: PROJECT PAGE
 											</p>
 										</div>
 									</div>
-									<div class='pproj-right-text desktop-only'>
+									<div class='pproj-right-text'>
 										<div class="small-text">
 											FIVE YEAR LTSC PRICE LIST
 										</div>
 										<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/Page_Project_01_07.jpg" alt="">
-									</div>
-									<div class='pproj-right-text mobile-only'>
-										<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/mobile/Project-Mobile_07.jpg" alt="">
 									</div>
 									<div class='clear'></div>
 								</div>

@@ -1,8 +1,25 @@
 <div style="clear: both;"></div>
 </div>
 </div>
-<div id="footer">
 
+<div class="ad-outer-container ad-footerBanner">
+	<div class="ad-container">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Excl-news HomeMiddleAd -->
+<ins class="adsbygoogle"
+	style="display:inline-block;width:728px;height:90px"
+	data-ad-client="ca-pub-3525701263209076"
+	data-ad-slot="5359993747"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+	</div>
+</div>
+
+
+<div id="footer">
 	<?php include( 'other-site-feeds.php' ); ?>
 </div>
 
@@ -11,6 +28,7 @@
 	<br/>
 	<strong>GameTekLive is part of the <a target='_blank' href="http://broadbentmedia.com">Broadbent Media</a> Group.</strong>
 	<br/>
+
 <div class="disclaimer" style="margin: 0 auto;padding: 12px 10px; text-align: center; font-size: 11px; max-width: 960px;">
 	<p>
 		The Owner t/a Broadbent Media (ACN: 163 361 144) cannot be held responsible for damages directly or indirectly may be caused by users who use our websites. The Owner makes no warranties as to the availability or functionality.<br/>
