@@ -26,6 +26,11 @@
 <div class="contact-us">
 	Contact Us: <a href="mailto:info@gameteklive.com">info@gameteklive.com</a>
 	<br/>
+	<div class="contactAddress" style="text-align: center;padding: 12px">
+		Level 19 Two International Finance Centre<br/>
+		8 Finance Street, Central<br/>
+		Hong Kong, China
+	</div>
 	<strong>GameTekLive is part of the <a target='_blank' href="http://broadbentmedia.com">Broadbent Media</a> Group.</strong>
 	<br/>
 

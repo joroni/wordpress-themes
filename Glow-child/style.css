@@ -176,3 +176,49 @@ body {
 	font-size: 10px !important;
 	line-height: 12px;
 }
+
+
+.ad-outer-container {
+  text-align: center;
+  overflow: hidden;
+}
+
+.ad-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.ad-container img,
+.ad-container iframe,
+.widget iframe {
+  border-radius: 3px;
+}
+
+.ad-container img {
+	width: 100%;
+}
+
+
+.ad-headerBanner {
+	padding-top: 10px;
+	margin-bottom: -10px;
+}
+
+.ad-belowFeatured {
+	padding-bottom: 10px;
+	padding-top: 8px;
+}
+
+.ad-afterThirdPost {
+	padding: 25px 20px 20px;
+}
+
+
+.ad-footerBanner {
+	padding: 6px 0 12px;
+	clear: both;
+}
+
+#sidebar .sidebar-block .sidebar-title {
+	display: none;
+}

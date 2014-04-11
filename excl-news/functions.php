@@ -291,6 +291,36 @@ registerWidget(array(
 ));
 
 function footerDisclaimer() {
+	$name = get_bloginfo('name');
+
+	if ( preg_match('/sport/i', $name) ) {
+		?>
+		<div class="contantDetails" style="text-align: center;">
+			Contact Us: <a href="mailto:info@exclusivelysport.com">info@exclusivelysport.com</a>
+			<br/>
+			<div class="contactAddress" style="text-align: center;padding: 12px;font-size:90%">
+				Level 19 Two International Finance Centre<br/>
+				8 Finance Street, Central<br/>
+				Hong Kong, China
+			</div>
+
+			<p><strong>Exclusively Sport is part of the <a target="_blank" href="http://broadbentmedia.com">Broadbent Media</a> Group.</strong></p>
+		</div>
+		<?php
+	} elseif ( preg_match('/news/i', $name) ) {
+		?>
+		<div class="contantDetails" style="text-align: center;">
+			Contact us: <a href="mailto:info@exclusivelynews.com">info@exclusivelynews.com</a>
+			<br/>
+			<div class="contactAddress" style="text-align: center;padding: 12px;font-size:90%">
+				Level 19 Two International Finance Centre<br/>
+				8 Finance Street, Central<br/>
+				Hong Kong, China
+			</div>
+			<p><strong>Exclusively News is part of the <a target="_blank" href="http://broadbentmedia.com">Broadbent Media</a> Group.</strong></p>
+		</div>
+		<?php
+	}
 	dynamic_sidebar('footerDisclaimer');
 }
 

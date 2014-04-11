@@ -412,6 +412,18 @@ registerWidget('ad-belowFeatured');
 registerWidget('footerDisclaimer');
 
 function footerDisclaimer() {
+	?>
+	<div class="contactDetails" style="text-align: center;">
+		Contact Us: <a href='mailto:info@forkandkniv.com'>info@forkandkniv.com</a>
+		<br/>
+		<div class="contactAddress" style="text-align: center;padding: 12px;font-size:90%">
+			Level 19 Two International Finance Centre<br/>
+			8 Finance Street, Central<br/>
+			Hong Kong, China
+		</div>
+		<p><strong>Fork And Kniv is part of the <a target="_blank" href="http://broadbentmedia.com">Broadbent Media</a> Group.</strong></p>
+	</div>
+	<?php
 	dynamic_sidebar('footerDisclaimer');
 }
 

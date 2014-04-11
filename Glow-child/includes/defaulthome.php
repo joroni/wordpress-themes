@@ -1,6 +1,27 @@
 <?php $i = 0; $fullposts_num = 3;
+
+$postCount = 0;
 if (have_posts()) : while (have_posts()) : the_post();
-$i++;?>
+++$postCount;
+$i++;
+
+if ( $postCount === 7 ) {
+	?>
+	
+<div class="ad-outer-container ad-afterThirdPost">
+	<div class="ad-container">
+
+<a href="http://ltsc.com.au">
+	<img style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
+</a>
+
+	</div>
+</div>
+
+	<?php
+}
+
+?>
 
 <?php $classtext = 'thumbnail';
 	  $titletext = get_the_title(); ?>

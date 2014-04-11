@@ -22,7 +22,12 @@
 				<div id="footer-bottom">
 					<div class="contact-us">
 						Contact Us: <a href="mailto:info@trendhomme.com">info@trendhomme.com</a>
-						<br/><br/>
+						<br/>
+						<div class="contactAddress" style="text-align: right;padding: 12px">
+							Level 19 Two International Finance Centre<br/>
+							8 Finance Street, Central<br/>
+							Hong Kong, China
+						</div>
 						<strong>Trend Homme is part of the <a target="_blank" href="http://broadbentmedia.com">Broadbent Media</a> Group.</strong>
 					</div>
 					<br/><br/>

@@ -70,6 +70,21 @@
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php $logo = (get_option('glow_logo') <> '') ? get_option('glow_logo') : get_template_directory_uri().'/images/logo.png'; ?>
 				<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" id="logo" class="unitPng"/></a>
 
+<div class="ad-outer-container ad-headerBanner">
+	<div class="ad-container">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Excl-news HomeMiddleAd -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3525701263209076"
+     data-ad-slot="5359993747"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+	</div>
+</div>
 			<div class="clear"></div>
 
 			<!-- Categories Menu -->

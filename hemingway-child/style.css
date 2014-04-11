@@ -2049,7 +2049,7 @@ input[type=checkbox] {
 
 
 	.home-section .download-section.last .downloads-sub-infotxt {
-	 padding: 0 ;
+		padding: 0 ;
 	}
 
 
@@ -2065,7 +2065,8 @@ input[type=checkbox] {
 	}
 
 
-	.who-are-we .left-image {
+	.projectPage .who-are-we .left-image,
+	.locationPage .who-are-we .left-image {
 		float: none;
 		width: 100%;
 		margin: 0 auto;
@@ -3048,7 +3049,23 @@ input[type=checkbox] {
 	cursor: zoom-in;
 }
 
-.who-are-we img {
+.projectPage .who-are-we img,
+.locationpage .who-are-we img {
 	margin-left: -80px;
 	float: right;
+}
+
+.disclaimer {
+	padding: 10px 40px;
+	font-size: 11px;
+	color: #888;
+	font-family: 'Calibri-Light';
+	text-align: justify;
+	max-width: 1060px;
+	margin: 0 auto 10px;
+
+}
+
+.page-footer .centered {
+	margin-bottom: 30px;
 }

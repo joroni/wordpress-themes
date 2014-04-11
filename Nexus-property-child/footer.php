@@ -24,6 +24,13 @@
 	<div id="footer-info" class="container">
 		<div class="contact-us">
 			Contact Us: <a href="mailto:info@takeonproperty.com">info@takeonproperty.com</a> | Take on Property is part of the <a href="http://broadbentmedia.com" target="_blank">Broadbent Media</a> Group.
+			<br/>
+			<div class="contactAddress" style="text-align: right;padding: 12px">
+				Level 19 Two International Finance Centre<br/>
+				8 Finance Street, Central<br/>
+				Hong Kong, China
+			</div>
+
 		</div>
 		<br/>
 		<?php dynamic_sidebar('footerDisclaimer') ?>

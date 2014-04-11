@@ -21,7 +21,12 @@
 
 			<div class="contact-us">
 				Contact Us: <a href="mailto:info@keepontravellin.com">info@keepontravellin.com</a>
-				<br/><br/>
+				<br/>
+				<div class="contactAddress" style="text-align: center;padding: 12px">
+					Level 19 Two International Finance Centre<br/>
+					8 Finance Street, Central<br/>
+					Hong Kong, China
+				</div>
 				<strong>Keep on Travellin is part of the <a href="http://broadbentmedia.com" target='_blank'>Broadbent Media</a> Group.</strong>
 				<br/><br/>
 				<?php dynamic_sidebar('footerDisclaimer') ?>

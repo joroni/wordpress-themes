@@ -128,3 +128,52 @@ body {
 	font-size: 10px !important;
 	line-height: 12px;
 }
+
+
+/* New */
+
+#et-slides { /* helps with the fact that the images arent full width */
+	text-align: center;
+}
+
+
+.ad-outer-container {
+  text-align: center;
+  overflow: hidden;
+}
+
+.ad-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.ad-container img,
+.ad-container iframe,
+.widget iframe {
+  border-radius: 3px;
+}
+
+.ad-container img {
+	width: 100%;
+}
+
+
+.ad-headerBanner {
+	padding: 0 0 4px;
+}
+
+.ad-belowFeatured {
+	padding-bottom: 10px;
+	padding-top: 8px;
+}
+
+.ad-afterThirdPost {
+	padding: 5px 0 40px;
+	width: 110%;
+	margin-left: -5%;
+}
+
+
+.ad-footerBanner {
+	padding: 6px 0 12px;
+}

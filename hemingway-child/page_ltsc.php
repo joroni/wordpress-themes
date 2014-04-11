@@ -12,7 +12,7 @@ Template Name: LTSC
   <body id="top">
   	<div id="pagewrap">
 
-			<div id="ltsctop" class="wrapper section-inner">
+			<div id="ltsctop" class="wrapper section-inner ltscPage">
 				<!-- Top Section-->
 				<div class="home-section">
 					<div class="center desktop-only">

@@ -42,6 +42,11 @@
 		<div class="contact-us">
 			Contact Us: <a href="mailto:info@a-museyourself.com">info@a-museyourself.com</a>
 			<br/>
+			<div class="contactAddress" style="text-align: center;padding: 12px">
+				Level 19 Two International Finance Centre<br/>
+				8 Finance Street, Central<br/>
+				Hong Kong, China
+			</div>
 			<strong>A-muse Yourself is part of the <a target="_blank" href="http://broadbentmedia.com">Broadbent Media</a> Group.</strong>
 			<br/>
 <div class="disclaimer" style="margin: 0 auto;padding: 12px 10px; text-align: center; font-size: 11px; max-width: 960px;">

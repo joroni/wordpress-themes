@@ -14,7 +14,7 @@ Template Name: About Us
   <body id="top">
   	<div id="pagewrap">
 
-			<div class="wrapper section-inner">
+			<div class="wrapper section-inner aboutPage">
 				<!-- Top Section-->
 					<div class="home-section">
 						<div class="center">

@@ -14,7 +14,7 @@ Template Name: PROJECT PAGE
   <body id="top">
   	<div id="pagewrap">
 
-			<div id="projtop" class="wrapper section-inner">
+			<div id="projtop" class="wrapper section-inner projectPage">
 
 				<!--THE PROJECT Section-->
 				<div class="home-section masterplan">

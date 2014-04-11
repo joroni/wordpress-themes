@@ -41,7 +41,7 @@ Template Name: LOCATION PAGE
 								</a>
 							</div>
 							<hr>
-							<span>SATTELITE MAP</span>
+							<span>SATELLITE MAP</span>
 						</div>
 						<div class="map-col">
 							<div class="images">

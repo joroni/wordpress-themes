@@ -1,4 +1,22 @@
 		</div> <!-- end wrapper -->
+
+<div class="ad-outer-container ad-footerBanner">
+	<div class="ad-container">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Excl-news HomeMiddleAd -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3525701263209076"
+     data-ad-slot="5359993747"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+	</div>
+</div>
+
+
 	</div> <!-- end main area wrap -->
 
 		<div id="footer">
@@ -7,6 +25,11 @@
 			<div class="contact-us">
 				Contact Us: <a href="mailto:info@mwhealthandfitness.com">info@mwhealthandfitness.com</a>
 				<br/>
+				<div class="contactAddress" style="text-align: center;padding: 12px">
+					Level 19 Two International Finance Centre<br/>
+					8 Finance Street, Central<br/>
+					Hong Kong, China
+				</div>
 				<strong>MW Health and Fitness is part of the <a href="http://broadbentmedia.com" target="_blank">Broadbent Media</a> Group.</strong>
 			</div>
 <div class="disclaimer" style="margin: 0 auto;padding: 12px 10px; text-align: center; font-size: 11px; max-width: 960px;">
