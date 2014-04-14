@@ -13,6 +13,76 @@ Template: powermag
 
 .ad-space-banner {
 	text-align: center;
-	margin-bottom: 15px;
 	overflow: hidden;
+}
+
+.ad-space-banner img {
+	width: 100%;
+}
+
+.signin {
+	margin-top: 4px;
+}
+
+#full-collapsible {
+	box-shadow:	2px 2px 12px #d0d0d0 inset,
+				0 0 0 1px rgba(0,0,0,0.1) inset !important;
+}
+
+#full-collapsible h2 {
+	color: #808080 !important;
+}
+
+#footer-wrap, #nav-wrap, #header-wrap #collapse-trigger {
+	display: none !important;
+}
+
+article .wpb_single_image:hover {
+	box-shadow: 0 0 14px 0 rgba(0,0,0, 0.2);
+}
+
+.disclaimer {
+	line-height: 1.2em;
+}
+
+
+.header-wrap {
+	text-align: center;
+}
+.header-wrap .branding {
+	width: 40%;
+	display: inline-block;
+	vertical-align: bottom;
+	float: none;
+}
+.header-wrap .ad-space-banner {
+	width: 55%;
+	margin-left: 4%;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 0 !important;
+}
+#logo {
+	float: none;
+}
+#logo img {
+	width: 100%;
+	max-width: 403px;
+}
+#full-top {
+	background-color: #1F1F1F !important;
+}
+
+
+@media (max-width: 768px) {
+	.header-wrap .ad-space-banner {
+		margin-top: 20px;
+		display: block;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.header-wrap .branding {
+		width: 100%;
+	}
 }

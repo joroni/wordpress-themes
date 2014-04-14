@@ -21,6 +21,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr-2.5.3.min.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="ie8.css" />
 <![endif]-->
+<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/style.css" />
 
 <?php include(get_template_directory() . '/partials/part-cat-options.php' );?>
 <?php wp_head(); ?>
@@ -53,17 +54,6 @@ if ($boxed) { ?>
 	
 		<div id="full-top">
 
-			<div class="ad-space-banner">
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- Broadbent Media -->
-				<ins class="adsbygoogle"
-				     style="display:inline-block !important;width:728px;height:90px"
-				     data-ad-client="ca-pub-3525701263209076"
-				     data-ad-slot="1461504547"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div>
 			
 			<!-- Masthead
 			================================================== -->
@@ -85,13 +75,19 @@ if ($boxed) { ?>
 								?>
 								
 								<div id="logo">
-									<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo of_get_option('pm_logo'); ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/></a>
+									<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+										<?php /* <img src="<?php echo of_get_option('pm_logo'); ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/> */ ?>
+										<img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo.png" alt="BBM" title="Broadbent Media" />
+									</a>
 								</div>
 								<?php } ?>
 							
 							</div>
-							
-							<?php if (of_get_option('pm_top_ad') != NULL) { //Top Banner ?>
+			<div class="ad-space-banner">
+<a href="http://ltsc.com.au">
+	<img style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
+</a>
+			</div>							<?php if (of_get_option('pm_top_ad') != NULL) { //Top Banner ?>
 							<div id="top-ad">
 								<?php echo ( of_get_option('pm_top_ad') ); ?>
 							</div>
@@ -149,9 +145,9 @@ if ($boxed) { ?>
 							</div>
 							<?php } ?>
 	
-				</nav><!-- .site-navigation .main-navigation -->
-			</div><!-- #nav-wrap -->
-		</div><!-- nav .row -->
+				</nav>
+			</div>
+		</div>
 	</div>
 
 		<?php if ( of_get_option('pm_ticker') ) { //Get NewsTicker if Enabled ?>

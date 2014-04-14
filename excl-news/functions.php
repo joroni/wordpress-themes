@@ -325,3 +325,6 @@ function footerDisclaimer() {
 }
 
 add_action( 'genesis_after_footer', 'footerDisclaimer' );
+
+
+
