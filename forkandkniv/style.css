@@ -1880,3 +1880,13 @@ a:hover {
 #sidebar .textwidget {
   text-align: center;
 }
+
+/* Easter */
+
+body {
+  background-image: url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgLeft.png"),
+                    url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgRight.png"),
+                    url("http://forkandkniv.broadbent.wpengine.com/wp-content/uploads/sites/6/2013/11/background.jpg");
+  background-position: top left, top right, top center;
+  background-repeat: no-repeat;
+}

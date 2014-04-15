@@ -120,9 +120,14 @@
 									<button class="emailSubmitButton" type="submit" autocomplete="off">
 										<img  id="emailsubmit" src="<?php echo get_stylesheet_directory_uri() ?>/images/submitbutton.png" alt="submit" />
 									</button>
-									<img  id="emailsent" src="<?php echo get_stylesheet_directory_uri() ?>/images/emailsent.jpg" style="display:none" alt="e-sent" />
-									<div id="contactform_errorloc" class="error_strings">
-							</div>
+									<img id="emailsent" src="<?php echo get_stylesheet_directory_uri() ?>/images/emailsent.jpg" style="display:none" alt="e-sent" />
+									<div class="messageBox">
+										<div class="message-number">Please enter a valid phone number.</div>
+										<div class="message-name">Please enter your Full Name.</div>
+										<div class="message-email">Please enter a valid Email address.</div>
+										<div class="message-success">Success!<br/>You will recieve an email shortly.</div>
+										<div class="message-failure">It didnt work.<br/>Please, try again soon.</div>
+									</div>
 							</div>
 								<div class='centered'>
 									<div class="csub-info">

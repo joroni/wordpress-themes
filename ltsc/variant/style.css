@@ -151,7 +151,8 @@ a:active, .button:active {
 .header,
 .core > section,
 .core .showcaseBox,
-.footer {
+.footer,
+.coreSection1 .seperator {
 	width: 1120px;
 	margin: 0 auto;
 }
@@ -160,185 +161,46 @@ a:active, .button:active {
 	width: 100%;
 	overflow: hidden;
 
-	background: #f6f6f6 url('/wp-content/themes/ltsc/variant/img/header.jpg') no-repeat center top;
+	background: #f6f6f6 url('/wp-content/themes/ltsc/variant/img/header.jpg') no-repeat center center ;
+	padding: 30px 0;
+	text-align: center;
 }
 
 .header {
-	height: 623px;
-
+	display: inline-block;
+	padding: 20px;
 	color: #b09045;
+	margin: 0 auto;
+	text-align: center;
+	background-color: rgba(255,255,255, 0.6);
+	border-radius: 3px;
 }
-
-	.headerLeft {
-		float: left;
-		width: 585px;
-		height: 100%;
-		padding-top: 70px;
-	}
-
-		.headerLeft-box1 {
-			height: 52%;
-		}
-
-			.headerLeft-content1 {
-				padding: 0 45px;
-				margin: 0 auto;
-
-				font-size: 32px;
-				line-height: 1.75em;
-				letter-spacing: 2px;
-				font-weight: normal;
-				text-transform: uppercase;
-
-			}
-
-		.headerLeft-box2 { }
-
-			.headerLeft-content2 {
-				padding: 24px 40px 38px 42px;
-				margin: 0 auto;
-
-				font-size: 48px;
-				text-transform: uppercase;
-				letter-spacing: 0.5px;
-
-				border-radius: 6px;
-				background-color: #aaa;
-				background-color: rgba(255,255,255, 0.73);
-				color: #344258;
-				white-space: nowrap;
-			}
-
-			.headerLeft .asterisk {
-				color: #67788D;
-			}
-
-			.headerLeft-numberImage {
-				width: 87px;
-				height: 87px;
-				margin: 4px 4px -31px;
-				display: inline-block;
-				background: url('/wp-content/themes/ltsc/variant/img/header_number.png') no-repeat;
-			}
-
-
-
-	.headerRight {
-		float: right;
+	.logo {
+		display: inline-block;
 		width: 400px;
-		height: 100%;
-		padding-top: 100px;
-		padding-right: 20px;
+		height: 154px;
+		margin-left: 15px;
+		background: url('/wp-content/themes/ltsc/variant/img/newLogo.png') no-repeat;
+		vertical-align: middle;
 	}
-		.logo {
-			width: 176px;
-			height: 56px;
-			margin: 0 auto;
-			margin-bottom: 35px;
-			background: url('/wp-content/themes/ltsc/variant/img/logo.png') no-repeat;
+
+	.logo:hover {
+		opacity: 0.9;
+	}
+
+	.headerText {
+		display: inline-block;
+		vertical-align: middle;
+		text-align: left;
+		margin-left: 70px;
+		color: #344258;
+		font-size: 44px;
+		letter-spacing: 0.5px;
+	}
+
+		.headerText .specialText {
+			color: #b09045;
 		}
-
-		.logo:hover {
-			opacity: 0.9;
-		}
-
-		.headerForm {
-			height: 100%;
-			width: 100%;
-		}
-
-			.headerForm-blurb {
-				padding: 0 0 14px;
-				opacity: 0;
-
-				color: #cad2da;
-				font-size: 16px;
-				text-align: center;
-			}
-
-			.headerForm .formList li {
-				margin-bottom: 30px;
-				border-radius: 4px;
-				background-color: #fff;
-			}
-				.headerForm .formList li:last-child { margin-bottom: 0; }
-
-				.headerForm .formList li.active {
-					box-shadow: 0 0 0 2px rgba(176, 143, 69, 0.8);
-				}
-
-				.headerForm .formList li.error {
-					box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.4) !important;
-				}
-
-				.headerForm .formList .active label {
-					color: #333;
-				}
-
-				.headerForm .formList .error label {
-					color: #8F2727;
-				}
-
-				.error-msg {
-					color: #9A5656;
-					font-size: 80%;
-					padding-bottom: 2px;
-				}
-
-		.headerForm .formList label,
-		.headerForm .formList input {
-			padding: 16px 10px;
-		}
-
-		.headerForm .formList label {
-			padding-left: 0;
-			padding-right: 10px;
-			text-align: right;
-			width: 27%;
-
-			color: #777;
-			font-size: 20px;
-			font-weight: 200;
-		}
-
-
-		.headerForm .formList input {
-			width: 71%;
-
-			border: 0;
-			color: #9f9f9f;
-			background-color: transparent;
-			font-family: 'Calibri';
-			font-size: 20px;
-		}
-
-			.headerForm input:focus {
-				color: #707070;
-				box-shadow: none !important;
-				outline: none !important;
-			}
-
-			.headerForm input:first-child {
-				margin-top: 0;
-			}
-
-		.headerForm-buttonBox {
-			padding: 30px 0;
-
-			text-align: center;
-		}
-
-		.headerForm-button {
-			width: 230px;
-			padding: 16px 28px;
-			display: inline-block;
-
-			font-size: 22px;
-			text-transform: uppercase;
-			border-radius: 6px;
-			border: 1px solid #fff;
-		}
-
 
 .core {
 	min-height: 400px;
@@ -376,6 +238,10 @@ a:active, .button:active {
 
 	.core .coreSection1 {
 		width: auto;
+	}
+
+	.core .coreSection1 .seperator {
+		padding: 30px 0 25px;
 	}
 
 	.core .showcaseBoxWrap,
@@ -536,6 +402,128 @@ a:active, .button:active {
 	.coreSection4-text {
 		padding-top: 24px;
 		font-size: 24px;
+	}
+	.coreSection5 {
+		font-size: 0;
+	}
+	.coreSection5 .leftSide,
+	.coreSection5 .rightSide {
+		display: inline-block;
+	}
+
+
+	.coreSection5 .leftSide {
+		width: 55%;
+	}
+
+	.coreSection5 .rightSide {
+		width: 45%;
+	}
+
+	.coreSection5 .text {
+		font-size: 40px;
+	}
+	.coreSection5 .leftSide img {
+		width: auto;
+		height: 100px;
+		display: block;
+	}
+
+	.contactForm {
+		height: 100%;
+		width: 100%;
+	}
+
+		.contactForm .blurb {
+			padding: 0 0 14px;
+			opacity: 0;
+
+			color: #cad2da;
+			font-size: 16px;
+			text-align: center;
+		}
+
+		.contactForm .formList li {
+			margin-bottom: 30px;
+			border-radius: 4px;
+			background-color: #fff;
+		}
+			.contactForm .formList li:last-child { margin-bottom: 0; }
+
+			.contactForm .formList li.active {
+				box-shadow: 0 0 0 2px rgba(176, 143, 69, 0.8);
+			}
+
+			.contactForm .formList li.error {
+				box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.4) !important;
+			}
+
+			.contactForm .formList .active label {
+				color: #333;
+			}
+
+			.contactForm .formList .error label {
+				color: #8F2727;
+			}
+
+			.error-msg {
+				color: #9A5656;
+				font-size: 80%;
+				padding-bottom: 2px;
+			}
+
+	.contactForm .formList label,
+	.contactForm .formList input {
+		padding: 16px 10px;
+	}
+
+	.contactForm .formList label {
+		padding-left: 0;
+		padding-right: 10px;
+		text-align: right;
+		width: 27%;
+
+		color: #777;
+		font-size: 20px;
+		font-weight: 200;
+	}
+
+
+	.contactForm .formList input {
+		width: 71%;
+
+		border: 0;
+		color: #9f9f9f;
+		background-color: transparent;
+		font-family: 'Calibri';
+		font-size: 20px;
+	}
+
+		.contactForm input:focus {
+			color: #707070;
+			box-shadow: none !important;
+			outline: none !important;
+		}
+
+		.contactForm input:first-child {
+			margin-top: 0;
+		}
+
+	.contactForm .buttonBox {
+		padding: 30px 0;
+
+		text-align: center;
+	}
+
+	.contactForm-button {
+		width: 230px;
+		padding: 16px 28px;
+		display: inline-block;
+
+		font-size: 22px;
+		text-transform: uppercase;
+		border-radius: 6px;
+		border: 1px solid #fff;
 	}
 
 .footerWrap {

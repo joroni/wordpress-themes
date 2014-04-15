@@ -3069,3 +3069,16 @@ input[type=checkbox] {
 .page-footer .centered {
 	margin-bottom: 30px;
 }
+
+form .invalid input {
+	box-shadow: 0 0 0 2px rgba(255,0,0,0.5);
+}
+
+.messageBox {
+	text-align: center;
+}
+
+.messageBox div {
+	display: none;
+	padding: 3px 0;
+}

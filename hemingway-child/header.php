@@ -14,7 +14,6 @@
 		<?php wp_head(); ?>
 
 		<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
-		<script src="<?php echo get_stylesheet_directory_uri() ?>/js/gen_validatorv4.js" type="text/javascript" xml:space="preserve"></script>
 		<script src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.scrollto.js" type="text/javascript"></script>
 		<script src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.viewport.js" type="text/javascript"></script>
 

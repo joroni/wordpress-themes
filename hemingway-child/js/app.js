@@ -205,7 +205,32 @@ $(document).ready(function() {
 
 	var $formButton	= $('.emailSubmitButton')
 	var $form		= $formButton.closest('form')
+	var $messageBox	= $('.messageBox')
 	
+	var validations = {
+		number: {
+			regex		: /^(\+\d{1,2})?((07|04)\d{8}|5\d{7,})$/i,
+			$input		: $form.find('[name="clientNumber"]'),
+			$message	: $messageBox.find('.message-number')
+		},
+		email: {
+			regex		: /\S+@\S+\.\S+/,
+			$input		: $form.find('[name="clientEmail"]'),
+			$message	: $messageBox.find('.message-email')
+		},
+		name: {
+			$input		: $form.find('[name="clientName"]'),
+			$message	: $messageBox.find('.message-name')
+		},
+		success: {
+			$message	: $messageBox.find('.message-success')
+		},
+		failure: {
+			$message	: $messageBox.find('.message-failure')
+		}
+	}
+
+
 	// We dont need to redirect if JS is working
 	$form.find('input[name=redirect]').remove()
 
@@ -213,12 +238,51 @@ $(document).ready(function() {
 	$formButton.on('click', function(event) {
 		event.preventDefault()
 
-		if ( $formButton.attr('disabled') == 'disabled' ) return null;
+		if ( $formButton.attr('disabled') == 'disabled' ) return null
 
 		var url		= $form.attr('action')
 		var method	= $form.attr('method')
 		var data	= $form.serializeArray()
 		
+		// Validations
+		var v		= validations
+		var isError	= false
+
+		number = v.number.$input.val().replace(/[^\+\d]/g, '') // strip non-numbers
+
+		if ( ! number.match(v.number.regex) ) {
+			v.number.$input.parent().addClass('invalid')
+			v.number.$message.fadeIn()
+			isError = true
+		}
+
+		if ( ! v.email.$input.val().match(v.email.regex) ) {
+			v.email.$input.parent().addClass('invalid')
+			v.email.$message.fadeIn()
+			isError = true
+		}
+
+		if ( ! v.name.$input.val() ) {
+			v.name.$input.parent().addClass('invalid')
+			v.name.$message.fadeIn()
+			isError = true
+		}
+
+		for ( var key in validations ) {
+			(function(key) {
+				var opt = validations[key]
+
+				if ( ! opt.$input ) return null
+
+				opt.$input.one('focusin', function() {
+					opt.$input.parent().removeClass('invalid')
+					opt.$message.fadeOut()
+				})
+			})(key)
+		}
+
+		if ( isError ) return false
+
 		$formButton.attr('disabled', 'disabled')
 
 		$.ajax({
@@ -228,20 +292,10 @@ $(document).ready(function() {
 		,	dataType: 'json'
 		,	error	: console.error
 		,	success	: function(json) {
-				console.log(json)
-
 				if ( json && json.success ) {
-					$('#contactform_errorloc')
-						.hide()
-						.html('Success!<br/>You will recieve an email shortly.')
-						.fadeIn()
-
-
+					v.success.$message.fadeIn()
 				} else {
-					$('#contactform_errorloc')
-						.hide()
-						.html('It didnt work.<br/>Please, try again soon.')
-						.fadeIn()
+					v.failure.$message.fadeIn()
 
 					$formButton.attr('disabled', false)
 				}
@@ -299,6 +353,8 @@ $(document).ready(function() {
 			}
 		})
 	}
+
+
 
 
 	//
@@ -365,6 +421,7 @@ $(document).ready(function() {
 		}
 	}
 
+	/*
 	// Validator stuff
 	var frmvalidator = new Validator("contactform");
 	frmvalidator.EnableOnPageErrorDisplaySingleBox();
@@ -380,7 +437,7 @@ $(document).ready(function() {
 	frmvalidator.addValidation("clientNumber","maxlen=50");
 	frmvalidator.addValidation("clientNumber","req","Please enter valid Contact Number");
 	frmvalidator.addValidation("clientNumber","numeric");
-
+	*/
 	window.clientsetFocus = function() {
 		$("form .clientName").focus()
 		$(".clientRequestLtsc").val("yes")

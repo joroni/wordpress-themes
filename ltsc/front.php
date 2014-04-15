@@ -1,36 +1,21 @@
 <div class="headerWrap">
 	<div class="header">
-		<div class="headerLeft">
-			<div class="headerLeft-box1 ">
-				<?php
-					// could probably add text like this via wordpress
-				?>
-				<div class="headerLeft-content1">
-					Making money in the<br/>
-					property market has<br/>
-					never been easier....
-				</div>
-
-			</div>
-			<div class="headerLeft-box2">
-				<div class="headerLeft-content2">
-					Secure property<br/>
-					for just <span class="headerLeft-numberImage"></span> a day!<span class="asterisk">*</span>
-				</div>
-			</div>
-		</div>
-		<div class="headerRight">
-			<a href="<?php echo home_url() ?>">
-				<div class="logo"></div>
-			</a>
-			<?php include 'headerForm.php'; ?>
+		<a class="logo" href="<?php echo home_url() ?>"></a>
+		<div class="headerText">
+			<span class="specialText">HEAR</span> WHY LTSC IS THE<br/>
+			FUTURE
 		</div>
 	</div>
 </div>
 <div class="core">
+
 	<section class="coreSection1">
 		<div class="coreTopText mediumText">
 			Using an LTSC, you can secure property with :
+		</div>
+		<div class="seperator">
+			<div class="seperatorLine"></div>
+			<div class="seperatorButtonWrap"><a class="seperatorButton button">BOOK A FREE WEBINAR</a></div>
 		</div>
 		<div class="showcaseBoxWrap">
 			<div class="showcaseBox">
@@ -128,6 +113,17 @@
 				SETTLE IN<br/>
 				URBANISATION STAGE
 			</div>
+		</div>
+	</section>
+	<section class="coreSection5">
+		<div class="leftSide">
+			<img alt="LTSC" src="<?php echo get_stylesheet_directory_uri() ?>/<?php echo $isVariant ? 'variant/' : '' ?>img/newLogo.png" />
+			<div class="text">
+				MAKING MONEY IN THE PROPERTY MARKET HAS NEVER BEEN EASIER...				
+			</div>
+		</div>
+		<div class="rightSide">
+			<?php include 'form.php'; ?>
 		</div>
 	</section>
 </div>

@@ -160,187 +160,140 @@ a:active, .button:active {
 	width: 100%;
 	overflow: hidden;
 
-	background: url('/wp-content/themes/ltsc/img/header.jpg') no-repeat center top;
+	background: url('/wp-content/themes/ltsc/img/header.jpg') no-repeat center center;
 	background-color: #101c28;
+	padding: 20px 0;
+	text-align: center;
 }
 
 .header {
-	height: 623px;
-
+	display: inline-block;
+	padding: 20px;
 	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	background-color: rgba(255,255,255, 0.25);
+	border-radius: 3px;
+	width: auto;
+
 }
-
-	.headerLeft {
-		float: left;
-		width: 585px;
-		height: 100%;
-		padding-top: 70px;
+	.logo {
+		display: inline-block;
+		width: 176px;
+		height: 56px;
+		background: url('/wp-content/themes/ltsc/img/logo.png') no-repeat;
+		vertical-align: middle;
 	}
 
-		.headerLeft-box1 {
-			height: 52%;
-		}
-
-			.headerLeft-content1 {
-				padding: 0 45px;
-				margin: 0 auto;
-
-				font-size: 32px;
-				line-height: 1.75em;
-				letter-spacing: 2px;
-				font-weight: normal;
-				text-transform: uppercase;
-
-			}
-
-		.headerLeft-box2 { }
-
-			.headerLeft-content2 {
-				padding: 24px 40px 38px 42px;
-				margin: 0 auto;
-
-				font-size: 48px;
-				text-transform: uppercase;
-				letter-spacing: 0.5px;
-
-				border-radius: 6px;
-				background-color: #aaa;
-				background-color: rgba(255,255,255, 0.73);
-				color: #344258;
-				white-space: nowrap;
-			}
-
-			.headerLeft .asterisk {
-				color: #67788D;
-			}
-
-			.headerLeft-numberImage {
-				width: 87px;
-				height: 87px;
-				margin: 4px 4px -31px;
-				display: inline-block;
-				background: url('/wp-content/themes/ltsc/img/header_number.png') no-repeat;
-			}
-
-
-
-	.headerRight {
-		float: right;
-		width: 400px;
-		height: 100%;
-		padding-top: 100px;
-		padding-right: 20px;
+	.logo:hover {
+		opacity: 0.9;
 	}
-		.logo {
-			width: 176px;
-			height: 56px;
-			margin: 0 auto;
-			margin-bottom: 35px;
-			background: url('/wp-content/themes/ltsc/img/logo.png') no-repeat;
-		}
 
-		.logo:hover {
-			opacity: 0.9;
-		}
+	.headerText {
+		display: inline-block;
+		vertical-align: middle;
+		text-align: left;
+		margin-left: 60px;
+	}
 
-		.headerForm {
-			height: 100%;
-			width: 100%;
-		}
+	.headerForm {
+		height: 100%;
+		width: 100%;
+	}
 
-			.headerForm-blurb {
-				padding: 0 0 14px;
-				opacity: 0;
+		.headerForm-blurb {
+			padding: 0 0 14px;
+			opacity: 0;
 
-				color: #cad2da;
-				font-size: 16px;
-				text-align: center;
-
-			}
-
-			.headerForm .formList li {
-				margin-bottom: 30px;
-				border-radius: 4px;
-				background-color: #fff;
-			}
-				.headerForm .formList li:last-child { margin-bottom: 0; }
-
-				.headerForm .formList li.active {
-					box-shadow: 0 0 0 2px rgba(46, 188, 68, 0.83);
-				}
-
-				.headerForm .formList li.error {
-					box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.73) !important;
-				}
-
-				.headerForm .formList .active label {
-					color: #222;
-				}
-
-				.headerForm .formList .error label {
-					color: #D25C5C;
-				}
-
-				.error-msg {
-					color: #EAC4C4;
-					font-size: 80%;
-					padding-bottom: 2px;
-				}
-
-		.headerForm .formList label,
-		.headerForm .formList input {
-			padding: 16px 10px;
-		}
-
-		.headerForm .formList label {
-			padding-left: 0;
-			padding-right: 10px;
-			text-align: right;
-			width: 27%;
-
-			color: #777;
-			font-size: 20px;
-			font-weight: 200;
-		}
-
-
-		.headerForm .formList input {
-			width: 71%;
-
-			border: 0;
-			color: #9f9f9f;
-			background-color: transparent;
-			font-family: 'Calibri';
-			font-size: 20px;
-		}
-
-			.headerForm input:focus {
-				color: #707070;
-				box-shadow: none !important;
-				outline: none !important;
-			}
-
-			.headerForm input:first-child {
-				margin-top: 0;
-			}
-
-
-		.headerForm-buttonBox {
-			padding: 30px 0;
-
+			color: #cad2da;
+			font-size: 16px;
 			text-align: center;
+
 		}
 
-		.headerForm-button {
-			width: 230px;
-			padding: 16px 28px;
-			display: inline-block;
-
-			font-size: 22px;
-			text-transform: uppercase;
-			border-radius: 6px;
-			border: 1px solid #fff;
+		.headerForm .formList li {
+			margin-bottom: 30px;
+			border-radius: 4px;
+			background-color: #fff;
 		}
+			.headerForm .formList li:last-child { margin-bottom: 0; }
+
+			.headerForm .formList li.active {
+				box-shadow: 0 0 0 2px rgba(46, 188, 68, 0.83);
+			}
+
+			.headerForm .formList li.error {
+				box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.73) !important;
+			}
+
+			.headerForm .formList .active label {
+				color: #222;
+			}
+
+			.headerForm .formList .error label {
+				color: #D25C5C;
+			}
+
+			.error-msg {
+				color: #EAC4C4;
+				font-size: 80%;
+				padding-bottom: 2px;
+			}
+
+	.headerForm .formList label,
+	.headerForm .formList input {
+		padding: 16px 10px;
+	}
+
+	.headerForm .formList label {
+		padding-left: 0;
+		padding-right: 10px;
+		text-align: right;
+		width: 27%;
+
+		color: #777;
+		font-size: 20px;
+		font-weight: 200;
+	}
+
+
+	.headerForm .formList input {
+		width: 71%;
+
+		border: 0;
+		color: #9f9f9f;
+		background-color: transparent;
+		font-family: 'Calibri';
+		font-size: 20px;
+	}
+
+		.headerForm input:focus {
+			color: #707070;
+			box-shadow: none !important;
+			outline: none !important;
+		}
+
+		.headerForm input:first-child {
+			margin-top: 0;
+		}
+
+
+	.headerForm-buttonBox {
+		padding: 30px 0;
+
+		text-align: center;
+	}
+
+	.headerForm-button {
+		width: 230px;
+		padding: 16px 28px;
+		display: inline-block;
+
+		font-size: 22px;
+		text-transform: uppercase;
+		border-radius: 6px;
+		border: 1px solid #fff;
+	}
 
 
 .core {
