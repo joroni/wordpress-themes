@@ -166,3 +166,17 @@ body {
 .ad-footerBanner {
 	padding: 6px 0 12px;
 }
+
+/* easter */
+html > body {
+  background-image: url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgLeft.png"),
+                    url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgRight.png")  !important;
+  background-position: top left, top right !important;
+  background-repeat: no-repeat !important;
+}
+
+@media (max-width: 1265px) {
+  html > body {
+    background-image: none !important;
+  }
+}

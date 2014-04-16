@@ -250,3 +250,18 @@ Template: TheSource
 .single #sidebar .widgetcontent {
 	padding: 20px 15px;
 }
+
+/* easter */
+html > body > #content {
+  background-image: url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgLeft.png"),
+                    url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgRight.png"),
+                    url("http://entertainment.broadbent.wpengine.com/wp-content/themes/TheSource/images/content_bg.png") !important;
+  background-position: top left, top right !important;
+  background-repeat: no-repeat, no-repeat, repeat-x !important;
+}
+
+@media (max-width: 1263px) {
+  html > body > #content {
+    background: url("http://entertainment.broadbent.wpengine.com/wp-content/themes/TheSource/images/content_bg.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0) !important;
+  }
+}

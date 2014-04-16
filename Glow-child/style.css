@@ -222,3 +222,17 @@ body {
 #sidebar .sidebar-block .sidebar-title {
 	display: none;
 }
+
+/* easter */
+body {
+  background-image: url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgLeft.png"),
+                    url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgRight.png") !important;
+  background-position: top left, top right !important;
+  background-repeat: no-repeat !important;
+}
+
+@media (max-width: 1265px) {
+  body {
+    background-image: none !important;
+  }
+}

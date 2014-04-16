@@ -225,3 +225,17 @@ body {
 	max-width: 300px;
 	height: 600px;
 }
+
+/* easter */
+body #wrapper2 {
+  background-image: url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgLeft.png"),
+                    url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgRight.png") !important;
+  background-position: top left, top right !important;
+  background-repeat: no-repeat !important;
+}
+
+@media (max-width: 1265px) {
+  body #wrapper2 {
+    background-image: none !important;
+  }
+}

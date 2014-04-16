@@ -1,9 +1,21 @@
 <div class="headerWrap">
 	<div class="header">
-		<a class="logo" href="<?php echo home_url() ?>"></a>
+		<a href="<?php echo home_url() ?>" title="LTSC"><img class="logo" alt="LTSC" src="<?php echo get_stylesheet_directory_uri() ?>/variant/img/newLogo.png" /></a>
 		<div class="headerText">
-			<span class="specialText">HEAR</span> WHY LTSC IS THE<br/>
-			FUTURE
+			<div class="headerTextItems">
+				<div class="active">
+					<span class="specialText">LEARN</span> HOW TO<br/>
+					PROFIT FROM AN LTSC
+				</div>
+				<div>
+					<span class="specialText">HEAR</span> WHY LTSC IS THE<br/>
+					FUTURE
+				</div>
+				<div>
+					<span class="specialText">SEE</span> HOW AN LTSC<br/>
+					CAN WORK FOR YOU
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -11,11 +23,11 @@
 
 	<section class="coreSection1">
 		<div class="coreTopText mediumText">
-			Using an LTSC, you can secure property with :
+			USING AN LTSC, YOU CAN SECURE PROPERTY
 		</div>
 		<div class="seperator">
 			<div class="seperatorLine"></div>
-			<div class="seperatorButtonWrap"><a class="seperatorButton button">BOOK A FREE WEBINAR</a></div>
+			<div class="seperatorButtonWrap"><a href="#contactForm" class="seperatorButton button bookWebinar">BOOK A FREE WEBINAR</a></div>
 		</div>
 		<div class="showcaseBoxWrap">
 			<div class="showcaseBox">
@@ -59,7 +71,7 @@
 				<?php 
 					$graphImage = $isVariant
 						? get_stylesheet_directory_uri() . '/variant/img/graph.png'
-						: get_stylesheet_directory_uri() . '/img/graph.png'
+						: get_stylesheet_directory_uri() . '/variant/img/graph.png'
 					;
 				?>
 				<img src="<?php echo $graphImage ?>" />
@@ -73,7 +85,7 @@
 	</section>
 	<section class="seperator">
 		<div class="seperatorLine"></div>
-		<div class="seperatorButtonWrap"><a class="seperatorButton button">BOOK A PRESENTATION</a></div>
+		<div class="seperatorButtonWrap"><a href="#contactForm" class="seperatorButton button learnMore">LEARN MORE</a></div>
 	</section>
 	<section class="coreSection3 row">
 		<div class="coreSection3-text col-3">
@@ -117,7 +129,7 @@
 	</section>
 	<section class="coreSection5">
 		<div class="leftSide">
-			<img alt="LTSC" src="<?php echo get_stylesheet_directory_uri() ?>/<?php echo $isVariant ? 'variant/' : '' ?>img/newLogo.png" />
+			<img alt="LTSC" src="<?php echo get_stylesheet_directory_uri() ?>/variant/img/newLogo.png" />
 			<div class="text">
 				MAKING MONEY IN THE PROPERTY MARKET HAS NEVER BEEN EASIER...				
 			</div>
@@ -150,7 +162,7 @@
 				<div class="clearfix"></div>
 				<div class="footerGuide-arrow"></div>
 				<div class="clearfix"></div>
-				<a class="footerGuide-button button" href="#">GUIDE TO LTSC</a>
+				<a class="footerGuide-button button learnMore" href="#contactForm">GUIDE TO LTSC</a>
 			</div>
 		</div>
 	</div>

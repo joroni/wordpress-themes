@@ -204,3 +204,21 @@ Template: celebritygossip-single-pro-psd
 .widget iframe {
   border-radius: 4px;
 }
+
+
+
+/* easter */
+body #main {
+  background-image: url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgLeft.png"),
+                    url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgRight.png") !important;
+  background-position: top left, top right !important;
+  background-repeat: no-repeat !important;
+  margin-top: 0;
+  padding-top: 25px;
+}
+
+@media (max-width: 1265px) {
+  body #main {
+    background-image: none !important;
+  }
+}

@@ -175,13 +175,14 @@ a:active, .button:active {
 	background-color: rgba(255,255,255, 0.6);
 	border-radius: 3px;
 }
-	.logo {
-		display: inline-block;
-		width: 400px;
-		height: 154px;
+	.header .logo {
 		margin-left: 15px;
-		background: url('/wp-content/themes/ltsc/variant/img/newLogo.png') no-repeat;
 		vertical-align: middle;
+		width: 322px;
+	}
+
+	.logo {
+		display: inline-block
 	}
 
 	.logo:hover {
@@ -190,11 +191,12 @@ a:active, .button:active {
 
 	.headerText {
 		display: inline-block;
+		position: relative;
 		vertical-align: middle;
 		text-align: left;
 		margin-left: 70px;
 		color: #344258;
-		font-size: 44px;
+		font-size: 42px;
 		letter-spacing: 0.5px;
 	}
 
@@ -298,7 +300,7 @@ a:active, .button:active {
 
 	.coreSection2-graph {
 		padding-left: 40px;
-		vertical-align: bottom;
+		vertical-align: middle;
 	}
 
 		.coreSection2-graph .graphText {
@@ -341,6 +343,7 @@ a:active, .button:active {
 	.core .seperatorButton {
 		display: inline-block;
 		padding: 14px 22px;
+		letter-spacing: 1px;
 
 		font-size: 22px;
 	}
@@ -405,23 +408,32 @@ a:active, .button:active {
 	}
 	.coreSection5 {
 		font-size: 0;
+		padding: 0 20px;
 	}
 	.coreSection5 .leftSide,
 	.coreSection5 .rightSide {
 		display: inline-block;
+		vertical-align: top;
 	}
 
 
 	.coreSection5 .leftSide {
-		width: 55%;
+		width: 50%;
+		margin-right: 5%;
+		margin-top: 35px;
 	}
 
 	.coreSection5 .rightSide {
-		width: 45%;
+		width: 40%;
+		margin-right: 5%;
 	}
 
 	.coreSection5 .text {
-		font-size: 40px;
+		font-size: 38px;
+		padding-top: 20px;
+		letter-spacing: 2px;
+		color: #b09045;
+		line-height: 1.35em;
 	}
 	.coreSection5 .leftSide img {
 		width: auto;
@@ -447,15 +459,16 @@ a:active, .button:active {
 			margin-bottom: 30px;
 			border-radius: 4px;
 			background-color: #fff;
+			border: 2px solid #b09045;
 		}
 			.contactForm .formList li:last-child { margin-bottom: 0; }
 
 			.contactForm .formList li.active {
-				box-shadow: 0 0 0 2px rgba(176, 143, 69, 0.8);
+				border-color: #396575;
 			}
 
 			.contactForm .formList li.error {
-				box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.4) !important;
+				border-color: #C44242;
 			}
 
 			.contactForm .formList .active label {
@@ -515,7 +528,7 @@ a:active, .button:active {
 		text-align: center;
 	}
 
-	.contactForm-button {
+	.contact-button {
 		width: 230px;
 		padding: 16px 28px;
 		display: inline-block;
@@ -525,6 +538,10 @@ a:active, .button:active {
 		border-radius: 6px;
 		border: 1px solid #fff;
 	}
+
+.learnMore {
+	letter-spacing: 2px;
+}
 
 .footerWrap {
 	overflow: hidden;
@@ -673,39 +690,43 @@ a:active, .button:active {
 }
 
 
-@media (max-width: 768px) and (min-width: 341px) {
+@media (max-width: 1100px) and (min-width: 341px) {
 	.header,
 	.core > section,
 	.core .showcaseBox,
 	.footer,
-	.headerLeft {
-		width: 768px;
+	.coreSection1 .seperator {
+		width: 100%;
+		min-width: 728px;
 	}
 
-	.header {
-		height: auto;
+	.header .logo {
+		display: inline-block;
+		width: 355px;
+		margin-left: 0;
+		margin-bottom: 20px;
 	}
+
+	.header .headerText {
+		display: block;
+		margin-left: 0;
+		text-align: center;
+		font-size: 36px;
+	}
+
+
+
+	.headerText br {
+		display: none;
+	}
+
+
 
 	.header .headerLeft {
 		float: none;
 		width: 610px;
 		margin: 0 auto;
-	}
-
-	.headerLeft-content1 {
-		width: 520px;
-	}
-
-	.headerLeft-box2 {
-		margin-top: 120px;
-	}
-
-	.headerRight {
-		margin: 0 auto;
-		float: none;
-		padding: 120px 0 0 0;
-	}
-	
+	}	
 
 	.core .showcaseBox {
 		display: block;
@@ -762,6 +783,7 @@ a:active, .button:active {
 			padding: 10px 0 40px 0;
 			width: 500px;
 			margin: 0 auto;
+			vertical-align: middle;
 		}
 
 		.coreSection2 .chartImage {
@@ -805,6 +827,22 @@ a:active, .button:active {
 
 	.coreSection4-text {
 		padding: 15px 0 60px;
+	}
+
+	.coreSection5 .leftSide .text {
+		font-size: 26px;
+	}
+	.coreSection5 .leftSide img {
+		height: 90px;
+	}
+	
+	.coreSection5 .leftSide {
+		margin-right: 2.5%
+	}
+
+	.coreSection5 .rightSide {
+		margin-right: 0;
+		width: 45%;
 	}
 
 	.footerWrap {
@@ -859,34 +897,25 @@ a:active, .button:active {
 		margin-bottom: 15px;
 	}
 
-	.headerLeft {
-		padding-top: 0px;
-	}
-		.headerLeft-box1 {
-			height: auto;
-		}
-		.headerLeft-content1 {
-			padding: 10px 0 10px 10px;
-			line-height: 1.6em;
-		}
-
-		.headerLeft-content2 {
-			padding: 6px 4px 32px 18px;
-			line-height: 1.25em;
-			font-size: 40px;
-			margin: 0 8px;
-			white-space: normal;
-		}
-
-	.headerRight {
-		width: auto;
-		height: auto;
-
-		padding: 40px 8px 10px;
+	.header .logo {
+		width: 249px;
+		margin-left: 0;
 	}
 	
+	.headerText {
+		text-align: center;
+		font-size: 24px;
+		margin-left: 0;
+	}
+	
+
 	.coreTopText {
 		padding: 18px 8px;
+		font-size: 20px;
+	}
+
+	.coreSection1 .seperator {
+		width: 100%;
 	}
 
 	.core .showcaseBox {
@@ -929,7 +958,12 @@ a:active, .button:active {
 
 	.coreSection2-text {
 		padding: 0;
+
 	}
+
+		.coreSection2-text p {
+			font-size: 18px;
+		}
 
 		.coreSection2-text h2 {
 			font-size: 36px;
@@ -997,6 +1031,34 @@ a:active, .button:active {
 		padding: 15px 0 60px;
 	}
 
+	.coreSection5 .leftSide .text {
+		font-size: 20px;
+		text-align: left;
+		padding-left: 10px;
+	}
+	.coreSection5 .leftSide img {
+		height: 100px;
+		display: inline;
+	}
+	
+	.coreSection5 .leftSide {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.coreSection5 .rightSide {
+		display: block;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.contactForm .formList input {
+		width: 65%;
+	}
+	.contactForm .formList label {
+		width: 34%;
+	}
 	.footerWrap {
 		background-position: -360px top;
 		height: auto;
