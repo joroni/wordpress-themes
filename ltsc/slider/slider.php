@@ -50,9 +50,9 @@ $sliderItems = buildSlider();
 	<head>
 		<title><?php the_title() ?></title>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
-		<script src="<?php echo get_stylesheet_directory_uri() ?>/slider/jquery.1.9.js"></script>
-		<script src="<?php echo get_stylesheet_directory_uri() ?>/slider/jquery.bxslider.js"></script>
-		<script src="<?php echo get_stylesheet_directory_uri() ?>/slider/jquery.bxslider.css"></script>
+		<script src="<?php echo get_template_directory_uri() ?>/slider/jquery.1.9.js"></script>
+		<script src="<?php echo get_template_directory_uri() ?>/slider/jquery.bxslider.js"></script>
+		<script src="<?php echo get_template_directory_uri() ?>/slider/jquery.bxslider.css"></script>
 		<style>
 			.slider {
 				position: relative;

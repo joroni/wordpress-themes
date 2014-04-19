@@ -33,14 +33,14 @@ body, img, p, pre, div, span, object, blockquote, a, address, cite, code, em, tt
 /* Misc/Global */
 
 body {
-	font-family: 'Lato';
+	font-family: 'Lato', Arial, sans-serif;
 	font-size: 14px;
 	color: #344258;
 }
 
 h1, h2, h3, h4 {
 	font-weight: normal;
-	font-family: 'Lato';
+	font-family: 'Lato', Arial, sans-serif;
 }
 
 h2 {
@@ -159,7 +159,6 @@ a:active, .button:active {
 
 .headerWrap {
 	width: 100%;
-	overflow: hidden;
 
 	background: #f6f6f6 url('/wp-content/themes/ltsc/variant/img/header.jpg') no-repeat center center ;
 	padding: 30px 0;
@@ -199,6 +198,18 @@ a:active, .button:active {
 		font-size: 42px;
 		letter-spacing: 0.5px;
 	}
+
+		.headerTextItems {
+			position: relative;
+		}
+		.headerTextItems div {
+			display: none;
+			width: 475px;
+		}
+
+		.headerText .active {
+			display: inline-block;
+		}
 
 		.headerText .specialText {
 			color: #b09045;
@@ -907,6 +918,10 @@ a:active, .button:active {
 		font-size: 24px;
 		margin-left: 0;
 	}
+
+		.headerTextItems div {
+			width: 280px;
+		}
 	
 
 	.coreTopText {

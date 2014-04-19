@@ -1,7 +1,3 @@
-<?php
-	if ( !isset($isVariant) )
-		$isVariant = isset($_GET['v']) ? true : false;
-?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,17 +8,17 @@
 
 		<link href='//fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 
-		<link media="screen" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/normalize.css" rel="stylesheet" />
+		<link media="screen" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/normalize.css" rel="stylesheet" />
 
-		<?php if ( $isVariant ) { ?>
-			<link media="screen" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/variant/style.css" rel="stylesheet" />
+		<?php if ( $isGold ) { ?>
+			<link media="screen" type="text/css" href="<?php echo get_template_directory_uri() ?>/gold/v_style.css" rel="stylesheet" />
 		<?php } else { ?>
-			<link media="screen" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/style.css" rel="stylesheet" />
+			<link media="screen" type="text/css" href="<?php echo get_template_directory_uri() ?>/style.css" rel="stylesheet" />
 		<?php } ?>
 
-		<script src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.js"></script>
-		<script src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.viewport.js"></script>
-		<script src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.scrollto.js"></script>
+		<script src="<?php echo get_template_directory_uri() ?>/js/jquery.js"></script>
+		<script src="<?php echo get_template_directory_uri() ?>/js/jquery.viewport.js"></script>
+		<script src="<?php echo get_template_directory_uri() ?>/js/jquery.scrollto.js"></script>
 
 		<?php # wp_head(); ?>
 

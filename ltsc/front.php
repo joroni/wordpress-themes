@@ -1,38 +1,41 @@
 <div class="headerWrap">
 	<div class="header">
-		<a href="<?php echo home_url() ?>" title="LTSC"><img class="logo" alt="LTSC" src="<?php echo get_stylesheet_directory_uri() ?>/variant/img/newLogo.png" /></a>
-		<div class="headerText">
-			<div class="headerTextItems">
-				<div class="active">
-					<span class="specialText">LEARN</span> HOW TO<br/>
-					PROFIT FROM AN LTSC
+		<div class="headerLeft">
+			<div class="headerLeft-box1 ">
+				<?php
+					// could probably add text like this via wordpress
+				?>
+				<div class="headerLeft-content1">
+					Making money in the<br/>
+					property market has<br/>
+					never been easier....
 				</div>
-				<div>
-					<span class="specialText">HEAR</span> WHY LTSC IS THE<br/>
-					FUTURE
-				</div>
-				<div>
-					<span class="specialText">SEE</span> HOW AN LTSC<br/>
-					CAN WORK FOR YOU
+
+			</div>
+			<div class="headerLeft-box2">
+				<div class="headerLeft-content2">
+					Secure property<br/>
+					for just <span class="headerLeft-numberImage"></span> a day!<span class="asterisk">*</span>
 				</div>
 			</div>
+		</div>
+		<div class="headerRight">
+			<a href="<?php echo home_url() ?>">
+				<div class="logo"></div>
+			</a>
+			<?php include 'headerForm.php'; ?>
 		</div>
 	</div>
 </div>
 <div class="core">
-
 	<section class="coreSection1">
 		<div class="coreTopText mediumText">
-			USING AN LTSC, YOU CAN SECURE PROPERTY
-		</div>
-		<div class="seperator">
-			<div class="seperatorLine"></div>
-			<div class="seperatorButtonWrap"><a href="#contactForm" class="seperatorButton button bookWebinar">BOOK A FREE WEBINAR</a></div>
+			Using an LTSC, you can secure property with :
 		</div>
 		<div class="showcaseBoxWrap">
 			<div class="showcaseBox">
 				<div class="showcaseImage imageBox">
-					<img src="<?php echo get_stylesheet_directory_uri() ?>/img/showcase_image.jpg" />
+					<img src="<?php echo get_template_directory_uri() ?>/img/showcase_image.jpg" />
 				</div>
 				<div class="showcaseText mediumText">
 					<ul class="showcaseList">
@@ -70,8 +73,8 @@
 			<div class="chartImage invisible">
 				<?php 
 					$graphImage = $isVariant
-						? get_stylesheet_directory_uri() . '/variant/img/graph.png'
-						: get_stylesheet_directory_uri() . '/variant/img/graph.png'
+						? get_template_directory_uri() . '/variant/img/graph.png'
+						: get_template_directory_uri() . '/img/graph.png'
 					;
 				?>
 				<img src="<?php echo $graphImage ?>" />
@@ -85,7 +88,7 @@
 	</section>
 	<section class="seperator">
 		<div class="seperatorLine"></div>
-		<div class="seperatorButtonWrap"><a href="#contactForm" class="seperatorButton button learnMore">LEARN MORE</a></div>
+		<div class="seperatorButtonWrap"><a class="seperatorButton button">BOOK A PRESENTATION</a></div>
 	</section>
 	<section class="coreSection3 row">
 		<div class="coreSection3-text col-3">
@@ -99,7 +102,7 @@
 		<div class="coreSection4-image col-3">
 			<div class="coreSection4-heading">STAGE 1</div>
 			<div class="imageBox imageBox-field">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/field.jpg" />
+				<img src="<?php echo get_template_directory_uri() ?>/img/field.jpg" />
 			</div>
 			<div class="coreSection4-text">
 				BUY IN</br>
@@ -109,7 +112,7 @@
 		<div class="coreSection4-image col-3">
 			<div class="coreSection4-heading">STAGE 2</div>
 			<div class="imageBox imageBox-map">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/map.png" />
+				<img src="<?php echo get_template_directory_uri() ?>/img/map.png" />
 			</div>
 			<div class="coreSection4-text">
 				HOLD DURING<br/>
@@ -119,23 +122,12 @@
 		<div class="coreSection4-image col-3">
 			<div class="coreSection4-heading">STAGE 3</div>
 			<div class="imageBox imageBox-house">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/house.jpg" />
+				<img src="<?php echo get_template_directory_uri() ?>/img/house.jpg" />
 			</div>
 			<div class="coreSection4-text">
 				SETTLE IN<br/>
 				URBANISATION STAGE
 			</div>
-		</div>
-	</section>
-	<section class="coreSection5">
-		<div class="leftSide">
-			<img alt="LTSC" src="<?php echo get_stylesheet_directory_uri() ?>/variant/img/newLogo.png" />
-			<div class="text">
-				MAKING MONEY IN THE PROPERTY MARKET HAS NEVER BEEN EASIER...				
-			</div>
-		</div>
-		<div class="rightSide">
-			<?php include 'form.php'; ?>
 		</div>
 	</section>
 </div>
@@ -162,7 +154,7 @@
 				<div class="clearfix"></div>
 				<div class="footerGuide-arrow"></div>
 				<div class="clearfix"></div>
-				<a class="footerGuide-button button learnMore" href="#contactForm">GUIDE TO LTSC</a>
+				<a class="footerGuide-button button" href="#">GUIDE TO LTSC</a>
 			</div>
 		</div>
 	</div>

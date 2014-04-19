@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: Thank You Gold
+Template Name: Thank You
 
 */
 
-$isVariant = true;
+$isVariant = false;
 
 ?>
 <!DOCTYPE html>
@@ -19,9 +19,9 @@ $isVariant = true;
 		<link media="screen" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/normalize.css" rel="stylesheet" />
 
 		<?php if ( $isVariant ) { ?>
-			<link media="screen" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/variant/style.css" rel="stylesheet" />
+			<link media="screen" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/style.css?version=2" rel="stylesheet" />
 		<?php } else { ?>
-			<link media="screen" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/style.css" rel="stylesheet" />
+			<link media="screen" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/style.css?version=2" rel="stylesheet" />
 		<?php } ?>
 
 		<script src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.js"></script>
@@ -50,7 +50,7 @@ $isVariant = true;
 				)
 			})
 		</script>
-
+		
 		<!-- Google Code for LTSC_April Conversion Page -->
 		<script type="text/javascript">
 			/* <![CDATA[ */
@@ -68,7 +68,7 @@ $isVariant = true;
 			</div>
 		</noscript>
 
-		<!-- Brandscreen Conversion Tag Code . Advertiser: LTSC. Name: thank you -->
-		<img src="http://tags.rtbidder.net/convert?sid=5341ed8f8bc06f188000454c" width="0" height="0" border="0" alt="" />
+		<!-- Brandscreen Conversion Tag Code . Advertiser: LTSC. Name: thank you - black -->
+		<img src="http://tags.rtbidder.net/convert?sid=53438ea655314b115460dfc4" width="0" height="0" border="0" alt="" />
 	</body>
 </html>

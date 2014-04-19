@@ -1,5 +1,7 @@
 <?php
 
+$test = false;
+
 # Suppress errors because it ruins json and we are to lazy to not have notices
 error_reporting(0);
 require_once "../../../../wp-load.php"; # Adds wordpress functionality
@@ -31,11 +33,14 @@ if ( $email ) {
 	include('internal.php'); # sets $internalEmailHtml
 
 	$emailHtml = file_get_contents('emails/default_inlined.html');
+	if ( ! $test ) {
+		$result = mail($email, $subject, $emailHtml, $oheaders);
 
-	$result = mail($email, $subject, $emailHtml, $oheaders);
-
-	if ( empty($_GET['test']) )
-		$internalResult	= mail("info@cottonparkestate.com", "Enquiry", $internalEmailHtml, $iheaders);
+		if ( empty($_GET['test']) )
+			$internalResult	= mail("info@cottonparkestate.com", "Enquiry", $internalEmailHtml, $iheaders);
+	} else {
+		$result = $internalResult = true;
+	}
 }
 
 $redirect = !empty($_GET['redirect']) ? $_GET['redirect'] : null;

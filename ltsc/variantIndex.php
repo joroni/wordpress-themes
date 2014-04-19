@@ -5,8 +5,6 @@ Template Name: Variant
 
 error_reporting(E_ALL);
 
-$_GET['v'] = 1;
-
-get_template_part('index');
+include __DIR__ . '/gold/_index.php';
 
 ?>

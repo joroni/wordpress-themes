@@ -2,79 +2,41 @@
 (function () {
 	$(document).ready(function() {
 
-
 		//
 		// Header form input focus classes
 		//
 
-		var $contactForm		= $('.contactForm')
-		var $contactFormForm	= $('.contactForm form')
-		var $contactFormInputs	= $contactForm.find('.formList input')
-		var $contactFormBlurb	= $contactForm.find('.blurb')
-		//var $formRedirect		= $contactFormForm.find('[name=redirect]')
+		var $headerFormInputs	= $('.headerForm .formList input')
+		var $headerFormForm		= $('.headerForm form')
+		var $headerFormBlurb	= $('.headerForm-blurb')
+		//var $formRedirect		= $headerFormForm.find('[name=redirect]')
 		//var formRedirect		= $formRedirect.val()
 		//$formRedirect.remove()
 
-		$contactFormInputs.on('focusin focusout', function() {
+		$headerFormInputs.on('focusin focusout', function() {
 			$input = $(this)
 			$li = $input.closest('li')
 
 			$li.toggleClass('active')
 		})
 
-
-		// Header slidy stuff
-		var $headerText			= $('.headerTextItems')
-		var $headerTextItems	= $headerText.children()
-
-		var textInterval = 4000
-		setInterval(
-			function() {
-				var $currentItem = $headerText.find('.active')
-				$currentItem.animate({
-					position: 'relative',
-					opacity: 0,
-				}, 250, function() {
-					$currentItem.removeClass('active')
-
-					var $nextItem = $currentItem.next()
-
-					if ( ! $nextItem.length ) {
-						$nextItem = $headerText.children().first()
-					}
-
-					$nextItem.css({
-						opacity: 0,
-					}).addClass('active')
-
-
-					$nextItem.animate({
-						opacity: 1,
-					}, 250)
-				}
-			)
-
-		
-			}, textInterval
-		)
-
-		var $formPhoneInput	= $contactForm.find('[name=phone]')
+		var $formPhoneInput	= $headerFormForm.find('[name=phone]')
 		var $formPhoneLi	= $formPhoneInput.closest('li')
-		var $formEmailInput	= $contactForm.find('[name=email]')
+		var $formEmailInput	= $headerFormForm.find('[name=email]')
 		var $formEmailLi	= $formEmailInput.closest('li')
 
-		$(document).on('click', '.contact-button', function (event) {
+		$(document).on('click', '.headerForm-button', function (event) {
 			var $button = $(this)
 
-			$contactFormBlurb.html('').animate({opacity: 1}, 500)
+			$headerFormBlurb.html('').animate({opacity: 1}, 500)
 
 			if ( ! $formEmailInput.val() || ! $formEmailInput.val().match(/\S+@\S+\.\S+/i) ) {
 				$formEmailLi.addClass('error')
 				var $emailError = $('.error-email')
 
 				if ( ! $emailError.length ) {
-					$contactFormBlurb.append("<div class='error-msg error-email'>Please enter an email.</div>")
-					$contactFormBlurb.show()
+					$headerFormBlurb.append("<div class='error-msg error-email'>Please enter an email.</div>")
+					$headerFormBlurb.show()
 					$emailError = $('.error-email')
 				}
 
@@ -91,8 +53,8 @@
 				var $phoneError = $('.error-phone')
 
 				if ( ! $phoneError.length ) {
-					$contactFormBlurb.append("<div class='error-msg error-phone'>Please enter a phone number.</div>")
-					$contactFormBlurb.show()
+					$headerFormBlurb.append("<div class='error-msg error-phone'>Please enter a phone number.</div>")
+					$headerFormBlurb.show()
 					$phoneError = $('.error-phone')
 				}
 
@@ -106,17 +68,17 @@
 			/*if ( ! btn.attr('disabled') ) {
 				btn.html("Sending...").attr('disabled', 'disabled');
 				$.ajax({
-					url			: $contactFormForm.attr('action'),
-					type		: $contactFormForm.attr('method'),
+					url			: $headerFormForm.attr('action'),
+					type		: $headerFormForm.attr('method'),
 					dataType	: 'html',
-					data		: $contactFormForm.serialize(),
+					data		: $headerFormForm.serialize(),
 					success		: function (response) {
 						data = JSON.parse(response)
 
 						console.log(response)
 
 						if ( data.success ) {
-							window.location.href = $contactFormForm.find('[name=thankYouUrl]').value
+							window.location.href = $headerFormForm.find('[name=thankYouUrl]').value
 						} else {
 							btn.attr('disabled', false).html('FIND OUT HOW');
 						}
@@ -140,36 +102,31 @@
 			$item.css({ position: 'relative', left: '70px', opacity: '0' })
 		})
 
-		var sliderSlide = function() {
-			var baseTime	= 300
-			var time		= 0
-			$listItems.each(function () {
-				var $item = $(this)
-				setTimeout(
-					function() {
-						$item.animate(
-							{
-								left: 0,
-								opacity: 1
-							},
-							500
-						)
-					},
-					( time = time + baseTime )
-				)
-			})
-		}
 		$(window).on('scroll.slider', function() {
 			if ( $lastListItem.is(':in-viewport') ) {
+				// Make sure it doesnt go off again by removing any .slider events
 				$(window).unbind('.slider')
-				sliderSlide()
+
+				// Maybe make this into its own function
+				var baseTime	= 300
+				var time		= 0
+				$listItems.each(function () {
+					var $item = $(this)
+					setTimeout(
+						function() {
+							$item.animate(
+								{
+									left: 0,
+									opacity: 1
+								},
+								500
+							)
+						},
+						( time = time + baseTime )
+					)
+				})
 			}
 		})
-
-		if ( $lastListItem.is(':in-viewport') ) {
-			$(window).unbind('.slider')
-			sliderSlide()
-		}
 
 		//
 		// On scroll shaking button animation
@@ -196,22 +153,25 @@
 	
 		var $seperatorButton	= $('.seperatorButton')
 		var $body				= $('body')
-		var $contactFormName	= $contactForm.find('input[name=name]')
+		var $logo				= $('.logo')
+		var $headerFormName		= $('.headerForm input[name=name]')
+
 		var $footerGuideButton	= $('.footerGuide-button')
 
 		var $buttons = $seperatorButton.add($footerGuideButton)
 
-		$buttons.on('click', function(event) {
-			event.preventDefault()
-
-			$body.scrollTo( $contactForm.offset().top, 800, {
+		$buttons.on('click', function() {
+			$body.scrollTo( $logo.offset().top, 800, {
 				onAfter: function() {
-					$contactFormBlurb.animate({ opacity: 1 }, 1000)
-					$contactFormName.focus()
-					$contactFormForm.append('<input type="hidden" name="webinar_button_clicked" value="1" />')
+					$headerFormBlurb.animate({ opacity: 1 }, 1000)
+					$headerFormName.focus()
+					$headerFormForm.append('<input type="hidden" name="webinar_button_clicked" value="1" />')
 				}
 			})
+
+			return false
 		})
+
 
 		var $subFooter			= $('.subFooter')
 
