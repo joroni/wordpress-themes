@@ -170,7 +170,12 @@ background-color: #2C9BAA !important;
 
 .et-slider-area .container header { display: none;}
 
-/* easter */
+html > body #top-area {
+	padding: 80px 0 60px !important;
+	padding-bottom: 60px !important;
+}
+
+/* easter 
 body .home-block {
   background-image: url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgLeft.png"),
                     url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgRight.png") !important;
@@ -183,3 +188,4 @@ body .home-block {
     background-image: none !important;
   }
 }
+*/

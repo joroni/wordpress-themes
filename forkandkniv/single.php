@@ -25,6 +25,13 @@ add_action( 'genesis_footer', 'genesis_footer_markup_close', 15);
 
 function opening_markup() {
 	?>
+        <div class="ad-outer-container ad-aboveSingle">
+                <div class="ad-container">
+<a href="http://ltsc.com.au">
+        <img width="100%" style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
+</a>
+                </div>
+        </div>
 	<div class="main-post-open">
 	<?php
 }

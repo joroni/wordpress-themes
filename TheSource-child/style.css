@@ -251,7 +251,7 @@ Template: TheSource
 	padding: 20px 15px;
 }
 
-/* easter */
+/* easter 
 html > body > #content {
   background-image: url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgLeft.png"),
                     url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgRight.png"),
@@ -264,4 +264,4 @@ html > body > #content {
   html > body > #content {
     background: url("http://entertainment.broadbent.wpengine.com/wp-content/themes/TheSource/images/content_bg.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0) !important;
   }
-}
+}*/

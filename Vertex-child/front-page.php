@@ -42,7 +42,13 @@ if ( 'on' == et_get_option( 'vertex_show_projects', 'on' ) ) {
 
 <?php if ( 'on' === et_get_option( 'vertex_featured', 'on' ) ) { ?>
 <section class="home-block et-even et-slider-area">
-	<?php insertAd('ad-headerBanner') ?>
+	<div class="ad-outer-container ad-headerBanner">
+		<div class="ad-container">
+			<a href="http://ltsc.com.au">
+				<img width="100%" style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
+			</a>
+		</div>
+	</div>
 
 	<div class="container">
 		<header>

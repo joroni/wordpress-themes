@@ -1857,6 +1857,11 @@ a:hover {
   padding: 18px 5px 5px;
 }
 
+.ad-aboveSingle {
+  margin-top: -4px;
+  padding: 0 5px 18px;
+}
+
 @media (max-width: 600px) {
   .ad-belowFeatured .textwidget > iframe {
     height: 40px;
@@ -1881,7 +1886,7 @@ a:hover {
   text-align: center;
 }
 
-/* Easter */
+/* Easter 
 
 body {
   background-image: url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgLeft.png"),
@@ -1890,3 +1895,4 @@ body {
   background-position: top left, top right, top center;
   background-repeat: no-repeat;
 }
+*/

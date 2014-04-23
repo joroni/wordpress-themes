@@ -34,33 +34,21 @@
 	</script>
 
 	<?php wp_head(); ?>
-	<style>
-		/* Easter */
-
-		body {
-		  background-image: url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgLeft.png"),
-		                    url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgRight.png");
-		  background-position: top left, top right;
-		  background-repeat: no-repeat;
-		}
-
-		@media (max-width: 1550px) {
-		  body {
-		    background-image: none;
-		  }
-		}
-
-		#featured {
-			background: transparent;
-		}
-	</style>
 </head>
 <body <?php body_class(); ?>>
 	<header id="main-header">
 		<div class="container">
 			<div id="top-info" class="clearfix">
 			<div class="header-banner">
-				<?php insertAd('ad-headerBanner') ?>
+
+<div class="ad-outer-container ad-headerBanner">
+	<div class="ad-container">
+		<a href="http://ltsc.com.au">
+			<img width="100%" style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
+		</a>
+	</div>
+</div>
+
 			</div>
 
 			<?php

@@ -5,9 +5,22 @@ if (have_posts()) : while (have_posts()) :
 
 the_post();
 
-if ( $postCount === 3 ) {
-	insertAd('ad-home-afterThirdPost');
-}
+if ( $postCount === 3 ) { ?>
+<div class="ad-outer-container ad-home-afterThirdPost">
+	<div class="ad-container">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-3525701263209076"
+     data-ad-slot="8204212147"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+	</div>
+</div>
+<?php }
 
 ++$postCount;
 

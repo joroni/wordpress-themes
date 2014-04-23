@@ -212,6 +212,11 @@ text-decoration : none;
 </div>
 
 <div id="main">
-<?php insertAd('ad-topBanner'); ?>
-
+<div class="ad-outer-container ad-topBanner">
+	<div class="ad-container">
+		<a href="http://ltsc.com.au">
+			<img width="100%" style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
+		</a>
+	</div>
+</div>
 <?php get_template_part( 'featured', get_post_format() );?>

@@ -223,7 +223,9 @@ body {
 	display: none;
 }
 
-/* easter */
+
+
+/* easter 
 body {
   background-image: url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgLeft.png"),
                     url("http://bbm.broadbent.wpengine.com/wp-content/uploads/sites/5/2014/04/easterBgRight.png") !important;
@@ -236,3 +238,7 @@ body {
     background-image: none !important;
   }
 }
+
+body {
+	background-color: #fff !important;
+}*/

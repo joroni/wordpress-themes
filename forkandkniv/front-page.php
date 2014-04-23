@@ -125,10 +125,15 @@ function render_home_page() {
 		endwhile;
 	}
 
-	insertAd('ad-belowFeatured');
 
 	?>
-
+	<div class="ad-outer-container ad-belowFeatured">
+		<div class="ad-container">
+<a href="http://ltsc.com.au">
+	<img width="100%" style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
+</a>
+		</div>
+	</div>
 	<div class="left-col">
 	<?php
 
@@ -140,7 +145,24 @@ function render_home_page() {
 
 			++$postCount;
 
-			if ( $postCount === 3 ) insertAd('ad-leftColPosts');
+			if ( $postCount === 3 ) {
+				?>
+<div class="ad-outer-container ad-leftColPosts">
+	<div class="ad-container">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-3525701263209076"
+     data-ad-slot="8204212147"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+	</div>
+</div>
+				<?php
+
+			}
 
 			if ( $postCount >= 7 ) continue;
 			
