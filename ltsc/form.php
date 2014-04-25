@@ -1,8 +1,12 @@
+<?php
+
+include 'data.php';
+
+?>
 <div class="contactForm" id="contactForm">
-	<div class="blurb">
-	</div>
-	<form action="<?php echo get_template_directory_uri() ?>/mail/email.php" method="GET"><!-- 1 -->
-		<input type="hidden" name="redirect" value="<?php echo home_url() ?>/thankyou" />
+	<form action="<?php echo get_template_directory_uri() ?>/email/emailSender.php" method="GET">
+		<input type="hidden" name="redirect" value="<?php echo home_url() . $page['thankyou'] ?>" />
+		<input type="hidden" name="googleEvent" value="<?php echo $page['googleEvent'] ?>" />
 		<ul class="formList">
 			<li>
 				<label>Full name :</label>
@@ -20,9 +24,22 @@
 				<label>Post code :</label>
 				<input name="postCode" />
 			</li>
-			<li>
+			<li class="contactCountry">
 				<label>Country :</label>
-				<input name="country" />
+
+				<select id="selectCountry" name="country" class="selectize" placeholder="Select a country...">
+					<option value="">Select a country...</option>
+					<?php foreach($data['countries'] as $code => $name) {
+						$selected = $code === 'AU'  ? true : false;
+						?>
+						<option
+							value="<?php echo $code ?>"
+							<?php echo $selected ? 'selected' : '' ?>
+						><?php echo $name ?></option>
+						
+					<?php } ?>
+					
+				</select>
 			</li>
 		</ul>
 		

@@ -84,7 +84,7 @@ if ($boxed) { ?>
 							
 							</div>
 			<div class="ad-space-banner">
-<a href="http://ltsc.com.au">
+<a href="http://ltsc.com.au/sm-april" target="_blank">
 	<img style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
 </a>
 			</div>							<?php if (of_get_option('pm_top_ad') != NULL) { //Top Banner ?>

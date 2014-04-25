@@ -1,0 +1,67 @@
+
+table.button td, table.tiny-button td, table.small-button td, table.medium-button td, table.large-button td {
+	border: 2px solid #222;
+	background: transparent;
+}
+
+table.button td:hover, table.tiny-button td:hover, table.small-button td:hover, table.medium-button td:hover, table.large-button td:hover {
+	background: #222 !important;
+	color: #fff !important;
+}
+
+table.button td a, table.tiny-button td a, table.small-button td a, table.medium-button td a, table.large-button td a {
+	color: #333 !important;
+}
+
+table.button td h3 a {
+	color: #fff !important;
+}
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
+	font-family: "Tahoma", "Helvetica", "Arial", sans-serif;
+	color: #7a7a7a;
+}
+
+body { font-size: 16px; }
+
+b, strong, .heading, h1, h2, h3, h4, h5, h6, li {
+	color: #444;
+	font-family: "Helvetica", "Arial", "Tahoma", sans-serif;
+}
+
+
+h3 {
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 150%;
+	text-align: center;
+	color: #404040;
+}
+
+p, li {
+	font-size: 16px;
+	line-height: 145%;
+}
+
+
+.underline {
+	text-decoration: underline;
+}
+table.button td, table.tiny-button td, table.small-button td, table.medium-button td, table.large-button td {
+	border: 0;
+	background: #b09045;
+	border-radius: 4px;
+}
+
+table.button td:hover, table.tiny-button td:hover, table.small-button td:hover, table.medium-button td:hover, table.large-button td:hover {
+	background: #344258 !important;
+}
+
+table.button td a, table.tiny-button td a, table.small-button td a, table.medium-button td a, table.large-button td a {
+	color: #fff;
+}
+
+.headerImage,
+.footerImage {
+	width: 600px !important;
+}

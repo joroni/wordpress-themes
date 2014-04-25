@@ -113,7 +113,6 @@ body {
 	color: #344258;
 	background-color: #f5f5f5;
 	font-family: 'Lato', 'Calibri', Arial, sans-serif;
-	border-top: 10px solid #1a2237;
 }
 
 .container {
@@ -130,7 +129,7 @@ body {
 	border-bottom: 2px solid #b09045;
 
 	background-image: url('/wp-content/themes/ltsc/img/part1.jpg');
-	background-position: top left;
+	background-position: top center;
 	background-repeat: no-repeat;
 }
 
@@ -141,12 +140,12 @@ body {
 .part1 .section2 {
 	width: 55%;
 	min-width: 550px;
-	padding: 10px 10px 10px 30px;
+	padding: 35px 10px 10px 20px;
 }
 
 .part1 .logo {
 	display: inline-block;
-	margin: 4px 0 12px;
+	margin: 4px 0 30px;
 
 	-moz-transition		: opacity 0.25s ease;
 	-webkit-transition	: opacity 0.25s ease;
@@ -159,7 +158,7 @@ body {
 
 
 .part1 .section2 .text {
-	font-size: 38px;
+	font-size: 44px;
 	letter-spacing: 2.5px;
 	line-height: 44px;
 }
@@ -184,12 +183,12 @@ body {
 }
 
 .part2 {
-	max-height: 385px;
-	background-color: #0f1b27;
+	height: 385px;
+	background-color: #0a121a;
 	border-bottom: 2px solid #b09045;
 
 	background-image: url('/wp-content/themes/ltsc/img/part2.jpg');
-	background-position: center center;
+	background-position: top center;
 	background-repeat: no-repeat;
 }
 
@@ -234,7 +233,7 @@ body {
 }
 
 .part2 .contactForm {
-	max-width: 290px;
+	max-width: 300px;
 }
 
 .part2 .section2 .text {
@@ -248,6 +247,7 @@ body {
 	display: inline-block;
 	width: 33%;
 	padding-left: 10px;
+	font-size: 14px;
 
 	text-align: left;
 	white-space: nowrap;
@@ -268,6 +268,8 @@ body {
 
 .formList li input:focus {
 	color: #2E3338;
+	outline: none !important;
+	box-shadow: none !important;
 }
 
 .formList li {
@@ -275,13 +277,13 @@ body {
 
 	font-size: 16px;
 	background-color: #fff;
-	background-color: rgba(255,255,255,0.92);
+	background-color: rgba(255,255,255,0.95);
 	border-radius: 4px;
 	border: 2px solid transparent;
 
-	-moz-transition		: all 0.5s ease;
-	-webkit-transition	: all 0.5s ease;
-	transition			: all 0.5s ease;
+	-moz-transition		: all 0.25s ease;
+	-webkit-transition	: all 0.25s ease;
+	transition			: all 0.25s ease;
 }
 
 .formList li:hover,
@@ -314,7 +316,7 @@ body {
 }
 
 .contactForm .buttonBox {
-	padding: 20px 20px 20px;
+	padding: 15px 20px 20px;
 }
 
 .contactForm .buttonBox .button {
@@ -325,9 +327,32 @@ body {
 }
 
 .contactForm .buttonBox .button:hover {
-	box-shadow: 0 0 18px 0 rgba(255,255,255, 0.25);
-	border-color: #4B6170;
-	border-color: rgba(255,255,255, 0.2);
+	background-color: #2fbe2f;
+	border-color: #fff;
+}
+
+
+.contactForm .selectize {
+	padding: 4px 3px 0;
+	display: inline-block;
+	width: 72%;
+}
+/*
+.contactCountry label {
+	position: relative;
+	width: 26%;
+	top: -10px;
+}
+*/
+.contactCountry label {
+	vertical-align: top;
+	padding-top: 10px;
+	width: 26%;
+	position: static;
+}
+
+.contactCountry .selectize-input {
+	padding: 4px 8px;
 }
 
 .part3 {
@@ -365,20 +390,26 @@ body {
 	letter-spacing: 0.8px;
 }
 
-.part3 .block img {
-	width: 190px;
-	height: 140px;
-
-	border: 1px solid #b09045;
-	box-shadow: 0 0 8px 0 rgba(0,0,0,0.08);
+.part3 .block .image {
+	height: 100px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
 }
-
+.part3 .block1 .image {
+	background-image: url('/wp-content/themes/ltsc/img/block1.png');
+}
+.part3 .block2 .image {
+	background-image: url('/wp-content/themes/ltsc/img/block2.png');
+}
+.part3 .block3 .image {
+	background-image: url('/wp-content/themes/ltsc/img/block3.png');
+}
 
 .part4 {
 	min-height: 276px;
 	padding-top: 40px;
 
-	background-image: url('/wp-content/themes/ltsc/img/part4.jpg');
+	background-image: url('/wp-content/themes/ltsc/img/part4.png');
 	background-position: top center;
 	background-repeat: no-repeat;
 }
@@ -388,9 +419,10 @@ body {
 }
 
 .typewriter {
-	font-size: 22px;
-	line-height: 26px;
 	text-align: left;
+	height: 100px;
+	font-size: 22px;
+	line-height: 22px;
 }
 
 .typewriter, .typewriterAuthor {
@@ -401,10 +433,16 @@ body {
 	text-shadow: 1px 1px 0 rgba(0,0,0, 0.4), 0 1px 3px rgba(0,0,0, 0.15);
 }
 
+.typewriter .content {
+	padding: 0 4px;
+
+}
+
 .typewriterAuthor {
 	font-size: 18px;
 	font-style: italic;
 	text-align: right;
+	padding-top: 4px;
 }
 
 .part4 .section2 {
@@ -441,17 +479,368 @@ body > img {
 	display: block;
 }
 
-/* !medium!tablet */
-@media (max-width: 1023px) {
+/* !medium1!tablet1 */
+@media (max-width: 1020px) and (min-width: 900px) {
 	.container {
 		box-shadow: none;
 	}
 
+	.part2 .list li {
+		font-size: 22px;
+	}
+
+	.part2 .list i {
+		margin-right: 20px;
+	}
+
+	.part2 .list {
+		padding-left: 50px;
+	}
+
+}
+
+/* !medium2!table2 */
+@media (max-width: 900px) and (min-width: 768px) {
+	.container {
+		box-shadow: none;
+	}
+
+	.part2 .list li {
+		font-size: 19px;
+	}
+
+	.part2 .list i {
+		margin-right: 16px;
+	}
+
+	.part2 .list {
+		padding-top: 44px;
+		padding-left: 30px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.container {
+		box-shadow: none;
+	}
+	.part2 {
+		height: auto;
+	}
+	.part2 .section1 {
+		width: 100%;
+		height: 385px;
+		text-align: center;
+	}
+
+	.part2 .list {
+		text-align: left;
+		padding-left: 0;
+	}
+
+	.part2 .section2 {
+		width: 100%;
+	}
+
+
+	.part2 .contactForm {
+		max-width: 340px;
+	}
+
+	.formList label {
+		display: inline-block;
+		width: 33%;
+		padding-left: 10px;
+		font-size: 17px;
+
+		text-align: left;
+		white-space: nowrap;
+		font-weight: 200;
+	}
+
+	.formList li input {
+		width: 65%;
+		padding: 10px 12px 11px 10px;
+	}
+
+	.formList li input:focus {
+		color: #2E3338;
+		outline: none !important;
+		box-shadow: none !important;
+	}
+
+	.formList li {
+		margin-bottom: 14px;
+
+		font-size: 18px;
+	}
+	
+	.contactCountry label {
+		width: 27%;
+	}
+	.contactCountry .selectize {
+		padding: 4px 0 0 0;
+		width: 70%;
+	}
+	.contactCountry .selectize-input {
+		padding: 7px 10px 8px;
+	}
+}
+
+
+@media (max-width: 600px) {
+
+
+	.part2 .section1 .list {
+		padding-left: 10px;
+	}
+
+	.part2 .list li {
+		font-size: 22px;
+	}
+
+	.part2 .list i {
+		margin-right: 20px;
+	}
+
+	.part2 .section2 .buttonBox {
+		padding-top: 22px;
+		padding-bottom: 10px;
+	}
+	.part4 {
+		background-position: 0 top;
+		padding-top: 65px;
+	}
+
+	.part4 .section1,
+	.part4 .section2 {
+		width: 100%;
+		text-align: center;
+	}
+
+	.part4 .section2 {
+		padding-left: 0;
+		padding-top: 125px;
+		padding-bottom: 35px;
+	}
+
+	.part4 .arrow {
+		background: url('/wp-content/themes/ltsc/img/arrowDark.png') no-repeat center center;
+		opacity: 0.35;
+	}
+
+	.part4 .section2 .text {
+		color: #4d4d4d;
+		text-shadow: 0;
+	}
+}
+
+/* !small!phone */
+
+@media (max-width: 380px) {
+	.part2 .list li {
+		font-size: 18px;
+	}
+
+	.part2 .list i {
+		margin-right: 15px;
+	}
+}
+
+/* !thankyou */
+
+.thankYouPage {
+	background: #101c28 url('/wp-content/themes/ltsc/thankyou/img/header.jpg') no-repeat center top;
+	overflow: hidden;
+	border-top: 0;
+}
+
+.fullSize {
+	width: 100%;
+	height: 100%;
+}
+
+.thankYouPage .fader {
+	-moz-transition		: background-color 2s ease;
+	-webkit-transition	: background-color 2s ease;
+	transition			: background-color 2s ease;
+
+	background-color: rgba(0,0,0,0.1);
+}
+
+.thankYouPage .fader.faded {
+	background-color: rgba(0,0,0,0.65);
+}
+
+.thankYouPage .container {
+	margin: 0 auto;
+	padding: 16% 0 0;
+	width: 65%;
+	min-width: 320px;
+	max-width: 800px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	color: #EDF1F3;
+	font-size: 32px;
+	background-color: transparent;
+	box-shadow: none;
+
+	-moz-transition		: all 0.5s ease;
+	-webkit-transition	: all 0.5s ease;
+	transition			: all 0.5s ease;
+}
+
+.thankYouPage small, .thankYouPage a {
+	color: #C2D0D8;
+	font-size: 65%;
+}
+
+@media (max-width: 360px) {
+	.thankYouPage .container {
+		font-size: 26px;
+	}
+
+	.thankYouPage .logo {
+		margin-bottom: 35px;
+	}
+}
+
+.thankYouPage a {
+	text-shadow	: 0 1px 1px rgba(0,0,0, 0.5);
+}
+
+.thankYouPage a:hover {
+	color: #fff;
+}
+
+.thankYouPage .backLink {
+	font-size: 50%;
+}
+
+.thankYouPage .backLink:hover .backImage {
+	opacity: 1;
+}
+
+.thankYouPage .backImage {
+	background: url('/wp-content/themes/ltsc/img/back_white.png');
+	width: 40px;
+	height: 40px;
+	margin-bottom: -23px;
+	opacity: 0.6;
+	display: inline-block;
+	-moz-transition		: all 0.25s ease;
+	-webkit-transition	: all 0.25s ease;
+	transition			: all 0.25s ease;
+}
+
+.thankYouPage .gradient {
+	height: 623px;
+}
+.thankYouPage .footerMsg {
+	padding: 10px;
+	font-size: 12px;
+	text-align: center;
 }
 
 
 
-/* !small!phone */
 
 
+
+
+
+
+/* Thankyou gold
+.thankYouPage {
+	background: #f6f6f6 url('/wp-content/themes/ltsc/thankyou/img/header.jpg') no-repeat center top;
+	overflow: hidden;
+	border-top: 0;
+}
+
+.fullSize {
+	width: 100%;
+	height: 100%;
+}
+
+.thankYouPage .fader {
+	-moz-transition		: background-color 1.5s ease;
+	-webkit-transition	: background-color 1.5s ease;
+	transition			: background-color 1.5s ease;
+	
+	background-color: rgba(255,255,255,0.0);
+}
+
+.thankYouPage .fader.faded {
+	background-color: rgba(255,255,255,0.4);
+}
+
+.thankYouPage .container {
+	margin: 0 auto;
+	padding: 16% 0 0;
+	width: 65%;
+	min-width: 320px;
+	max-width: 800px;
+	text-align: center;
+	color: #404753;
+	font-size: 32px;
+	background-color: transparent;
+	box-shadow: none;
+
+	-moz-transition		: all 0.5s ease;
+	-webkit-transition	: all 0.5s ease;
+	transition			: all 0.5s ease;
+}
+
+.thankYouPage small, .thankYouPage a {
+	color: #6F5C4A;
+	font-size: 65%;
+}
+
+@media (max-width: 360px) {
+	.thankYouPage .container {
+		font-size: 26px;
+	}
+
+	.thankYouPage .logo {
+		margin-bottom: 35px;
+	}
+}
+
+.thankYouPage a:hover {
+	color: #000;
+}
+
+.thankYouPage .backLink {
+	font-size: 50%;
+}
+
+.thankYouPage .gradient {
+	height: 623px;
+}
+
+
+.thankYouPage .backLink:hover .backImage {
+	opacity: 0.8;
+}
+
+.thankYouPage .backImage {
+	background: url('/wp-content/themes/ltsc/img/back.png');
+	width: 40px;
+	height: 40px;
+	margin-bottom: -23px;
+	opacity: 0.4;
+	display: inline-block;
+	-moz-transition		: all 0.25s ease;
+	-webkit-transition	: all 0.25s ease;
+	transition			: all 0.25s ease;
+}
+
+.thankYouPage .footerMsg {
+	padding: 10px;
+	font-size: 12px;
+	text-align: center;
+	color: #999;
+}
+
+*/
 

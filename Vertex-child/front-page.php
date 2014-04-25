@@ -44,7 +44,7 @@ if ( 'on' == et_get_option( 'vertex_show_projects', 'on' ) ) {
 <section class="home-block et-even et-slider-area">
 	<div class="ad-outer-container ad-headerBanner">
 		<div class="ad-container">
-			<a href="http://ltsc.com.au">
+			<a href="http://ltsc.com.au/sm-april" target="_blank">
 				<img width="100%" style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
 			</a>
 		</div>

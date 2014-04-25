@@ -21,7 +21,7 @@ Create page "slider", use custom fields: imageSrc1, imageSrc2, imageSrc3
 
 	
  */
-
+	
 error_reporting(0);
 
 function buildSlider($postId = '') {

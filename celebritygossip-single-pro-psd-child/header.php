@@ -214,7 +214,7 @@ text-decoration : none;
 <div id="main">
 <div class="ad-outer-container ad-topBanner">
 	<div class="ad-container">
-		<a href="http://ltsc.com.au">
+		<a href="http://ltsc.com.au/sm-april" target="_blank">
 			<img width="100%" style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
 		</a>
 	</div>
