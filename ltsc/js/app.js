@@ -1,7 +1,9 @@
 
 $(document).ready(function() {
-
-	$('.selectize').selectize()
+	var $list			= $('.part2 .list')
+	
+	$list.$ticks		= $list.find('i')
+	$list.$ticks.$last	= $list.$ticks.last()
 
 	var $footerButton	= $('.part4 .button')
 	,	$form			= $('.contactForm')
@@ -20,6 +22,9 @@ $(document).ready(function() {
 	$typewriter.$author		= $('.typewriterAuthor')
 
 	$form.$countrySelectize = $form.find('.selectize')
+
+
+	$('.selectize').selectize()
 
 	$form.$inputs.on('focusin focusout', function() {
 		var $input	= $(this)
@@ -171,5 +176,34 @@ $(document).ready(function() {
 
 		$(window).scrollTo($target.offset().top - 50, 800)
 	})
+
+
+	//
+	// Tick animations
+	//
+	var tickAnimation = function() {
+		if ( $list.$ticks.$last.is(':in-viewport') ) {
+			$(window).unbind('.tickAnimation')
+
+			var delay			= 150
+			,	accumulated		= delay
+
+			$list.$ticks.each(function() {
+				var $tick = $(this)
+
+				setTimeout(function() {
+					$tick.animate({
+						opacity: 1,
+						//left: -6
+					}, 200).animate({
+						//left: 0
+					}, 250)
+				}, accumulated = accumulated + delay )
+			})
+		}
+	}
+
+	$(window).on('scroll.tickAnimation', tickAnimation)
+	tickAnimation()
 
 });

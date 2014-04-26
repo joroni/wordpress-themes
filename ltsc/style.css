@@ -223,6 +223,8 @@ body {
 	background-image: url('/wp-content/themes/ltsc/img/tick.png');
 	background-position: 0 center;
 	background-repeat: no-repeat;
+	opacity: 0.25;
+	position: relative;
 }
 
 .part2 .section2 {
@@ -615,6 +617,7 @@ body > img {
 	.part4 .section1,
 	.part4 .section2 {
 		width: 100%;
+		display: block;
 		text-align: center;
 	}
 
