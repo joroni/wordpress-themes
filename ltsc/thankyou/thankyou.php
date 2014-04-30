@@ -43,8 +43,11 @@ Template Name: Thank You - Base
 			})
 		</script>
 		
-		<?php include __DIR__ . $page['trackingGoogle']; ?>
-		<?php include __DIR__ . $page['trackingImage']; ?>
+		<?php if ( !empty($page['trackingGoogle']) ) include __DIR__ . $page['trackingGoogle']; ?>
+		<?php if ( !empty($page['trackingImage']) ) include __DIR__ . $page['trackingImage']; ?>
+		<?php if ( !empty($page['tracking1']) ) include __DIR__ . $page['tracking1']; ?>
+		<?php if ( !empty($page['tracking2']) ) include __DIR__ . $page['tracking2']; ?>
+
 
 	</body>
 </html>

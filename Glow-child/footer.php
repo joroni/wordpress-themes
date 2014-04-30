@@ -19,6 +19,27 @@
 
 	</div> <!-- end main area wrap -->
 
+			<?php $menuClass = 'nav superfish';
+			$menuID = 'page-menu';
+			$primaryNav = '';
+			if (function_exists('wp_nav_menu')) {
+				$primaryNav = wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container' => '', 'fallback_cb' => '', 'menu_class' => $menuClass, 'menu_id' => $menuID, 'echo' => false ) );
+			};
+			if ($primaryNav == '') { ?>
+				<ul id="<?php echo esc_attr( $menuID ); ?>" class="<?php echo esc_attr( $menuClass ); ?>">
+					<?php if (get_option('glow_swap_navbar') == 'false') { ?>
+						<?php if (get_option('glow_home_link') == 'on') { ?>
+							<li <?php if (is_home()) echo('class="current_page_item"') ?>><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e('Home','Glow'); ?></a></li>
+						<?php }; ?>
+
+						<?php show_page_menu($menuClass,false,false); ?>
+					<?php } else { ?>
+						<?php show_categories_menu($menuClass,false); ?>
+					<?php } ?>
+				</ul> <!-- end ul#nav -->
+			<?php }
+			else echo($primaryNav); ?>
+			
 		<div id="footer">
 			<?php include( 'other-site-feeds.php' ); ?>
 
@@ -34,7 +55,7 @@
 			</div>
 <div class="disclaimer" style="margin: 0 auto;padding: 12px 10px; text-align: center; font-size: 11px; max-width: 960px;">
 	<p>
-		The Owner t/a Broadbent Media (ACN: 163 361 144) cannot be held responsible for damages directly or indirectly may be caused by users who use our websites. The Owner makes no warranties as to the availability or functionality.<br/>
+		The Owner t/a Broadbent Media cannot be held responsible for damages directly or indirectly may be caused by users who use our websites. The Owner makes no warranties as to the availability or functionality.<br/>
 		The Owner cannot be held responsible for the legality of the content of the web pages we link to from our websites. We can not guarantee that links published works.<br/>
 		The Owner may also not be held responsible for any kind of loss that is related to your use of content on websites operated by The Owner. This disclaimer includes both direct and indirect losses, including losses caused by disruptions, that the sites are not available and the like.<br/>
 		The Owner takes no responsibility for the register of members in the event; malware / hacking or other external influences beyond our control or event which is considered as force majeure.<br/>

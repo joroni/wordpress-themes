@@ -129,7 +129,7 @@ function external_sites() {
 
                 <div class="disclaimer">
                     <p>
-                        Arion Group Pty Ltd t/a Broadbent Media (ACN: 163 361 144) cannot be held responsible for damages directly or indirectly may be caused by users who use our websites. Arion Group Pty Ltd makes no warranties as to the availability or functionality.
+                        Arion Group Pty Ltd t/a Broadbent Media cannot be held responsible for damages directly or indirectly may be caused by users who use our websites. Arion Group Pty Ltd makes no warranties as to the availability or functionality.
 
                         Arion Group Pty Ltd cannot be held responsible for the legality of the content of the web pages we link to from our websites. We can not guarantee that links published works.
 

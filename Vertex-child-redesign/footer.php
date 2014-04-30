@@ -24,16 +24,16 @@
 			</div>
 
 			<div class="disclaimer">
-						<p>Arion Group Pty Ltd t/a Broadbent Media (ACN: 163 361 144) cannot be held responsible for damages directly or indirectly may be caused by users who use our websites. Arion Group Pty Ltd makes no warranties as to the availability or functionality.</p>
+				<p>Arion Group Pty Ltd t/a Broadbent Media cannot be held responsible for damages directly or indirectly may be caused by users who use our websites. Arion Group Pty Ltd makes no warranties as to the availability or functionality.</p>
 
-						<p>Arion Group Pty Ltd cannot be held responsible for the legality of the content of the web pages we link to from our websites. We can not guarantee that links published works.</p>
+				<p>Arion Group Pty Ltd cannot be held responsible for the legality of the content of the web pages we link to from our websites. We can not guarantee that links published works.</p>
 
-						<p>Arion Group Pty Ltd may also not be held responsible for any kind of loss that is related to your use of content on websites operated by Arion Group Pty Ltd. This disclaimer includes both direct and indirect losses, including losses caused by disruptions, that the sites are not available and the like.v
+				<p>Arion Group Pty Ltd may also not be held responsible for any kind of loss that is related to your use of content on websites operated by Arion Group Pty Ltd. This disclaimer includes both direct and indirect losses, including losses caused by disruptions, that the sites are not available and the like.v
 
-						<p>Arion Group Pty Ltd takes no responsibility for the register of members in the event; malware / hacking or other external influences beyond our control or event which is considered as force majeure.</p>
+				<p>Arion Group Pty Ltd takes no responsibility for the register of members in the event; malware / hacking or other external influences beyond our control or event which is considered as force majeure.</p>
 
-						<p>Arion Group Pty Ltd sites are turning to the Australian market and should therefore be assessed in accordance with Australian law. The potential users outside Australia's borders are responsible for the rules, regulations and laws.</p>
-					</div>
+				<p>Arion Group Pty Ltd sites are turning to the Australian market and should therefore be assessed in accordance with Australian law. The potential users outside Australia's borders are responsible for the rules, regulations and laws.</p>
+			</div>
 		</div> <!-- .container -->
 	</footer> <!-- #main-footer -->
 

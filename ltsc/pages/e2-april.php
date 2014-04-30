@@ -9,7 +9,6 @@ $page = array(
 	'googleEvent'	=> 'email2-form',
 );
 
-#include __DIR__ . '/../promotion1/_index.php';
 include __DIR__ . '/../landingPage.php';
 
 ?>

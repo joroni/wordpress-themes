@@ -9,6 +9,6 @@ $page = array(
 	'googleEvent'	=> 'speed-form',
 );
 
-include __DIR__ . '/../landingPage.php';
+include __DIR__ . '/../promotion3/landingPage.php';
 
 ?>

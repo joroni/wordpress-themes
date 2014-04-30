@@ -27,7 +27,7 @@
 			<?php include 'form.php' ?>
 		</div>
 	</div>
-	
+	<!--
 	<div class="part3 row-center">
 		<div class="section1 col-center">
 			<span class="text">HOW DOES LTSC WORK ?</span>
@@ -36,7 +36,6 @@
 			<div class="block block1 col-center">
 				<div class="text">STAGE 1</div>
 				<div class="image"></div>
-				<!--<img alt="Stage 1" src="<?php echo get_template_directory_uri() ?>/img/block1.png"/>-->
 				<div class="text2">
 					BUY IN<br/>
 					GREENFIELDS STAGE
@@ -45,7 +44,6 @@
 			<div class="block block2 col-center">
 				<div class="text">STAGE 2</div>
 				<div class="image"></div>
-				<!--<img alt="Stage 2" src="<?php echo get_template_directory_uri() ?>/img/block2.png"/>-->
 				<div class="text2">
 					HOLD DURING<br/>
 					DEVELOPMENT STAGE
@@ -54,7 +52,6 @@
 			<div class="block block3 col-center">
 				<div class="text">STAGE 3</div>
 				<div class="image"></div>
-				<!--<img alt="Stage 3" src="<?php echo get_template_directory_uri() ?>/img/block3.png"/>-->
 				<div class="text2">
 					SETTLE IN<br/>
 					URBANISATION STAGE
@@ -62,7 +59,7 @@
 			</div>
 		</div>
 	</div>
-
+	-->
 	<div class="part4 row">
 		<div class="section1 col-right">
 			<div class="typewriter"><?php
@@ -88,7 +85,7 @@
 	</div>
 
 	<div class="part5 row-center">
-		<div class="text col-center">*Terms and conditions may apply</div>
+		<div class="text col-center"><a href="<?php get_bloginfo('wpurl') ?>/terms">*Terms and conditions may apply</a></div>
 	</div>
 </div>
 

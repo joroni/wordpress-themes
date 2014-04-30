@@ -93,7 +93,7 @@
 	</div>
 
 	<div class="part5 row-center">
-		<div class="text col-center">*Terms and conditions may apply</div>
+		<div class="text col-center"><a href="<?php get_bloginfo('wpurl') ?>/terms">*Terms and conditions may apply</a></div>
 	</div>
 </div>
 

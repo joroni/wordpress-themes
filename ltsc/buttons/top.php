@@ -1,1 +1,1 @@
-<a class="button tracking-1 top-button" href="#contactForm">FOUND OUT HOW</a>
+<a class="button tracking-1 top-button scrollMe" data-event="" href="#contactForm">FIND OUT HOW</a>

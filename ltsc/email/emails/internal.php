@@ -49,6 +49,24 @@
 									<td>Country:</td>
 									<td><?php echo $client_countryCode ?>, <?php echo $client_countryName ?></td>
 								</tr>
+								<?php if ( $client_extraFields ) { ?>
+									<tr>
+										<td>Birth Date:</td>
+										<td><?php echo $client_birthDate ?></td>
+									</tr>
+									<tr>
+										<td>Owns Property:</td>
+										<td><?php echo $client_ownsProperty == '0' ? 'false' : 'true'; ?></td>
+									</tr>
+									<tr>
+										<td>Income:</td>
+										<td><?php echo $client_income ?></td>
+									</tr>
+									<tr>
+										<td>Contest Text:</td>
+										<td><?php echo $client_text ?></td>
+									</tr>
+								<?php } ?>
 							</tbody>
 						</table>
 						

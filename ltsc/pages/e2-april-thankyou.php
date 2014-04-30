@@ -7,7 +7,7 @@ $page = array(
 	'path'			=> '/e2-april',
 	'thankyou'		=> '/e2-april-thankyou',
 	'googleEvent'	=> 'email2-form',
-	'trackingImage'		=> '/../tracking/thankyou-image.php',
+	'trackingImage'		=> '',
 	'trackingGoogle'	=> '/../tracking/google.php',
 );
 

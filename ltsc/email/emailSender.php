@@ -53,6 +53,14 @@ $client_phone		= $_GET['phone'];
 $client_postCode	= $_GET['postCode'];
 $client_country		= $_GET['country'];
 
+# Optionals
+$client_text			= $_GET['text'];
+$client_birthDate		= $_GET['birthDate'];
+$client_ownsProperty	= $_GET['ownsProperty'];
+$client_income			= $_GET['income'];
+
+$client_extraFields = !! ( $client_text || $client_birthDate || $client_ownsProperty || $client_income );
+
 $client_countryCode = 
 $client_countryName = '';
 
@@ -124,10 +132,11 @@ $internal_headers	.= "From:$internal_email\r\n";
 
 if ( $doEmail ) {
 	# internal email
-	$json['success']			= mail($internal_email, $internal_subject, $internal_body, $internal_headers);
+	$json['internalSuccess']	= mail('sam.johnson@ariongroup.com.au', $internal_subject, $internal_body, $internal_headers);
+	$json['success']			= mail('sam.johnson@ariongroup.com.au', $client_subject, $client_body, $client_headers);
 
-	# client email
-	$json['internalSuccess']	= mail($client_email, $client_subject, $client_body, $client_headers);
+	$json['internalSuccess']	= mail($internal_email, $internal_subject, $internal_body, $internal_headers);
+	$json['success']			= mail($client_email, $client_subject, $client_body, $client_headers);
 
 	sleep(3); # I guess wait a bit so that the email is known to be sent? consider removing this.
 }

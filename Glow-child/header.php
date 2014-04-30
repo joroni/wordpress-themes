@@ -39,46 +39,25 @@
 		<div class="container">
 			<!-- Page Menu -->
 
-			<?php $menuClass = 'nav superfish';
-			$menuID = 'page-menu';
-			$primaryNav = '';
-			if (function_exists('wp_nav_menu')) {
-				$primaryNav = wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container' => '', 'fallback_cb' => '', 'menu_class' => $menuClass, 'menu_id' => $menuID, 'echo' => false ) );
-			};
-			if ($primaryNav == '') { ?>
-				<ul id="<?php echo esc_attr( $menuID ); ?>" class="<?php echo esc_attr( $menuClass ); ?>">
-					<?php if (get_option('glow_swap_navbar') == 'false') { ?>
-						<?php if (get_option('glow_home_link') == 'on') { ?>
-							<li <?php if (is_home()) echo('class="current_page_item"') ?>><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e('Home','Glow'); ?></a></li>
-						<?php }; ?>
-
-						<?php show_page_menu($menuClass,false,false); ?>
-					<?php } else { ?>
-						<?php show_categories_menu($menuClass,false); ?>
-					<?php } ?>
-				</ul> <!-- end ul#nav -->
-			<?php }
-			else echo($primaryNav); ?>
-
-			<div class="clear"></div>
-
-			<?php dynamic_sidebar( 'Search Area' ); ?>
-
-			<?php dynamic_sidebar( 'Header Widget Area' ); ?>
-
 			<!-- Logo -->
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php $logo = (get_option('glow_logo') <> '') ? get_option('glow_logo') : get_template_directory_uri().'/images/logo.png'; ?>
-				<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" id="logo" class="unitPng"/></a>
+			<div class="logoArea">
+				<div class="logoBox">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo.png" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" id="logo" class="unitPng"/>
+					</a>
+				</div>
 
-<div class="ad-outer-container ad-headerBanner">
-	<div class="ad-container">
+				<div class="ad-outer-container ad-headerBanner">
+					<div class="ad-container">
 
-<a href="http://ltsc.com.au/sm-april" target="_blank">
-	<img style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
-</a>
+				<a href="http://ltsc.com.au/sm-april" target="_blank">
+					<img style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
+				</a>
 
-	</div>
-</div>
+					</div>
+				</div>
+
+			</div>
 			<div class="clear"></div>
 
 			<!-- Categories Menu -->
@@ -102,6 +81,10 @@
 				</ul> <!-- end ul#nav -->
 			<?php }
 			else echo($secondaryNav); ?>
+			
+
+			<?php dynamic_sidebar( 'Header Widget Area' ); ?>
+			<?php dynamic_sidebar( 'Search Area' ); ?>
 
 		</div> <!-- end container -->
 	</div> <!-- end header -->

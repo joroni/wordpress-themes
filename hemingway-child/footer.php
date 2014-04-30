@@ -143,7 +143,7 @@
 	</div> <!-- /credits -->
 
 	<div class="disclaimer">
-		The Owner t/a Broadbent Media (ACN: 163 361 144) cannot be held responsible for damages directly or indirectly may be caused by users who use our websites.<br/>
+		The Owner t/a Broadbent Media cannot be held responsible for damages directly or indirectly may be caused by users who use our websites.<br/>
 		The Owner makes no warranties as to the availability or functionality.<br/>
 		The Owner cannot be held responsible for the legality of the content of the web pages we link to from our websites. We can not guarantee that links published works.<br/>
 		The Owner may also not be held responsible for any kind of loss that is related to your use of content on websites operated by The Owner.<br/>

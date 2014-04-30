@@ -6,6 +6,7 @@ $(document).ready(function() {
 	$list.$ticks.$last	= $list.$ticks.last()
 
 	var $footerButton	= $('.part4 .button')
+	,	$headerButton	= $('.part1 .button')
 	,	$form			= $('.contactForm')
 
 	$form.$form			= $form.find('form')
@@ -71,12 +72,12 @@ $(document).ready(function() {
 			failure = true;
 		}
 
-		var $countryInput = $form.$countrySelectize.find('.selectize-input .item')
+		/*var $countryInput = $form.$countrySelectize.find('.selectize-input .item')
 
 		if ( ! $countryInput.data('value') ) {
 			$form.$countrySelectize.parent().addClass('error')
 			failure = true;
-		}
+		}*/
 
 		if ( failure ) {
 			return false;
@@ -139,7 +140,7 @@ $(document).ready(function() {
 	$typewriter.$author.css({ opacity: 0 })
 	$typewriter.css({ opacity: 0 })
 
-	$(window).on('scroll.typewriterFooter', function() {
+	var typewriterInit = function() {
 		if ( $typewriter.$author.is(':in-viewport') ) {
 			$(window).unbind('.typewriterFooter')
 			text = $typewriter.$content.html()
@@ -152,13 +153,16 @@ $(document).ready(function() {
 				$typewriter.$author.animate({ opacity: 1 }, 1000)
 			})
 		}
-	})
+	}
 
+	$(window).on('scroll.typewriterFooter', typewriterInit)
+	typewriterInit()
+	
 	//
 	// Buttons
 	// 
 	
-	$footerButton.on('click', function() {
+	$footerButton.add($headerButton).on('click', function() {
 		var $button = $(this)
 
 		setTimeout(function(){
@@ -194,9 +198,9 @@ $(document).ready(function() {
 				setTimeout(function() {
 					$tick.animate({
 						opacity: 1,
-						//left: -6
+						left: -5
 					}, 200).animate({
-						//left: 0
+						left: 0
 					}, 250)
 				}, accumulated = accumulated + delay )
 			})
