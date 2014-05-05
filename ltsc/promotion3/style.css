@@ -162,6 +162,15 @@ body {
 	background-repeat: no-repeat;
 }
 
+.part2Bg {
+	background-image: url('/wp-content/themes/ltsc/promotion3/img/part2b.png');
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	padding-bottom: 120px;
+}
+
 .part2 .section1 {
 	width: 60%;
 }
@@ -376,15 +385,25 @@ body {
 }
 
 
-.contactCountry label {
+.contactCountry label,
+.contactIncome label {
 	vertical-align: top;
 	padding-top: 10px;
 	width: 26%;
 	position: static;
 }
 
-.contactCountry .selectize-input {
+.contactCountry .selectize-input,
+.contactIncome .selectize-input {
 	padding: 4px 8px;
+}
+
+.selectize-input {
+	white-space: nowrap;
+}
+
+.selectize-input.focus {
+	margin-top: -1px;
 }
 
 .part3 {
@@ -522,14 +541,17 @@ body > img {
 		height: 180px;
 	}
 	
-	.contactCountry label {
+	.contactCountry label,
+	.contactIncome label {
 		width: 27%;
 	}
-	.contactCountry .selectize {
+	.contactCountry .selectize,
+	.contactIncome .selectize {
 		padding: 4px 0 0 0;
 		width: 70%;
 	}
-	.contactCountry .selectize-input {
+	.contactCountry .selectize-input,
+	.contactIncome .selectize-input {
 		padding: 7px 10px 8px;
 	}
 }
@@ -633,7 +655,10 @@ body > img {
 		padding-left: 18px;
 		padding-right: 18px;
 	}
-
+	
+	.part2 .formList .ownProperty > label {
+		font-size: 16px;
+	}
 
 }
 

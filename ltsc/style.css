@@ -310,7 +310,9 @@ body {
 	text-align: left;
 	display: inline-block;
 }
-
+.selectize-input.focus {
+	margin-top: -1px;
+}
 .contactForm .errorMsg {
 	color: #9A5656;
 	font-size: 80%;

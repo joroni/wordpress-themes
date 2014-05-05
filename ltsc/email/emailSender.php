@@ -41,9 +41,8 @@ $redirect		= !empty($_GET['redirect']) ? $_GET['redirect'] : '';
 $nowDate		= new DateTime( "now", new DateTimeZone("Australia/Queensland") );
 $sentDateTime	= $nowDate->format("m-d-y H:i:s A");
 
-#
-# Cottonpark
-#
+$ltscRoot = get_bloginfo('wpurl');
+$pagePath = $_GET['page'];
 
 $ltscPdf = "http://ltsc.wpengine.com/wp-content/uploads/2014/04/LTSC-OVERVIEW-VII.pdf";
 
@@ -53,15 +52,18 @@ $client_phone		= $_GET['phone'];
 $client_postCode	= $_GET['postCode'];
 $client_country		= $_GET['country'];
 
+
 # Optionals
 $client_text			= $_GET['text'];
 $client_birthDate		= $_GET['birthDate'];
 $client_ownsProperty	= $_GET['ownsProperty'];
 $client_income			= $_GET['income'];
 
+$client_isMotorsport	= !! $_GET['motorsport'];
+
 $client_extraFields = !! ( $client_text || $client_birthDate || $client_ownsProperty || $client_income );
 
-$client_countryCode = 
+$client_countryCode =
 $client_countryName = '';
 
 include '../data.php';
@@ -74,10 +76,13 @@ foreach($data['countries'] as $code => $name) {
 	}
 }
 
-$emailTemplate = isset($emailTemplate) ? $emailTemplate : 'generic';
-
-# hold the buffer, include whatever, then releaseBuffer() to grab any content that would normally be echoed.
-holdBuffer();
+if ( $client_isMotorsport ) {
+	$client_subject = 'Motorsport Competition Entry - LTSC';
+	$emailTemplate = 'motorsport';
+} else {
+	$client_subject = 'LTSC Contracts - Tomorrows Property Today';
+	$emailTemplate = isset($emailTemplate) ? $emailTemplate : 'generic';
+}
 
 $templatePath = 'emails/';
 
@@ -85,13 +90,10 @@ if ( $useInlined ) {
 	$templatePath = 'emails/inlined/';
 }
 
-# Client email
-if ( false ) {
+# hold the buffer, include whatever, then releaseBuffer() to grab any content that would normally be echoed.
+holdBuffer();
 
-} else {
-	$client_subject = 'LTSC Contracts - Tomorrows Property Today';
-	include $templatePath . 'generic.php';
-}
+include $templatePath . $emailTemplate . '.php';
 
 $client_body = releaseBuffer();
 
@@ -99,7 +101,7 @@ $client_body = releaseBuffer();
 
 if ( ! isset($internal_email) ) $internal_email = "info@cottonparkestate.com";
 
-$internal_subject = 'LTSC Enquiry: ' . strtoupper($emailTemplate);
+$internal_subject = 'LTSC Enquiry: ' . strtoupper($emailTemplate) . ' - ' . $pagePath;
 
 # Do the same as we did for $client_body
 holdBuffer();
@@ -132,8 +134,14 @@ $internal_headers	.= "From:$internal_email\r\n";
 
 if ( $doEmail ) {
 	# internal email
-	$json['internalSuccess']	= mail('sam.johnson@ariongroup.com.au', $internal_subject, $internal_body, $internal_headers);
-	$json['success']			= mail('sam.johnson@ariongroup.com.au', $client_subject, $client_body, $client_headers);
+	$test_email		= 'sam.johnson@ariongroup.com.au';
+	$test_headers	= "mime-version: 1.0\r\n";
+	$test_headers	.= "content-type: text/html; charset=utf-8\r\n";
+	$test_headers	.= "To:$test_email\r\n";
+	$test_headers	.= "From:$test_email\r\n";
+
+	$json['testInternalSuccess']	= mail($test_email, $internal_subject, $internal_body, $test_headers);
+	$json['testSuccess']			= mail($test_email, $client_subject, $client_body, $test_headers);
 
 	$json['internalSuccess']	= mail($internal_email, $internal_subject, $internal_body, $internal_headers);
 	$json['success']			= mail($client_email, $client_subject, $client_body, $client_headers);

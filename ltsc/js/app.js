@@ -41,10 +41,16 @@ $(document).ready(function() {
 		$li.removeClass('error')
 	})
 
-	//$form.$lis.on('click', function(event) {
-	//	if ( event.target)
-	//	$(this).find('input').focus()
-	//})
+	$form.$lis.on('click', function(event) {
+		console.log($(this))
+		var $target	= $(event.target)
+		,	$li		= $(this)
+
+		if ( $target.is(':not(input)') ) {
+			$li.find('> input').focus()
+		}
+		
+	})
 
 	$(document).on('click', '.contact-button', function (event) {
 		var $button = $(this)
@@ -66,13 +72,13 @@ $(document).ready(function() {
 			$form.$phone.parent().addClass('error')
 			failure = true;
 		}
-
+		/*
 		if ( ! $form.$postCode.val() || ! $form.$postCode.val().match(/\d+/) ) {
 			$form.$postCode.parent().addClass('error')
 			failure = true;
 		}
 
-		/*var $countryInput = $form.$countrySelectize.find('.selectize-input .item')
+		var $countryInput = $form.$countrySelectize.find('.selectize-input .item')
 
 		if ( ! $countryInput.data('value') ) {
 			$form.$countrySelectize.parent().addClass('error')

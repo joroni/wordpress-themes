@@ -7,6 +7,8 @@ include __DIR__ . '/../data.php';
 	<form action="<?php echo get_template_directory_uri() ?>/email/emailSender.php" method="GET">
 		<input type="hidden" name="redirect" value="<?php echo home_url() . $page['thankyou'] ?>" />
 		<input type="hidden" name="googleEvent" value="<?php echo $page['googleEvent'] ?>" />
+		<input type="hidden" name="motorsport" value="1" />
+		<input type="hidden" name="page" value="<?php echo $page['path'] ?>" />
 		<ul class="formList">
 			<li>
 				<label>Full name :</label>
@@ -20,9 +22,22 @@ include __DIR__ . '/../data.php';
 				<label>Phone :</label>
 				<input name="phone" />
 			</li>
-			<li>
+			<li class="contactIncome">
 				<label>Income :</label>
-				<input name="income" />
+				<select id="selectIncome" name="income" class="selectize" placeholder="Select a range...">
+					<option
+						value="0-20k"
+					>$0 - $20,000</option>
+					<option
+						value="20-40k"
+					>$20,000 - $40,000</option>
+					<option
+						value="40-100k"
+					>$40,000 - $100,000</option>
+					<option
+						value="100k+"
+					>$100,000 or more</option>
+				</select>
 			</li>
 			<li class="ownProperty">
 				<label>Do you own property ?</label>
@@ -31,7 +46,7 @@ include __DIR__ . '/../data.php';
 					<label>NO</label><input type="radio" name="ownsProperty" value="0" />
 				</span>
 			</li>
-			<li>
+			<!--<li>
 				<label>Date of birth :</label>
 				<input name="birthDate" />
 			</li>
@@ -54,7 +69,7 @@ include __DIR__ . '/../data.php';
 						
 					<?php } ?>
 				</select>
-			</li>
+			</li>-->
 			<li class="message">
 				In 30 words or less tell us why you deserve the tickets.<br/>
 				You must complete this field in order to be eligible.

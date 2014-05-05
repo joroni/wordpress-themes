@@ -12,7 +12,7 @@
 error_reporting(0);
 
 $doEmail	= false;
-$useInlined	= false;
+$useInlined	= !empty($_GET['inlined']) ? true : false;
 $readEmail	= true;
 
 $emailTemplate = 'generic';
@@ -21,6 +21,7 @@ $_GET['email']		='1@1.com';
 $_GET['phone']		='34343242342';
 $_GET['postCode']	='4444';
 $_GET['country']	='AU';
+#$_GET['motorsport'] = '1';
 
 include "emailSender.php";
 

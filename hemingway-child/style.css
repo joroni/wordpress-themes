@@ -1488,7 +1488,7 @@ END OF PROJECT PAGE SETTINGS
 .accounts-list img, .accounts-list span {
 	display: block;
 	float: left;
-	padding-right: 152px;
+	padding-right: 120px;
 }
 .accounts-list span {
 	border-right: 2px solid #333;

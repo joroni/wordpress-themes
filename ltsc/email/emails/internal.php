@@ -18,6 +18,10 @@
 							</thead>
 							<tbody>
 								<tr>
+									<td>Page:</td>
+									<td><?php echo $ltscRoot . $pagePath ?></td>
+								</tr>
+								<tr>
 									<td>Request Type:</td>
 									<td><?php echo $emailTemplate ?></td>
 								</tr>

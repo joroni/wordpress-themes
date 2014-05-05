@@ -7,6 +7,7 @@ include 'data.php';
 	<form action="<?php echo get_template_directory_uri() ?>/email/emailSender.php" method="GET">
 		<input type="hidden" name="redirect" value="<?php echo home_url() . $page['thankyou'] ?>" />
 		<input type="hidden" name="googleEvent" value="<?php echo $page['googleEvent'] ?>" />
+		<input type="hidden" name="page" value="<?php echo $page['path'] ?>" />
 		<ul class="formList">
 			<li>
 				<label>Full name :</label>
@@ -20,7 +21,7 @@ include 'data.php';
 				<label>Phone :</label>
 				<input name="phone" />
 			</li>
-			<li>
+			<!--<li>
 				<label>Post code :</label>
 				<input name="postCode" />
 			</li>
@@ -41,6 +42,7 @@ include 'data.php';
 					
 				</select>
 			</li>
+			-->
 		</ul>
 		
 		<div class="buttonBox row-center">
