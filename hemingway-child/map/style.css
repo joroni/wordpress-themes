@@ -1,0 +1,313 @@
+.dyanmicMap * { 
+	-webkit-box-sizing	: border-box;
+	-moz-box-sizing		: border-box;
+	box-sizing			: border-box;
+}
+
+.dynamicMap table { border-collapse: separate; border-spacing: 0 }
+
+.mapBox {
+	width: 60%;
+	padding: 10px;
+	padding-top: 30px;
+	float: left;
+}
+.map, .mapLegend {
+	margin: 0 auto;
+	position: relative;
+}
+
+.mapPart {
+	display: block;
+	max-width: 512px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+
+	-webkit-transition	: all 0.5s;
+	-moz-transition		: all 0.5s;
+	transition			: all 0.5s;
+}
+
+.mapPart.hover {
+	opacity: 0.5;
+}
+
+.mapPart.active, .mapPart.active.hover {
+	opacity: 1;
+}
+
+
+.mapPart-0 {
+	position: static;
+	opacity: 1 !important;
+}
+
+.mapPart-letters {
+	opacity: 0.8 !important;
+}
+
+.mapNav {
+	width: 40%;
+	float: left;
+	padding: 20px 0 40px 20px;
+}
+
+.navItem {
+	padding: 8px 0;
+}
+
+
+.navCircle:hover {
+	cursor: pointer;
+	opacity: 0.75;
+}
+
+.navItem .navInfo {
+	display: none;
+	padding: 8px;
+}
+.navItem.active .navInfo,
+.navItem .navCircle {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.navInfo {
+	padding-top: 7px;
+	padding-left: 15px;
+}
+.navInfo .pointer {
+	float: left;
+	width: 0;
+	height: 0;
+	border-top		: 12px solid transparent;
+	border-bottom	: 12px solid transparent;
+	border-right	: 20px solid red;
+}
+
+.navItem-1 .pointer				{ border-right-color: #16ccfb }
+.navItem-1 .mapTable thead td	{
+	background-color	: #16ccfb;
+	border-left-color	: #16ccfb;
+}
+
+.navItem-2 .pointer				{ border-right-color: #0079ba }
+.navItem-2 .mapTable thead td	{
+	background-color	: #0079ba;
+	border-left-color	: #0079ba;
+}
+
+.navItem-3 .pointer				{ border-right-color: #a485dd }
+.navItem-3 .mapTable thead td	{
+	background-color	: #a485dd;
+	border-left-color	: #a485dd;
+}
+
+.navItem-4 .pointer				{ border-right-color: #f74d4d }
+.navItem-4 .mapTable thead td	{
+	background-color	: #f74d4d;
+	border-left-color	: #f74d4d;
+}
+
+.navItem-5 .pointer				{ border-right-color: #45ceb3 }
+.navItem-5 .mapTable thead td	{
+	background-color	: #45ceb3;
+	border-left-color	: #45ceb3;
+}
+
+.navItem-6 .pointer				{ border-right-color: #f3a43d }
+.navItem-6 .mapTable thead td	{
+	background-color	: #f3a43d;
+	border-left-color	: #f3a43d;
+}
+
+.mapTable {
+	float: left;
+	color: #666;
+	font-size: 15px;
+}
+.mapTable thead td {
+	background-color: red;
+	border-left-color: red;
+	border-width: 0 0 0 1px;
+	color: #fff;
+	height: 24px;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.mapTable thead td:last-child {
+	border-radius: 0 4px 0 0;
+}
+
+.mapTable tbody tr:last-child td:first-child {
+	border-radius: 0 0 0 4px;
+}
+.mapTable tbody tr:last-child td:last-child {
+	border-radius: 0 0 4px 0;
+}
+.mapTable tbody td:last-child {
+	border-width: 0 1px 1px 1px;
+}
+
+.mapTable td:first-child,
+.mapTable .thead td {
+	font-size: 15px;
+}
+
+.mapTable td:first-child {
+	color: #999;
+}
+
+
+.mapTable tbody td {
+	position: relative;
+}
+
+.mapTable tbody td.usable:hover,
+.mapTable tbody td.usable.active {
+	box-shadow: 0 0 12px 0 rgba(0,0,0,0.18);
+	outline: 1px solid #ddd;
+	outline: 1px solid rgba(0,0,0,0.08);
+	color: #000;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.mapTable tbody td.usable.active {
+	outline-color: #A5D3EF;
+}
+
+/* &#10003; is a tick */
+
+.mapTable tbody td.empty {
+	background-color: #eee !important;
+	color: transparent !important;
+}
+.mapTable td {
+	padding: 2px 14px;
+	text-align: center;
+	border-color: #eee #eee #e8e8e8 #eee;
+	border-style: solid;
+	border-width: 0 0 1px 1px;
+}
+
+.mapTable td:last-child {
+	padding-right: 12px;
+}
+
+
+.mapLegend {
+	white-space: nowrap;
+	padding: 4px;
+	width: 100%;
+}
+
+.leftLegend {
+	padding-left: 8px;
+	width: 40%;
+}
+.rightLegend {
+	padding-left: 35px;
+	width: 60%;
+}
+.mapLegend > div {
+	font-size: 16px;
+	font-weight: 600;
+	color: #444;
+	letter-spacing: 0.5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+.legendPark img {
+	max-width: 166px;
+}
+.legendLane img,
+.legendRoad img {
+	max-width: 199px;
+}
+.mapLegend img {
+	width: 100%;
+}
+@media (max-width: 800px) {
+	.mapBox {
+		width: 50%;
+	}
+	.mapNav {
+		width: 50%;
+	}
+
+	.mapNav .navCircle {
+		width: 30px;
+	}
+
+	.mapNav .navInfo {
+		padding-top: 5px;
+	}
+
+	.mapNav .navItem.active {
+		min-width: 310px;
+	}
+
+	.mapBox {
+		padding-top: 40px;
+	}
+
+	.mapLegend {
+		width: 85%;
+	}
+}
+
+@media (max-width: 680px) {
+	.dynamicMap {
+		text-align: center;
+	}
+	.mapBox, .mapNav {
+		float: none;
+		width: auto;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.mapBox {
+		padding-top: 8px;
+	}
+
+	.mapBox .map {
+		max-width: 320px;
+	}
+
+	.mapNav {
+		padding: 4px 8px 0 8px;
+		position: relative;
+		height: 220px
+	}
+
+	.mapNav .navItem {
+		display: inline-block;
+		padding: 8px 5px;
+	}
+	.mapNav .navItem.active {
+		min-width: unset;
+	}
+	.mapNav .navItem.active .navInfo {
+		position: absolute;
+		left: 12px;
+		top: 56px;
+	}
+	.mapNav .navItem.active .pointer {
+		display: none;
+	}
+
+	.mapTable thead td:first-child {
+		border-radius: 4px 0 0 0;
+	}
+	.mapLegend {
+		width: 75%;
+		min-width: 280px;
+	}
+}

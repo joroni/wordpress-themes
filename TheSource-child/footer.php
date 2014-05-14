@@ -48,6 +48,7 @@
 				Hong Kong, China
 			</div>
 			<strong>A-muse Yourself is part of the <a target="_blank" href="http://broadbentmedia.com">Broadbent Media</a> Group.</strong>
+<p style="text-align:center;" class="footerLinks"><a href="http://broadbentmedia.com/privacy/">Privacy Policy</a></p>
 			<br/>
 <div class="disclaimer" style="margin: 0 auto;padding: 12px 10px; text-align: center; font-size: 11px; max-width: 960px;">
 	<p>

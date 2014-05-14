@@ -1,6 +1,12 @@
 <?php
 
 $postCount = 0;
+$lambCat = get_category_by_slug('tiffany-lamb');
+if ( $lambCat )
+	query_posts(array(
+		'cat' => '-' . $lambCat->term_id
+	));
+
 if (have_posts()) : while (have_posts()) : the_post();
 		$postCount++;
 		$thumb = '';

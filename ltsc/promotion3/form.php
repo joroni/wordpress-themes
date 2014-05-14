@@ -83,4 +83,5 @@ include __DIR__ . '/../data.php';
 			<button class="contact-button col button" type="submit" autocomplete="off">PLAY NOW</button>
 		</div>
 	</form>
+	<div class="contactNumber"><span class="label">Or call us on:</span><span>1800 177 199</span></div>
 </div>

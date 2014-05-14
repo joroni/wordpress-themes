@@ -53,6 +53,7 @@
 				</div>
 				<strong>MW Health and Fitness is part of the <a href="http://broadbentmedia.com" target="_blank">Broadbent Media</a> Group.</strong>
 			</div>
+<p style="text-align:center;" class="footerLinks"><a href="http://broadbentmedia.com/privacy/">Privacy Policy</a></p>
 <div class="disclaimer" style="margin: 0 auto;padding: 12px 10px; text-align: center; font-size: 11px; max-width: 960px;">
 	<p>
 		The Owner t/a Broadbent Media cannot be held responsible for damages directly or indirectly may be caused by users who use our websites. The Owner makes no warranties as to the availability or functionality.<br/>

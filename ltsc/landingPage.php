@@ -4,12 +4,13 @@
 <div class="container">
 	<a href="<?php home_url() ?>">
 		<div class="part1 row">
-
+			<div class="section1 col text">SINGAPORE - HONG KONG - SYDNEY - MELBOURNE - SOUTHPORT</div>
 		</div>
 	</a>
 	<div class="part2 row">
 		<div class="section1 col">
 			<ul class="list">
+				<li class="heading">Buy property today with:</li>
 				<li><i></i>No Bank Debt</li>
 				<li><i></i>No Tenancy Issues</li>
 				<li><i></i>No Rates Cost</li>
@@ -72,7 +73,7 @@
 			<div class="typewriterAuthor"><span class="content">WARREN BUFFET</span></div>
 		</div>
 		<div class="section2 col-left">
-			<div class="downloadBox col-center">
+			<!--<div class="downloadBox col-center">
 				<div class="text">
 					GET A FREE DOWNLOAD<br/>
 					ON HOW YOU CAN BENEFIT<br/>
@@ -80,12 +81,12 @@
 				</div>
 				<div class="arrow"></div>
 				<?php include 'buttons/bottom.php'; ?>
-			</div>
+			</div>-->
 		</div>
 	</div>
 
 	<div class="part5 row-center">
-		<div class="text col-center"><a href="<?php get_bloginfo('wpurl') ?>/terms">*Terms and conditions may apply</a></div>
+		<div class="text col-center">*Terms and conditions may apply. <a href="<?php echo home_url() ?>/privacy">Privacy Policy</a></div>
 	</div>
 </div>
 

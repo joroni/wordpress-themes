@@ -2209,8 +2209,7 @@ iframe#pf-email-iframe {
 }
 
 /* fix to align shit, probably not very good at all */
-.home .top-wrap .top-content .content-left,
-.home .top-wrap .top-content .content-right .category-section {
+.home .top-wrap .top-content .content-left {
   min-height: 1080px;
 }
 
@@ -2232,12 +2231,6 @@ iframe#pf-email-iframe {
 .widget iframe {
   border-radius: 3px;
 }
-
-
-.ad-headerBanner iframe {
-  width: 640px;
-}
-
 
 .top-sidebar .widget-container {
   margin-top: 10px;
@@ -2357,3 +2350,13 @@ body {
     background-image: none;
   }
 }*/
+
+.tiffanyLambSection {
+  margin-bottom: 10px;
+}
+.tiffanyLambBanner {
+  margin: 0 auto;
+  width: 287px;
+  height: 176px;
+  background: url('/wp-content/themes/excl-news/images/tiffanyLambBanner.jpg');
+}

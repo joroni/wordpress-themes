@@ -52,7 +52,7 @@ $(document).ready(function() {
 		
 	})
 
-	$(document).on('click', '.contact-button', function (event) {
+	$(document).on('submit', '.contactForm form', function (event) {
 		var $button = $(this)
 		var failure = false
 
@@ -215,5 +215,11 @@ $(document).ready(function() {
 
 	$(window).on('scroll.tickAnimation', tickAnimation)
 	tickAnimation()
+
+	var $visitWebsiteLink = $('.visitWebsite a')
+
+	$visitWebsiteLink.on('click', function() {
+		ga('send', 'event', 'visitSite', 'clickLinkGMay')
+	})
 
 });

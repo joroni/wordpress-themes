@@ -31,7 +31,7 @@ Template Name: Thank You - Base
 						<a class="backLink" href="<?php echo home_url() . $page['path'] ?>"><i class="backImage"></i>Click here to go back to LTSC.com.au</a>
 					</p>
 				</div>
-				<div class="footerMsg">Terms and Conditions may apply</div>
+				<div class="footerMsg">Terms and Conditions may apply. <a href="<?php echo home_url() ?>/privacy">Privacy Policy</a></div>
 			</div>
 		</div>
 		<script>

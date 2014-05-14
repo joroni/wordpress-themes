@@ -71,7 +71,11 @@ body, img, p, pre, div, span, object, blockquote, a, address, cite, code, em, tt
 a {
 	text-decoration: none;
 	outline: 0 !important;
+	color: #87662F;
 }
+
+a:hover { color: #48371A }
+
 
 .button {
 	display: inline-block;
@@ -430,6 +434,20 @@ body {
 /* tracker image fix */
 body > img {
 	display: block;
+}
+
+
+.contactNumber {
+	text-align: center;
+	white-space: nowrap;
+	padding-top: 4px;
+	color: #bbb;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.contactNumber .label {
+	padding-right: 10px;
+	color: #999;
 }
 
 /* !medium1!tablet1 */

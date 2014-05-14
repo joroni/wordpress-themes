@@ -265,3 +265,14 @@ html > body > #content {
     background: url("http://entertainment.broadbent.wpengine.com/wp-content/themes/TheSource/images/content_bg.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0) !important;
   }
 }*/
+
+.tiffanyLambSection {
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+.tiffanyLambBanner {
+	display: block;
+	max-width: 680px;
+	width: 100%;
+	margin: 0 auto;
+}

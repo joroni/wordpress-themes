@@ -84,9 +84,15 @@ if ($boxed) { ?>
 							
 							</div>
 			<div class="ad-space-banner">
-<a href="http://ltsc.com.au/sm-april" target="_blank">
-	<img style="max-width:728px;" src="http://ltsc.wpengine.com/wp-content/themes/ltsc/img/ad728x90.gif" />
-</a>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3525701263209076"
+     data-ad-slot="5359993747"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 			</div>							<?php if (of_get_option('pm_top_ad') != NULL) { //Top Banner ?>
 							<div id="top-ad">
 								<?php echo ( of_get_option('pm_top_ad') ); ?>

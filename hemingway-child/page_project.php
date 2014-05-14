@@ -62,12 +62,8 @@ Template Name: PROJECT PAGE
 							<h2>MASTERPLAN</h2>
 						</div>
 					<!-- PROJECT TOP MAP-->
-						<div class="center desktop-only">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/Page_Project_01_03.jpg" alt="">
-						</div>
-						<div class="center mobile-only">
-							<img class='img-center' src="<?php echo get_stylesheet_directory_uri() ?>/images/project/mobile/Project-Mobile_03.jpg" alt="">
-						</div>
+						<?php include 'map/map.php' ?>
+						<div class="clear"></div>
 						<div class='who-are-we'>
 								<div class='section price-list'>
 									<div class='pproj_left-image'>
@@ -82,22 +78,18 @@ Template Name: PROJECT PAGE
 										<div class="small-text">
 											FIVE YEAR LTSC PRICE LIST
 										</div>
-										<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/Page_Project_01_07.jpg" alt="">
+										<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/table1.png" alt="">
 									</div>
 									<div class='clear'></div>
 								</div>
 						</div>
 						<div class="pproj-center desktop-only">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/Page_Project_01_09.jpg" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/table2.png" alt="">
 						</div>
 
 						<div class="pproj-center mobile-only">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/mobile/Project-Mobile_10.jpg" alt="">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/mobile/Project-Mobile_13.jpg" alt="">
-
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/project/mobileTable.jpg" alt="">
 						</div>
-
-
 
 						<div class='clear'></div>
 						<!--  END OF PROJECT TOP MAP-->

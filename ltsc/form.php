@@ -49,4 +49,7 @@ include 'data.php';
 			<?php include 'buttons/form.php' ?>
 		</div>
 	</form>
+	
+	<div class="contactNumber"><i></i><span>1800 177 199</span></div>
+	<div class="visitWebsite"><a href="http://ltsc.com.au">Click Here</a> to visit our website.</div>
 </div>

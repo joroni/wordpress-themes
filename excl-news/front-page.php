@@ -157,14 +157,26 @@ function custom_loop() {
                     $excluded = featured_posts( $excluded );
                     ?>
                 </div>
+                <?php
+                $postLimit = 4;
+                if ( $lambCat = get_category_by_slug('tiffany-lamb') ) {
+                    $postLimit = 2;
+                    ?>
+                    <div class="content-right">
+                        <?php
+                        lamb_posts($lambCat->term_id);
+
+                        ?>
+                    </div>
+                <?php } ?>
                 <div class="content-right">
                     <?php
                     $excluded = other_posts_with_ad(
                         genesis_get_option( 'home_cat_2' ),
                         $excluded,
                         'first',
-                        genesis_get_option( 'home_cat_2_posts' ),
-                        3, # index to insert ad before
+                        $postLimit,
+                        ($postLimit / 2) + 1, # index to insert ad before
                         'home-second-column-ad', # class
                         'HomeSecondColumnAd' # dynamic_sidebar()
                     );
@@ -331,7 +343,27 @@ function other_posts( $cat_id, $excluded, $class, $posts_per_page ) {
 
         return $excluded;
 }
+function lamb_posts( $cat_id, $posts_per_page = 1 ) {
+        $query = new WP_Query( array( 'cat' => $cat_id, 'posts_per_page' => $posts_per_page ) );
+        $cat_name = get_cat_name( $cat_id );
 
+        ?>
+        <div class="category-section first tiffanyLambSection">
+               <div class="tiffanyLambBanner"></div>
+                <?php
+
+                while( $query->have_posts() ) : $query->the_post();
+                        normal_post();
+                endwhile;
+        ?>
+        <div class="clear"></div>
+        </div>
+        <?php
+
+        wp_reset_query();
+
+        return null;
+}
 function other_posts_with_ad( $cat_id, $excluded, $class, $posts_per_page, $adIndex = 3, $adClass = '', $adKey = '' ) {
     if ( $posts_per_page > 4 ) { --$posts_per_page; }
 
@@ -347,7 +379,7 @@ function other_posts_with_ad( $cat_id, $excluded, $class, $posts_per_page, $adIn
         while( $query->have_posts() ) :
             $query->the_post();
             ++$index;
-            if ( $index === 3 ) {
+            if ( $index === $adIndex ) {
                 ?>
                 <div class="<?php echo $adClass ?>">
                     <div class="ad-container">

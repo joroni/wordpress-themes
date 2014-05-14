@@ -51,7 +51,11 @@ h2 {
 a {
 	text-decoration: none;
 	outline: 0 !important;
+	color: #87662F;
 }
+
+a:hover { color: #48371A }
+
 
 /*
 a:active, .button:active {

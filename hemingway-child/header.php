@@ -12,10 +12,14 @@
 		<?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
 
 		<?php wp_head(); ?>
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
 
-		<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/vendorCalc/normalize.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/vendorCalc/style.css">
+		<script src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.js" type="text/javascript"></script>
 		<script src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.scrollto.js" type="text/javascript"></script>
 		<script src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.viewport.js" type="text/javascript"></script>
+		<script src="<?php echo get_stylesheet_directory_uri() ?>/vendorCalc/assets/jquery.nouislider.min.js" type="text/javascript"></script>
 
 	</head>
 

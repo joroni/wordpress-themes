@@ -97,12 +97,11 @@ Template Name: LTSC
 					</div>
 				<!-- End of Chart Section-->
 
-				<div id="vendertermscalc" class="home-section desktop-only">
-				<div class="center">
-					<h2 class="ltsctitle coming-soon">
-						VENDOR TERMS CALCULATOR<br/>COMING SOON !
-					</h2>
-				</div>
+			<div id="vendertermscalc" class="home-section">
+				<h2 class="ltsctitle faq-title">
+					VENDOR TERMS CALCULATOR
+				</h2>
+				<?php include 'vendorCalc/calc.php'; ?>
 			</div>
 
 			<div class="page-seperator">

@@ -23,16 +23,14 @@ function endRequest($json, $redirect = '') {
 		header("content-type: application/json");
 		echo json_encode($json);
 	}
-
-	die();
 }
 
 $json = array( 'success' => false, 'error' => null );
 
-
 $readEmail	= isset($readEmail)		? $readEmail	: false;
 $doEmail	= isset($doEmail)		? $doEmail		: true;
 $useInlined	= isset($useInlined)	? $useInlined	: true;
+$apiCall	= isset($apiCall)		? $apiCall		: null;
 
 # If redirect is set, redirect instead of serving json (ie. no javascript is needed)
 # This should really be a valid redirect path or nothing
@@ -52,7 +50,6 @@ $client_phone		= $_GET['phone'];
 $client_postCode	= $_GET['postCode'];
 $client_country		= $_GET['country'];
 
-
 # Optionals
 $client_text			= $_GET['text'];
 $client_birthDate		= $_GET['birthDate'];
@@ -60,6 +57,8 @@ $client_ownsProperty	= $_GET['ownsProperty'];
 $client_income			= $_GET['income'];
 
 $client_isMotorsport	= !! $_GET['motorsport'];
+
+if ( $apiCall !== false ) { $apiCall = $client_isMotorsport; }
 
 $client_extraFields = !! ( $client_text || $client_birthDate || $client_ownsProperty || $client_income );
 
@@ -120,6 +119,9 @@ if ( ! $readEmail ) {
 	# TEST*/
 }
 
+#$doEmail = false; # test
+#$redirect = '';
+
 $client_headers		= "mime-version: 1.0\r\n";
 $client_headers		.= "content-type: text/html; charset=utf-8\r\n";
 
@@ -140,19 +142,26 @@ if ( $doEmail ) {
 	$test_headers	.= "To:$test_email\r\n";
 	$test_headers	.= "From:$test_email\r\n";
 
-	$json['testInternalSuccess']	= mail($test_email, $internal_subject, $internal_body, $test_headers);
-	$json['testSuccess']			= mail($test_email, $client_subject, $client_body, $test_headers);
-
 	$json['internalSuccess']	= mail($internal_email, $internal_subject, $internal_body, $internal_headers);
 	$json['success']			= mail($client_email, $client_subject, $client_body, $client_headers);
 
-	sleep(3); # I guess wait a bit so that the email is known to be sent? consider removing this.
+	sleep(1); # I guess wait a bit so that the email is known to be sent? consider removing this.
+
+	$json['testInternalSuccess']	= mail($test_email, $internal_subject, $internal_body, $test_headers);
+	$json['testSuccess']			= mail($test_email, $client_subject, $client_body, $test_headers);
+
 }
 
-$json['GET'] = $_GET;
+
 
 if ( ! $readEmail ) {
 	endRequest($json, $redirect);
 }
 
+if ( $apiCall ) {
+	include 'apiCall.php';
+
+	#$json['apiCall'] = $apiCallResult;
+	#$json['apiError'] = $apiError;
+}
 ?>

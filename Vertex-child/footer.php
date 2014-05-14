@@ -28,6 +28,7 @@
 					Hong Kong, China
 				</div>
 				<strong>Keep on Travellin is part of the <a href="http://broadbentmedia.com" target='_blank'>Broadbent Media</a> Group.</strong>
+<p style="text-align:center;" class="footerLinks"><a href="http://broadbentmedia.com/privacy/">Privacy Policy</a></p>
 				<br/><br/>
 				<div style="color:#6f6f6f;font-style:normal;margin: 0 auto;padding: 12px 10px; text-align: center; font-size: 11px; max-width: 960px;" class="disclaimer">
 The Owner t/a Broadbent Media cannot be held responsible for damages directly or indirectly may be caused by users who use our websites. The Owner makes no warranties as to the availability or functionality.<br>

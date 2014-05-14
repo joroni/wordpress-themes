@@ -33,6 +33,7 @@
 
 		</div>
 		<br/>
+<p style="text-align:center;" class="footerLinks"><a href="http://broadbentmedia.com/privacy/">Privacy Policy</a></p>
 		<div style="margin: 0 auto;padding: 12px 10px; text-align: center; font-size: 11px; max-width: 960px;" class="disclaimer">
 		<p>
 		The Owner t/a Broadbent Media cannot be held responsible for damages directly or indirectly may be caused by users who use our websites. The Owner makes no warranties as to the availability or functionality.<br>

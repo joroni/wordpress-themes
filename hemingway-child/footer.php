@@ -124,26 +124,21 @@
 		<div class="credits-inner section-inner">
 	
 			<p class="credits-left">
-			
 				&copy; <?php echo date("Y") ?> <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
-			
 			</p>
 			
 			<p class="credits-right">
-				
 				<span><?php printf( __( 'Theme by <a href="%s">Anders Noren</a>', 'hemingway'), 'http://www.andersnoren.se' ); ?></span> &mdash; <a title="<?php _e('To the top', 'hemingway'); ?>" class="tothetop"><?php _e('Up', 'hemingway' ); ?> &uarr;</a>
-				
 			</p>
 			
 			<div class="clear"></div>
-			
 
 		</div> <!-- /credits-inner -->
 		
 	</div> <!-- /credits -->
-
+	<p style="text-align:center;" class="footerLinks"><a href="<?php echo home_url() ?>/privacy">Privacy Policy</a></p>
 	<div class="disclaimer">
-		The Owner t/a Broadbent Media cannot be held responsible for damages directly or indirectly may be caused by users who use our websites.<br/>
+		The Owner t/a Arion Group cannot be held responsible for damages directly or indirectly may be caused by users who use our websites.<br/>
 		The Owner makes no warranties as to the availability or functionality.<br/>
 		The Owner cannot be held responsible for the legality of the content of the web pages we link to from our websites. We can not guarantee that links published works.<br/>
 		The Owner may also not be held responsible for any kind of loss that is related to your use of content on websites operated by The Owner.<br/>
@@ -156,6 +151,7 @@
 <?php wp_footer(); ?>
 
 <script src="<?php echo get_stylesheet_directory_uri() ?>/js/app.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri() ?>/vendorCalc/app.js"></script>
 
 </body>
 </html>

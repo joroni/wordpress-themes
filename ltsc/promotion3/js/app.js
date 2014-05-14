@@ -47,8 +47,7 @@ $(document).ready(function() {
 		}
 	})
 
-	$(document).on('click', '.contact-button', function (event) {
-		var $button = $(this)
+	$(document).on('submit', '.contactForm form', function (event) {
 		var failure = false
 
 		console.log('submit clicked')

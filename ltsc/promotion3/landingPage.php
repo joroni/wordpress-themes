@@ -37,7 +37,7 @@
 	</div>
 
 	<div class="part5 row-center">
-		<div class="text col-center"><a href="<?php get_bloginfo('wpurl') ?>/s-terms">*Terms and conditions may apply</a></div>
+		<div class="text col-center"><a href="<?php get_bloginfo('wpurl') ?>/s-terms">*Terms and conditions may apply</a>. <a href="<?php echo home_url() ?>/privacy">Privacy Policy</a></div>
 	</div>
 </div>
 
